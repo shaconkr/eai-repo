@@ -352,7 +352,7 @@
             </io>
         </header>
         <unit>
-            <io id="S00000000627" idn="DEFT_HCN_EAH22S_HCNC" name="jmims.entity.deft.hcn.EAH22S_HCNC" version="3" type="Entity" squencename="entity">
+            <io id="S00000000627" idn="DEFT_HCN_EAH22S_HCNC" name="jmims.entity.deft.hcn.EAH22S_HCNC" version="4" type="Entity" squencename="entity">
                 <common>
                     <description />
                     <system code="HCN" name="HCN" />
@@ -395,7 +395,7 @@
                     </online>
                 </process_type>
                 <data><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/" version="S00000000627.3">
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/" version="S00000000627.4">
     <element name="root" type="tns:DEFT_HCN_EAH22S_HCNC_ENT_inbound" />
     <complexType name="DEFT_HCN_EAH22S_HCNC_ENT_inbound">
         <sequence>
@@ -475,7 +475,7 @@
                 <annotation>
                     <documentation>HCN법인구분코드</documentation>
                     <appinfo>
-                        <p:description value="HCN고객번호" />
+                        <p:description value="HCN법인구분코드" />
                         <p:mandatory value="N" />
                         <p:level value="1" />
                         <p:encryption value="N" />
@@ -493,7 +493,7 @@
                 <annotation>
                     <documentation>자택주소</documentation>
                     <appinfo>
-                        <p:description value="HCN법인구분코드" />
+                        <p:description />
                         <p:mandatory value="N" />
                         <p:level value="1" />
                         <p:encryption value="N" />
