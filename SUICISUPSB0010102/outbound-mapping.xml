@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="outbound" id="SUICISUPSB0010102" version="1" />
+    <interface bound="outbound" id="SUICISUPSB0010102" version="2" />
     <src_io id="SSUIUPSB0010102" />
     <target_io id="TCISUPSB0010102" />
     <mapping>
