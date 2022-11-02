@@ -3,6 +3,35 @@
     <element name="root" type="tns:SSUIUPSB0010102_outbound" />
     <complexType name="SSUIUPSB0010102_outbound">
         <sequence>
+            <element name="dayCWtdwRateLstRowcount">
+                <annotation>
+                    <documentation>일별회수비율목록_배열건수</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="long">
+                        <totalDigits value="5" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element maxOccurs="unbounded" name="dayCWtdwRateLstList" type="tns:DAY_C_WTDW_RATE_LST_LIST_TYPE">
+                <annotation>
+                    <documentation>일별회수비율목록_배열</documentation>
+                    <appinfo>
+                        <p:adjustLength category="variableField" lengthFieldURL="DAY_C_WTDW_RATE_LST_ROWCOUNT" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                    </appinfo>
+                </annotation>
+            </element>
             <element name="asgnrId">
                 <annotation>
                     <documentation>담당자ID</documentation>

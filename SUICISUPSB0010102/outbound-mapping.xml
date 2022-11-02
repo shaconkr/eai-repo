@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="outbound" id="SUICISUPSB0010102" version="2" />
+    <interface bound="outbound" id="SUICISUPSB0010102" version="3" />
     <src_io id="SSUIUPSB0010102" />
     <target_io id="TCISUPSB0010102" />
+    <mapping>
+        <source path="entity/DAY_C_WTDW_RATE_LST_ROWCOUNT" />
+        <target path="entity/DAY_C_WTDW_RATE_LST_ROWCOUNT" />
+        <function ref="move" />
+    </mapping>
     <mapping>
         <source path="entity/ASGNR_ID" />
         <target path="entity/ASGNR_ID" />
