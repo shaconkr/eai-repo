@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SSUICDCZ0010101" version="1">
+    <common>
+        <io_name><![CDATA[공통.코드.목록.조회]]></io_name>
+        <!--I/O 명-->
+        <description />
+        <!--I/O 설명-->
+        <system code="SUI" name="통합단말" />
+        <!--시스템코드, 시스템명-->
+        <work code="DEFT" name="어플리케이션 Default 코드" />
+        <!--업무구분코드-->
+        <datetime>2022-11-01 10:39:37</datetime>
+        <!--작성 시간-->
+        <writer>CIS012</writer>
+        <!--작성자-->
+        <charset>UTF-8</charset>
+        <!--캐릭터셋-->
+        <package_name>hdc.cis.cd.cdc.cdcz.onl.sc.io</package_name>
+        <!--패키지경로-->
+        <class_name>CommCdLstQry</class_name>
+        <!--클래스명-->
+    </common>
+    <process_type type="O" name="온라인">
+        <online>
+            <service_in />
+            <!--Input 거래 ID-->
+            <service_out />
+            <!--Output 거래 ID-->
+            <syn-asyn code="1" name="동기" />
+            <!--동기 / 비동기 여부-->
+            <bizhub code="000" name="고객X 마케팅X" />
+            <!--비즈허브 접촉정보거래종류-->
+            <trncd_in />
+            <!--Input 거래 코드-->
+            <trncd_out />
+            <!--Output 거래 코드-->
+            <external>
+                <system />
+                <!--대외 기관 구분 코드-->
+                <work />
+                <!--대외 업무 코드-->
+                <msg />
+                <!--대외 전문 종별 코드-->
+                <tx />
+                <!--대외 거래 구분 코드-->
+                <inao code="1" />
+                <!--대내외 구분 코드 : 1 대내, 2 대외-->
+                <etc />
+                <!--대외 기타 구분 코드-->
+            </external>
+        </online>
+        <eai>
+            <service />
+            <!--DB 서비스명-->
+            <table />
+            <!--DB 테이블 명-->
+        </eai>
+    </process_type>
+    <!--IO처리유형 : O - 온라인, D - DB, F - FILE-->
+    <inbound>
+        <message>
+            <io id="C00000000637" idn="" version="1" name="SSUICDCZ0010101_INBOUND" type="Message" />
+        </message>
+        <header />
+        <unit>
+            <io id="C00000000637" idn="" name="SSUICDCZ0010101_INBOUND" version="1" type="Entity" squencename="entity">
+                <common>
+                    <description />
+                    <system />
+                    <!--시스템코드, 시스템명-->
+                    <work />
+                    <!--업무 구분 코드-->
+                    <datetime>2022-11-01 10:39:37</datetime>
+                    <!--작성 시간-->
+                    <writer>CIS012</writer>
+                    <!--작성자-->
+                    <package_name />
+                    <!--패키지경로-->
+                    <class_name />
+                    <!--클래스명-->
+                </common>
+                <process_type />
+                <data><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/">
+    <element name="root" type="tns:SSUICDCZ0010101_inbound" />
+    <complexType name="SSUICDCZ0010101_inbound">
+        <sequence>
+            <element name="srchRowcount">
+                <annotation>
+                    <documentation>검색목록건수</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="long">
+                        <totalDigits value="5" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element maxOccurs="unbounded" name="srchList" type="tns:SRCH_LIST_TYPE">
+                <annotation>
+                    <documentation>검색목록</documentation>
+                    <appinfo>
+                        <p:adjustLength category="variableField" lengthFieldURL="SRCH_ROWCOUNT" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                    </appinfo>
+                </annotation>
+            </element>
+        </sequence>
+    </complexType>
+    <complexType name="SRCH_LIST_TYPE">
+        <sequence>
+            <element name="cdGrpEnm">
+                <annotation>
+                    <documentation>코드그룹영문명</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="200" />
+                    </restriction>
+                </simpleType>
+            </element>
+        </sequence>
+    </complexType>
+</schema>]]></data>
+            </io>
+        </unit>
+    </inbound>
+    <outbound>
+        <message>
+            <io id="C00000000639" idn="" version="1" name="SSUICDCZ0010101_OUTBOUND" type="Message" />
+        </message>
+        <header />
+        <unit>
+            <io id="C00000000639" idn="" name="SSUICDCZ0010101_OUTBOUND" version="1" type="Entity" squencename="entity">
+                <common>
+                    <description />
+                    <system />
+                    <!--시스템코드, 시스템명-->
+                    <work />
+                    <!--업무 구분 코드-->
+                    <datetime>2022-11-01 10:39:37</datetime>
+                    <!--작성 시간-->
+                    <writer>CIS012</writer>
+                    <!--작성자-->
+                    <package_name />
+                    <!--패키지경로-->
+                    <class_name />
+                    <!--클래스명-->
+                </common>
+                <process_type />
+                <data><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/">
+    <element name="root" type="tns:SSUICDCZ0010101_outbound" />
+    <complexType name="SSUICDCZ0010101_outbound">
+        <sequence>
+            <element name="cdRowcount">
+                <annotation>
+                    <documentation>코드개수</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="long">
+                        <totalDigits value="5" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element maxOccurs="unbounded" name="cdList" type="tns:CD_LIST_TYPE">
+                <annotation>
+                    <documentation>코드목록</documentation>
+                    <appinfo>
+                        <p:adjustLength category="variableField" lengthFieldURL="CD_ROWCOUNT" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                    </appinfo>
+                </annotation>
+            </element>
+        </sequence>
+    </complexType>
+    <complexType name="CD_LIST_TYPE">
+        <sequence>
+            <element name="cdGrpEnm">
+                <annotation>
+                    <documentation>코드그룹영문명</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="200" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="cdNm">
+                <annotation>
+                    <documentation>코드명</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="100" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="cdVal">
+                <annotation>
+                    <documentation>코드값</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="12" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="optMarkVal">
+                <annotation>
+                    <documentation>옵션표기값</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="1" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="highCdGrpEnm">
+                <annotation>
+                    <documentation>상위코드그룹영문명</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="1" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="lowCdGrpEnm">
+                <annotation>
+                    <documentation>하위코드그룹영문명</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="1" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="cdAttrVal1">
+                <annotation>
+                    <documentation>코드속성값1</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="100" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="cdAttrVal2">
+                <annotation>
+                    <documentation>코드속성값2</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="100" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="cdAttrVal3">
+                <annotation>
+                    <documentation>코드속성값3</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="100" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="cdAttrVal4">
+                <annotation>
+                    <documentation>코드속성값4</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="100" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="cdAttrVal5">
+                <annotation>
+                    <documentation>코드속성값5</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="100" />
+                    </restriction>
+                </simpleType>
+            </element>
+        </sequence>
+    </complexType>
+</schema>]]></data>
+            </io>
+        </unit>
+    </outbound>
+</io>

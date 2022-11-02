@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="inbound" id="SUICISCDCZ0010101" version="2" />
+    <src_io id="SSUICDCZ0010101" />
+    <target_io id="TCISCDCZ0010101" />
+    <mapping>
+        <source path="entity/SRCH_ROWCOUNT" />
+        <target path="entity/SRCH_ROWCOUNT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/SRCH_LIST/CD_GRP_ENM" />
+        <target path="entity/SRCH_LIST/CD_GRP_ENM" />
+        <function ref="move" />
+    </mapping>
+</map>

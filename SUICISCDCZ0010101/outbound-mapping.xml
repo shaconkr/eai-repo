@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="outbound" id="SUICISCDCZ0010101" version="2" />
+    <src_io id="SSUICDCZ0010101" />
+    <target_io id="TCISCDCZ0010101" />
+    <mapping>
+        <source path="entity/CD_ROWCOUNT" />
+        <target path="entity/CD_ROWCOUNT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/CD_LIST/CD_GRP_ENM" />
+        <target path="entity/CD_LIST/CD_GRP_ENM" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/CD_LIST/CD_NM" />
+        <target path="entity/CD_LIST/CD_NM" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/CD_LIST/CD_VAL" />
+        <target path="entity/CD_LIST/CD_VAL" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/CD_LIST/OPT_MARK_VAL" />
+        <target path="entity/CD_LIST/OPT_MARK_VAL" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/CD_LIST/HIGH_CD_GRP_ENM" />
+        <target path="entity/CD_LIST/HIGH_CD_GRP_ENM" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/CD_LIST/LOW_CD_GRP_ENM" />
+        <target path="entity/CD_LIST/LOW_CD_GRP_ENM" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/CD_LIST/CD_ATTR_VAL1" />
+        <target path="entity/CD_LIST/CD_ATTR_VAL1" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/CD_LIST/CD_ATTR_VAL2" />
+        <target path="entity/CD_LIST/CD_ATTR_VAL2" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/CD_LIST/CD_ATTR_VAL3" />
+        <target path="entity/CD_LIST/CD_ATTR_VAL3" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/CD_LIST/CD_ATTR_VAL4" />
+        <target path="entity/CD_LIST/CD_ATTR_VAL4" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/CD_LIST/CD_ATTR_VAL5" />
+        <target path="entity/CD_LIST/CD_ATTR_VAL5" />
+        <function ref="move" />
+    </mapping>
+</map>
