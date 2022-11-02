@@ -352,7 +352,7 @@
             </io>
         </header>
         <unit>
-            <io id="S00000000629" idn="DEFT_HCN_EAH22R_HCNC" name="jmims.entity.deft.hcn.EAH22R_HCNC" version="2" type="Entity" squencename="entity">
+            <io id="S00000000629" idn="DEFT_HCN_EAH22R_HCNC" name="jmims.entity.deft.hcn.EAH22R_HCNC" version="3" type="Entity" squencename="entity">
                 <common>
                     <description />
                     <system code="HCN" name="HCN" />
@@ -395,7 +395,7 @@
                     </online>
                 </process_type>
                 <data><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/" version="S00000000629.2">
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/" version="S00000000629.3">
     <element name="root" type="tns:DEFT_HCN_EAH22R_HCNC_ENT_inbound" />
     <complexType name="DEFT_HCN_EAH22R_HCNC_ENT_inbound">
         <sequence>
@@ -557,7 +557,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="string">
-                        <maxLength value="1" />
+                        <maxLength value="230" />
                     </restriction>
                 </simpleType>
             </element>
