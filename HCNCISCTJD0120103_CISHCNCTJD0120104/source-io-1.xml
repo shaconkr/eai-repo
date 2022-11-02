@@ -94,7 +94,7 @@
             </io>
         </message>
         <header>
-            <io id="H00000000580" idn="DEFT_HCN_HCommHeader" version="3" name="jmims.header.deft.hcn.HCommHeader" type="Header" squencename="header">
+            <io id="H00000000580" idn="DEFT_HCN_HCommHeader" version="4" name="jmims.header.deft.hcn.HCommHeader" type="Header" squencename="header">
                 <common>
                     <description><![CDATA[HCN 전문헤더]]></description>
                     <system code="CIS" name="H-CIS" />
@@ -137,7 +137,7 @@
                     </online>
                 </process_type>
             </io>
-            <io id="S00000000579" idn="DEFT_HCN_HCommHeader" name="jmims.entity.deft.hcn.HCommHeader" version="3" type="Entity" squencename="entity1">
+            <io id="S00000000579" idn="DEFT_HCN_HCommHeader" name="jmims.entity.deft.hcn.HCommHeader" version="4" type="Entity" squencename="entity1">
                 <common>
                     <description><![CDATA[HCN 전문헤더]]></description>
                     <system code="CIS" name="H-CIS" />
@@ -180,7 +180,7 @@
                     </online>
                 </process_type>
                 <data><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/" version="S00000000579.3">
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/" version="S00000000579.4">
     <element name="root" type="tns:DEFT_HCN_HCommHeader_ENT_inbound" />
     <complexType name="DEFT_HCN_HCommHeader_ENT_inbound">
         <sequence>
@@ -324,7 +324,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="string">
-                        <maxLength value="1" />
+                        <maxLength value="6" />
                     </restriction>
                 </simpleType>
             </element>

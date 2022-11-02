@@ -108,7 +108,7 @@
     </common>
     <interface_type>
         <source>
-            <ioid version="2">SHCNCTJD0120103</ioid>
+            <ioid version="3">SHCNCTJD0120103</ioid>
             <!--소스 I/O ID-->
             <ioidn>DEFT_HCN_EAH22S_HCNC</ioidn>
             <!--소스 관리 I/O ID-->
@@ -166,7 +166,7 @@
             </process_type>
         </source>
         <target>
-            <ioid version="2">TCISCTJD0120103</ioid>
+            <ioid version="3">TCISCTJD0120103</ioid>
             <!--타겟 I/O ID-->
             <ioidn>DEFT_HCN_HAH22S_HCNC</ioidn>
             <!--타겟 관리 I/O ID-->
