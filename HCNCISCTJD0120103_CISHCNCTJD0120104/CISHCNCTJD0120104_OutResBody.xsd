@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/" version="S00000000629.3">
-    <element name="root" type="tns:DEFT_HCN_EAH22R_HCNC_ENT_inbound" />
-    <complexType name="DEFT_HCN_EAH22R_HCNC_ENT_inbound">
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/" version="S00000000615.4">
+    <element name="root" type="tns:DEFT_HCN_HAH22R_HCNC_ENT_inbound" />
+    <complexType name="DEFT_HCN_HAH22R_HCNC_ENT_inbound">
         <sequence>
             <element name="acptDt">
                 <annotation>
