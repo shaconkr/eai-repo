@@ -43,6 +43,10 @@
                 <!--대외 거래 구분 코드-->
                 <etc />
                 <!--대외 기타 구분 코드-->
+                <inao code="1" />
+                <!--대내외 구간 코드 : 1 대내, 2 대외-->
+                <ext_inop code="2" />
+                <!--대내외 (일반/공유 I/O) 구분 코드 : 1 대내 (일반), 2 대외 (공유)-->
             </external>
         </online>
     </process_type>
@@ -194,6 +198,7 @@
                         <p:encryption value="N" />
                         <p:mask_type />
                         <p:msg_key value="Y" />
+                        <p:krn_fld_yn value="N" />
                     </appinfo>
                 </annotation>
                 <simpleType>
@@ -212,6 +217,7 @@
                         <p:encryption value="N" />
                         <p:mask_type />
                         <p:msg_key value="Y" />
+                        <p:krn_fld_yn value="N" />
                     </appinfo>
                 </annotation>
                 <simpleType>
@@ -230,6 +236,7 @@
                         <p:encryption value="N" />
                         <p:mask_type />
                         <p:msg_key value="Y" />
+                        <p:krn_fld_yn value="N" />
                     </appinfo>
                 </annotation>
                 <simpleType>
@@ -248,6 +255,7 @@
                         <p:encryption value="N" />
                         <p:mask_type />
                         <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
                     </appinfo>
                 </annotation>
                 <simpleType>
@@ -266,6 +274,7 @@
                         <p:encryption value="N" />
                         <p:mask_type />
                         <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
                     </appinfo>
                 </annotation>
                 <simpleType>
@@ -284,6 +293,7 @@
                         <p:encryption value="N" />
                         <p:mask_type />
                         <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
                     </appinfo>
                 </annotation>
                 <simpleType>
@@ -302,6 +312,7 @@
                         <p:encryption value="N" />
                         <p:mask_type />
                         <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
                     </appinfo>
                 </annotation>
                 <simpleType>
@@ -320,6 +331,7 @@
                         <p:encryption value="N" />
                         <p:mask_type />
                         <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
                     </appinfo>
                 </annotation>
                 <simpleType>
@@ -338,6 +350,7 @@
                         <p:encryption value="N" />
                         <p:mask_type />
                         <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
                     </appinfo>
                 </annotation>
                 <simpleType>
@@ -409,6 +422,7 @@
                         <p:encryption value="N" />
                         <p:mask_type />
                         <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
                     </appinfo>
                 </annotation>
                 <simpleType>
@@ -427,6 +441,7 @@
                         <p:encryption value="N" />
                         <p:mask_type />
                         <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
                     </appinfo>
                 </annotation>
                 <simpleType>
@@ -445,6 +460,7 @@
                         <p:encryption value="N" />
                         <p:mask_type />
                         <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
                     </appinfo>
                 </annotation>
                 <simpleType>
@@ -463,6 +479,7 @@
                         <p:encryption value="N" />
                         <p:mask_type />
                         <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
                     </appinfo>
                 </annotation>
                 <simpleType>
@@ -481,6 +498,7 @@
                         <p:encryption value="N" />
                         <p:mask_type />
                         <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
                     </appinfo>
                 </annotation>
                 <simpleType>
@@ -499,6 +517,7 @@
                         <p:encryption value="N" />
                         <p:mask_type />
                         <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
                     </appinfo>
                 </annotation>
                 <simpleType>
@@ -517,6 +536,7 @@
                         <p:encryption value="N" />
                         <p:mask_type />
                         <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
                     </appinfo>
                 </annotation>
                 <simpleType>
@@ -535,6 +555,7 @@
                         <p:encryption value="N" />
                         <p:mask_type />
                         <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
                     </appinfo>
                 </annotation>
                 <simpleType>
@@ -553,6 +574,7 @@
                         <p:encryption value="N" />
                         <p:mask_type />
                         <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
                     </appinfo>
                 </annotation>
                 <simpleType>

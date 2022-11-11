@@ -13,6 +13,7 @@
                         <p:encryption value="N" />
                         <p:mask_type />
                         <p:msg_key value="Y" />
+                        <p:krn_fld_yn value="N" />
                     </appinfo>
                 </annotation>
                 <simpleType>
@@ -31,6 +32,7 @@
                         <p:encryption value="N" />
                         <p:mask_type />
                         <p:msg_key value="Y" />
+                        <p:krn_fld_yn value="N" />
                     </appinfo>
                 </annotation>
                 <simpleType>
@@ -49,6 +51,7 @@
                         <p:encryption value="N" />
                         <p:mask_type />
                         <p:msg_key value="Y" />
+                        <p:krn_fld_yn value="N" />
                     </appinfo>
                 </annotation>
                 <simpleType>
@@ -67,6 +70,7 @@
                         <p:encryption value="N" />
                         <p:mask_type />
                         <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
                     </appinfo>
                 </annotation>
                 <simpleType>
@@ -85,6 +89,7 @@
                         <p:encryption value="N" />
                         <p:mask_type />
                         <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
                     </appinfo>
                 </annotation>
                 <simpleType>
@@ -103,6 +108,7 @@
                         <p:encryption value="N" />
                         <p:mask_type />
                         <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
                     </appinfo>
                 </annotation>
                 <simpleType>
@@ -121,6 +127,7 @@
                         <p:encryption value="N" />
                         <p:mask_type />
                         <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
                     </appinfo>
                 </annotation>
                 <simpleType>
@@ -139,6 +146,7 @@
                         <p:encryption value="N" />
                         <p:mask_type />
                         <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
                     </appinfo>
                 </annotation>
                 <simpleType>
@@ -157,6 +165,7 @@
                         <p:encryption value="N" />
                         <p:mask_type />
                         <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
                     </appinfo>
                 </annotation>
                 <simpleType>
