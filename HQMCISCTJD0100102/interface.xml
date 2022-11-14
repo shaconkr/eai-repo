@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="HQMCISCTJD0100102" name="현대렌탈케어 제휴카드회원정보수신 소스IO" version="3">
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="HQMCISCTJD0100102" name="현대렌탈케어 제휴카드회원정보수신 소스IO" version="5">
     <common>
         <description />
         <system code="HQM" name="현대렌탈케어" />

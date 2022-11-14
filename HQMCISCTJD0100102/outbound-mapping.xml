@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="outbound" id="HQMCISCTJD0100102" version="2" />
+    <interface bound="outbound" id="HQMCISCTJD0100102" version="3" />
     <src_io id="SHQMCDJD0100101" />
     <target_io id="TCISCTJD0100102" />
     <mapping>
@@ -49,7 +49,7 @@
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/HrcAlliCrdMemInfRcvBody/MSO_ACPT_DT" />
+        <source path="entity/HrcAlliCrdMemInfRcvBody/ALLI_CRD_ACPT_DT" />
         <target path="entity/HrcAlliCrdMemInfRcvBody/MSO_ACPT_DT" />
         <function ref="move" />
     </mapping>
@@ -59,27 +59,27 @@
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/HrcAlliCrdMemInfRcvBody/CTEL_TELPN_AREA_NO" />
+        <source path="entity/HrcAlliCrdMemInfRcvBody/TELPN_AREA_NO" />
         <target path="entity/HrcAlliCrdMemInfRcvBody/CTEL_TELPN_AREA_NO" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/HrcAlliCrdMemInfRcvBody/CTEL_TELS" />
+        <source path="entity/HrcAlliCrdMemInfRcvBody/TELS" />
         <target path="entity/HrcAlliCrdMemInfRcvBody/CTEL_TELS" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/HrcAlliCrdMemInfRcvBody/CTEL_TELPN_SEQNO" />
+        <source path="entity/HrcAlliCrdMemInfRcvBody/TELPN_SEQNO" />
         <target path="entity/HrcAlliCrdMemInfRcvBody/CTEL_TELPN_SEQNO" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/HrcAlliCrdMemInfRcvBody/ADR" />
+        <source path="entity/HrcAlliCrdMemInfRcvBody/ADR1" />
         <target path="entity/HrcAlliCrdMemInfRcvBody/ADR" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/HrcAlliCrdMemInfRcvBody/PTC_ADR" />
+        <source path="entity/HrcAlliCrdMemInfRcvBody/ADR2" />
         <target path="entity/HrcAlliCrdMemInfRcvBody/PTC_ADR" />
         <function ref="move" />
     </mapping>
@@ -99,7 +99,7 @@
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/HrcAlliCrdMemInfRcvBody/PREP_VAL" />
+        <source path="entity/PREP_VAL1" />
         <target path="entity/HrcAlliCrdMemInfRcvBody/PREP_VAL" />
         <function ref="move" />
     </mapping>

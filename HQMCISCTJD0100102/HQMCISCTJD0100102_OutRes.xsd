@@ -19,6 +19,26 @@
                     </appinfo>
                 </annotation>
             </element>
+            <element name="prepVal1">
+                <annotation>
+                    <documentation>예비값1</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="106" />
+                    </restriction>
+                </simpleType>
+            </element>
         </sequence>
     </complexType>
     <complexType name="HrcAlliCrdMemInfRcvHdr_TYPE">
@@ -207,9 +227,9 @@
     </complexType>
     <complexType name="HrcAlliCrdMemInfRcvBody_TYPE">
         <sequence>
-            <element name="msoAcptDt">
+            <element name="alliCrdAcptDt">
                 <annotation>
-                    <documentation>MSO접수일자</documentation>
+                    <documentation>제휴카드접수일자</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
@@ -247,9 +267,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="ctelTelpnAreaNo">
+            <element name="telpnAreaNo">
                 <annotation>
-                    <documentation>연락처전화지역번호</documentation>
+                    <documentation>전화지역번호</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
@@ -267,9 +287,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="ctelTels">
+            <element name="tels">
                 <annotation>
-                    <documentation>연락처전화국번호</documentation>
+                    <documentation>전화국번호</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
@@ -287,9 +307,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="ctelTelpnSeqno">
+            <element name="telpnSeqno">
                 <annotation>
-                    <documentation>연락처전화일련번호</documentation>
+                    <documentation>전화일련번호</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
@@ -307,9 +327,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="adr">
+            <element name="adr1">
                 <annotation>
-                    <documentation>주소</documentation>
+                    <documentation>주소1</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
@@ -327,9 +347,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="ptcAdr">
+            <element name="adr2">
                 <annotation>
-                    <documentation>상세주소</documentation>
+                    <documentation>주소2</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
@@ -404,26 +424,6 @@
                 <simpleType>
                     <restriction base="string">
                         <maxLength value="80" />
-                    </restriction>
-                </simpleType>
-            </element>
-            <element name="prepVal">
-                <annotation>
-                    <documentation>예비값</documentation>
-                    <appinfo>
-                        <p:description />
-                        <p:mandatory value="N" />
-                        <p:level value="2" />
-                        <p:encryption value="N" />
-                        <p:one_path_encp value="N" />
-                        <p:mask_type />
-                        <p:db_key value="N" />
-                        <p:krn_fld_yn value="N" />
-                    </appinfo>
-                </annotation>
-                <simpleType>
-                    <restriction base="string">
-                        <maxLength value="19" />
                     </restriction>
                 </simpleType>
             </element>
