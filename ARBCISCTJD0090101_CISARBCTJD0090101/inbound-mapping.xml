@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="inbound" id="ARBCISCTJD0090101" version="1" />
+    <interface bound="inbound" id="ARBCISCTJD0090101" version="2" />
     <src_io id="SARBCTJD0090103" />
     <target_io id="TCISCTJD0090103" />
     <mapping>
@@ -49,8 +49,8 @@
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/MSO_ACPT_DT" />
-        <target path="entity/MSO_ACPT_DT" />
+        <source path="entity/ALLI_CRD_ACPT_DT" />
+        <target path="entity/ALLI_CRD_ACPT_DT" />
         <function ref="move" />
     </mapping>
     <mapping>
@@ -59,53 +59,53 @@
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/CTEL_TELPN_AREA_NO" />
-        <target path="entity/CTEL_TELPN_AREA_NO" />
+        <source path="entity/TELPN_AREA_NO" />
+        <target path="entity/TELPN_AREA_NO" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/CTEL_TELS" />
-        <target path="entity/CTEL_TELS" />
+        <source path="entity/TELS" />
+        <target path="entity/TELS" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/CTEL_TELPN_SEQNO" />
-        <target path="entity/CTEL_TELPN_SEQNO" />
+        <source path="entity/TELPN_SEQNO" />
+        <target path="entity/TELPN_SEQNO" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/ADR" />
-        <target path="entity/ADR" />
+        <source path="entity/ADR1" />
+        <target path="entity/ADR1" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/PTC_ADR" />
-        <target path="entity/PTC_ADR" />
+        <source path="entity/ADR2" />
+        <target path="entity/ADR2" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/ABN_CUST_NO" />
-        <target path="entity/ABN_CUST_NO" />
+        <source path="entity/ALLI_CRD_CUST_NO" />
+        <target path="entity/ALLI_CRD_CUST_NO" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/SEQNO" />
-        <target path="entity/SEQNO" />
+        <source path="entity/TRD_INNT_NO" />
+        <target path="entity/TRD_INNT_NO" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/CNCL_ACPT_DT" />
-        <target path="entity/CNCL_ACPT_DT" />
+        <source path="entity/REQ_CNCL_DT" />
+        <target path="entity/REQ_CNCL_DT" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/CNCL_SEQNO" />
-        <target path="entity/CNCL_SEQNO" />
+        <source path="entity/REQ_CNCL_TRAN_INNT_NO" />
+        <target path="entity/REQ_CNCL_TRAN_INNT_NO" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/CNCL_ABN_CUST_NO" />
-        <target path="entity/CNCL_ABN_CUST_NO" />
+        <source path="entity/REQ_CNCL_CUST_NO" />
+        <target path="entity/REQ_CNCL_CUST_NO" />
         <function ref="move" />
     </mapping>
     <mapping>

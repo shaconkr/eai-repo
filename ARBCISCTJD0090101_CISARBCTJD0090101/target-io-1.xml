@@ -365,7 +365,7 @@
             </io>
         </header>
         <unit>
-            <io id="S00000000727" idn="DEFT_ARB_EAH23S" name="jmims.entity.deft.arb.EAH23S" version="1" type="Entity" squencename="entity">
+            <io id="S00000000727" idn="DEFT_ARB_EAH23S" name="jmims.entity.deft.arb.EAH23S" version="2" type="Entity" squencename="entity">
                 <common>
                     <description><![CDATA[아름방송 전문 BODY]]></description>
                     <system code="ARB" name="아름방송" />
@@ -408,13 +408,13 @@
                     </online>
                 </process_type>
                 <data><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/" version="S00000000727.1">
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/" version="S00000000727.2">
     <element name="root" type="tns:DEFT_ARB_EAH23S_ENT_inbound" />
     <complexType name="DEFT_ARB_EAH23S_ENT_inbound">
         <sequence>
-            <element name="msoAcptDt">
+            <element name="alliCrdAcptDt">
                 <annotation>
-                    <documentation>MSO접수일자</documentation>
+                    <documentation>제휴카드접수일자</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
@@ -450,9 +450,28 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="ctelTelpnAreaNo">
+            <element name="telpnAreaNo">
                 <annotation>
-                    <documentation>연락처전화지역번호</documentation>
+                    <documentation>전화지역번호</documentation>
+                    <appinfo>
+                        <p:description value="신청고객연락처전화번호" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="4" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="tels">
+                <annotation>
+                    <documentation>전화국번호</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
@@ -469,9 +488,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="ctelTels">
+            <element name="telpnSeqno">
                 <annotation>
-                    <documentation>연락처전화국번호</documentation>
+                    <documentation>전화일련번호</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
@@ -488,30 +507,11 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="ctelTelpnSeqno">
+            <element name="adr1">
                 <annotation>
-                    <documentation>연락처전화일련번호</documentation>
+                    <documentation>주소1</documentation>
                     <appinfo>
-                        <p:description />
-                        <p:mandatory value="N" />
-                        <p:level value="1" />
-                        <p:encryption value="N" />
-                        <p:mask_type />
-                        <p:msg_key value="N" />
-                        <p:krn_fld_yn value="N" />
-                    </appinfo>
-                </annotation>
-                <simpleType>
-                    <restriction base="string">
-                        <maxLength value="4" />
-                    </restriction>
-                </simpleType>
-            </element>
-            <element name="adr">
-                <annotation>
-                    <documentation>주소</documentation>
-                    <appinfo>
-                        <p:description />
+                        <p:description value="주소1미존재건수" />
                         <p:mandatory value="N" />
                         <p:level value="1" />
                         <p:encryption value="N" />
@@ -526,11 +526,11 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="ptcAdr">
+            <element name="adr2">
                 <annotation>
-                    <documentation>상세주소</documentation>
+                    <documentation>주소2</documentation>
                     <appinfo>
-                        <p:description />
+                        <p:description value="주소1미존재건수" />
                         <p:mandatory value="N" />
                         <p:level value="1" />
                         <p:encryption value="N" />
@@ -545,9 +545,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="abnCustNo">
+            <element name="alliCrdCustNo">
                 <annotation>
-                    <documentation>ABN고객번호</documentation>
+                    <documentation>제휴카드고객번호</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
@@ -564,9 +564,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="seqno">
+            <element name="trdInntNo">
                 <annotation>
-                    <documentation>일련번호</documentation>
+                    <documentation>거래고유번호</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
@@ -583,9 +583,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="cnclAcptDt">
+            <element name="reqCnclDt">
                 <annotation>
-                    <documentation>취소접수일자</documentation>
+                    <documentation>신청취소일자</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
@@ -602,9 +602,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="cnclSeqno">
+            <element name="reqCnclTranInntNo">
                 <annotation>
-                    <documentation>취소일련번호</documentation>
+                    <documentation>신청취소거래고유번호</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
@@ -621,9 +621,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="cnclAbnCustNo">
+            <element name="reqCnclCustNo">
                 <annotation>
-                    <documentation>취소ABN고객번호</documentation>
+                    <documentation>신청취소고객번호</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
