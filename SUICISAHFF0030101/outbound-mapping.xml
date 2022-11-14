@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="outbound" id="SUICISAHFF0030101" version="3" />
+    <interface bound="outbound" id="SUICISAHFF0030101" version="4" />
     <src_io id="SSUIAHFF0030101" />
     <target_io id="TCISAHFF0030101" />
     <mapping>
-        <source path="entity/REG_YN" />
-        <target path="entity/REG_YN" />
+        <source path="entity/RST_GROUP/REG_YN" />
+        <target path="entity/RST_GROUP/REG_YN" />
         <function ref="move" />
     </mapping>
 </map>

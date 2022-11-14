@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TCISAHFF0030101" version="3">
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TCISAHFF0030101" version="4">
     <common>
         <io_name><![CDATA[승인주의메시지등록]]></io_name>
         <!--I/O 명-->
@@ -273,13 +273,25 @@
     <element name="root" type="tns:TCISAHFF0030101_outbound" />
     <complexType name="TCISAHFF0030101_outbound">
         <sequence>
+            <element maxOccurs="1" minOccurs="1" name="rstGroup" type="tns:RST_GROUP_TYPE">
+                <annotation>
+                    <documentation>결과그룹</documentation>
+                    <appinfo>
+                        <p:level value="1" />
+                    </appinfo>
+                </annotation>
+            </element>
+        </sequence>
+    </complexType>
+    <complexType name="RST_GROUP_TYPE">
+        <sequence>
             <element name="regYn">
                 <annotation>
                     <documentation>등록여부</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
