@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TCISCTJD0100102" version="1">
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TCISCTJD0100102" version="2">
     <common>
         <io_name><![CDATA[현대렌탈케어 제휴카드회원정보수신 타겟IO]]></io_name>
         <!--I/O 명-->
@@ -28,7 +28,7 @@
             <!--Output 거래 ID-->
             <syn-asyn code="1" name="동기" />
             <!--동기 / 비동기 여부-->
-            <bizhub code="000" name="고객X 마케팅X" />
+            <bizhub />
             <!--비즈허브 접촉정보거래종류-->
             <trncd_in />
             <!--Input 거래 코드-->
@@ -143,7 +143,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="string">
-                        <maxLength value="1" />
+                        <maxLength value="5" />
                     </restriction>
                 </simpleType>
             </element>
@@ -163,7 +163,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="string">
-                        <maxLength value="6" />
+                        <maxLength value="8" />
                     </restriction>
                 </simpleType>
             </element>
@@ -183,7 +183,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="string">
-                        <maxLength value="1" />
+                        <maxLength value="16" />
                     </restriction>
                 </simpleType>
             </element>
@@ -263,7 +263,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="string">
-                        <maxLength value="1" />
+                        <maxLength value="6" />
                     </restriction>
                 </simpleType>
             </element>
@@ -601,7 +601,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="string">
-                        <maxLength value="1" />
+                        <maxLength value="5" />
                     </restriction>
                 </simpleType>
             </element>
@@ -621,7 +621,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="string">
-                        <maxLength value="6" />
+                        <maxLength value="8" />
                     </restriction>
                 </simpleType>
             </element>
@@ -641,7 +641,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="string">
-                        <maxLength value="1" />
+                        <maxLength value="16" />
                     </restriction>
                 </simpleType>
             </element>
@@ -721,7 +721,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="string">
-                        <maxLength value="1" />
+                        <maxLength value="6" />
                     </restriction>
                 </simpleType>
             </element>
