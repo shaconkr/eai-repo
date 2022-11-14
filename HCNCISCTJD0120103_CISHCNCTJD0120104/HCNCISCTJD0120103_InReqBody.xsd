@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/" version="S00000000627.4">
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/" version="S00000000627.5">
     <element name="root" type="tns:DEFT_HCN_EAH22S_HCNC_ENT_inbound" />
     <complexType name="DEFT_HCN_EAH22S_HCNC_ENT_inbound">
         <sequence>
-            <element name="acptDt">
+            <element name="alliCrdAcptDt">
                 <annotation>
-                    <documentation>접수일자</documentation>
+                    <documentation>제휴카드접수일자</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
@@ -41,9 +41,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="custTelno">
+            <element name="telpnAreaNo">
                 <annotation>
-                    <documentation>고객전화번호</documentation>
+                    <documentation>전화지역번호</documentation>
                     <appinfo>
                         <p:description value="신청고객연락처전화번호" />
                         <p:mandatory value="N" />
@@ -56,13 +56,51 @@
                 </annotation>
                 <simpleType>
                     <restriction base="string">
-                        <maxLength value="12" />
+                        <maxLength value="4" />
                     </restriction>
                 </simpleType>
             </element>
-            <element name="hcnCustNo">
+            <element name="tels">
                 <annotation>
-                    <documentation>HCN고객번호</documentation>
+                    <documentation>전화국번호</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="4" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="telpnSeqno">
+                <annotation>
+                    <documentation>전화일련번호</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="4" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="alliCrdCustNo">
+                <annotation>
+                    <documentation>제휴카드고객번호</documentation>
                     <appinfo>
                         <p:description value="HCN고객번호" />
                         <p:mandatory value="N" />
@@ -79,9 +117,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="hcnCorpGbcd">
+            <element name="alliCrdCorpGbcd">
                 <annotation>
-                    <documentation>HCN법인구분코드</documentation>
+                    <documentation>제휴카드법인구분코드</documentation>
                     <appinfo>
                         <p:description value="HCN법인구분코드" />
                         <p:mandatory value="N" />
@@ -98,11 +136,11 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="hmAdr">
+            <element name="adr1">
                 <annotation>
-                    <documentation>자택주소</documentation>
+                    <documentation>주소1</documentation>
                     <appinfo>
-                        <p:description />
+                        <p:description value="주소1미존재건수" />
                         <p:mandatory value="N" />
                         <p:level value="1" />
                         <p:encryption value="N" />
@@ -117,11 +155,11 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="etcAdr">
+            <element name="adr2">
                 <annotation>
-                    <documentation>기타주소</documentation>
+                    <documentation>주소2</documentation>
                     <appinfo>
-                        <p:description />
+                        <p:description value="주소1미존재건수" />
                         <p:mandatory value="N" />
                         <p:level value="1" />
                         <p:encryption value="N" />

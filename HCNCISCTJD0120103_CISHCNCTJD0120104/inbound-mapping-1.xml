@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="inbound" id="CISHCNCTJD0120104" version="3" />
+    <interface bound="inbound" id="CISHCNCTJD0120104" version="4" />
     <src_io id="SCISCTJD0120104" />
     <target_io id="THCNCTJD0120104" />
     <mapping>
@@ -49,8 +49,8 @@
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/ACPT_DT" />
-        <target path="entity/ACPT_DT" />
+        <source path="entity/ALLI_CRD_ACPT_DT" />
+        <target path="entity/ALLI_CRD_ACPT_DT" />
         <function ref="move" />
     </mapping>
     <mapping>
@@ -59,28 +59,38 @@
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/CUST_TELNO" />
-        <target path="entity/CUST_TELNO" />
+        <source path="entity/TELPN_AREA_NO" />
+        <target path="entity/TELPN_AREA_NO" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/HCN_CUST_NO" />
-        <target path="entity/HCN_CUST_NO" />
+        <source path="entity/TELS" />
+        <target path="entity/TELS" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/HCN_CORP_GBCD" />
-        <target path="entity/HCN_CORP_GBCD" />
+        <source path="entity/TELPN_SEQNO" />
+        <target path="entity/TELPN_SEQNO" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/HM_ADR" />
-        <target path="entity/HM_ADR" />
+        <source path="entity/ALLI_CRD_CUST_NO" />
+        <target path="entity/ALLI_CRD_CUST_NO" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/ETC_ADR" />
-        <target path="entity/ETC_ADR" />
+        <source path="entity/ALLI_CRD_CORP_GBCD" />
+        <target path="entity/ALLI_CRD_CORP_GBCD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/ADR1" />
+        <target path="entity/ADR1" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/ADR2" />
+        <target path="entity/ADR2" />
         <function ref="move" />
     </mapping>
     <mapping>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="HCNCISCTJD0120103" idn="DEFT_HCN_EAH22S" name="HCN제휴카드회원정보수신" version="6">
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="HCNCISCTJD0120103" idn="DEFT_HCN_EAH22S" name="HCN제휴카드회원정보수신" version="8">
     <common>
         <description />
         <system code="HCN" name="HCN" />
