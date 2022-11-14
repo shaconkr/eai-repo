@@ -1,41 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="inbound" id="SUICISAHFF0030101" version="2" />
+    <interface bound="inbound" id="SUICISAHFF0030101" version="3" />
     <src_io id="SSUIAHFF0030101" />
     <target_io id="TCISAHFF0030101" />
     <mapping>
-        <source path="entity/CRD_MEM_NO" />
-        <target path="entity/CRD_MEM_NO" />
+        <source path="entity/DATA_GROUP/CRD_MEM_NO" />
+        <target path="entity/DATA_GROUP/CRD_MEM_NO" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/APRVL_CARE_GBCD" />
-        <target path="entity/APRVL_CARE_GBCD" />
+        <source path="entity/DATA_GROUP/APRVL_CARE_GBCD" />
+        <target path="entity/DATA_GROUP/APRVL_CARE_GBCD" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/APRVL_CARE_APLY_DT" />
-        <target path="entity/APRVL_CARE_APLY_DT" />
+        <source path="entity/DATA_GROUP/APRVL_CARE_APLY_DT" />
+        <target path="entity/DATA_GROUP/APRVL_CARE_APLY_DT" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/APRVL_CARE_END_DT" />
-        <target path="entity/APRVL_CARE_END_DT" />
+        <source path="entity/DATA_GROUP/APRVL_CARE_END_DT" />
+        <target path="entity/DATA_GROUP/APRVL_CARE_END_DT" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/APRVL_CARE_CNTN" />
-        <target path="entity/APRVL_CARE_CNTN" />
+        <source path="entity/DATA_GROUP/APRVL_CARE_CNTN" />
+        <target path="entity/DATA_GROUP/APRVL_CARE_CNTN" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/CNSL_STORE_CD" />
-        <target path="entity/CNSL_STORE_CD" />
+        <source path="entity/DATA_GROUP/CNSL_STORE_CD" />
+        <target path="entity/DATA_GROUP/CNSL_STORE_CD" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/CONPS_ID" />
-        <target path="entity/CONPS_ID" />
+        <source path="entity/DATA_GROUP/CONPS_ID" />
+        <target path="entity/DATA_GROUP/CONPS_ID" />
         <function ref="move" />
     </mapping>
 </map>
