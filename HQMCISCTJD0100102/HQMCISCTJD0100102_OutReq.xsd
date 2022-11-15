@@ -19,26 +19,6 @@
                     </appinfo>
                 </annotation>
             </element>
-            <element name="prepVal1">
-                <annotation>
-                    <documentation>예비값1</documentation>
-                    <appinfo>
-                        <p:description />
-                        <p:mandatory value="N" />
-                        <p:level value="1" />
-                        <p:encryption value="N" />
-                        <p:one_path_encp value="N" />
-                        <p:mask_type />
-                        <p:db_key value="N" />
-                        <p:krn_fld_yn value="N" />
-                    </appinfo>
-                </annotation>
-                <simpleType>
-                    <restriction base="string">
-                        <maxLength value="106" />
-                    </restriction>
-                </simpleType>
-            </element>
         </sequence>
     </complexType>
     <complexType name="HrcAlliCrdMemInfRcvHdr_TYPE">
@@ -424,6 +404,26 @@
                 <simpleType>
                     <restriction base="string">
                         <maxLength value="80" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="prepVal1">
+                <annotation>
+                    <documentation>예비값1</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="106" />
                     </restriction>
                 </simpleType>
             </element>

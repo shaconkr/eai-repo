@@ -100,7 +100,7 @@
     </mapping>
     <mapping>
         <source path="entity/HrcAlliCrdMemInfRcvBody/PREP_VAL" />
-        <target path="entity/PREP_VAL1" />
+        <target path="entity/HrcAlliCrdMemInfRcvBody/PREP_VAL1" />
         <function ref="move" />
     </mapping>
 </map>
