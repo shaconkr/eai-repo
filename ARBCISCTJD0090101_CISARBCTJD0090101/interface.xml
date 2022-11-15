@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="ARBCISCTJD0090101" idn="DEFT_ARB_EAH23S" name="아름방송제휴카드회원정보수신 소스 IO" version="5">
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="ARBCISCTJD0090101" idn="DEFT_ARB_EAH23S" name="아름방송제휴카드회원정보수신 소스 IO" version="6">
     <common>
         <description><![CDATA[아름방송제휴카드회원정보수신]]></description>
         <system code="ARB" name="아름방송" />
