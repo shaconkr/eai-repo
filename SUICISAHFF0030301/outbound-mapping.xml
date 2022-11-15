@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="outbound" id="SUICISAHFF0030301" version="1" />
+    <interface bound="outbound" id="SUICISAHFF0030301" version="2" />
     <src_io id="SSUIAHFF0030301" />
     <target_io id="TCISAHFF0030301" />
     <mapping>
@@ -21,6 +21,11 @@
     <mapping>
         <source path="entity/RST_LIST/APRVL_CARE_GBCD" />
         <target path="entity/RST_LIST/APRVL_CARE_GBCD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RST_LIST/REG_DTM" />
+        <target path="entity/RST_LIST/REG_DTM" />
         <function ref="move" />
     </mapping>
     <mapping>

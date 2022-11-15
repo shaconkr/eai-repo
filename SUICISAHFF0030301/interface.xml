@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SUICISAHFF0030301" name="승인주의메시지 목록조회" version="1">
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SUICISAHFF0030301" name="승인주의메시지 목록조회" version="2">
     <common>
         <description />
         <system code="SUI" name="통합단말" />
