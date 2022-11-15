@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SSUIAHFF0030101" version="4">
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SSUIAHFF0030101" version="5">
     <common>
         <io_name><![CDATA[승인주의메시지등록]]></io_name>
         <!--I/O 명-->
@@ -99,6 +99,26 @@
     </complexType>
     <complexType name="DATA_GROUP_TYPE">
         <sequence>
+            <element name="memNm">
+                <annotation>
+                    <documentation>회원명</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="100" />
+                    </restriction>
+                </simpleType>
+            </element>
             <element name="crdMemNo">
                 <annotation>
                     <documentation>카드회원번호</documentation>
