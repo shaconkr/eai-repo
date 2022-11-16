@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TCISFNDX0010101" version="2">
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TCISFNDX0010101" version="3">
     <common>
         <io_name><![CDATA[키오스크이용내역조회]]></io_name>
         <!--I/O 명-->
@@ -7,7 +7,7 @@
         <!--I/O 설명-->
         <system code="CIS" name="H-CIS" />
         <!--시스템코드, 시스템명-->
-        <work code="FNDA" name="고객 청구입금 내역조회" />
+        <work code="FNDX" name="청구외부제공" />
         <!--업무구분코드-->
         <datetime>2022-11-16 11:30:54</datetime>
         <!--작성 시간-->
