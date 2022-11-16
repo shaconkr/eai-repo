@@ -171,7 +171,7 @@
             <!--타겟 I/O ID-->
             <system code="CIS" name="H-CIS" />
             <!--타겟 I/O 시스템 구분 코드 / 시스템 명-->
-            <work code="FNDA" name="고객 청구입금 내역조회" />
+            <work code="FNDX" name="청구외부제공" />
             <!--타겟 I/O 업무 코드 / 업무 코드 명-->
             <person>조영래</person>
             <!--타겟 I/O 작성자-->
