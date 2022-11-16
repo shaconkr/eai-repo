@@ -293,7 +293,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="long">
-                        <totalDigits value="1" />
+                        <totalDigits value="22" />
                     </restriction>
                 </simpleType>
             </element>
@@ -313,7 +313,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="long">
-                        <totalDigits value="1" />
+                        <totalDigits value="22" />
                     </restriction>
                 </simpleType>
             </element>
@@ -333,7 +333,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="long">
-                        <totalDigits value="1" />
+                        <totalDigits value="22" />
                     </restriction>
                 </simpleType>
             </element>
@@ -353,7 +353,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="long">
-                        <totalDigits value="1" />
+                        <totalDigits value="22" />
                     </restriction>
                 </simpleType>
             </element>
