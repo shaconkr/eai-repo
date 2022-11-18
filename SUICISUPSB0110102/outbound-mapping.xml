@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="outbound" id="SUICISUPSB0110102" version="1" />
+    <interface bound="outbound" id="SUICISUPSB0110102" version="2" />
     <src_io id="SSUIUPSB0110102" />
     <target_io id="TCISUPSB0110102" />
     <mapping>
@@ -121,6 +121,246 @@
     <mapping>
         <source path="entity/LMM_VS_WTDW_ARLT_LST_LIST/ODUE_IAMT_WTDW_RATE5" />
         <target path="entity/LMM_VS_WTDW_ARLT_LST_LIST/ODUE_IAMT_WTDW_RATE5" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/LMM_VS_WTDW_ARLT_LST2_ROWCOUNT" />
+        <target path="entity/LMM_VS_WTDW_ARLT_LST2_ROWCOUNT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/LMM_VS_WTDW_ARLT_LST2_LIST/ASGNR_ID" />
+        <target path="entity/LMM_VS_WTDW_ARLT_LST2_LIST/ASGNR_ID" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/LMM_VS_WTDW_ARLT_LST2_LIST/ASGNR_NM" />
+        <target path="entity/LMM_VS_WTDW_ARLT_LST2_LIST/ASGNR_NM" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/LMM_VS_WTDW_ARLT_LST2_LIST/ODUE_MTHS" />
+        <target path="entity/LMM_VS_WTDW_ARLT_LST2_LIST/ODUE_MTHS" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/LMM_VS_WTDW_ARLT_LST2_LIST/CD_AREA_NM1" />
+        <target path="entity/LMM_VS_WTDW_ARLT_LST2_LIST/CD_AREA_NM1" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/LMM_VS_WTDW_ARLT_LST2_LIST/ODUE_PRNC_AMT1" />
+        <target path="entity/LMM_VS_WTDW_ARLT_LST2_LIST/ODUE_PRNC_AMT1" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/LMM_VS_WTDW_ARLT_LST2_LIST/ODUE_IAMT_AMT1" />
+        <target path="entity/LMM_VS_WTDW_ARLT_LST2_LIST/ODUE_IAMT_AMT1" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/LMM_VS_WTDW_ARLT_LST2_LIST/ODUE_IAMT_WTDW_RATE1" />
+        <target path="entity/LMM_VS_WTDW_ARLT_LST2_LIST/ODUE_IAMT_WTDW_RATE1" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/LMM_VS_WTDW_ARLT_LST2_LIST/CD_AREA_NM2" />
+        <target path="entity/LMM_VS_WTDW_ARLT_LST2_LIST/CD_AREA_NM2" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/LMM_VS_WTDW_ARLT_LST2_LIST/ODUE_PRNC_AMT2" />
+        <target path="entity/LMM_VS_WTDW_ARLT_LST2_LIST/ODUE_PRNC_AMT2" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/LMM_VS_WTDW_ARLT_LST2_LIST/ODUE_IAMT_AMT2" />
+        <target path="entity/LMM_VS_WTDW_ARLT_LST2_LIST/ODUE_IAMT_AMT2" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/LMM_VS_WTDW_ARLT_LST2_LIST/ODUE_IAMT_WTDW_RATE2" />
+        <target path="entity/LMM_VS_WTDW_ARLT_LST2_LIST/ODUE_IAMT_WTDW_RATE2" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/LMM_VS_WTDW_ARLT_LST2_LIST/CD_AREA_NM3" />
+        <target path="entity/LMM_VS_WTDW_ARLT_LST2_LIST/CD_AREA_NM3" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/LMM_VS_WTDW_ARLT_LST2_LIST/ODUE_PRNC_AMT3" />
+        <target path="entity/LMM_VS_WTDW_ARLT_LST2_LIST/ODUE_PRNC_AMT3" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/LMM_VS_WTDW_ARLT_LST2_LIST/ODUE_IAMT_AMT3" />
+        <target path="entity/LMM_VS_WTDW_ARLT_LST2_LIST/ODUE_IAMT_AMT3" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/LMM_VS_WTDW_ARLT_LST2_LIST/ODUE_IAMT_WTDW_RATE3" />
+        <target path="entity/LMM_VS_WTDW_ARLT_LST2_LIST/ODUE_IAMT_WTDW_RATE3" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/LMM_VS_WTDW_ARLT_LST2_LIST/CD_AREA_NM4" />
+        <target path="entity/LMM_VS_WTDW_ARLT_LST2_LIST/CD_AREA_NM4" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/LMM_VS_WTDW_ARLT_LST2_LIST/ODUE_PRNC_AMT4" />
+        <target path="entity/LMM_VS_WTDW_ARLT_LST2_LIST/ODUE_PRNC_AMT4" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/LMM_VS_WTDW_ARLT_LST2_LIST/ODUE_IAMT_AMT4" />
+        <target path="entity/LMM_VS_WTDW_ARLT_LST2_LIST/ODUE_IAMT_AMT4" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/LMM_VS_WTDW_ARLT_LST2_LIST/ODUE_IAMT_WTDW_RATE4" />
+        <target path="entity/LMM_VS_WTDW_ARLT_LST2_LIST/ODUE_IAMT_WTDW_RATE4" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/LMM_VS_WTDW_ARLT_LST2_LIST/CD_AREA_NM5" />
+        <target path="entity/LMM_VS_WTDW_ARLT_LST2_LIST/CD_AREA_NM5" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/LMM_VS_WTDW_ARLT_LST2_LIST/ODUE_PRNC_AMT5" />
+        <target path="entity/LMM_VS_WTDW_ARLT_LST2_LIST/ODUE_PRNC_AMT5" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/LMM_VS_WTDW_ARLT_LST2_LIST/ODUE_IAMT_AMT5" />
+        <target path="entity/LMM_VS_WTDW_ARLT_LST2_LIST/ODUE_IAMT_AMT5" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/LMM_VS_WTDW_ARLT_LST2_LIST/ODUE_IAMT_WTDW_RATE5" />
+        <target path="entity/LMM_VS_WTDW_ARLT_LST2_LIST/ODUE_IAMT_WTDW_RATE5" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/LMM_VS_WTDW_ARLT_LST3_ROWCOUNT" />
+        <target path="entity/LMM_VS_WTDW_ARLT_LST3_ROWCOUNT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/LMM_VS_WTDW_ARLT_LST3_LIST/ASGNR_ID" />
+        <target path="entity/LMM_VS_WTDW_ARLT_LST3_LIST/ASGNR_ID" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/LMM_VS_WTDW_ARLT_LST3_LIST/ASGNR_NM" />
+        <target path="entity/LMM_VS_WTDW_ARLT_LST3_LIST/ASGNR_NM" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/LMM_VS_WTDW_ARLT_LST3_LIST/ODUE_MTHS" />
+        <target path="entity/LMM_VS_WTDW_ARLT_LST3_LIST/ODUE_MTHS" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/LMM_VS_WTDW_ARLT_LST3_LIST/CD_AREA_NM1" />
+        <target path="entity/LMM_VS_WTDW_ARLT_LST3_LIST/CD_AREA_NM1" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/LMM_VS_WTDW_ARLT_LST3_LIST/ODUE_PRNC_AMT1" />
+        <target path="entity/LMM_VS_WTDW_ARLT_LST3_LIST/ODUE_PRNC_AMT1" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/LMM_VS_WTDW_ARLT_LST3_LIST/ODUE_IAMT_AMT1" />
+        <target path="entity/LMM_VS_WTDW_ARLT_LST3_LIST/ODUE_IAMT_AMT1" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/LMM_VS_WTDW_ARLT_LST3_LIST/ODUE_IAMT_WTDW_RATE1" />
+        <target path="entity/LMM_VS_WTDW_ARLT_LST3_LIST/ODUE_IAMT_WTDW_RATE1" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/LMM_VS_WTDW_ARLT_LST3_LIST/CD_AREA_NM2" />
+        <target path="entity/LMM_VS_WTDW_ARLT_LST3_LIST/CD_AREA_NM2" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/LMM_VS_WTDW_ARLT_LST3_LIST/ODUE_PRNC_AMT2" />
+        <target path="entity/LMM_VS_WTDW_ARLT_LST3_LIST/ODUE_PRNC_AMT2" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/LMM_VS_WTDW_ARLT_LST3_LIST/ODUE_IAMT_AMT2" />
+        <target path="entity/LMM_VS_WTDW_ARLT_LST3_LIST/ODUE_IAMT_AMT2" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/LMM_VS_WTDW_ARLT_LST3_LIST/ODUE_IAMT_WTDW_RATE2" />
+        <target path="entity/LMM_VS_WTDW_ARLT_LST3_LIST/ODUE_IAMT_WTDW_RATE2" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/LMM_VS_WTDW_ARLT_LST3_LIST/CD_AREA_NM3" />
+        <target path="entity/LMM_VS_WTDW_ARLT_LST3_LIST/CD_AREA_NM3" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/LMM_VS_WTDW_ARLT_LST3_LIST/ODUE_PRNC_AMT3" />
+        <target path="entity/LMM_VS_WTDW_ARLT_LST3_LIST/ODUE_PRNC_AMT3" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/LMM_VS_WTDW_ARLT_LST3_LIST/ODUE_IAMT_AMT3" />
+        <target path="entity/LMM_VS_WTDW_ARLT_LST3_LIST/ODUE_IAMT_AMT3" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/LMM_VS_WTDW_ARLT_LST3_LIST/ODUE_IAMT_WTDW_RATE3" />
+        <target path="entity/LMM_VS_WTDW_ARLT_LST3_LIST/ODUE_IAMT_WTDW_RATE3" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/LMM_VS_WTDW_ARLT_LST3_LIST/CD_AREA_NM4" />
+        <target path="entity/LMM_VS_WTDW_ARLT_LST3_LIST/CD_AREA_NM4" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/LMM_VS_WTDW_ARLT_LST3_LIST/ODUE_PRNC_AMT4" />
+        <target path="entity/LMM_VS_WTDW_ARLT_LST3_LIST/ODUE_PRNC_AMT4" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/LMM_VS_WTDW_ARLT_LST3_LIST/ODUE_IAMT_AMT4" />
+        <target path="entity/LMM_VS_WTDW_ARLT_LST3_LIST/ODUE_IAMT_AMT4" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/LMM_VS_WTDW_ARLT_LST3_LIST/ODUE_IAMT_WTDW_RATE4" />
+        <target path="entity/LMM_VS_WTDW_ARLT_LST3_LIST/ODUE_IAMT_WTDW_RATE4" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/LMM_VS_WTDW_ARLT_LST3_LIST/CD_AREA_NM5" />
+        <target path="entity/LMM_VS_WTDW_ARLT_LST3_LIST/CD_AREA_NM5" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/LMM_VS_WTDW_ARLT_LST3_LIST/ODUE_PRNC_AMT5" />
+        <target path="entity/LMM_VS_WTDW_ARLT_LST3_LIST/ODUE_PRNC_AMT5" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/LMM_VS_WTDW_ARLT_LST3_LIST/ODUE_IAMT_AMT5" />
+        <target path="entity/LMM_VS_WTDW_ARLT_LST3_LIST/ODUE_IAMT_AMT5" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/LMM_VS_WTDW_ARLT_LST3_LIST/ODUE_IAMT_WTDW_RATE5" />
+        <target path="entity/LMM_VS_WTDW_ARLT_LST3_LIST/ODUE_IAMT_WTDW_RATE5" />
         <function ref="move" />
     </mapping>
 </map>

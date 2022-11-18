@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TCISUPSB0110102" version="2">
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TCISUPSB0110102" version="3">
     <common>
         <io_name><![CDATA[전월대비회수실적조회]]></io_name>
         <!--I/O 명-->
@@ -172,6 +172,66 @@
                     <documentation>전월대비회수실적목록_배열</documentation>
                     <appinfo>
                         <p:adjustLength category="variableField" lengthFieldURL="LMM_VS_WTDW_ARLT_LST_ROWCOUNT" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                    </appinfo>
+                </annotation>
+            </element>
+            <element name="lmmVsWtdwArltLst2Rowcount">
+                <annotation>
+                    <documentation>전월대비회수실적목록배열건수2</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="long">
+                        <totalDigits value="5" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element maxOccurs="unbounded" name="lmmVsWtdwArltLst2List" type="tns:LMM_VS_WTDW_ARLT_LST2_LIST_TYPE">
+                <annotation>
+                    <documentation>전월대비회수실적목록_배열2</documentation>
+                    <appinfo>
+                        <p:adjustLength category="variableField" lengthFieldURL="LMM_VS_WTDW_ARLT_LST2_ROWCOUNT" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                    </appinfo>
+                </annotation>
+            </element>
+            <element name="lmmVsWtdwArltLst3Rowcount">
+                <annotation>
+                    <documentation>전월대비회수실적목록배열건수3</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="long">
+                        <totalDigits value="5" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element maxOccurs="unbounded" name="lmmVsWtdwArltLst3List" type="tns:LMM_VS_WTDW_ARLT_LST3_LIST_TYPE">
+                <annotation>
+                    <documentation>전월대비회수실적목록_배열3</documentation>
+                    <appinfo>
+                        <p:adjustLength category="variableField" lengthFieldURL="LMM_VS_WTDW_ARLT_LST3_ROWCOUNT" />
                         <p:mandatory value="N" />
                         <p:level value="1" />
                     </appinfo>
@@ -642,6 +702,944 @@
                 <simpleType>
                     <restriction base="decimal">
                         <totalDigits value="15" />
+                        <fractionDigits value="2" />
+                    </restriction>
+                </simpleType>
+            </element>
+        </sequence>
+    </complexType>
+    <complexType name="LMM_VS_WTDW_ARLT_LST2_LIST_TYPE">
+        <sequence>
+            <element name="asgnrId">
+                <annotation>
+                    <documentation>담당자ID</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="100" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="asgnrNm">
+                <annotation>
+                    <documentation>담당자명</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="100" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="odueMths">
+                <annotation>
+                    <documentation>연체개월수</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="long">
+                        <totalDigits value="9" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="cdAreaNm1">
+                <annotation>
+                    <documentation>코드지역명1</documentation>
+                    <appinfo>
+                        <p:description value="코드지역명" />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="200" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="oduePrncAmt1">
+                <annotation>
+                    <documentation>연체원금금액1</documentation>
+                    <appinfo>
+                        <p:description value="연체원금금액" />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="long">
+                        <totalDigits value="24" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="odueIamtAmt1">
+                <annotation>
+                    <documentation>연체입금금액1</documentation>
+                    <appinfo>
+                        <p:description value="연체입금금액" />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="long">
+                        <totalDigits value="24" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="odueIamtWtdwRate1">
+                <annotation>
+                    <documentation>연체입금회수비율1</documentation>
+                    <appinfo>
+                        <p:description value="연체에 대한 입금금액 비율" />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="decimal">
+                        <totalDigits value="17" />
+                        <fractionDigits value="2" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="cdAreaNm2">
+                <annotation>
+                    <documentation>코드지역명2</documentation>
+                    <appinfo>
+                        <p:description value="코드지역명" />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="200" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="oduePrncAmt2">
+                <annotation>
+                    <documentation>연체원금금액2</documentation>
+                    <appinfo>
+                        <p:description value="연체원금금액" />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="long">
+                        <totalDigits value="25" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="odueIamtAmt2">
+                <annotation>
+                    <documentation>연체입금금액2</documentation>
+                    <appinfo>
+                        <p:description value="연체입금금액" />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="long">
+                        <totalDigits value="25" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="odueIamtWtdwRate2">
+                <annotation>
+                    <documentation>연체입금회수비율2</documentation>
+                    <appinfo>
+                        <p:description value="연체에 대한 입금금액 비율" />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="decimal">
+                        <totalDigits value="19" />
+                        <fractionDigits value="2" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="cdAreaNm3">
+                <annotation>
+                    <documentation>코드지역명3</documentation>
+                    <appinfo>
+                        <p:description value="코드지역명" />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="200" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="oduePrncAmt3">
+                <annotation>
+                    <documentation>연체원금금액3</documentation>
+                    <appinfo>
+                        <p:description value="연체원금금액" />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="long">
+                        <totalDigits value="26" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="odueIamtAmt3">
+                <annotation>
+                    <documentation>연체입금금액3</documentation>
+                    <appinfo>
+                        <p:description value="연체입금금액" />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="long">
+                        <totalDigits value="26" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="odueIamtWtdwRate3">
+                <annotation>
+                    <documentation>연체입금회수비율3</documentation>
+                    <appinfo>
+                        <p:description value="연체에 대한 입금금액 비율" />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="decimal">
+                        <totalDigits value="21" />
+                        <fractionDigits value="2" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="cdAreaNm4">
+                <annotation>
+                    <documentation>코드지역명4</documentation>
+                    <appinfo>
+                        <p:description value="코드지역명" />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="200" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="oduePrncAmt4">
+                <annotation>
+                    <documentation>연체원금금액4</documentation>
+                    <appinfo>
+                        <p:description value="연체원금금액" />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="long">
+                        <totalDigits value="27" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="odueIamtAmt4">
+                <annotation>
+                    <documentation>연체입금금액4</documentation>
+                    <appinfo>
+                        <p:description value="연체입금금액" />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="long">
+                        <totalDigits value="27" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="odueIamtWtdwRate4">
+                <annotation>
+                    <documentation>연체입금회수비율4</documentation>
+                    <appinfo>
+                        <p:description value="연체에 대한 입금금액 비율" />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="decimal">
+                        <totalDigits value="23" />
+                        <fractionDigits value="2" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="cdAreaNm5">
+                <annotation>
+                    <documentation>코드지역명5</documentation>
+                    <appinfo>
+                        <p:description value="코드지역명" />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="200" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="oduePrncAmt5">
+                <annotation>
+                    <documentation>연체원금금액5</documentation>
+                    <appinfo>
+                        <p:description value="연체원금금액" />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="long">
+                        <totalDigits value="28" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="odueIamtAmt5">
+                <annotation>
+                    <documentation>연체입금금액5</documentation>
+                    <appinfo>
+                        <p:description value="연체입금금액" />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="long">
+                        <totalDigits value="28" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="odueIamtWtdwRate5">
+                <annotation>
+                    <documentation>연체입금회수비율5</documentation>
+                    <appinfo>
+                        <p:description value="연체에 대한 입금금액 비율" />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="decimal">
+                        <totalDigits value="25" />
+                        <fractionDigits value="2" />
+                    </restriction>
+                </simpleType>
+            </element>
+        </sequence>
+    </complexType>
+    <complexType name="LMM_VS_WTDW_ARLT_LST3_LIST_TYPE">
+        <sequence>
+            <element name="asgnrId">
+                <annotation>
+                    <documentation>담당자ID</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="100" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="asgnrNm">
+                <annotation>
+                    <documentation>담당자명</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="100" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="odueMths">
+                <annotation>
+                    <documentation>연체개월수</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="long">
+                        <totalDigits value="10" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="cdAreaNm1">
+                <annotation>
+                    <documentation>코드지역명1</documentation>
+                    <appinfo>
+                        <p:description value="코드지역명" />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="200" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="oduePrncAmt1">
+                <annotation>
+                    <documentation>연체원금금액1</documentation>
+                    <appinfo>
+                        <p:description value="연체원금금액" />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="long">
+                        <totalDigits value="29" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="odueIamtAmt1">
+                <annotation>
+                    <documentation>연체입금금액1</documentation>
+                    <appinfo>
+                        <p:description value="연체입금금액" />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="long">
+                        <totalDigits value="29" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="odueIamtWtdwRate1">
+                <annotation>
+                    <documentation>연체입금회수비율1</documentation>
+                    <appinfo>
+                        <p:description value="연체에 대한 입금금액 비율" />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="decimal">
+                        <totalDigits value="27" />
+                        <fractionDigits value="2" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="cdAreaNm2">
+                <annotation>
+                    <documentation>코드지역명2</documentation>
+                    <appinfo>
+                        <p:description value="코드지역명" />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="200" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="oduePrncAmt2">
+                <annotation>
+                    <documentation>연체원금금액2</documentation>
+                    <appinfo>
+                        <p:description value="연체원금금액" />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="long">
+                        <totalDigits value="30" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="odueIamtAmt2">
+                <annotation>
+                    <documentation>연체입금금액2</documentation>
+                    <appinfo>
+                        <p:description value="연체입금금액" />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="long">
+                        <totalDigits value="30" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="odueIamtWtdwRate2">
+                <annotation>
+                    <documentation>연체입금회수비율2</documentation>
+                    <appinfo>
+                        <p:description value="연체에 대한 입금금액 비율" />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="decimal">
+                        <totalDigits value="29" />
+                        <fractionDigits value="2" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="cdAreaNm3">
+                <annotation>
+                    <documentation>코드지역명3</documentation>
+                    <appinfo>
+                        <p:description value="코드지역명" />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="200" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="oduePrncAmt3">
+                <annotation>
+                    <documentation>연체원금금액3</documentation>
+                    <appinfo>
+                        <p:description value="연체원금금액" />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="long">
+                        <totalDigits value="31" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="odueIamtAmt3">
+                <annotation>
+                    <documentation>연체입금금액3</documentation>
+                    <appinfo>
+                        <p:description value="연체입금금액" />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="long">
+                        <totalDigits value="31" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="odueIamtWtdwRate3">
+                <annotation>
+                    <documentation>연체입금회수비율3</documentation>
+                    <appinfo>
+                        <p:description value="연체에 대한 입금금액 비율" />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="decimal">
+                        <totalDigits value="31" />
+                        <fractionDigits value="2" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="cdAreaNm4">
+                <annotation>
+                    <documentation>코드지역명4</documentation>
+                    <appinfo>
+                        <p:description value="코드지역명" />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="200" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="oduePrncAmt4">
+                <annotation>
+                    <documentation>연체원금금액4</documentation>
+                    <appinfo>
+                        <p:description value="연체원금금액" />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="long">
+                        <totalDigits value="32" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="odueIamtAmt4">
+                <annotation>
+                    <documentation>연체입금금액4</documentation>
+                    <appinfo>
+                        <p:description value="연체입금금액" />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="long">
+                        <totalDigits value="32" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="odueIamtWtdwRate4">
+                <annotation>
+                    <documentation>연체입금회수비율4</documentation>
+                    <appinfo>
+                        <p:description value="연체에 대한 입금금액 비율" />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="decimal">
+                        <totalDigits value="33" />
+                        <fractionDigits value="2" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="cdAreaNm5">
+                <annotation>
+                    <documentation>코드지역명5</documentation>
+                    <appinfo>
+                        <p:description value="코드지역명" />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="200" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="oduePrncAmt5">
+                <annotation>
+                    <documentation>연체원금금액5</documentation>
+                    <appinfo>
+                        <p:description value="연체원금금액" />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="long">
+                        <totalDigits value="33" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="odueIamtAmt5">
+                <annotation>
+                    <documentation>연체입금금액5</documentation>
+                    <appinfo>
+                        <p:description value="연체입금금액" />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="long">
+                        <totalDigits value="33" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="odueIamtWtdwRate5">
+                <annotation>
+                    <documentation>연체입금회수비율5</documentation>
+                    <appinfo>
+                        <p:description value="연체에 대한 입금금액 비율" />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="decimal">
+                        <totalDigits value="35" />
                         <fractionDigits value="2" />
                     </restriction>
                 </simpleType>
