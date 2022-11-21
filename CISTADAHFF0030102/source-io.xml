@@ -19,6 +19,8 @@
         <!--패키지경로-->
         <class_name>EaiAprvlCareMsg</class_name>
         <!--클래스명-->
+        <sttl_yn>Y</sttl_yn>
+        <!--표준전문여부-->
     </common>
     <process_type type="O" name="온라인">
         <online>
@@ -34,6 +36,8 @@
             <!--Input 거래 코드-->
             <trncd_out />
             <!--Output 거래 코드-->
+            <ext_inop code="1" />
+            <!--대내외 (일반/공유 I/O) 구분 코드 : 1 대내 (일반), 2 대외 (공유)-->
             <external>
                 <system />
                 <!--대외 기관 구분 코드-->
@@ -47,8 +51,6 @@
                 <!--대외 기타 구분 코드-->
                 <inao code="1" />
                 <!--대내외 구간 코드 : 1 대내, 2 대외-->
-                <ext_inop code="1" />
-                <!--대내외 (일반/공유 I/O) 구분 코드 : 1 대내 (일반), 2 대외 (공유)-->
             </external>
         </online>
         <eai>
@@ -80,6 +82,8 @@
                     <!--패키지경로-->
                     <class_name />
                     <!--클래스명-->
+                    <sttl_yn>N</sttl_yn>
+                    <!--표준전문여부-->
                 </common>
                 <process_type />
                 <data><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
@@ -314,6 +318,8 @@
                     <!--패키지경로-->
                     <class_name />
                     <!--클래스명-->
+                    <sttl_yn>N</sttl_yn>
+                    <!--표준전문여부-->
                 </common>
                 <process_type />
                 <data><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
