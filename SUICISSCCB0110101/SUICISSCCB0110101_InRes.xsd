@@ -37,6 +37,26 @@
     </complexType>
     <complexType name="RST_LIST_TYPE">
         <sequence>
+            <element name="chkYn">
+                <annotation>
+                    <documentation>체크여부</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="1" />
+                    </restriction>
+                </simpleType>
+            </element>
             <element name="crdMemNo">
                 <annotation>
                     <documentation>카드회원번호</documentation>
