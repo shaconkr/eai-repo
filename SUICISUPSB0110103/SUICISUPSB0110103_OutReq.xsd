@@ -37,9 +37,9 @@
     </complexType>
     <complexType name="LMM_VS_WTDW_ARLT_LST2_LIST_TYPE">
         <sequence>
-            <element name="chkYn2">
+            <element name="iudFlagVal">
                 <annotation>
-                    <documentation>체크여부2</documentation>
+                    <documentation>신규수정삭제플래그값</documentation>
                     <appinfo>
                         <p:description value="마감기준일자" />
                         <p:mandatory value="N" />

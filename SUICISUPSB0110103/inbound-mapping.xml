@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="inbound" id="SUICISUPSB0110103" version="2" />
+    <interface bound="inbound" id="SUICISUPSB0110103" version="3" />
     <src_io id="SSUIUPSB0110103" />
     <target_io id="TCISUPSB0110103" />
     <mapping>
@@ -9,8 +9,8 @@
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/LMM_VS_WTDW_ARLT_LST2_LIST/CHK_YN2" />
-        <target path="entity/LMM_VS_WTDW_ARLT_LST2_LIST/CHK_YN2" />
+        <source path="entity/LMM_VS_WTDW_ARLT_LST2_LIST/IUD_FLAG_VAL" />
+        <target path="entity/LMM_VS_WTDW_ARLT_LST2_LIST/IUD_FLAG_VAL" />
         <function ref="move" />
     </mapping>
     <mapping>
