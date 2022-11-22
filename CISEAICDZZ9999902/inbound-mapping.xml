@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="inbound" id="CISEAICDZZ9999902" version="2" />
+    <src_io id="SCISCDZZ9999902" />
+    <target_io id="TEAICDZZ9999902" />
+    <mapping>
+        <source path="entity/INT_ID" />
+        <target path="entity/INT_ID" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/SRC_SYS_GBCD" />
+        <target path="entity/SRC_SYS_GBCD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/TRGT_SYS_GBCD" />
+        <target path="entity/TRGT_SYS_GBCD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/APP_GBCD" />
+        <target path="entity/APP_GBCD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/FILE_PATH" />
+        <target path="entity/FILE_PATH" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/FILE_NM" />
+        <target path="entity/FILE_NM" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/Af_PROC_YN" />
+        <target path="entity/AF_PROC_YN" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/AF_PROC_FILE_PATH" />
+        <target path="entity/AF_PROC_FILE_PATH" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/AF_PROC_FILE_NM" />
+        <target path="entity/AF_PROC_FILE_NM" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/AF_PROC_PARA" />
+        <target path="entity/AF_PROC_PARA" />
+        <function ref="move" />
+    </mapping>
+</map>
