@@ -97,6 +97,26 @@
     </complexType>
     <complexType name="LMM_VS_WTDW_ARLT_LST_LIST_TYPE">
         <sequence>
+            <element name="chkYn">
+                <annotation>
+                    <documentation>체크여부</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="1" />
+                    </restriction>
+                </simpleType>
+            </element>
             <element name="asgnrId">
                 <annotation>
                     <documentation>담당자ID</documentation>
@@ -566,6 +586,26 @@
     </complexType>
     <complexType name="LMM_VS_WTDW_ARLT_LST2_LIST_TYPE">
         <sequence>
+            <element name="chkYn2">
+                <annotation>
+                    <documentation>체크여부2</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="1" />
+                    </restriction>
+                </simpleType>
+            </element>
             <element name="asgnrId">
                 <annotation>
                     <documentation>담당자ID</documentation>
@@ -1035,6 +1075,26 @@
     </complexType>
     <complexType name="LMM_VS_WTDW_ARLT_LST3_LIST_TYPE">
         <sequence>
+            <element name="chkYn3">
+                <annotation>
+                    <documentation>체크여부3</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="1" />
+                    </restriction>
+                </simpleType>
+            </element>
             <element name="asgnrId">
                 <annotation>
                     <documentation>담당자ID</documentation>

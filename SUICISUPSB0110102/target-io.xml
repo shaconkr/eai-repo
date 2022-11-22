@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TCISUPSB0110102" version="3">
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TCISUPSB0110102" version="4">
     <common>
         <io_name><![CDATA[전월대비회수실적조회]]></io_name>
         <!--I/O 명-->
@@ -211,7 +211,7 @@
                 <annotation>
                     <documentation>전월대비회수실적목록배열건수3</documentation>
                     <appinfo>
-                        <p:description />
+                        <p:description value="연체에 대한 입금금액 비율" />
                         <p:mandatory value="N" />
                         <p:level value="1" />
                         <p:encryption value="N" />
@@ -241,6 +241,26 @@
     </complexType>
     <complexType name="LMM_VS_WTDW_ARLT_LST_LIST_TYPE">
         <sequence>
+            <element name="chkYn">
+                <annotation>
+                    <documentation>체크여부</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="1" />
+                    </restriction>
+                </simpleType>
+            </element>
             <element name="asgnrId">
                 <annotation>
                     <documentation>담당자ID</documentation>
@@ -710,9 +730,9 @@
     </complexType>
     <complexType name="LMM_VS_WTDW_ARLT_LST2_LIST_TYPE">
         <sequence>
-            <element name="asgnrId">
+            <element name="chkYn2">
                 <annotation>
-                    <documentation>담당자ID</documentation>
+                    <documentation>체크여부2</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
@@ -726,7 +746,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="string">
-                        <maxLength value="100" />
+                        <maxLength value="1" />
                     </restriction>
                 </simpleType>
             </element>
@@ -774,7 +794,7 @@
                 <annotation>
                     <documentation>코드지역명1</documentation>
                     <appinfo>
-                        <p:description value="코드지역명" />
+                        <p:description />
                         <p:mandatory value="N" />
                         <p:level value="2" />
                         <p:encryption value="N" />
@@ -794,7 +814,7 @@
                 <annotation>
                     <documentation>연체원금금액1</documentation>
                     <appinfo>
-                        <p:description value="연체원금금액" />
+                        <p:description value="코드지역명" />
                         <p:mandatory value="N" />
                         <p:level value="2" />
                         <p:encryption value="N" />
@@ -814,7 +834,7 @@
                 <annotation>
                     <documentation>연체입금금액1</documentation>
                     <appinfo>
-                        <p:description value="연체입금금액" />
+                        <p:description value="연체원금금액" />
                         <p:mandatory value="N" />
                         <p:level value="2" />
                         <p:encryption value="N" />
@@ -834,7 +854,7 @@
                 <annotation>
                     <documentation>연체입금회수비율1</documentation>
                     <appinfo>
-                        <p:description value="연체에 대한 입금금액 비율" />
+                        <p:description value="연체입금금액" />
                         <p:mandatory value="N" />
                         <p:level value="2" />
                         <p:encryption value="N" />
@@ -855,7 +875,7 @@
                 <annotation>
                     <documentation>코드지역명2</documentation>
                     <appinfo>
-                        <p:description value="코드지역명" />
+                        <p:description value="연체에 대한 입금금액 비율" />
                         <p:mandatory value="N" />
                         <p:level value="2" />
                         <p:encryption value="N" />
@@ -875,7 +895,7 @@
                 <annotation>
                     <documentation>연체원금금액2</documentation>
                     <appinfo>
-                        <p:description value="연체원금금액" />
+                        <p:description value="코드지역명" />
                         <p:mandatory value="N" />
                         <p:level value="2" />
                         <p:encryption value="N" />
@@ -895,7 +915,7 @@
                 <annotation>
                     <documentation>연체입금금액2</documentation>
                     <appinfo>
-                        <p:description value="연체입금금액" />
+                        <p:description value="연체원금금액" />
                         <p:mandatory value="N" />
                         <p:level value="2" />
                         <p:encryption value="N" />
@@ -915,7 +935,7 @@
                 <annotation>
                     <documentation>연체입금회수비율2</documentation>
                     <appinfo>
-                        <p:description value="연체에 대한 입금금액 비율" />
+                        <p:description value="연체입금금액" />
                         <p:mandatory value="N" />
                         <p:level value="2" />
                         <p:encryption value="N" />
@@ -936,7 +956,7 @@
                 <annotation>
                     <documentation>코드지역명3</documentation>
                     <appinfo>
-                        <p:description value="코드지역명" />
+                        <p:description value="연체에 대한 입금금액 비율" />
                         <p:mandatory value="N" />
                         <p:level value="2" />
                         <p:encryption value="N" />
@@ -956,7 +976,7 @@
                 <annotation>
                     <documentation>연체원금금액3</documentation>
                     <appinfo>
-                        <p:description value="연체원금금액" />
+                        <p:description value="코드지역명" />
                         <p:mandatory value="N" />
                         <p:level value="2" />
                         <p:encryption value="N" />
@@ -976,7 +996,7 @@
                 <annotation>
                     <documentation>연체입금금액3</documentation>
                     <appinfo>
-                        <p:description value="연체입금금액" />
+                        <p:description value="연체원금금액" />
                         <p:mandatory value="N" />
                         <p:level value="2" />
                         <p:encryption value="N" />
@@ -996,7 +1016,7 @@
                 <annotation>
                     <documentation>연체입금회수비율3</documentation>
                     <appinfo>
-                        <p:description value="연체에 대한 입금금액 비율" />
+                        <p:description value="연체입금금액" />
                         <p:mandatory value="N" />
                         <p:level value="2" />
                         <p:encryption value="N" />
@@ -1017,7 +1037,7 @@
                 <annotation>
                     <documentation>코드지역명4</documentation>
                     <appinfo>
-                        <p:description value="코드지역명" />
+                        <p:description value="연체에 대한 입금금액 비율" />
                         <p:mandatory value="N" />
                         <p:level value="2" />
                         <p:encryption value="N" />
@@ -1037,7 +1057,7 @@
                 <annotation>
                     <documentation>연체원금금액4</documentation>
                     <appinfo>
-                        <p:description value="연체원금금액" />
+                        <p:description value="코드지역명" />
                         <p:mandatory value="N" />
                         <p:level value="2" />
                         <p:encryption value="N" />
@@ -1057,7 +1077,7 @@
                 <annotation>
                     <documentation>연체입금금액4</documentation>
                     <appinfo>
-                        <p:description value="연체입금금액" />
+                        <p:description value="연체원금금액" />
                         <p:mandatory value="N" />
                         <p:level value="2" />
                         <p:encryption value="N" />
@@ -1077,7 +1097,7 @@
                 <annotation>
                     <documentation>연체입금회수비율4</documentation>
                     <appinfo>
-                        <p:description value="연체에 대한 입금금액 비율" />
+                        <p:description value="연체입금금액" />
                         <p:mandatory value="N" />
                         <p:level value="2" />
                         <p:encryption value="N" />
@@ -1098,7 +1118,7 @@
                 <annotation>
                     <documentation>코드지역명5</documentation>
                     <appinfo>
-                        <p:description value="코드지역명" />
+                        <p:description value="연체에 대한 입금금액 비율" />
                         <p:mandatory value="N" />
                         <p:level value="2" />
                         <p:encryption value="N" />
@@ -1118,7 +1138,7 @@
                 <annotation>
                     <documentation>연체원금금액5</documentation>
                     <appinfo>
-                        <p:description value="연체원금금액" />
+                        <p:description value="코드지역명" />
                         <p:mandatory value="N" />
                         <p:level value="2" />
                         <p:encryption value="N" />
@@ -1138,7 +1158,7 @@
                 <annotation>
                     <documentation>연체입금금액5</documentation>
                     <appinfo>
-                        <p:description value="연체입금금액" />
+                        <p:description value="연체원금금액" />
                         <p:mandatory value="N" />
                         <p:level value="2" />
                         <p:encryption value="N" />
@@ -1158,7 +1178,7 @@
                 <annotation>
                     <documentation>연체입금회수비율5</documentation>
                     <appinfo>
-                        <p:description value="연체에 대한 입금금액 비율" />
+                        <p:description value="연체입금금액" />
                         <p:mandatory value="N" />
                         <p:level value="2" />
                         <p:encryption value="N" />
@@ -1179,6 +1199,26 @@
     </complexType>
     <complexType name="LMM_VS_WTDW_ARLT_LST3_LIST_TYPE">
         <sequence>
+            <element name="chkYn3">
+                <annotation>
+                    <documentation>체크여부3</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="1" />
+                    </restriction>
+                </simpleType>
+            </element>
             <element name="asgnrId">
                 <annotation>
                     <documentation>담당자ID</documentation>
@@ -1243,7 +1283,7 @@
                 <annotation>
                     <documentation>코드지역명1</documentation>
                     <appinfo>
-                        <p:description value="코드지역명" />
+                        <p:description />
                         <p:mandatory value="N" />
                         <p:level value="2" />
                         <p:encryption value="N" />
@@ -1263,7 +1303,7 @@
                 <annotation>
                     <documentation>연체원금금액1</documentation>
                     <appinfo>
-                        <p:description value="연체원금금액" />
+                        <p:description value="코드지역명" />
                         <p:mandatory value="N" />
                         <p:level value="2" />
                         <p:encryption value="N" />
@@ -1283,7 +1323,7 @@
                 <annotation>
                     <documentation>연체입금금액1</documentation>
                     <appinfo>
-                        <p:description value="연체입금금액" />
+                        <p:description value="연체원금금액" />
                         <p:mandatory value="N" />
                         <p:level value="2" />
                         <p:encryption value="N" />
@@ -1303,7 +1343,7 @@
                 <annotation>
                     <documentation>연체입금회수비율1</documentation>
                     <appinfo>
-                        <p:description value="연체에 대한 입금금액 비율" />
+                        <p:description value="연체입금금액" />
                         <p:mandatory value="N" />
                         <p:level value="2" />
                         <p:encryption value="N" />
@@ -1324,7 +1364,7 @@
                 <annotation>
                     <documentation>코드지역명2</documentation>
                     <appinfo>
-                        <p:description value="코드지역명" />
+                        <p:description value="연체에 대한 입금금액 비율" />
                         <p:mandatory value="N" />
                         <p:level value="2" />
                         <p:encryption value="N" />
@@ -1344,7 +1384,7 @@
                 <annotation>
                     <documentation>연체원금금액2</documentation>
                     <appinfo>
-                        <p:description value="연체원금금액" />
+                        <p:description value="코드지역명" />
                         <p:mandatory value="N" />
                         <p:level value="2" />
                         <p:encryption value="N" />
@@ -1364,7 +1404,7 @@
                 <annotation>
                     <documentation>연체입금금액2</documentation>
                     <appinfo>
-                        <p:description value="연체입금금액" />
+                        <p:description value="연체원금금액" />
                         <p:mandatory value="N" />
                         <p:level value="2" />
                         <p:encryption value="N" />
@@ -1384,7 +1424,7 @@
                 <annotation>
                     <documentation>연체입금회수비율2</documentation>
                     <appinfo>
-                        <p:description value="연체에 대한 입금금액 비율" />
+                        <p:description value="연체입금금액" />
                         <p:mandatory value="N" />
                         <p:level value="2" />
                         <p:encryption value="N" />
@@ -1405,7 +1445,7 @@
                 <annotation>
                     <documentation>코드지역명3</documentation>
                     <appinfo>
-                        <p:description value="코드지역명" />
+                        <p:description value="연체에 대한 입금금액 비율" />
                         <p:mandatory value="N" />
                         <p:level value="2" />
                         <p:encryption value="N" />
@@ -1425,7 +1465,7 @@
                 <annotation>
                     <documentation>연체원금금액3</documentation>
                     <appinfo>
-                        <p:description value="연체원금금액" />
+                        <p:description value="코드지역명" />
                         <p:mandatory value="N" />
                         <p:level value="2" />
                         <p:encryption value="N" />
@@ -1445,7 +1485,7 @@
                 <annotation>
                     <documentation>연체입금금액3</documentation>
                     <appinfo>
-                        <p:description value="연체입금금액" />
+                        <p:description value="연체원금금액" />
                         <p:mandatory value="N" />
                         <p:level value="2" />
                         <p:encryption value="N" />
@@ -1465,7 +1505,7 @@
                 <annotation>
                     <documentation>연체입금회수비율3</documentation>
                     <appinfo>
-                        <p:description value="연체에 대한 입금금액 비율" />
+                        <p:description value="연체입금금액" />
                         <p:mandatory value="N" />
                         <p:level value="2" />
                         <p:encryption value="N" />
@@ -1486,7 +1526,7 @@
                 <annotation>
                     <documentation>코드지역명4</documentation>
                     <appinfo>
-                        <p:description value="코드지역명" />
+                        <p:description value="연체에 대한 입금금액 비율" />
                         <p:mandatory value="N" />
                         <p:level value="2" />
                         <p:encryption value="N" />
@@ -1506,7 +1546,7 @@
                 <annotation>
                     <documentation>연체원금금액4</documentation>
                     <appinfo>
-                        <p:description value="연체원금금액" />
+                        <p:description value="코드지역명" />
                         <p:mandatory value="N" />
                         <p:level value="2" />
                         <p:encryption value="N" />
@@ -1526,7 +1566,7 @@
                 <annotation>
                     <documentation>연체입금금액4</documentation>
                     <appinfo>
-                        <p:description value="연체입금금액" />
+                        <p:description value="연체원금금액" />
                         <p:mandatory value="N" />
                         <p:level value="2" />
                         <p:encryption value="N" />
@@ -1546,7 +1586,7 @@
                 <annotation>
                     <documentation>연체입금회수비율4</documentation>
                     <appinfo>
-                        <p:description value="연체에 대한 입금금액 비율" />
+                        <p:description value="연체입금금액" />
                         <p:mandatory value="N" />
                         <p:level value="2" />
                         <p:encryption value="N" />
@@ -1567,7 +1607,7 @@
                 <annotation>
                     <documentation>코드지역명5</documentation>
                     <appinfo>
-                        <p:description value="코드지역명" />
+                        <p:description value="연체에 대한 입금금액 비율" />
                         <p:mandatory value="N" />
                         <p:level value="2" />
                         <p:encryption value="N" />
@@ -1587,7 +1627,7 @@
                 <annotation>
                     <documentation>연체원금금액5</documentation>
                     <appinfo>
-                        <p:description value="연체원금금액" />
+                        <p:description value="코드지역명" />
                         <p:mandatory value="N" />
                         <p:level value="2" />
                         <p:encryption value="N" />
@@ -1607,7 +1647,7 @@
                 <annotation>
                     <documentation>연체입금금액5</documentation>
                     <appinfo>
-                        <p:description value="연체입금금액" />
+                        <p:description value="연체원금금액" />
                         <p:mandatory value="N" />
                         <p:level value="2" />
                         <p:encryption value="N" />
@@ -1627,7 +1667,7 @@
                 <annotation>
                     <documentation>연체입금회수비율5</documentation>
                     <appinfo>
-                        <p:description value="연체에 대한 입금금액 비율" />
+                        <p:description value="연체입금금액" />
                         <p:mandatory value="N" />
                         <p:level value="2" />
                         <p:encryption value="N" />
