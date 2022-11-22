@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="outbound" id="SUICISUPSB0110103" version="2" />
+    <src_io id="SSUIUPSB0110103" />
+    <target_io id="TCISUPSB0110103" />
+    <mapping>
+        <source path="entity/PROC_RST_CD" />
+        <target path="entity/PROC_RST_CD" />
+        <function ref="move" />
+    </mapping>
+</map>
