@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="outbound" id="SUICISSCCB0110101" version="2" />
+    <interface bound="outbound" id="SUICISSCCB0110101" version="3" />
     <src_io id="SSUISCCB0110101" />
     <target_io id="TCISSCCB0110101" />
     <mapping>
@@ -11,6 +11,11 @@
     <mapping>
         <source path="entity/RST_LIST/CHK_YN" />
         <target path="entity/RST_LIST/CHK_YN" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RST_LIST/BSIC_DT" />
+        <target path="entity/RST_LIST/BSIC_DT" />
         <function ref="move" />
     </mapping>
     <mapping>
