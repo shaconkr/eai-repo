@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="inbound" id="CISTADAHFF0030102" version="1" />
+    <interface bound="inbound" id="CISTADAHFF0030102" version="2" />
     <src_io id="SCISAHFF0030102" />
     <target_io id="TTADAHFF0030102" />
     <mapping>
@@ -46,11 +46,6 @@
     <mapping>
         <source path="entity/CONPS_ID" />
         <target path="entity/CONPS_ID" />
-        <function ref="move" />
-    </mapping>
-    <mapping>
-        <source path="entity/OCRN_CNT" />
-        <target path="entity/OCRN_CNT" />
         <function ref="move" />
     </mapping>
 </map>
