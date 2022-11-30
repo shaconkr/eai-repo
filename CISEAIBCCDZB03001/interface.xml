@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="CISTADAHFF0030102" name="승인주의메시지(승인서버)" version="2">
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="CISEAIBCCDZB03001" name="FW_테스트_FILEToFILE" version="2">
     <common>
-        <description />
+        <description><![CDATA[FW_테스트_FILEToFILE_20221125
+CIS To EAI]]></description>
         <system code="CIS" name="H-CIS" />
         <!--시스템구분코드-->
-        <work code="AHFF" name="부가정보" />
+        <work code="DEFT" name="어플리케이션 Default 코드" />
         <!--어플리케이션코드-->
-        <datetime>2022-11-17 11:32:47</datetime>
+        <datetime>2022-11-25 16:54:28</datetime>
         <!--작성일-->
-        <writer>CIS070</writer>
+        <writer>CIS043</writer>
         <!--작성자-->
         <user_field_1 />
         <!--참조I/F ID-->
@@ -16,25 +17,24 @@
         <!--유저필드-->
         <etc_con />
         <!--거래 ID-->
-        <transaction_id />
+        <transaction_id>BCCDZB03001C</transaction_id>
         <!--기타 정보-->
         <attribute>
             <infra code="2" name="대내I/F" />
             <!--연계구분 - 1:MCI / 2:대내 I/F / 3:대외 I/F / 6:통합 UI-->
-            <process code="1" name="온라인(대내)" />
+            <process code="4" name="FILEtoFILE(대내)" />
             <!--처리유형 - 1:온라인(대내) / 2:온라인(대외) / 3:(배치)DBtoDB / 4:FILEtoFILE(대내) / 5:(실행주기)DBtoDB / 8:FILEtoFILE(대외)-->
-            <mapping code="Y" name="매핑함" />
+            <mapping code="N" name="매핑안함" />
             <!--매핑여부-->
-            <occur_cycle />
+            <occur_cycle code="1" name="일별 1회" />
             <!--발생주기 - 1:일별1회 / 2:일별 수시 / 3:주별1회 / 4:주별 수시 / 5:월별1회 / 6:월별수시-->
-            <frequency />
+            <frequency>10</frequency>
             <!--예상건수-->
             <online>
                 <timeout />
                 <!--Timer값-->
                 <internal>
-                    <method code="1" name="요청/응답" />
-                    <!--처리방법 - 1:요청/응답 / 2:요청 / 3:응답-->
+                    <method />
                 </internal>
                 <external>
                     <system />
@@ -83,17 +83,17 @@
                     <!--대외기관 파일명-->
                     <ext_line_char />
                     <!--대외 개행문자-->
-                    <ext_record_size />
+                    <ext_record_size>0</ext_record_size>
                     <!--대외 레코드 크기-->
-                    <ext_date_change />
+                    <ext_date_change>0</ext_date_change>
                     <!--대외 일자 변동분-->
                     <ext_file_code />
                     <!--대외 파일코드-->
-                    <ext_dupl_yn />
+                    <ext_dupl_yn>N</ext_dupl_yn>
                     <!--대외 중복수신 여부-->
                     <filler />
                     <!--대외 추가 속성-->
-                    <schedule_yn />
+                    <schedule_yn>N</schedule_yn>
                     <!--전송 스케줄-->
                     <day_code />
                     <!--파일 스케줄-->
@@ -111,13 +111,13 @@
     </common>
     <interface_type>
         <source>
-            <ioid>SCISAHFF0030102</ioid>
+            <ioid>SCISBCCDZB03001</ioid>
             <!--소스 I/O ID-->
             <system code="CIS" name="H-CIS" />
             <!--소스 I/O 시스템 구분 코드 / 시스템 명-->
-            <work code="AHFF" name="부가정보" />
+            <work code="DEFT" name="어플리케이션 Default 코드" />
             <!--소스 I/O 업무 코드 / 업무 코드 명-->
-            <person>전부일</person>
+            <person />
             <!--소스 I/O 작성자-->
             <process_type>
                 <eai>
@@ -147,17 +147,17 @@
                     <cctn_info_dsnc>00</cctn_info_dsnc>
                     <batch>
                         <file2file>
-                            <sorc_dflt_yn />
+                            <sorc_dflt_yn>Y</sorc_dflt_yn>
                             <!--소스 파일 경로 표준경로사용 여부-->
-                            <path />
+                            <path>/dat/interface/snd/hcisnas/file_data/CDZB/send</path>
                             <!--FILE2FILE 경로-->
-                            <rule />
-                            <!--FILE명 규칙-->
-                            <process_method />
-                            <!--처리 방법-->
+                            <rule>test01</rule>
+                            <!--소스 FILE 명 규칙-->
+                            <process_method code="1" name="수시 (Batch Agent Call)" />
+                            <!--처리방법 - 1:수시 / 2:폴링-->
                             <cron_set />
                             <!--실행주기-->
-                            <sorc_back_yn />
+                            <sorc_back_yn>N</sorc_back_yn>
                             <!--소스 백업 여부 - N:작업 없음 / B:백업 / D:삭제-->
                             <sorc_back_path_nm />
                             <!--소스 백업 경로-->
@@ -167,19 +167,18 @@
             </process_type>
         </source>
         <target>
-            <ioid>TTADAHFF0030102</ioid>
+            <ioid>TEAIBCCDZB03001</ioid>
             <!--타겟 I/O ID-->
-            <system code="TAD" name="승인서버(탠덤)" />
+            <system code="EAI" name="EAI" />
             <!--타겟 I/O 시스템 구분 코드 / 시스템 명-->
             <work code="DEFT" name="어플리케이션 Default 코드" />
             <!--타겟 I/O 업무 코드 / 업무 코드 명-->
-            <person>전부일</person>
+            <person />
             <!--타겟 I/O 작성자-->
             <process_type>
                 <online>
                     <internal>
                         <request_receive />
-                        <!--수신 거래 ID-->
                     </internal>
                 </online>
                 <eai>
@@ -209,21 +208,21 @@
                     <cctn_info_dsnc>00</cctn_info_dsnc>
                     <batch>
                         <file2file>
-                            <trgt_dflt_yn />
+                            <trgt_dflt_yn>Y</trgt_dflt_yn>
                             <!--타겟 파일 경로 표준경로사용 여부-->
-                            <path />
+                            <path>/dat/interface/rcv/hcisnas/file_data/CDZA/recv</path>
                             <!--FILE2FILE 경로-->
-                            <trgt_file_renm_yn />
+                            <trgt_file_renm_yn>N</trgt_file_renm_yn>
                             <!--타겟 변환규칙여부-->
                             <rule />
-                            <!--FILE명 규칙-->
-                            <after_execute />
+                            <!--타겟 FILE명 규칙-->
+                            <after_execute>N</after_execute>
                             <!--후속처리 여부-->
                             <after_shell_nm />
                             <!--후속처리 파일명-->
                             <after_shell_path />
                             <!--후속처리 파일 경로-->
-                            <overwrite_yn />
+                            <overwrite_yn>Y</overwrite_yn>
                             <!--중복 파일명 덮어쓰기 여부-->
                         </file2file>
                     </batch>

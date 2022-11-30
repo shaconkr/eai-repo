@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TTADAHFF0030102" version="2">
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TTADAHFF0030102" version="3">
     <common>
         <io_name><![CDATA[승인주의메시지(승인서버)]]></io_name>
         <!--I/O 명-->
@@ -268,26 +268,6 @@
                 <simpleType>
                     <restriction base="string">
                         <maxLength value="8" />
-                    </restriction>
-                </simpleType>
-            </element>
-            <element name="ocrnCnt">
-                <annotation>
-                    <documentation>발생건수</documentation>
-                    <appinfo>
-                        <p:description />
-                        <p:mandatory value="N" />
-                        <p:level value="1" />
-                        <p:encryption value="N" />
-                        <p:one_path_encp value="N" />
-                        <p:mask_type />
-                        <p:db_key value="N" />
-                        <p:krn_fld_yn value="N" />
-                    </appinfo>
-                </annotation>
-                <simpleType>
-                    <restriction base="long">
-                        <totalDigits value="4" />
                     </restriction>
                 </simpleType>
             </element>
