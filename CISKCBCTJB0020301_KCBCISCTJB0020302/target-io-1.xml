@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TCISCTJB0020302" idn="DEFT_KCB_H0210_212" version="1">
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TCISCTJB0020302" idn="DEFT_KCB_H0210_212" version="2">
     <common>
         <io_name><![CDATA[KCB부동산소유확인조회 응답 타겟IO]]></io_name>
         <!--I/O 명-->
@@ -55,7 +55,7 @@
     <!--IO처리유형 : O - 온라인, D - DB, F - FILE-->
     <inbound>
         <message>
-            <io id="C00000001664" idn="DEFT_KCB_H0210_212" version="1" name="jmims.message.deft.kcb.H0210_212" type="Message">
+            <io id="C00000001664" idn="DEFT_KCB_H0210_212" version="2" name="jmims.message.deft.kcb.H0210_212" type="Message">
                 <common>
                     <description />
                     <system code="CIS" name="H-CIS" />
@@ -468,7 +468,7 @@
             </io>
         </header>
         <unit>
-            <io id="S00000001662" idn="DEFT_KCB_H0210_212" name="jmims.entity.deft.kcb.H0210_212" version="1" type="Entity" squencename="entity">
+            <io id="S00000001662" idn="DEFT_KCB_H0210_212" name="jmims.entity.deft.kcb.H0210_212" version="2" type="Entity" squencename="entity">
                 <common>
                     <description><![CDATA[KCB부동산소유확인조회 응답 타겟 Unit]]></description>
                     <system code="CIS" name="H-CIS" />
@@ -513,7 +513,7 @@
                     </online>
                 </process_type>
                 <data><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/" version="S00000001662.1">
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/" version="S00000001662.2">
     <element name="root" type="tns:DEFT_KCB_H0210_212_ENT_inbound" />
     <complexType name="DEFT_KCB_H0210_212_ENT_inbound">
         <sequence>
@@ -664,8 +664,8 @@
                     </appinfo>
                 </annotation>
                 <simpleType>
-                    <restriction base="string">
-                        <maxLength value="3" />
+                    <restriction base="long">
+                        <totalDigits value="3" />
                     </restriction>
                 </simpleType>
             </element>
@@ -683,8 +683,8 @@
                     </appinfo>
                 </annotation>
                 <simpleType>
-                    <restriction base="string">
-                        <maxLength value="3" />
+                    <restriction base="long">
+                        <totalDigits value="3" />
                     </restriction>
                 </simpleType>
             </element>
@@ -702,8 +702,8 @@
                     </appinfo>
                 </annotation>
                 <simpleType>
-                    <restriction base="string">
-                        <maxLength value="2" />
+                    <restriction base="long">
+                        <totalDigits value="2" />
                     </restriction>
                 </simpleType>
             </element>
@@ -721,8 +721,8 @@
                     </appinfo>
                 </annotation>
                 <simpleType>
-                    <restriction base="string">
-                        <maxLength value="3" />
+                    <restriction base="long">
+                        <totalDigits value="3" />
                     </restriction>
                 </simpleType>
             </element>
@@ -740,8 +740,8 @@
                     </appinfo>
                 </annotation>
                 <simpleType>
-                    <restriction base="string">
-                        <maxLength value="3" />
+                    <restriction base="long">
+                        <totalDigits value="3" />
                     </restriction>
                 </simpleType>
             </element>
@@ -759,8 +759,8 @@
                     </appinfo>
                 </annotation>
                 <simpleType>
-                    <restriction base="string">
-                        <maxLength value="3" />
+                    <restriction base="long">
+                        <totalDigits value="3" />
                     </restriction>
                 </simpleType>
             </element>
@@ -778,8 +778,8 @@
                     </appinfo>
                 </annotation>
                 <simpleType>
-                    <restriction base="string">
-                        <maxLength value="3" />
+                    <restriction base="long">
+                        <totalDigits value="3" />
                     </restriction>
                 </simpleType>
             </element>
@@ -797,8 +797,8 @@
                     </appinfo>
                 </annotation>
                 <simpleType>
-                    <restriction base="string">
-                        <maxLength value="3" />
+                    <restriction base="long">
+                        <totalDigits value="3" />
                     </restriction>
                 </simpleType>
             </element>
@@ -816,8 +816,8 @@
                     </appinfo>
                 </annotation>
                 <simpleType>
-                    <restriction base="string">
-                        <maxLength value="2" />
+                    <restriction base="long">
+                        <totalDigits value="2" />
                     </restriction>
                 </simpleType>
             </element>
