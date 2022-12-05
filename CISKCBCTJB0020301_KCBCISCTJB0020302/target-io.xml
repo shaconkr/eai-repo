@@ -468,7 +468,7 @@
             </io>
         </header>
         <unit>
-            <io id="S00000001556" idn="DEFT_KCB_E0200_212" name="jmims.entity.deft.kcb.E0200_212" version="5" type="Entity" squencename="entity">
+            <io id="S00000001556" idn="DEFT_KCB_E0200_212" name="jmims.entity.deft.kcb.E0200_212" version="7" type="Entity" squencename="entity">
                 <common>
                     <description><![CDATA[KCB부동산소유확인 타겟 Unit]]></description>
                     <system code="KCB" name="올크레딧" />
@@ -513,7 +513,7 @@
                     </online>
                 </process_type>
                 <data><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/" version="S00000001556.5">
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/" version="S00000001556.7">
     <element name="root" type="tns:DEFT_KCB_E0200_212_ENT_inbound" />
     <complexType name="DEFT_KCB_E0200_212_ENT_inbound">
         <sequence>
@@ -683,8 +683,8 @@
                     </appinfo>
                 </annotation>
                 <simpleType>
-                    <restriction base="string">
-                        <maxLength value="3" />
+                    <restriction base="long">
+                        <totalDigits value="3" />
                     </restriction>
                 </simpleType>
             </element>
@@ -702,8 +702,8 @@
                     </appinfo>
                 </annotation>
                 <simpleType>
-                    <restriction base="string">
-                        <maxLength value="2" />
+                    <restriction base="long">
+                        <totalDigits value="2" />
                     </restriction>
                 </simpleType>
             </element>
@@ -721,8 +721,8 @@
                     </appinfo>
                 </annotation>
                 <simpleType>
-                    <restriction base="string">
-                        <maxLength value="3" />
+                    <restriction base="long">
+                        <totalDigits value="3" />
                     </restriction>
                 </simpleType>
             </element>
@@ -740,8 +740,8 @@
                     </appinfo>
                 </annotation>
                 <simpleType>
-                    <restriction base="string">
-                        <maxLength value="3" />
+                    <restriction base="long">
+                        <totalDigits value="3" />
                     </restriction>
                 </simpleType>
             </element>
@@ -759,8 +759,8 @@
                     </appinfo>
                 </annotation>
                 <simpleType>
-                    <restriction base="string">
-                        <maxLength value="3" />
+                    <restriction base="long">
+                        <totalDigits value="3" />
                     </restriction>
                 </simpleType>
             </element>
@@ -778,16 +778,16 @@
                     </appinfo>
                 </annotation>
                 <simpleType>
-                    <restriction base="string">
-                        <maxLength value="2" />
+                    <restriction base="long">
+                        <totalDigits value="2" />
                     </restriction>
                 </simpleType>
             </element>
-            <element maxOccurs="unbounded" name="반복부List" type="tns:반복부_LIST_TYPE">
+            <element maxOccurs="unbounded" name="apsReqnList" type="tns:APS_REQN_LIST_TYPE">
                 <annotation>
                     <documentation>APS반복부_배열</documentation>
                     <appinfo>
-                        <p:adjustLength category="variableField" lengthFieldURL="APS요청건수" />
+                        <p:adjustLength category="variableField" lengthFieldURL="APS_REQN_CNT" />
                         <p:mandatory value="N" />
                         <p:level value="1" />
                     </appinfo>
@@ -795,8 +795,8 @@
             </element>
         </sequence>
     </complexType>
-    <element name="root" type="tns:반복부_LIST_TYPE_inbound" />
-    <complexType name="반복부_LIST_TYPE">
+    <element name="root" type="tns:APS_REQN_LIST_TYPE_inbound" />
+    <complexType name="APS_REQN_LIST_TYPE">
         <sequence>
             <element name="segId">
                 <annotation>

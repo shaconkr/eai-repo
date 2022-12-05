@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="inbound" id="CISKCBCTJB0020301" version="1" />
+    <interface bound="inbound" id="CISKCBCTJB0020301" version="2" />
     <src_io id="SCISCTJB0020301" />
     <target_io id="TKCBCTJB0020301" />
     <mapping>
@@ -144,13 +144,13 @@
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/반복부_LIST[]/SEG_ID" />
-        <target path="entity/반복부_LIST[]/SEG_ID" />
+        <source path="entity/APS_REQN_LIST[]/SEG_ID" />
+        <target path="entity/APS_REQN_LIST[]/SEG_ID" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/반복부_LIST[]/PRF_CD" />
-        <target path="entity/반복부_LIST[]/PRF_CD" />
+        <source path="entity/APS_REQN_LIST[]/PRF_CD" />
+        <target path="entity/APS_REQN_LIST[]/PRF_CD" />
         <function ref="move" />
     </mapping>
 </map>

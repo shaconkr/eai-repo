@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="CISKCBCTJB0020301" idn="DEFT_KCB_H0200_212" name="KCB부동산소유확인조회 송신" version="2">
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="CISKCBCTJB0020301" idn="DEFT_KCB_H0200_212" name="KCB부동산소유확인조회 송신" version="4">
     <common>
         <description><![CDATA[KCB부동산소유확인조회]]></description>
         <system code="CIS" name="H-CIS" />
