@@ -19,7 +19,7 @@
         <transaction_id>OCFNDX00101R</transaction_id>
         <!--기타 정보-->
         <attribute>
-            <infra code="2" name="대내 I/F" />
+            <infra code="2" name="대내I/F" />
             <!--연계구분 - 1:MCI / 2:대내 I/F / 3:대외 I/F / 6:통합 UI-->
             <process code="1" name="온라인(대내)" />
             <!--처리유형 - 1:온라인(대내) / 2:온라인(대외) / 3:(배치)DBtoDB / 4:FILEtoFILE(대내) / 5:(실행주기)DBtoDB / 8:FILEtoFILE(대외)-->
