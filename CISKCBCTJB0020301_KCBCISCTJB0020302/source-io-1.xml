@@ -468,7 +468,7 @@
             </io>
         </header>
         <unit>
-            <io id="S00000001581" idn="DEFT_KCB_E0210_212" name="jmims.entity.deft.kcb.E0210_212" version="3" type="Entity" squencename="entity">
+            <io id="S00000001581" idn="DEFT_KCB_E0210_212" name="jmims.entity.deft.kcb.E0210_212" version="4" type="Entity" squencename="entity">
                 <common>
                     <description><![CDATA[KCB부동산소유확인조회 응답 소스 Unit]]></description>
                     <system code="KCB" name="올크레딧" />
@@ -513,7 +513,7 @@
                     </online>
                 </process_type>
                 <data><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/" version="S00000001581.3">
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/" version="S00000001581.4">
     <element name="root" type="tns:DEFT_KCB_E0210_212_ENT_inbound" />
     <complexType name="DEFT_KCB_E0210_212_ENT_inbound">
         <sequence>
@@ -1269,8 +1269,8 @@
                     </appinfo>
                 </annotation>
                 <simpleType>
-                    <restriction base="string">
-                        <maxLength value="9" />
+                    <restriction base="long">
+                        <totalDigits value="9" />
                     </restriction>
                 </simpleType>
             </element>
@@ -1307,8 +1307,8 @@
                     </appinfo>
                 </annotation>
                 <simpleType>
-                    <restriction base="string">
-                        <maxLength value="9" />
+                    <restriction base="long">
+                        <totalDigits value="9" />
                     </restriction>
                 </simpleType>
             </element>
