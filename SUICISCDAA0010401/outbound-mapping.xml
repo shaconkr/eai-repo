@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="outbound" id="SUICISCDAA0010401" version="2" />
+    <src_io id="SSUICDAA0010401" />
+    <target_io id="TCISCDAA0010401" />
+    <mapping>
+        <source path="entity/FUNC_ROWCOUNT" />
+        <target path="entity/FUNC_ROWCOUNT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/FUNC_LIST/CHK_YN" />
+        <target path="entity/FUNC_LIST/CHK_YN" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/FUNC_LIST/SCRN_FUNC_SEQ" />
+        <target path="entity/FUNC_LIST/SCRN_FUNC_SEQ" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/FUNC_LIST/CIS_SCRN_ID" />
+        <target path="entity/FUNC_LIST/CIS_SCRN_ID" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/FUNC_LIST/FRWK_TRD_CD" />
+        <target path="entity/FUNC_LIST/FRWK_TRD_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/FUNC_LIST/BTN_ID" />
+        <target path="entity/FUNC_LIST/BTN_ID" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/FUNC_LIST/EXECT_NM" />
+        <target path="entity/FUNC_LIST/EXECT_NM" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/FUNC_LIST/RMRK" />
+        <target path="entity/FUNC_LIST/RMRK" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/FUNC_LIST/USE_YN" />
+        <target path="entity/FUNC_LIST/USE_YN" />
+        <function ref="move" />
+    </mapping>
+</map>
