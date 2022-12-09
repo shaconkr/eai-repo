@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="outbound" id="SUICISCDKA0010501" version="3" />
+    <src_io id="SSUICDKA0010501" />
+    <target_io id="TCISCDKA0010501" />
+    <mapping>
+        <source path="entity/RST_GROUP/TOT_CNT" />
+        <target path="entity/RST_GROUP/TOT_CNT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RST_GROUP/SUCC_CNT" />
+        <target path="entity/RST_GROUP/SUCC_CNT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RST_GROUP/FAIL_CNT" />
+        <target path="entity/RST_GROUP/FAIL_CNT" />
+        <function ref="move" />
+    </mapping>
+</map>
