@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="inbound" id="SUICISUPEA0050102" version="1" />
+    <src_io id="SSUIUPEA0050102" />
+    <target_io id="TCISUPEA0050102" />
+    <mapping>
+        <source path="entity/ODUE_CUST_LST_ROWCOUNT" />
+        <target path="entity/ODUE_CUST_LST_ROWCOUNT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/ODUE_CUST_LST_LIST/IUD_FLAG_VAL" />
+        <target path="entity/ODUE_CUST_LST_LIST/IUD_FLAG_VAL" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/ODUE_CUST_LST_LIST/CLLCTN_CUST_MNG_NO" />
+        <target path="entity/ODUE_CUST_LST_LIST/CLLCTN_CUST_MNG_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/ODUE_CUST_LST_LIST/DEGTN_CUST_GBCD" />
+        <target path="entity/ODUE_CUST_LST_LIST/DEGTN_CUST_GBCD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/ODUE_CUST_LST_LIST/DEGTN_CUST_NM" />
+        <target path="entity/ODUE_CUST_LST_LIST/DEGTN_CUST_NM" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/ODUE_CUST_LST_LIST/REPP_NM" />
+        <target path="entity/ODUE_CUST_LST_LIST/REPP_NM" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/ODUE_CUST_LST_LIST/RGNO" />
+        <target path="entity/ODUE_CUST_LST_LIST/RGNO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/ODUE_CUST_LST_LIST/BIZTP_NM" />
+        <target path="entity/ODUE_CUST_LST_LIST/BIZTP_NM" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/ODUE_CUST_LST_LIST/BIZC_NM" />
+        <target path="entity/ODUE_CUST_LST_LIST/BIZC_NM" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/ODUE_CUST_LST_LIST/TELPN_AREA_NO" />
+        <target path="entity/ODUE_CUST_LST_LIST/TELPN_AREA_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/ODUE_CUST_LST_LIST/TELS" />
+        <target path="entity/ODUE_CUST_LST_LIST/TELS" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/ODUE_CUST_LST_LIST/TELPN_SEQNO" />
+        <target path="entity/ODUE_CUST_LST_LIST/TELPN_SEQNO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/ODUE_CUST_LST_LIST/TELNO" />
+        <target path="entity/ODUE_CUST_LST_LIST/TELNO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/ODUE_CUST_LST_LIST/FAX_NO1" />
+        <target path="entity/ODUE_CUST_LST_LIST/FAX_NO1" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/ODUE_CUST_LST_LIST/FAX_NO2" />
+        <target path="entity/ODUE_CUST_LST_LIST/FAX_NO2" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/ODUE_CUST_LST_LIST/FAX_NO3" />
+        <target path="entity/ODUE_CUST_LST_LIST/FAX_NO3" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/ODUE_CUST_LST_LIST/CONT_STRT_DT" />
+        <target path="entity/ODUE_CUST_LST_LIST/CONT_STRT_DT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/ODUE_CUST_LST_LIST/CONT_END_DT" />
+        <target path="entity/ODUE_CUST_LST_LIST/CONT_END_DT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/ODUE_CUST_LST_LIST/TRD_YN" />
+        <target path="entity/ODUE_CUST_LST_LIST/TRD_YN" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/ODUE_CUST_LST_LIST/POST_NO" />
+        <target path="entity/ODUE_CUST_LST_LIST/POST_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/ODUE_CUST_LST_LIST/ADR1" />
+        <target path="entity/ODUE_CUST_LST_LIST/ADR1" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/ODUE_CUST_LST_LIST/ADR2" />
+        <target path="entity/ODUE_CUST_LST_LIST/ADR2" />
+        <function ref="move" />
+    </mapping>
+</map>
