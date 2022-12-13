@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="inbound" id="SUICISUPEA0050101" version="1" />
+    <src_io id="SSUIUPEA0050101" />
+    <target_io id="TCISUPEA0050101" />
+    <mapping>
+        <source path="entity/CLLCTN_CUST_MNG_NO" />
+        <target path="entity/CLLCTN_CUST_MNG_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/DEGTN_CUST_GBCD" />
+        <target path="entity/DEGTN_CUST_GBCD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/DEGTN_CUST_NM" />
+        <target path="entity/DEGTN_CUST_NM" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/REPP_NM" />
+        <target path="entity/REPP_NM" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RGNO" />
+        <target path="entity/RGNO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/BIZTP_NM" />
+        <target path="entity/BIZTP_NM" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/BIZC_NM" />
+        <target path="entity/BIZC_NM" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/TELPN_AREA_NO" />
+        <target path="entity/TELPN_AREA_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/TELS" />
+        <target path="entity/TELS" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/TELPN_SEQNO" />
+        <target path="entity/TELPN_SEQNO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/TELNO" />
+        <target path="entity/TELNO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/FAX_NO1" />
+        <target path="entity/FAX_NO1" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/FAX_NO2" />
+        <target path="entity/FAX_NO2" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/FAX_NO3" />
+        <target path="entity/FAX_NO3" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/CONT_STRT_DT" />
+        <target path="entity/CONT_STRT_DT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/CONT_END_DT" />
+        <target path="entity/CONT_END_DT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/TRD_YN" />
+        <target path="entity/TRD_YN" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/POST_NO" />
+        <target path="entity/POST_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/ADR1" />
+        <target path="entity/ADR1" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/ADR2" />
+        <target path="entity/ADR2" />
+        <function ref="move" />
+    </mapping>
+</map>
