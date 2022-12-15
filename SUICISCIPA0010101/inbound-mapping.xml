@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="inbound" id="SUICISCIPA0010101" version="1" />
+    <interface bound="inbound" id="SUICISCIPA0010101" version="2" />
     <src_io id="SSUICIPA0010101" />
     <target_io id="TCISCIPA0010101" />
     <mapping>
-        <source path="entity/DT" />
-        <target path="entity/DT" />
+        <source path="entity/INSR_DATA/DT" />
+        <target path="entity/INSR_DATA/DT" />
         <function ref="move" />
     </mapping>
 </map>
