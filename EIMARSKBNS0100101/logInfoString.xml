@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<deployment id="D00000000008">
-    <deployer id="CIS001">홍길동</deployer>
-    <deployment_date>2022-12-16 15:27:35.892417</deployment_date>
+<deployment id="D00000000011">
+    <deployer id="ADMIN">관리자</deployer>
+    <deployment_date>2022-12-16 15:36:18.336251</deployment_date>
     <target_system id="EAI_D_01">EAI 대내</target_system>
 </deployment>
