@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="inbound" id="SUICISUPEA0050101" version="1" />
+    <interface bound="inbound" id="SUICISUPEA0050101" version="2" />
     <src_io id="SSUIUPEA0050101" />
     <target_io id="TCISUPEA0050101" />
     <mapping>
@@ -39,38 +39,13 @@
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/TELPN_AREA_NO" />
-        <target path="entity/TELPN_AREA_NO" />
-        <function ref="move" />
-    </mapping>
-    <mapping>
-        <source path="entity/TELS" />
-        <target path="entity/TELS" />
-        <function ref="move" />
-    </mapping>
-    <mapping>
-        <source path="entity/TELPN_SEQNO" />
-        <target path="entity/TELPN_SEQNO" />
-        <function ref="move" />
-    </mapping>
-    <mapping>
         <source path="entity/TELNO" />
         <target path="entity/TELNO" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/FAX_NO1" />
-        <target path="entity/FAX_NO1" />
-        <function ref="move" />
-    </mapping>
-    <mapping>
-        <source path="entity/FAX_NO2" />
-        <target path="entity/FAX_NO2" />
-        <function ref="move" />
-    </mapping>
-    <mapping>
-        <source path="entity/FAX_NO3" />
-        <target path="entity/FAX_NO3" />
+        <source path="entity/FAX_NO" />
+        <target path="entity/FAX_NO" />
         <function ref="move" />
     </mapping>
     <mapping>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="outbound" id="SUICISUPEA0050101" version="1" />
+    <interface bound="outbound" id="SUICISUPEA0050101" version="2" />
     <src_io id="SSUIUPEA0050101" />
     <target_io id="TCISUPEA0050101" />
     <mapping>
@@ -44,38 +44,13 @@
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/ODUE_CUST_LST_LIST/TELPN_AREA_NO" />
-        <target path="entity/ODUE_CUST_LST_LIST/TELPN_AREA_NO" />
-        <function ref="move" />
-    </mapping>
-    <mapping>
-        <source path="entity/ODUE_CUST_LST_LIST/TELS" />
-        <target path="entity/ODUE_CUST_LST_LIST/TELS" />
-        <function ref="move" />
-    </mapping>
-    <mapping>
-        <source path="entity/ODUE_CUST_LST_LIST/TELPN_SEQNO" />
-        <target path="entity/ODUE_CUST_LST_LIST/TELPN_SEQNO" />
-        <function ref="move" />
-    </mapping>
-    <mapping>
         <source path="entity/ODUE_CUST_LST_LIST/TELNO" />
         <target path="entity/ODUE_CUST_LST_LIST/TELNO" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/ODUE_CUST_LST_LIST/FAX_NO1" />
-        <target path="entity/ODUE_CUST_LST_LIST/FAX_NO1" />
-        <function ref="move" />
-    </mapping>
-    <mapping>
-        <source path="entity/ODUE_CUST_LST_LIST/FAX_NO2" />
-        <target path="entity/ODUE_CUST_LST_LIST/FAX_NO2" />
-        <function ref="move" />
-    </mapping>
-    <mapping>
-        <source path="entity/ODUE_CUST_LST_LIST/FAX_NO3" />
-        <target path="entity/ODUE_CUST_LST_LIST/FAX_NO3" />
+        <source path="entity/ODUE_CUST_LST_LIST/FAX_NO" />
+        <target path="entity/ODUE_CUST_LST_LIST/FAX_NO" />
         <function ref="move" />
     </mapping>
     <mapping>

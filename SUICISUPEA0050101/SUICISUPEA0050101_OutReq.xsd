@@ -143,66 +143,6 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="telpnAreaNo">
-                <annotation>
-                    <documentation>전화지역번호</documentation>
-                    <appinfo>
-                        <p:description />
-                        <p:mandatory value="N" />
-                        <p:level value="1" />
-                        <p:encryption value="N" />
-                        <p:one_path_encp value="N" />
-                        <p:mask_type />
-                        <p:db_key value="N" />
-                        <p:krn_fld_yn value="N" />
-                    </appinfo>
-                </annotation>
-                <simpleType>
-                    <restriction base="string">
-                        <maxLength value="4" />
-                    </restriction>
-                </simpleType>
-            </element>
-            <element name="tels">
-                <annotation>
-                    <documentation>전화국번호</documentation>
-                    <appinfo>
-                        <p:description />
-                        <p:mandatory value="N" />
-                        <p:level value="1" />
-                        <p:encryption value="N" />
-                        <p:one_path_encp value="N" />
-                        <p:mask_type />
-                        <p:db_key value="N" />
-                        <p:krn_fld_yn value="N" />
-                    </appinfo>
-                </annotation>
-                <simpleType>
-                    <restriction base="string">
-                        <maxLength value="4" />
-                    </restriction>
-                </simpleType>
-            </element>
-            <element name="telpnSeqno">
-                <annotation>
-                    <documentation>전화일련번호</documentation>
-                    <appinfo>
-                        <p:description />
-                        <p:mandatory value="N" />
-                        <p:level value="1" />
-                        <p:encryption value="N" />
-                        <p:one_path_encp value="N" />
-                        <p:mask_type />
-                        <p:db_key value="N" />
-                        <p:krn_fld_yn value="N" />
-                    </appinfo>
-                </annotation>
-                <simpleType>
-                    <restriction base="string">
-                        <maxLength value="4" />
-                    </restriction>
-                </simpleType>
-            </element>
             <element name="telno">
                 <annotation>
                     <documentation>전화번호</documentation>
@@ -223,49 +163,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="faxNo1">
+            <element name="faxNo">
                 <annotation>
-                    <documentation>팩스번호1</documentation>
-                    <appinfo>
-                        <p:description value="팩스번호" />
-                        <p:mandatory value="N" />
-                        <p:level value="1" />
-                        <p:encryption value="N" />
-                        <p:one_path_encp value="N" />
-                        <p:mask_type />
-                        <p:db_key value="N" />
-                        <p:krn_fld_yn value="N" />
-                    </appinfo>
-                </annotation>
-                <simpleType>
-                    <restriction base="string">
-                        <maxLength value="20" />
-                    </restriction>
-                </simpleType>
-            </element>
-            <element name="faxNo2">
-                <annotation>
-                    <documentation>팩스번호2</documentation>
-                    <appinfo>
-                        <p:description value="팩스번호" />
-                        <p:mandatory value="N" />
-                        <p:level value="1" />
-                        <p:encryption value="N" />
-                        <p:one_path_encp value="N" />
-                        <p:mask_type />
-                        <p:db_key value="N" />
-                        <p:krn_fld_yn value="N" />
-                    </appinfo>
-                </annotation>
-                <simpleType>
-                    <restriction base="string">
-                        <maxLength value="20" />
-                    </restriction>
-                </simpleType>
-            </element>
-            <element name="faxNo3">
-                <annotation>
-                    <documentation>팩스번호3</documentation>
+                    <documentation>팩스번호</documentation>
                     <appinfo>
                         <p:description value="팩스번호" />
                         <p:mandatory value="N" />
