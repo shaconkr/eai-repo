@@ -3,13 +3,13 @@
     <common>
         <io_name><![CDATA[업체정보관리]]></io_name>
         <!--I/O 명-->
-        <description />
+        <description><![CDATA[연체에서 관리하는 외부 업체정보]]></description>
         <!--I/O 설명-->
         <system code="CIS" name="H-CIS" />
         <!--시스템코드, 시스템명-->
         <work code="UPEA" name="추심위임관리" />
         <!--업무구분코드-->
-        <datetime>2022-12-08 17:38:43</datetime>
+        <datetime>2022-12-19 13:37:18</datetime>
         <!--작성 시간-->
         <writer>CIS013</writer>
         <!--작성자-->
@@ -60,21 +60,21 @@
             <!--DB 테이블 명-->
         </eai>
     </process_type>
-    <!--IO처리유형 : O - 온라인, D - DB, F - FILE-->
+    <!--IO처리유형 : O - 온라인, D - DB, F - FILE, A - API-->
     <inbound>
         <message>
-            <io id="C00000003007" idn="" version="1" name="TCISUPEA0050101_INBOUND" type="Message" />
+            <io id="C00000000129" idn="" version="1" name="TCISUPEA0050101_INBOUND" type="Message" />
         </message>
         <header />
         <unit>
-            <io id="C00000003007" idn="" name="TCISUPEA0050101_INBOUND" version="1" type="Entity" squencename="entity">
+            <io id="C00000000129" idn="" name="TCISUPEA0050101_INBOUND" version="1" type="Entity" squencename="entity">
                 <common>
                     <description />
                     <system />
                     <!--시스템코드, 시스템명-->
                     <work />
                     <!--업무 구분 코드-->
-                    <datetime>2022-12-08 17:38:43</datetime>
+                    <datetime>2022-12-19 13:37:18</datetime>
                     <!--작성 시간-->
                     <writer>CIS013</writer>
                     <!--작성자-->
@@ -499,18 +499,18 @@
     </inbound>
     <outbound>
         <message>
-            <io id="C00000003009" idn="" version="1" name="TCISUPEA0050101_OUTBOUND" type="Message" />
+            <io id="C00000000131" idn="" version="1" name="TCISUPEA0050101_OUTBOUND" type="Message" />
         </message>
         <header />
         <unit>
-            <io id="C00000003009" idn="" name="TCISUPEA0050101_OUTBOUND" version="1" type="Entity" squencename="entity">
+            <io id="C00000000131" idn="" name="TCISUPEA0050101_OUTBOUND" version="1" type="Entity" squencename="entity">
                 <common>
                     <description />
                     <system />
                     <!--시스템코드, 시스템명-->
                     <work />
                     <!--업무 구분 코드-->
-                    <datetime>2022-12-08 17:38:43</datetime>
+                    <datetime>2022-12-19 13:37:18</datetime>
                     <!--작성 시간-->
                     <writer>CIS013</writer>
                     <!--작성자-->

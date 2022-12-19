@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SSUIUPEA0050101" version="1">
     <common>
-        <io_name><![CDATA[업체정보관리조회]]></io_name>
+        <io_name><![CDATA[업체정보조회]]></io_name>
         <!--I/O 명-->
         <description />
         <!--I/O 설명-->
@@ -9,7 +9,7 @@
         <!--시스템코드, 시스템명-->
         <work code="DEFT" name="어플리케이션 Default 코드" />
         <!--업무구분코드-->
-        <datetime>2022-12-08 17:42:13</datetime>
+        <datetime>2022-12-19 13:45:06</datetime>
         <!--작성 시간-->
         <writer>CIS013</writer>
         <!--작성자-->
@@ -60,21 +60,21 @@
             <!--DB 테이블 명-->
         </eai>
     </process_type>
-    <!--IO처리유형 : O - 온라인, D - DB, F - FILE-->
+    <!--IO처리유형 : O - 온라인, D - DB, F - FILE, A - API-->
     <inbound>
         <message>
-            <io id="C00000003011" idn="" version="1" name="SSUIUPEA0050101_INBOUND" type="Message" />
+            <io id="C00000000133" idn="" version="1" name="SSUIUPEA0050101_INBOUND" type="Message" />
         </message>
         <header />
         <unit>
-            <io id="C00000003011" idn="" name="SSUIUPEA0050101_INBOUND" version="1" type="Entity" squencename="entity">
+            <io id="C00000000133" idn="" name="SSUIUPEA0050101_INBOUND" version="1" type="Entity" squencename="entity">
                 <common>
                     <description />
                     <system />
                     <!--시스템코드, 시스템명-->
                     <work />
                     <!--업무 구분 코드-->
-                    <datetime>2022-12-08 17:42:13</datetime>
+                    <datetime>2022-12-19 13:45:06</datetime>
                     <!--작성 시간-->
                     <writer>CIS013</writer>
                     <!--작성자-->
@@ -499,18 +499,18 @@
     </inbound>
     <outbound>
         <message>
-            <io id="C00000003013" idn="" version="1" name="SSUIUPEA0050101_OUTBOUND" type="Message" />
+            <io id="C00000000135" idn="" version="1" name="SSUIUPEA0050101_OUTBOUND" type="Message" />
         </message>
         <header />
         <unit>
-            <io id="C00000003013" idn="" name="SSUIUPEA0050101_OUTBOUND" version="1" type="Entity" squencename="entity">
+            <io id="C00000000135" idn="" name="SSUIUPEA0050101_OUTBOUND" version="1" type="Entity" squencename="entity">
                 <common>
                     <description />
                     <system />
                     <!--시스템코드, 시스템명-->
                     <work />
                     <!--업무 구분 코드-->
-                    <datetime>2022-12-08 17:42:13</datetime>
+                    <datetime>2022-12-19 13:45:06</datetime>
                     <!--작성 시간-->
                     <writer>CIS013</writer>
                     <!--작성자-->

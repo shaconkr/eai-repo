@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SUICISUPEA0050101" name="업체정보관리조회" version="1">
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SUICISUPEA0050101" name="업체정보조회" version="1">
     <common>
         <description />
         <system code="SUI" name="통합단말" />
         <!--시스템구분코드-->
         <work code="DEFT" name="어플리케이션 Default 코드" />
         <!--어플리케이션코드-->
-        <datetime>2022-12-08 17:42:13</datetime>
+        <datetime>2022-12-19 13:45:06</datetime>
         <!--작성일-->
         <writer>CIS013</writer>
         <!--작성자-->
@@ -20,9 +20,9 @@
         <!--기타 정보-->
         <attribute>
             <infra code="2" name="대내I/F" />
-            <!--연계구분 - 1:MCI / 2:대내 I/F / 3:대외 I/F / 6:통합 UI-->
+            <!--연계구분 - 1:MCI / 2:대내I/F / 3:대외I/F / 6:통합UI / 7:승인I/F-->
             <process code="1" name="온라인(대내)" />
-            <!--처리유형 - 1:온라인(대내) / 2:온라인(대외) / 3:(배치)DBtoDB / 4:FILEtoFILE(대내) / 5:(실행주기)DBtoDB / 8:FILEtoFILE(대외)-->
+            <!--처리유형 - 1:온라인(대내) / 2:온라인(대외) / 3:(배치)DBtoDB / 4:FILEtoFILE(대내) / 5:(실행주기)DBtoDB / 7:API(대외) / 8:FILEtoFILE(대외)-->
             <mapping code="Y" name="매핑함" />
             <!--매핑여부-->
             <occur_cycle />
