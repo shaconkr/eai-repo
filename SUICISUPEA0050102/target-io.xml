@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TCISUPEA0050102" version="2">
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TCISUPEA0050102" version="1">
     <common>
         <io_name><![CDATA[업체정보관리처리]]></io_name>
         <!--I/O 명-->
@@ -9,7 +9,7 @@
         <!--시스템코드, 시스템명-->
         <work code="UPEA" name="추심위임관리" />
         <!--업무구분코드-->
-        <datetime>2022-12-13 11:12:34</datetime>
+        <datetime>2022-12-19 14:59:08</datetime>
         <!--작성 시간-->
         <writer>CIS013</writer>
         <!--작성자-->
@@ -30,7 +30,7 @@
             <!--Output 거래 ID-->
             <syn-asyn code="1" name="동기" />
             <!--동기 / 비동기 여부-->
-            <bizhub />
+            <bizhub code="000" name="고객X 마케팅X" />
             <!--비즈허브 접촉정보거래종류-->
             <trncd_in />
             <!--Input 거래 코드-->
@@ -60,21 +60,21 @@
             <!--DB 테이블 명-->
         </eai>
     </process_type>
-    <!--IO처리유형 : O - 온라인, D - DB, F - FILE-->
+    <!--IO처리유형 : O - 온라인, D - DB, F - FILE, A - API-->
     <inbound>
         <message>
-            <io id="C00000003035" idn="" version="1" name="TCISUPEA0050102_INBOUND" type="Message" />
+            <io id="C00000000137" idn="" version="1" name="TCISUPEA0050102_INBOUND" type="Message" />
         </message>
         <header />
         <unit>
-            <io id="C00000003035" idn="" name="TCISUPEA0050102_INBOUND" version="1" type="Entity" squencename="entity">
+            <io id="C00000000137" idn="" name="TCISUPEA0050102_INBOUND" version="1" type="Entity" squencename="entity">
                 <common>
                     <description />
                     <system />
                     <!--시스템코드, 시스템명-->
                     <work />
                     <!--업무 구분 코드-->
-                    <datetime>2022-12-13 11:12:34</datetime>
+                    <datetime>2022-12-19 14:59:08</datetime>
                     <!--작성 시간-->
                     <writer>CIS013</writer>
                     <!--작성자-->
@@ -285,66 +285,6 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="telpnAreaNo">
-                <annotation>
-                    <documentation>전화지역번호</documentation>
-                    <appinfo>
-                        <p:description />
-                        <p:mandatory value="N" />
-                        <p:level value="2" />
-                        <p:encryption value="N" />
-                        <p:one_path_encp value="N" />
-                        <p:mask_type />
-                        <p:db_key value="N" />
-                        <p:krn_fld_yn value="N" />
-                    </appinfo>
-                </annotation>
-                <simpleType>
-                    <restriction base="string">
-                        <maxLength value="4" />
-                    </restriction>
-                </simpleType>
-            </element>
-            <element name="tels">
-                <annotation>
-                    <documentation>전화국번호</documentation>
-                    <appinfo>
-                        <p:description />
-                        <p:mandatory value="N" />
-                        <p:level value="2" />
-                        <p:encryption value="N" />
-                        <p:one_path_encp value="N" />
-                        <p:mask_type />
-                        <p:db_key value="N" />
-                        <p:krn_fld_yn value="N" />
-                    </appinfo>
-                </annotation>
-                <simpleType>
-                    <restriction base="string">
-                        <maxLength value="4" />
-                    </restriction>
-                </simpleType>
-            </element>
-            <element name="telpnSeqno">
-                <annotation>
-                    <documentation>전화일련번호</documentation>
-                    <appinfo>
-                        <p:description />
-                        <p:mandatory value="N" />
-                        <p:level value="2" />
-                        <p:encryption value="N" />
-                        <p:one_path_encp value="N" />
-                        <p:mask_type />
-                        <p:db_key value="N" />
-                        <p:krn_fld_yn value="N" />
-                    </appinfo>
-                </annotation>
-                <simpleType>
-                    <restriction base="string">
-                        <maxLength value="4" />
-                    </restriction>
-                </simpleType>
-            </element>
             <element name="telno">
                 <annotation>
                     <documentation>전화번호</documentation>
@@ -365,49 +305,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="faxNo1">
+            <element name="faxNo">
                 <annotation>
-                    <documentation>팩스번호1</documentation>
-                    <appinfo>
-                        <p:description value="팩스번호" />
-                        <p:mandatory value="N" />
-                        <p:level value="2" />
-                        <p:encryption value="N" />
-                        <p:one_path_encp value="N" />
-                        <p:mask_type />
-                        <p:db_key value="N" />
-                        <p:krn_fld_yn value="N" />
-                    </appinfo>
-                </annotation>
-                <simpleType>
-                    <restriction base="string">
-                        <maxLength value="20" />
-                    </restriction>
-                </simpleType>
-            </element>
-            <element name="faxNo2">
-                <annotation>
-                    <documentation>팩스번호2</documentation>
-                    <appinfo>
-                        <p:description value="팩스번호" />
-                        <p:mandatory value="N" />
-                        <p:level value="2" />
-                        <p:encryption value="N" />
-                        <p:one_path_encp value="N" />
-                        <p:mask_type />
-                        <p:db_key value="N" />
-                        <p:krn_fld_yn value="N" />
-                    </appinfo>
-                </annotation>
-                <simpleType>
-                    <restriction base="string">
-                        <maxLength value="20" />
-                    </restriction>
-                </simpleType>
-            </element>
-            <element name="faxNo3">
-                <annotation>
-                    <documentation>팩스번호3</documentation>
+                    <documentation>팩스번호</documentation>
                     <appinfo>
                         <p:description value="팩스번호" />
                         <p:mandatory value="N" />
@@ -553,18 +453,18 @@
     </inbound>
     <outbound>
         <message>
-            <io id="C00000003037" idn="" version="1" name="TCISUPEA0050102_OUTBOUND" type="Message" />
+            <io id="C00000000139" idn="" version="1" name="TCISUPEA0050102_OUTBOUND" type="Message" />
         </message>
         <header />
         <unit>
-            <io id="C00000003037" idn="" name="TCISUPEA0050102_OUTBOUND" version="1" type="Entity" squencename="entity">
+            <io id="C00000000139" idn="" name="TCISUPEA0050102_OUTBOUND" version="1" type="Entity" squencename="entity">
                 <common>
                     <description />
                     <system />
                     <!--시스템코드, 시스템명-->
                     <work />
                     <!--업무 구분 코드-->
-                    <datetime>2022-12-13 11:12:34</datetime>
+                    <datetime>2022-12-19 14:59:08</datetime>
                     <!--작성 시간-->
                     <writer>CIS013</writer>
                     <!--작성자-->

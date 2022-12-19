@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<deployment id="D00000001700">
+<deployment id="D00000000020">
     <deployer id="CIS013">문석재</deployer>
-    <deployment_date>2022-12-13 11:16:54.364593</deployment_date>
+    <deployment_date>2022-12-19 15:01:16.125464</deployment_date>
     <target_system id="EAI_D_01">EAI 대내</target_system>
 </deployment>
