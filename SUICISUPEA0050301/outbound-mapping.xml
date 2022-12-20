@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="outbound" id="SUICISUPEA0050301" version="1" />
+    <src_io id="SSUIUPEA0050301" />
+    <target_io id="TCISUPEA0050301" />
+    <mapping>
+        <source path="entity/DEGTN_CUST_LST_ROWCOUNT" />
+        <target path="entity/DEGTN_CUST_LST_ROWCOUNT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/DEGTN_CUST_LST_LIST/CLLCTN_CUST_MNG_NO" />
+        <target path="entity/DEGTN_CUST_LST_LIST/CLLCTN_CUST_MNG_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/DEGTN_CUST_LST_LIST/DEGTN_CUST_GBCD" />
+        <target path="entity/DEGTN_CUST_LST_LIST/DEGTN_CUST_GBCD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/DEGTN_CUST_LST_LIST/DEGTN_CUST_NM" />
+        <target path="entity/DEGTN_CUST_LST_LIST/DEGTN_CUST_NM" />
+        <function ref="move" />
+    </mapping>
+</map>
