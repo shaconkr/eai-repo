@@ -1,11 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="outbound" id="SUICISCTJC0011401" version="1" />
+    <interface bound="outbound" id="SUICISCTJC0011401" version="2" />
     <src_io id="SSUICTJC0011401" />
     <target_io id="TCISCTJC0011401" />
     <mapping>
-        <source path="entity/PROC_RST_CD" />
-        <target path="entity/PROC_RST_CD" />
+        <source path="entity/IQRY_ROWCOUNT" />
+        <target path="entity/IQRY_ROWCOUNT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/IQRY_LIST/CRD_NO" />
+        <target path="entity/IQRY_LIST/CRD_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/IQRY_LIST/CRD_ALCO_CD" />
+        <target path="entity/IQRY_LIST/CRD_ALCO_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/IQRY_LIST/PROC_RST_CD" />
+        <target path="entity/IQRY_LIST/PROC_RST_CD" />
         <function ref="move" />
     </mapping>
 </map>
