@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="inbound" id="SUICISCTJC0060101" version="1" />
+    <src_io id="SSUICTJC0060101" />
+    <target_io id="TCISCTJC0060101" />
+    <mapping>
+        <source path="entity/TRD_GBCD" />
+        <target path="entity/TRD_GBCD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RCPL_GBCD" />
+        <target path="entity/RCPL_GBCD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/CRD_NO" />
+        <target path="entity/CRD_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/CRD_ALCO_CD" />
+        <target path="entity/CRD_ALCO_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/DLV_REQN_NOTE_GBCD" />
+        <target path="entity/DLV_REQN_NOTE_GBCD" />
+        <function ref="move" />
+    </mapping>
+</map>
