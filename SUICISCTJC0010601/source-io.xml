@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SSUICTJC0010601" version="2">
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SSUICTJC0010601" version="3">
     <common>
         <io_name><![CDATA[쟈스민카드 발급가능여부 조회]]></io_name>
         <!--I/O 명-->
@@ -91,26 +91,6 @@
     <element name="root" type="tns:SSUICTJC0010601_inbound" />
     <complexType name="SSUICTJC0010601_inbound">
         <sequence>
-            <element name="crdMemNo">
-                <annotation>
-                    <documentation>카드회원번호</documentation>
-                    <appinfo>
-                        <p:description />
-                        <p:mandatory value="N" />
-                        <p:level value="1" />
-                        <p:encryption value="N" />
-                        <p:one_path_encp value="N" />
-                        <p:mask_type />
-                        <p:db_key value="N" />
-                        <p:krn_fld_yn value="N" />
-                    </appinfo>
-                </annotation>
-                <simpleType>
-                    <restriction base="string">
-                        <maxLength value="9" />
-                    </restriction>
-                </simpleType>
-            </element>
             <element name="crdNo">
                 <annotation>
                     <documentation>카드번호</documentation>
