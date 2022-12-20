@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TCISCTJC0010601" version="1">
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TCISCTJC0010601" version="2">
     <common>
         <io_name><![CDATA[쟈스민카드 발급가능여부 조회 타겟IO]]></io_name>
         <!--I/O 명-->
@@ -30,7 +30,7 @@
             <!--Output 거래 ID-->
             <syn-asyn code="1" name="동기" />
             <!--동기 / 비동기 여부-->
-            <bizhub code="000" name="고객X 마케팅X" />
+            <bizhub />
             <!--비즈허브 접촉정보거래종류-->
             <trncd_in />
             <!--Input 거래 코드-->
@@ -108,6 +108,26 @@
                 <simpleType>
                     <restriction base="string">
                         <maxLength value="9" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="crdNo">
+                <annotation>
+                    <documentation>카드번호</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="16" />
                     </restriction>
                 </simpleType>
             </element>

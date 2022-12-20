@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SUICISCTJC0010601" name="쟈스민카드 발급가능여부 조회" version="1">
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SUICISCTJC0010601" name="쟈스민카드 발급가능여부 조회" version="3">
     <common>
         <description />
         <system code="SUI" name="통합단말" />
