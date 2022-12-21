@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SSUIUPEZ9990101" version="2">
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SSUIUPEZ9990101" version="3">
     <common>
         <io_name><![CDATA[연체팝업테스트]]></io_name>
         <!--I/O 명-->
@@ -111,6 +111,26 @@
                     </restriction>
                 </simpleType>
             </element>
+            <element name="filePath">
+                <annotation>
+                    <documentation>파일경로</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="500" />
+                    </restriction>
+                </simpleType>
+            </element>
         </sequence>
     </complexType>
 </schema>]]></data>
@@ -164,6 +184,26 @@
                 <simpleType>
                     <restriction base="string">
                         <maxLength value="4000" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="procFilePathNm">
+                <annotation>
+                    <documentation>처리파일경로명</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="200" />
                     </restriction>
                 </simpleType>
             </element>
