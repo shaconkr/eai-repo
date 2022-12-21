@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SSUIUPEZ9990101" version="1">
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SSUIUPEZ9990101" version="2">
     <common>
         <io_name><![CDATA[연체팝업테스트]]></io_name>
         <!--I/O 명-->
@@ -15,7 +15,7 @@
         <!--작성자-->
         <charset>UTF-8</charset>
         <!--캐릭터셋-->
-        <package_name>hdc.cis.up.upe.upea.onl.sc.io</package_name>
+        <package_name>hdc.cis.up.upe.upez.onl.sc.io</package_name>
         <!--패키지경로-->
         <class_name>MigTestCol</class_name>
         <!--클래스명-->
@@ -30,7 +30,7 @@
             <!--Output 거래 ID-->
             <syn-asyn code="1" name="동기" />
             <!--동기 / 비동기 여부-->
-            <bizhub code="000" name="고객X 마케팅X" />
+            <bizhub />
             <!--비즈허브 접촉정보거래종류-->
             <trncd_in />
             <!--Input 거래 코드-->
