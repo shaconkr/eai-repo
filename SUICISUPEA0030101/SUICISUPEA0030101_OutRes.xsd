@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/">
+    <element name="root" type="tns:TCISUPEA0030101_outbound" />
+    <complexType name="TCISUPEA0030101_outbound">
+        <sequence>
+            <element name="cllctnCustCmisLstRowcount">
+                <annotation>
+                    <documentation>추심업체수수료목록건수</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="long">
+                        <totalDigits value="5" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element maxOccurs="unbounded" name="cllctnCustCmisLstList" type="tns:CLLCTN_CUST_CMIS_LST_LIST_TYPE">
+                <annotation>
+                    <documentation>추심업체수수료목록</documentation>
+                    <appinfo>
+                        <p:adjustLength category="variableField" lengthFieldURL="CLLCTN_CUST_CMIS_LST_ROWCOUNT" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                    </appinfo>
+                </annotation>
+            </element>
+        </sequence>
+    </complexType>
+    <complexType name="CLLCTN_CUST_CMIS_LST_LIST_TYPE">
+        <sequence>
+            <element name="degtnCustNm">
+                <annotation>
+                    <documentation>위임업체명</documentation>
+                    <appinfo>
+                        <p:description value="추심 위임 및 관련 업체" />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="300" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="cmisEvalStottrMths">
+                <annotation>
+                    <documentation>수수료평가시작연체기간개월수</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="long">
+                        <totalDigits value="11" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="ovprEndMths">
+                <annotation>
+                    <documentation>연체기간종료개월수</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="long">
+                        <totalDigits value="11" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="oduePrncBlnc">
+                <annotation>
+                    <documentation>연체원금잔액</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="long">
+                        <totalDigits value="19" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="odueCmisBlnc">
+                <annotation>
+                    <documentation>연체수수료잔액</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="long">
+                        <totalDigits value="19" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="odueIntrBlnc">
+                <annotation>
+                    <documentation>연체이자잔액</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="long">
+                        <totalDigits value="19" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="iamtPrncTotAmt">
+                <annotation>
+                    <documentation>입금원금총금액</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="long">
+                        <totalDigits value="19" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="iamtCmisTotAmt">
+                <annotation>
+                    <documentation>입금수수료총금액</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="long">
+                        <totalDigits value="19" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="iamtIntrTotAmt">
+                <annotation>
+                    <documentation>입금이자총금액</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="long">
+                        <totalDigits value="19" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="giveAmt">
+                <annotation>
+                    <documentation>지급금액</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="long">
+                        <totalDigits value="1" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="cmisr">
+                <annotation>
+                    <documentation>수수료율</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="decimal">
+                        <totalDigits value="12" />
+                        <fractionDigits value="2" />
+                    </restriction>
+                </simpleType>
+            </element>
+        </sequence>
+    </complexType>
+</schema>
