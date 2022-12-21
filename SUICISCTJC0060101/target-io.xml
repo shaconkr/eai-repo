@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TCISCTJC0060101" version="1">
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TCISCTJC0060101" version="2">
     <common>
         <io_name><![CDATA[분실신고재발급처리 타겟IO]]></io_name>
         <!--I/O 명-->
@@ -30,7 +30,7 @@
             <!--Output 거래 ID-->
             <syn-asyn code="1" name="동기" />
             <!--동기 / 비동기 여부-->
-            <bizhub code="000" name="고객X 마케팅X" />
+            <bizhub />
             <!--비즈허브 접촉정보거래종류-->
             <trncd_in />
             <!--Input 거래 코드-->
@@ -111,13 +111,47 @@
                     </restriction>
                 </simpleType>
             </element>
+            <element name="crdRowcount">
+                <annotation>
+                    <documentation>카드목록건수</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="long">
+                        <totalDigits value="5" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element maxOccurs="unbounded" name="crdList" type="tns:CRD_LIST_TYPE">
+                <annotation>
+                    <documentation>카드목록</documentation>
+                    <appinfo>
+                        <p:adjustLength category="variableField" lengthFieldURL="CRD_ROWCOUNT" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                    </appinfo>
+                </annotation>
+            </element>
+        </sequence>
+    </complexType>
+    <complexType name="CRD_LIST_TYPE">
+        <sequence>
             <element name="rcplGbcd">
                 <annotation>
                     <documentation>수령지구분코드</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -137,7 +171,7 @@
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -151,33 +185,13 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="crdAlcoCd">
-                <annotation>
-                    <documentation>카드제휴사코드</documentation>
-                    <appinfo>
-                        <p:description />
-                        <p:mandatory value="N" />
-                        <p:level value="1" />
-                        <p:encryption value="N" />
-                        <p:one_path_encp value="N" />
-                        <p:mask_type />
-                        <p:db_key value="N" />
-                        <p:krn_fld_yn value="N" />
-                    </appinfo>
-                </annotation>
-                <simpleType>
-                    <restriction base="string">
-                        <maxLength value="4" />
-                    </restriction>
-                </simpleType>
-            </element>
             <element name="dlvReqnNoteGbcd">
                 <annotation>
                     <documentation>배송요청사항구분코드</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -188,6 +202,26 @@
                 <simpleType>
                     <restriction base="string">
                         <maxLength value="1" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="crdItemCd">
+                <annotation>
+                    <documentation>카드상품코드</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="4" />
                     </restriction>
                 </simpleType>
             </element>
@@ -227,13 +261,47 @@
     <element name="root" type="tns:TCISCTJC0060101_outbound" />
     <complexType name="TCISCTJC0060101_outbound">
         <sequence>
+            <element name="crdRowcount">
+                <annotation>
+                    <documentation>카드목록건수</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="long">
+                        <totalDigits value="5" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element maxOccurs="unbounded" name="crdList" type="tns:CRD_LIST_TYPE">
+                <annotation>
+                    <documentation>카드목록</documentation>
+                    <appinfo>
+                        <p:adjustLength category="variableField" lengthFieldURL="CRD_ROWCOUNT" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                    </appinfo>
+                </annotation>
+            </element>
+        </sequence>
+    </complexType>
+    <complexType name="CRD_LIST_TYPE">
+        <sequence>
             <element name="crdNo">
                 <annotation>
                     <documentation>카드번호</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -253,7 +321,7 @@
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
