@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="outbound" id="SUICISPMCD0010101" version="2" />
+    <src_io id="SSUIPMCD0010101" />
+    <target_io id="TCISPMCD0010101" />
+    <mapping>
+        <source path="entity/GRID_ROWCOUNT" />
+        <target path="entity/GRID_ROWCOUNT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/GRID_LIST/MRCV_DT" />
+        <target path="entity/GRID_LIST/MRCV_DT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/GRID_LIST/REQ_STLM_UNIT_NO" />
+        <target path="entity/GRID_LIST/REQ_STLM_UNIT_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/GRID_LIST/MRCV_SEQ" />
+        <target path="entity/GRID_LIST/MRCV_SEQ" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/GRID_LIST/IAMT_PATH_CD" />
+        <target path="entity/GRID_LIST/IAMT_PATH_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/GRID_LIST/IAMT_DT" />
+        <target path="entity/GRID_LIST/IAMT_DT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/GRID_LIST/IAMT_AMT" />
+        <target path="entity/GRID_LIST/IAMT_AMT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/GRID_LIST/DSNT_IAMT_YN" />
+        <target path="entity/GRID_LIST/DSNT_IAMT_YN" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/GRID_LIST/REG_STORE_CD" />
+        <target path="entity/GRID_LIST/REG_STORE_CD" />
+        <function ref="move" />
+    </mapping>
+</map>

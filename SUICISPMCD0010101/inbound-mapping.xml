@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="inbound" id="SUICISPMCD0010101" version="2" />
+    <src_io id="SSUIPMCD0010101" />
+    <target_io id="TCISPMCD0010101" />
+    <mapping>
+        <source path="entity/SCH_GROUP/CRD_MEM_NO" />
+        <target path="entity/SCH_GROUP/CRD_MEM_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/SCH_GROUP/REQ_STLM_UNIT_NO" />
+        <target path="entity/SCH_GROUP/REQ_STLM_UNIT_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/SCH_GROUP/QRY_STRT_DT" />
+        <target path="entity/SCH_GROUP/QRY_STRT_DT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/SCH_GROUP/QRY_END_DT" />
+        <target path="entity/SCH_GROUP/QRY_END_DT" />
+        <function ref="move" />
+    </mapping>
+</map>
