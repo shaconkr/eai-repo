@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SUICISUPEA0040101" name="추심이관대상조회" version="3">
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SUICISUPEA0040101" name="추심이관대상조회" version="4">
     <common>
         <description />
         <system code="SUI" name="통합단말" />
