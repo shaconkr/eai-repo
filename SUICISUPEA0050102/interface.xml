@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SUICISUPEA0050102" name="업체정보처리" version="2">
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SUICISUPEA0050102" name="업체정보처리" version="3">
     <common>
         <description />
         <system code="SUI" name="통합단말" />
@@ -16,7 +16,7 @@
         <!--유저필드-->
         <etc_con />
         <!--거래 ID-->
-        <transaction_id>OCUPEA00502C</transaction_id>
+        <transaction_id>OCUPEA00502U</transaction_id>
         <!--기타 정보-->
         <attribute>
             <infra code="2" name="대내I/F" />
@@ -71,8 +71,6 @@
                     <!--거래 코드 3자리-->
                     <no_res_type />
                     <!--무응답시 수신구분 - 1:요청전문 / 2:표준헤더-->
-                    <chn_tp_c />
-                    <!--채널 유형 코드-->
                 </external>
             </online>
             <batch>
