@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SUICISUPEA0060201" name="추심업체수수료율등록" version="1">
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SUICISUPEA0060201" name="추심업체수수료율등록" version="2">
     <common>
         <description />
         <system code="SUI" name="통합단말" />
@@ -16,7 +16,7 @@
         <!--유저필드-->
         <etc_con />
         <!--거래 ID-->
-        <transaction_id>OCUPEA00602C</transaction_id>
+        <transaction_id>OCUPEA00602U</transaction_id>
         <!--기타 정보-->
         <attribute>
             <infra code="2" name="대내I/F" />
@@ -71,8 +71,6 @@
                     <!--거래 코드 3자리-->
                     <no_res_type />
                     <!--무응답시 수신구분 - 1:요청전문 / 2:표준헤더-->
-                    <chn_tp_c />
-                    <!--채널 유형 코드-->
                 </external>
             </online>
             <batch>
@@ -117,7 +115,7 @@
             <!--소스 I/O 시스템 구분 코드 / 시스템 명-->
             <work code="DEFT" name="어플리케이션 Default 코드" />
             <!--소스 I/O 업무 코드 / 업무 코드 명-->
-            <person>문석재</person>
+            <person />
             <!--소스 I/O 작성자-->
             <process_type>
                 <eai>
@@ -173,7 +171,7 @@
             <!--타겟 I/O 시스템 구분 코드 / 시스템 명-->
             <work code="UPEA" name="추심위임관리" />
             <!--타겟 I/O 업무 코드 / 업무 코드 명-->
-            <person>문석재</person>
+            <person />
             <!--타겟 I/O 작성자-->
             <process_type>
                 <online>
