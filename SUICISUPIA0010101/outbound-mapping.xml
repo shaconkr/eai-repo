@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="outbound" id="SUICISUPIA0010101" version="1" />
+    <interface bound="outbound" id="SUICISUPIA0010101" version="2" />
     <src_io id="SSUIUPIA0010101" />
     <target_io id="TCISUPIA0010101" />
     <mapping>
@@ -14,28 +14,23 @@
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/APTM_CLAS_MNG_LST_LIST/PRIOR_RANK" />
-        <target path="entity/APTM_CLAS_MNG_LST_LIST/PRIOR_RANK" />
-        <function ref="move" />
-    </mapping>
-    <mapping>
         <source path="entity/APTM_CLAS_MNG_LST_LIST/APTM_CLAS_NM" />
         <target path="entity/APTM_CLAS_MNG_LST_LIST/APTM_CLAS_NM" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/APTM_CLAS_MNG_LST_LIST/APTM_MTHD_CD" />
-        <target path="entity/APTM_CLAS_MNG_LST_LIST/APTM_MTHD_CD" />
+        <source path="entity/APTM_CLAS_MNG_LST_LIST/ODUE_APTM_CSF_CD" />
+        <target path="entity/APTM_CLAS_MNG_LST_LIST/ODUE_APTM_CSF_CD" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/APTM_CLAS_MNG_LST_LIST/APLY_GBCD" />
-        <target path="entity/APTM_CLAS_MNG_LST_LIST/APLY_GBCD" />
+        <source path="entity/APTM_CLAS_MNG_LST_LIST/ODUE_MNG_AREA_CD" />
+        <target path="entity/APTM_CLAS_MNG_LST_LIST/ODUE_MNG_AREA_CD" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/APTM_CLAS_MNG_LST_LIST/APTM_CLAS_CNTN" />
-        <target path="entity/APTM_CLAS_MNG_LST_LIST/APTM_CLAS_CNTN" />
+        <source path="entity/APTM_CLAS_MNG_LST_LIST/PRIOR_RANK" />
+        <target path="entity/APTM_CLAS_MNG_LST_LIST/PRIOR_RANK" />
         <function ref="move" />
     </mapping>
     <mapping>
@@ -56,6 +51,21 @@
     <mapping>
         <source path="entity/APTM_CLAS_MNG_LST_LIST/APTM_END_ODUE_AMT" />
         <target path="entity/APTM_CLAS_MNG_LST_LIST/APTM_END_ODUE_AMT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/APTM_CLAS_MNG_LST_LIST/APLY_GBCD" />
+        <target path="entity/APTM_CLAS_MNG_LST_LIST/APLY_GBCD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/APTM_CLAS_MNG_LST_LIST/APTM_CLAS_CNTN" />
+        <target path="entity/APTM_CLAS_MNG_LST_LIST/APTM_CLAS_CNTN" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/APTM_CLAS_MNG_LST_LIST/APTM_MTHD_CD" />
+        <target path="entity/APTM_CLAS_MNG_LST_LIST/APTM_MTHD_CD" />
         <function ref="move" />
     </mapping>
 </map>

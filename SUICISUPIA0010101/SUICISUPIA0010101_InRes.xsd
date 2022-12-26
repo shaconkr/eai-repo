@@ -57,26 +57,6 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="priorRank">
-                <annotation>
-                    <documentation>우선순위</documentation>
-                    <appinfo>
-                        <p:description />
-                        <p:mandatory value="N" />
-                        <p:level value="2" />
-                        <p:encryption value="N" />
-                        <p:one_path_encp value="N" />
-                        <p:mask_type />
-                        <p:db_key value="N" />
-                        <p:krn_fld_yn value="N" />
-                    </appinfo>
-                </annotation>
-                <simpleType>
-                    <restriction base="long">
-                        <totalDigits value="1" />
-                    </restriction>
-                </simpleType>
-            </element>
             <element name="aptmClasNm">
                 <annotation>
                     <documentation>배분항목명</documentation>
@@ -97,9 +77,29 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="aptmMthdCd">
+            <element name="odueAptmCsfCd">
                 <annotation>
-                    <documentation>배분방법코드</documentation>
+                    <documentation>연체배분분류코드</documentation>
+                    <appinfo>
+                        <p:description value="연체 배분 분류의 코드" />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="2" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="odueMngAreaCd">
+                <annotation>
+                    <documentation>연체관리지역코드</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
@@ -117,9 +117,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="aplyGbcd">
+            <element name="priorRank">
                 <annotation>
-                    <documentation>적용구분코드</documentation>
+                    <documentation>우선순위</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
@@ -132,28 +132,8 @@
                     </appinfo>
                 </annotation>
                 <simpleType>
-                    <restriction base="string">
-                        <maxLength value="1" />
-                    </restriction>
-                </simpleType>
-            </element>
-            <element name="aptmClasCntn">
-                <annotation>
-                    <documentation>배분항목내용</documentation>
-                    <appinfo>
-                        <p:description />
-                        <p:mandatory value="N" />
-                        <p:level value="2" />
-                        <p:encryption value="N" />
-                        <p:one_path_encp value="N" />
-                        <p:mask_type />
-                        <p:db_key value="N" />
-                        <p:krn_fld_yn value="N" />
-                    </appinfo>
-                </annotation>
-                <simpleType>
-                    <restriction base="string">
-                        <maxLength value="100" />
+                    <restriction base="long">
+                        <totalDigits value="1" />
                     </restriction>
                 </simpleType>
             </element>
@@ -234,6 +214,66 @@
                 <simpleType>
                     <restriction base="long">
                         <totalDigits value="19" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="aplyGbcd">
+                <annotation>
+                    <documentation>적용구분코드</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="1" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="aptmClasCntn">
+                <annotation>
+                    <documentation>배분항목내용</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="100" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="aptmMthdCd">
+                <annotation>
+                    <documentation>배분방법코드</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="2" />
                     </restriction>
                 </simpleType>
             </element>
