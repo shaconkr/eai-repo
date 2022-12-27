@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="outbound" id="SUICISSCEE0010201" version="1" />
+    <src_io id="SSUISCEE0010201" />
+    <target_io id="TCISSCEE0010201" />
+    <mapping>
+        <source path="entity/TELNO" />
+        <target path="entity/TELNO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/DICO_NM" />
+        <target path="entity/DICO_NM" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/TELPN_GBCD" />
+        <target path="entity/TELPN_GBCD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/ADR" />
+        <target path="entity/ADR" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/REG_STORE_CD" />
+        <target path="entity/REG_STORE_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/REG_RSN" />
+        <target path="entity/REG_RSN" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RGST_ID" />
+        <target path="entity/RGST_ID" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/REG_DTM" />
+        <target path="entity/REG_DTM" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/TMNN_STORE_CD" />
+        <target path="entity/TMNN_STORE_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/TMNN_RSN" />
+        <target path="entity/TMNN_RSN" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/CNPS_ID" />
+        <target path="entity/CNPS_ID" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/TMNN_DTM" />
+        <target path="entity/TMNN_DTM" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/CHGP_ID" />
+        <target path="entity/CHGP_ID" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/CHG_DTM" />
+        <target path="entity/CHG_DTM" />
+        <function ref="move" />
+    </mapping>
+</map>
