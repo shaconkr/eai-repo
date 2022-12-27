@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SSUIUPIA0010101" version="3">
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SSUIUPIA0010101" version="4">
     <common>
         <io_name><![CDATA[연체항목관리조회]]></io_name>
         <!--I/O 명-->
@@ -204,6 +204,26 @@
             <element name="aptmCd">
                 <annotation>
                     <documentation>배분코드</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="5" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="aptmCd1">
+                <annotation>
+                    <documentation>배분코드1</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />

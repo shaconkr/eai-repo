@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="outbound" id="SUICISUPIA0010101" version="2" />
+    <interface bound="outbound" id="SUICISUPIA0010101" version="3" />
     <src_io id="SSUIUPIA0010101" />
     <target_io id="TCISUPIA0010101" />
     <mapping>
@@ -11,6 +11,11 @@
     <mapping>
         <source path="entity/APTM_CLAS_MNG_LST_LIST/APTM_CD" />
         <target path="entity/APTM_CLAS_MNG_LST_LIST/APTM_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/APTM_CLAS_MNG_LST_LIST/APTM_CD1" />
+        <target path="entity/APTM_CLAS_MNG_LST_LIST/APTM_CD1" />
         <function ref="move" />
     </mapping>
     <mapping>
