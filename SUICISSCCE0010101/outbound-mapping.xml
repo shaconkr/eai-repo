@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="outbound" id="SUICISSCCE0010101" version="2" />
+    <src_io id="SSUISCCE0010101" />
+    <target_io id="TCISSCCE0010101" />
+    <mapping>
+        <source path="entity/RST_ROWCOUNT" />
+        <target path="entity/RST_ROWCOUNT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RST_LIST/CNFM_STORE_CD" />
+        <target path="entity/RST_LIST/CNFM_STORE_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RST_LIST/CNFM_CNT" />
+        <target path="entity/RST_LIST/CNFM_CNT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RST_LIST/CNFM_CUST_TYPE_CNT1" />
+        <target path="entity/RST_LIST/CNFM_CUST_TYPE_CNT1" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RST_LIST/CNFM_CUST_TYPE_CNT2" />
+        <target path="entity/RST_LIST/CNFM_CUST_TYPE_CNT2" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RST_LIST/CNFM_CUST_TYPE_CNT3" />
+        <target path="entity/RST_LIST/CNFM_CUST_TYPE_CNT3" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RST_LIST/IAMT_CRST_CNT1" />
+        <target path="entity/RST_LIST/IAMT_CRST_CNT1" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RST_LIST/IAMT_CRST_CNT2" />
+        <target path="entity/RST_LIST/IAMT_CRST_CNT2" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RST_LIST/IAMT_CRST_CNT3" />
+        <target path="entity/RST_LIST/IAMT_CRST_CNT3" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RST_LIST/IAMT_CRST_CNT4" />
+        <target path="entity/RST_LIST/IAMT_CRST_CNT4" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RST_LIST/ODUE_CNT1" />
+        <target path="entity/RST_LIST/ODUE_CNT1" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RST_LIST/ODUE_CNT2" />
+        <target path="entity/RST_LIST/ODUE_CNT2" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RST_LIST/ODUE_CNT3" />
+        <target path="entity/RST_LIST/ODUE_CNT3" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RST_LIST/ODUE_TRGT_TYPE_CNT1" />
+        <target path="entity/RST_LIST/ODUE_TRGT_TYPE_CNT1" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RST_LIST/ODUE_TRGT_TYPE_CNT2" />
+        <target path="entity/RST_LIST/ODUE_TRGT_TYPE_CNT2" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RST_LIST/ODUE_TRGT_TYPE_CNT3" />
+        <target path="entity/RST_LIST/ODUE_TRGT_TYPE_CNT3" />
+        <function ref="move" />
+    </mapping>
+</map>

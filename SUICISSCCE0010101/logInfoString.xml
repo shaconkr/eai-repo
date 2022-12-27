@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deployment id="D00000000299">
+    <deployer id="CIS060">김병근</deployer>
+    <deployment_date>2022-12-27 10:56:33.572166</deployment_date>
+    <target_system id="EAI_D_01">EAI 대내</target_system>
+</deployment>

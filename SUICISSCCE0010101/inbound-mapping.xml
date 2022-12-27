@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="inbound" id="SUICISSCCE0010101" version="2" />
+    <src_io id="SSUISCCE0010101" />
+    <target_io id="TCISSCCE0010101" />
+    <mapping>
+        <source path="entity/BSIC_STRT_DT" />
+        <target path="entity/BSIC_STRT_DT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/BSIC_END_DT" />
+        <target path="entity/BSIC_END_DT" />
+        <function ref="move" />
+    </mapping>
+</map>
