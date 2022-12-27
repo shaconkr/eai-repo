@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="inbound" id="SUICISUPEA0040201" version="2" />
+    <interface bound="inbound" id="SUICISUPEA0040201" version="3" />
     <src_io id="SSUIUPEA0040201" />
     <target_io id="TCISUPEA0040201" />
     <mapping>
@@ -66,6 +66,11 @@
     <mapping>
         <source path="entity/CLLCTN_MVOT_TRGTP_LST_LIST/ASK_DT" />
         <target path="entity/CLLCTN_MVOT_TRGTP_LST_LIST/ASK_DT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/CLLCTN_MVOT_TRGTP_LST_LIST/CLLCTN_CUST_MNG_NO" />
+        <target path="entity/CLLCTN_MVOT_TRGTP_LST_LIST/CLLCTN_CUST_MNG_NO" />
         <function ref="move" />
     </mapping>
 </map>
