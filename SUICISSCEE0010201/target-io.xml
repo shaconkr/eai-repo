@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TCISSCEE0010201" version="2">
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TCISSCEE0010201" version="4">
     <common>
         <io_name><![CDATA[깡업체관리조회]]></io_name>
         <!--I/O 명-->
@@ -207,13 +207,47 @@
     <element name="root" type="tns:TCISSCEE0010201_outbound" />
     <complexType name="TCISSCEE0010201_outbound">
         <sequence>
+            <element name="rstRowcount">
+                <annotation>
+                    <documentation>결과건수</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="long">
+                        <totalDigits value="5" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element maxOccurs="unbounded" name="rstList" type="tns:RST_LIST_TYPE">
+                <annotation>
+                    <documentation>결과리스트</documentation>
+                    <appinfo>
+                        <p:adjustLength category="variableField" lengthFieldURL="RST_ROWCOUNT" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                    </appinfo>
+                </annotation>
+            </element>
+        </sequence>
+    </complexType>
+    <complexType name="RST_LIST_TYPE">
+        <sequence>
             <element name="telno">
                 <annotation>
                     <documentation>전화번호</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -233,7 +267,7 @@
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -253,7 +287,7 @@
                     <appinfo>
                         <p:description value="전화구분코드" />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -273,7 +307,7 @@
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -293,7 +327,7 @@
                     <appinfo>
                         <p:description value="등록점코드" />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -313,7 +347,7 @@
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -333,7 +367,7 @@
                     <appinfo>
                         <p:description value="등록자ID" />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -353,7 +387,7 @@
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -373,7 +407,7 @@
                     <appinfo>
                         <p:description value="해지점코드" />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -393,7 +427,7 @@
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -413,7 +447,7 @@
                     <appinfo>
                         <p:description value="해지자ID" />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -433,7 +467,7 @@
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -453,7 +487,7 @@
                     <appinfo>
                         <p:description value="변경자ID" />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -473,7 +507,7 @@
                     <appinfo>
                         <p:description value="변경자ID" />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />

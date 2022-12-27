@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SUICISSCEE0010201" name="깡업체관리조회" version="3">
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SUICISSCEE0010201" name="깡업체관리조회" version="4">
     <common>
         <description><![CDATA[깡업체관리 조회]]></description>
         <system code="SUI" name="통합단말" />
