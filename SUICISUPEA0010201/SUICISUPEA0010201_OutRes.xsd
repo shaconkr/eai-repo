@@ -137,6 +137,26 @@
                     </restriction>
                 </simpleType>
             </element>
+            <element name="odueTotSumAmt">
+                <annotation>
+                    <documentation>연체총합계금액</documentation>
+                    <appinfo>
+                        <p:description value="연체금액의 총합" />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="long">
+                        <totalDigits value="19" />
+                    </restriction>
+                </simpleType>
+            </element>
             <element name="oduePrncAmt">
                 <annotation>
                     <documentation>연체원금금액</documentation>
@@ -182,6 +202,26 @@
                     <documentation>연체이자금액</documentation>
                     <appinfo>
                         <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="long">
+                        <totalDigits value="19" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="iamtTotSumAmt">
+                <annotation>
+                    <documentation>입금총합계금액</documentation>
+                    <appinfo>
+                        <p:description value="입금금액의 합산" />
                         <p:mandatory value="N" />
                         <p:level value="2" />
                         <p:encryption value="N" />
