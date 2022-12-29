@@ -97,9 +97,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="iamtPathCd">
+            <element name="crdIamtPathCd">
                 <annotation>
-                    <documentation>입금경로코드</documentation>
+                    <documentation>카드입금경로코드</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
@@ -113,7 +113,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="string">
-                        <maxLength value="1" />
+                        <maxLength value="5" />
                     </restriction>
                 </simpleType>
             </element>
@@ -153,13 +153,33 @@
                 </annotation>
                 <simpleType>
                     <restriction base="long">
-                        <totalDigits value="1" />
+                        <totalDigits value="15" />
                     </restriction>
                 </simpleType>
             </element>
             <element name="dsntIamtYn">
                 <annotation>
                     <documentation>지정입금여부</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="1" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="mDoRpymYn">
+                <annotation>
+                    <documentation>중도상환여부</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
@@ -194,6 +214,66 @@
                 <simpleType>
                     <restriction base="string">
                         <maxLength value="3" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="storeNm">
+                <annotation>
+                    <documentation>점명</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="100" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="dlineDt">
+                <annotation>
+                    <documentation>마감일자</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="8" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="athzStatCd">
+                <annotation>
+                    <documentation>결재상태코드</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="1" />
                     </restriction>
                 </simpleType>
             </element>
