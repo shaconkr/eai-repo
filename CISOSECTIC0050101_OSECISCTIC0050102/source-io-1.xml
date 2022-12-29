@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SOSECTIC0050102" idn="DEFT_OSE_E2501" version="2">
+    <common>
+        <io_name><![CDATA[온세통신가상전화번호등록송신 응답 소스 대외]]></io_name>
+        <!--I/O 명-->
+        <description />
+        <!--I/O 설명-->
+        <system code="OSE" name="온세통신" />
+        <!--시스템코드, 시스템명-->
+        <work code="DEFT" name="어플리케이션 Default 코드" />
+        <!--업무구분코드-->
+        <datetime>2022-12-29 10:10:40</datetime>
+        <!--작성 시간-->
+        <writer>하중구</writer>
+        <!--작성자-->
+        <charset>KSC5601</charset>
+        <!--캐릭터셋-->
+        <package_name />
+        <!--패키지경로-->
+        <class_name />
+        <!--클래스명-->
+        <sttl_yn>N</sttl_yn>
+        <!--표준전문여부-->
+    </common>
+    <process_type type="O" name="온라인">
+        <online>
+            <service_in />
+            <!--Input 거래 ID-->
+            <service_out />
+            <!--Output 거래 ID-->
+            <syn-asyn />
+            <!--동기 / 비동기 여부-->
+            <trncd_in />
+            <!--Input 거래 코드-->
+            <trncd_out />
+            <!--Output 거래 코드-->
+            <ext_inop code="2" />
+            <!--대내외 (일반/공유 I/O) 구분 코드 : 1 대내 (일반), 2 대외 (공유)-->
+            <external>
+                <system code="OSE" name="온세통신" />
+                <!--대외 기관 구분 코드-->
+                <work code="DEFT" name="대외 업무 기본값" />
+                <!--대외 업무 코드-->
+                <msg code="2501" />
+                <!--대외 전문 종별 코드-->
+                <tx />
+                <!--대외 거래 구분 코드-->
+                <etc />
+                <!--대외 기타 구분 코드-->
+                <inao code="2" />
+                <!--대내외 구간 코드 : 1 대내, 2 대외-->
+            </external>
+        </online>
+    </process_type>
+    <!--IO처리유형 : O - 온라인, D - DB, F - FILE, A - API-->
+    <inbound>
+        <message>
+            <io id="C00000000772" idn="DEFT_OSE_E2501" version="2" name="jmims.message.deft.ose.E2501" type="Message">
+                <common>
+                    <description />
+                    <system code="OSE" name="온세통신" />
+                    <!--시스템코드, 시스템명-->
+                    <work code="DEFT" name="어플리케이션 Default 코드" />
+                    <!--업무 구분 코드-->
+                    <datetime>2022-12-29 10:10:40</datetime>
+                    <!--작성 시간-->
+                    <writer>하중구</writer>
+                    <!--작성자-->
+                    <package_name />
+                    <!--패키지경로-->
+                    <class_name />
+                    <!--클래스명-->
+                    <sttl_yn>N</sttl_yn>
+                    <!--표준전문여부-->
+                </common>
+                <process_type>
+                    <online>
+                        <external>
+                            <system code="OSE" name="온세통신" />
+                            <!--대외 기관 코드, 대외 기관 명-->
+                            <work code="DEFT" name="대외 업무 기본값" />
+                            <!--대외 업무 코드-->
+                            <msg code="2501" />
+                            <!--대외 전문 종별 코드-->
+                            <tx />
+                            <!--대외 거래 구분 코드-->
+                            <etc />
+                            <!--대외 기타 구분코드-->
+                            <rspn />
+                            <!--대외 응답 코드-->
+                            <utrace />
+                            <!--고유 TraceKey-->
+                            <extwork />
+                            <!--Work 코드-->
+                            <error />
+                            <!--Error 코드-->
+                            <encoding style="KSC5601" />
+                            <!--Encoding-->
+                        </external>
+                    </online>
+                </process_type>
+            </io>
+        </message>
+        <header>
+            <io id="H00000000769" idn="DEFT_OSE_ECommHeader" version="3" name="jmims.header.deft.ose.ECommHeader" type="Header" squencename="header">
+                <common>
+                    <description><![CDATA[온세통신가상전화번호등록처리 결과를 요청하는 Header (ASIS:ah21lnc4_m, az88lnc0)]]></description>
+                    <system code="OSE" name="온세통신" />
+                    <!--시스템코드, 시스템명-->
+                    <work code="DEFT" name="어플리케이션 Default 코드" />
+                    <!--업무 구분 코드-->
+                    <datetime>2022-12-29 09:25:56</datetime>
+                    <!--작성 시간-->
+                    <writer>하중구</writer>
+                    <!--작성자-->
+                    <package_name>hdc.cis.ct.cti.ctic.onl.sc.io</package_name>
+                    <!--패키지경로-->
+                    <class_name>CrdSendVirtTelnoRegTrsHdr</class_name>
+                    <!--클래스명-->
+                    <sttl_yn>N</sttl_yn>
+                    <!--표준전문여부-->
+                </common>
+                <process_type>
+                    <online>
+                        <external>
+                            <system code="OSE" name="온세통신" />
+                            <!--대외 기관 코드, 대외 기관 명-->
+                            <work code="DEFT" name="대외 업무 기본값" />
+                            <!--대외 업무 코드-->
+                            <msg code="pacGbVal" />
+                            <!--대외 전문 종별 코드-->
+                            <tx />
+                            <!--대외 거래 구분 코드-->
+                            <etc />
+                            <!--대외 기타 구분코드-->
+                            <rspn code="procRstCd" />
+                            <!--대외 응답 코드-->
+                            <utrace />
+                            <!--고유 TraceKey-->
+                            <extwork />
+                            <!--Work 코드-->
+                            <error />
+                            <!--Error 코드-->
+                            <encoding />
+                            <!--Encoding-->
+                        </external>
+                    </online>
+                </process_type>
+            </io>
+            <io id="S00000000768" idn="DEFT_OSE_ECommHeader" name="jmims.entity.deft.ose.ECommHeader" version="3" type="Entity" squencename="entity1">
+                <common>
+                    <description><![CDATA[온세통신가상전화번호등록처리 결과를 요청하는 Header (ASIS:ah21lnc4_m, az88lnc0)]]></description>
+                    <system code="OSE" name="온세통신" />
+                    <!--시스템코드, 시스템명-->
+                    <work code="DEFT" name="어플리케이션 Default 코드" />
+                    <!--업무 구분 코드-->
+                    <datetime>2022-12-29 09:25:56</datetime>
+                    <!--작성 시간-->
+                    <writer>하중구</writer>
+                    <!--작성자-->
+                    <package_name>hdc.cis.ct.cti.ctic.onl.sc.io</package_name>
+                    <!--패키지경로-->
+                    <class_name>CrdSendVirtTelnoRegTrsHdr</class_name>
+                    <!--클래스명-->
+                    <sttl_yn>N</sttl_yn>
+                    <!--표준전문여부-->
+                </common>
+                <process_type>
+                    <online>
+                        <external>
+                            <system code="OSE" name="온세통신" />
+                            <!--대외 기관 코드, 대외 기관 명-->
+                            <work code="DEFT" name="대외 업무 기본값" />
+                            <!--대외 업무 코드-->
+                            <msg code="pacGbVal" />
+                            <!--대외 전문 종별 코드-->
+                            <tx />
+                            <!--대외 거래 구분 코드-->
+                            <etc />
+                            <!--대외 기타 구분코드-->
+                            <rspn code="procRstCd" />
+                            <!--대외 응답 코드-->
+                            <utrace />
+                            <!--고유 TraceKey-->
+                            <extwork />
+                            <!--Work 코드-->
+                            <error />
+                            <!--Error 코드-->
+                            <encoding />
+                            <!--Encoding-->
+                        </external>
+                    </online>
+                </process_type>
+                <data><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/" version="S00000000768.3">
+    <element name="root" type="tns:DEFT_OSE_ECommHeader_ENT_inbound" />
+    <complexType name="DEFT_OSE_ECommHeader_ENT_inbound">
+        <sequence>
+            <element name="strtGbVal">
+                <annotation>
+                    <documentation>시작구분값</documentation>
+                    <appinfo>
+                        <p:description value="#" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="1" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="pacGbVal">
+                <annotation>
+                    <documentation>패킷구분값</documentation>
+                    <appinfo>
+                        <p:description value="패킷 구분 값                                   (3501)" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="4" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="coCd">
+                <annotation>
+                    <documentation>회사코드</documentation>
+                    <appinfo>
+                        <p:description value="사업자 구분 코드 (온세가 사전에 할당 , 통보 )  (138)" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="3" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="bscmGbNo">
+                <annotation>
+                    <documentation>사업자구분번호</documentation>
+                    <appinfo>
+                        <p:description value="자체 시스템 구분 번호                          (001)" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="3" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="pacGbNo">
+                <annotation>
+                    <documentation>패킷구분번호</documentation>
+                    <appinfo>
+                        <p:description value="사업자 자체 패킷 구분 번호 (필요시 사용 )      (예:11281111001772576451)" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="Y" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="20" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="procRstCd">
+                <annotation>
+                    <documentation>처리결과코드</documentation>
+                    <appinfo>
+                        <p:description value="성공:00,실패:01~99" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="2" />
+                    </restriction>
+                </simpleType>
+            </element>
+        </sequence>
+    </complexType>
+</schema>]]></data>
+            </io>
+        </header>
+        <unit>
+            <io id="S00000000770" idn="DEFT_OSE_E2501" name="jmims.entity.deft.ose.E2501" version="5" type="Entity" squencename="entity">
+                <common>
+                    <description><![CDATA[온세통신가상전화번호등록처리 결과를 요청하는 Body (ASIS:ah21lnc4_m, az88lnc0)]]></description>
+                    <system code="OSE" name="온세통신" />
+                    <!--시스템코드, 시스템명-->
+                    <work code="DEFT" name="어플리케이션 Default 코드" />
+                    <!--업무 구분 코드-->
+                    <datetime>2022-12-29 09:45:59</datetime>
+                    <!--작성 시간-->
+                    <writer>하중구</writer>
+                    <!--작성자-->
+                    <package_name>hdc.cis.ct.cti.ctic.onl.sc.io</package_name>
+                    <!--패키지경로-->
+                    <class_name>CrdSendVirtTelnoRegTrsMain</class_name>
+                    <!--클래스명-->
+                    <sttl_yn>N</sttl_yn>
+                    <!--표준전문여부-->
+                </common>
+                <process_type>
+                    <online>
+                        <external>
+                            <system code="OSE" name="온세통신" />
+                            <!--대외 기관 코드, 대외 기관 명-->
+                            <work code="DEFT" name="대외 업무 기본값" />
+                            <!--대외 업무 코드-->
+                            <msg code="2501" />
+                            <!--대외 전문 종별 코드-->
+                            <tx />
+                            <!--대외 거래 구분 코드-->
+                            <etc />
+                            <!--대외 기타 구분코드-->
+                            <rspn />
+                            <!--대외 응답 코드-->
+                            <utrace />
+                            <!--고유 TraceKey-->
+                            <extwork />
+                            <!--Work 코드-->
+                            <error />
+                            <!--Error 코드-->
+                            <encoding />
+                            <!--Encoding-->
+                        </external>
+                    </online>
+                </process_type>
+                <data><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/" version="S00000000770.5">
+    <element name="root" type="tns:DEFT_OSE_E2501_ENT_inbound" />
+    <complexType name="DEFT_OSE_E2501_ENT_inbound">
+        <sequence>
+            <element name="procMthdCd">
+                <annotation>
+                    <documentation>처리방법코드</documentation>
+                    <appinfo>
+                        <p:description value="0504 번호 할당 방식 구분 ( 1 로 고정 )&#xA;1:사업자할당후 번호리턴,2:서버에서 할당후 번호리턴-미적용" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="Y" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="1" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="virtTelno1">
+                <annotation>
+                    <documentation>가상전화번호1</documentation>
+                    <appinfo>
+                        <p:description value="0504 가상 번호 ( 11~12자리 )                  (예:05075905276)" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="Y" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="15" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="telno11">
+                <annotation>
+                    <documentation>전화번호11</documentation>
+                    <appinfo>
+                        <p:description value="사용자 번호 1(12 자리이하)" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="15" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="telno12">
+                <annotation>
+                    <documentation>전화번호12</documentation>
+                    <appinfo>
+                        <p:description value="사용자 번호 2(12 자리이하)" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="15" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="virtTelno2">
+                <annotation>
+                    <documentation>가상전화번호2</documentation>
+                    <appinfo>
+                        <p:description value="0504 가상 번호 ( 11~12자리 )&#xA;안심번호간 상호 통화 방식인 경우 사용&#xA;(일반 안심번호 방식인 경우 공백 )" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="15" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="telno21">
+                <annotation>
+                    <documentation>전화번호21</documentation>
+                    <appinfo>
+                        <p:description value="사용자 번호 1(12 자리이하 자리이하 )&#xA;(일반 안심번호 방식인 경우 공백 )" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="15" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="telno22">
+                <annotation>
+                    <documentation>전화번호22</documentation>
+                    <appinfo>
+                        <p:description value="사용자 번호 2(12 자리이하 자리이하 )&#xA;(일반 안심번호 방식인 경우 공백 )" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="15" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="useStatGbcd">
+                <annotation>
+                    <documentation>사용상태구분코드</documentation>
+                    <appinfo>
+                        <p:description value="사용상태구분 (1 로 고정)                      (1)" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="1" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="endGbVal">
+                <annotation>
+                    <documentation>종료구분값</documentation>
+                    <appinfo>
+                        <p:description value="$" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="1" />
+                    </restriction>
+                </simpleType>
+            </element>
+        </sequence>
+    </complexType>
+</schema>]]></data>
+            </io>
+        </unit>
+    </inbound>
+    <outbound>
+        <message />
+        <header />
+        <unit />
+    </outbound>
+</io>
