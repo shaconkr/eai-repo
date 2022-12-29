@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="outbound" id="SUICISCTRA0010101" version="2" />
+    <src_io id="SSUICTRA0010101" />
+    <target_io id="TCISCTRA0010101" />
+    <mapping>
+        <source path="entity/QRY_ROWCOUNT" />
+        <target path="entity/QRY_ROWCOUNT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/QRY_LIST/RCRT_FORM_CD" />
+        <target path="entity/QRY_LIST/RCRT_FORM_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/QRY_LIST/CRSP_MM" />
+        <target path="entity/QRY_LIST/CRSP_MM" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/QRY_LIST/GOAL_MEM_CNT" />
+        <target path="entity/QRY_LIST/GOAL_MEM_CNT" />
+        <function ref="move" />
+    </mapping>
+</map>
