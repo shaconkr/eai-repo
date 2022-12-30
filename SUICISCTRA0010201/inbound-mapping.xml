@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="inbound" id="SUICISCTRA0010201" version="2" />
+    <src_io id="SSUICTRA0010201" />
+    <target_io id="TCISCTRA0010201" />
+    <mapping>
+        <source path="entity/RCRT_YR" />
+        <target path="entity/RCRT_YR" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/STORE_CD" />
+        <target path="entity/STORE_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RCRT_FORM_CD" />
+        <target path="entity/RCRT_FORM_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/CRSP_MM" />
+        <target path="entity/CRSP_MM" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/GOAL_MEM_CNT" />
+        <target path="entity/GOAL_MEM_CNT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RCRT_PROC_STAT_CD" />
+        <target path="entity/RCRT_PROC_STAT_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/FAML_GOAL_MEM_CNT" />
+        <target path="entity/FAML_GOAL_MEM_CNT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/CNFM_MEM_CNT" />
+        <target path="entity/CNFM_MEM_CNT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/UTLZ_MEM_CNT" />
+        <target path="entity/UTLZ_MEM_CNT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/REG_ID" />
+        <target path="entity/REG_ID" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/REG_DTM" />
+        <target path="entity/REG_DTM" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/REG_PRG_ID" />
+        <target path="entity/REG_PRG_ID" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/CHG_DTM" />
+        <target path="entity/CHG_DTM" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/CHG_ID" />
+        <target path="entity/CHG_ID" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/CHG_PRG_ID" />
+        <target path="entity/CHG_PRG_ID" />
+        <function ref="move" />
+    </mapping>
+</map>
