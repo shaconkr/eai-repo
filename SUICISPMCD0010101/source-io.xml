@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SSUIPMCD0010101" version="2">
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SSUIPMCD0010101" version="3">
     <common>
         <io_name><![CDATA[입금정정대상조회]]></io_name>
         <!--I/O 명-->
@@ -293,9 +293,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="mrcvSeq">
+            <element name="crdMrcvSeq">
                 <annotation>
-                    <documentation>수납순번</documentation>
+                    <documentation>카드수납순번</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
@@ -309,7 +309,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="string">
-                        <maxLength value="8" />
+                        <maxLength value="4" />
                     </restriction>
                 </simpleType>
             </element>
@@ -333,6 +333,26 @@
                     </restriction>
                 </simpleType>
             </element>
+            <element name="crdIamtPathNm">
+                <annotation>
+                    <documentation>카드입금경로명</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="100" />
+                    </restriction>
+                </simpleType>
+            </element>
             <element name="iamtDt">
                 <annotation>
                     <documentation>입금일자</documentation>
@@ -353,9 +373,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="iamtAmt">
+            <element name="realIamtAmt">
                 <annotation>
-                    <documentation>입금금액</documentation>
+                    <documentation>실입금금액</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
@@ -369,7 +389,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="long">
-                        <totalDigits value="15" />
+                        <totalDigits value="19" />
                     </restriction>
                 </simpleType>
             </element>
