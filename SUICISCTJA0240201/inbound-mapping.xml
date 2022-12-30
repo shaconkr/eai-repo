@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="inbound" id="SUICISCTJA0240201" version="1" />
+    <interface bound="inbound" id="SUICISCTJA0240201" version="2" />
     <src_io id="SSUICTJA0240201" />
     <target_io id="TCISCTJA0240201" />
     <mapping>
         <source path="entity/SEND_DTL_ROWCOUNT" />
         <target path="entity/SEND_DTL_ROWCOUNT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/SEND_DTL_LIST/IUD_FLAG_VAL" />
+        <target path="entity/SEND_DTL_LIST/IUD_FLAG_VAL" />
         <function ref="move" />
     </mapping>
     <mapping>
