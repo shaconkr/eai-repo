@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SSUICTRA0010101" version="1">
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SSUICTRA0010101" version="2">
     <common>
-        <io_name><![CDATA[모집계획등록]]></io_name>
+        <io_name><![CDATA[모집계획목록조회]]></io_name>
         <!--I/O 명-->
         <description />
         <!--I/O 설명-->
@@ -30,7 +30,7 @@
             <!--Output 거래 ID-->
             <syn-asyn code="1" name="동기" />
             <!--동기 / 비동기 여부-->
-            <bizhub code="000" name="고객X 마케팅X" />
+            <bizhub />
             <!--비즈허브 접촉정보거래종류-->
             <trncd_in />
             <!--Input 거래 코드-->
@@ -91,13 +91,25 @@
     <element name="root" type="tns:SSUICTRA0010101_inbound" />
     <complexType name="SSUICTRA0010101_inbound">
         <sequence>
+            <element maxOccurs="1" minOccurs="1" name="srchGroup" type="tns:SRCH_GROUP_TYPE">
+                <annotation>
+                    <documentation>검색그룹</documentation>
+                    <appinfo>
+                        <p:level value="1" />
+                    </appinfo>
+                </annotation>
+            </element>
+        </sequence>
+    </complexType>
+    <complexType name="SRCH_GROUP_TYPE">
+        <sequence>
             <element name="rcrtYr">
                 <annotation>
                     <documentation>모집년도</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -117,7 +129,7 @@
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
