@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TCISCTIC0050102" idn="DEFT_OSE_H2501" version="1">
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TCISCTIC0050102" idn="DEFT_OSE_H2501" version="3">
     <common>
         <io_name><![CDATA[온세통신가상전화번호등록송신 응답 타겟 대내]]></io_name>
         <!--I/O 명-->
@@ -17,7 +17,7 @@
         <!--캐릭터셋-->
         <package_name>hdc.cis.ct.cti.ctic.onl.sc.io</package_name>
         <!--패키지경로-->
-        <class_name>CrdSendVirtTelnoRegTrsResp</class_name>
+        <class_name>CrdSendVirtTelnoRegRcv</class_name>
         <!--클래스명-->
         <sttl_yn>Y</sttl_yn>
         <!--표준전문여부-->
@@ -55,7 +55,7 @@
     <!--IO처리유형 : O - 온라인, D - DB, F - FILE, A - API-->
     <inbound>
         <message>
-            <io id="C00000000785" idn="DEFT_OSE_H2501" version="1" name="jmims.message.deft.ose.H2501" type="Message">
+            <io id="C00000000785" idn="DEFT_OSE_H2501" version="3" name="jmims.message.deft.ose.H2501" type="Message">
                 <common>
                     <description />
                     <system code="CIS" name="H-CIS" />

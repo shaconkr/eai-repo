@@ -106,7 +106,7 @@
     </common>
     <interface_type>
         <source>
-            <ioid version="2">SCISCTIC0050101</ioid>
+            <ioid version="8">SCISCTIC0050101</ioid>
             <!--소스 I/O ID-->
             <ioidn>DEFT_OSE_H2501</ioidn>
             <!--소스 관리 I/O ID-->
@@ -164,7 +164,7 @@
             </process_type>
         </source>
         <target>
-            <ioid version="4">TOSECTIC0050101</ioid>
+            <ioid version="10">TOSECTIC0050101</ioid>
             <!--타겟 I/O ID-->
             <ioidn>DEFT_OSE_E2501</ioidn>
             <!--타겟 관리 I/O ID-->
