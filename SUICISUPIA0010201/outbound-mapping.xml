@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="outbound" id="SUICISUPIA0010201" version="1" />
+    <src_io id="SSUIUPIA0010201" />
+    <target_io id="TCISUPIA0010201" />
+    <mapping>
+        <source path="entity/ASGNR_APTM_BSIC_LST_ROWCOUNT" />
+        <target path="entity/ASGNR_APTM_BSIC_LST_ROWCOUNT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/ASGNR_APTM_BSIC_LST_LIST/ASGNR_ID" />
+        <target path="entity/ASGNR_APTM_BSIC_LST_LIST/ASGNR_ID" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/ASGNR_APTM_BSIC_LST_LIST/EMP_NM" />
+        <target path="entity/ASGNR_APTM_BSIC_LST_LIST/EMP_NM" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/ASGNR_APTM_BSIC_LST_LIST/ODUE_MNG_AREA_CD" />
+        <target path="entity/ASGNR_APTM_BSIC_LST_LIST/ODUE_MNG_AREA_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/ASGNR_APTM_BSIC_LST_LIST/APTM_CD" />
+        <target path="entity/ASGNR_APTM_BSIC_LST_LIST/APTM_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/ASGNR_APTM_BSIC_LST_LIST/CPLV_VAL" />
+        <target path="entity/ASGNR_APTM_BSIC_LST_LIST/CPLV_VAL" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/ASGNR_APTM_BSIC_LST_LIST/ASGNR_ABLT_ADDV" />
+        <target path="entity/ASGNR_APTM_BSIC_LST_LIST/ASGNR_ABLT_ADDV" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/ASGNR_APTM_BSIC_LST_LIST/DRMN_YN" />
+        <target path="entity/ASGNR_APTM_BSIC_LST_LIST/DRMN_YN" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/ASGNR_APTM_BSIC_LST_LIST/APLY_YN" />
+        <target path="entity/ASGNR_APTM_BSIC_LST_LIST/APLY_YN" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/ASGNR_APTM_BSIC_LST_LIST/APTM_STRT_ODUE_AMT" />
+        <target path="entity/ASGNR_APTM_BSIC_LST_LIST/APTM_STRT_ODUE_AMT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/ASGNR_APTM_BSIC_LST_LIST/APTM_END_ODUE_AMT" />
+        <target path="entity/ASGNR_APTM_BSIC_LST_LIST/APTM_END_ODUE_AMT" />
+        <function ref="move" />
+    </mapping>
+</map>
