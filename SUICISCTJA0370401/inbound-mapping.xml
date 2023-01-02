@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="inbound" id="SUICISCTJA0370401" version="1" />
+    <src_io id="SSUICTJA0370401" />
+    <target_io id="TCISCTJA0370401" />
+    <mapping>
+        <source path="entity/STORE_CD" />
+        <target path="entity/STORE_CD" />
+        <function ref="move" />
+    </mapping>
+</map>
