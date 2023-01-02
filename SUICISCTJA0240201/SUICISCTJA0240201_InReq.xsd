@@ -37,26 +37,6 @@
     </complexType>
     <complexType name="SEND_DTL_LIST_TYPE">
         <sequence>
-            <element name="iudFlagVal">
-                <annotation>
-                    <documentation>신규수정삭제플래그값</documentation>
-                    <appinfo>
-                        <p:description />
-                        <p:mandatory value="N" />
-                        <p:level value="2" />
-                        <p:encryption value="N" />
-                        <p:one_path_encp value="N" />
-                        <p:mask_type />
-                        <p:db_key value="N" />
-                        <p:krn_fld_yn value="N" />
-                    </appinfo>
-                </annotation>
-                <simpleType>
-                    <restriction base="string">
-                        <maxLength value="1" />
-                    </restriction>
-                </simpleType>
-            </element>
             <element name="sendGb">
                 <annotation>
                     <documentation>발송구분</documentation>

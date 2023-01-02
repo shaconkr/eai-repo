@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SUICISCTJA0240201" name="금융 소비자 법 계약서 설명서 LMS 전송 처리" version="2">
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SUICISCTJA0240201" name="금융 소비자 법 계약서 설명서 LMS 전송 처리" version="4">
     <common>
         <description><![CDATA[금융 소비자 법 계약서 설명서 LMS 전송 처리]]></description>
         <system code="SUI" name="통합단말" />

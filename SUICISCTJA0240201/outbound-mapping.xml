@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="outbound" id="SUICISCTJA0240201" version="2" />
+    <interface bound="outbound" id="SUICISCTJA0240201" version="4" />
     <src_io id="SSUICTJA0240201" />
     <target_io id="TCISCTJA0240201" />
     <mapping>
@@ -11,6 +11,11 @@
     <mapping>
         <source path="entity/SEND_DTL_LIST/PROC_RST_CD" />
         <target path="entity/SEND_DTL_LIST/PROC_RST_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/SEND_DTL_LIST/CRD_MEM_NO" />
+        <target path="entity/SEND_DTL_LIST/CRD_MEM_NO" />
         <function ref="move" />
     </mapping>
 </map>
