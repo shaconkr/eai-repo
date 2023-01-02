@@ -33,66 +33,6 @@
                     </appinfo>
                 </annotation>
             </element>
-            <element name="acptStoreCd">
-                <annotation>
-                    <documentation>접수점코드</documentation>
-                    <appinfo>
-                        <p:description />
-                        <p:mandatory value="N" />
-                        <p:level value="1" />
-                        <p:encryption value="N" />
-                        <p:one_path_encp value="N" />
-                        <p:mask_type />
-                        <p:db_key value="N" />
-                        <p:krn_fld_yn value="N" />
-                    </appinfo>
-                </annotation>
-                <simpleType>
-                    <restriction base="string">
-                        <maxLength value="3" />
-                    </restriction>
-                </simpleType>
-            </element>
-            <element name="crdAcptDt">
-                <annotation>
-                    <documentation>카드접수일자</documentation>
-                    <appinfo>
-                        <p:description />
-                        <p:mandatory value="N" />
-                        <p:level value="1" />
-                        <p:encryption value="N" />
-                        <p:one_path_encp value="N" />
-                        <p:mask_type />
-                        <p:db_key value="N" />
-                        <p:krn_fld_yn value="N" />
-                    </appinfo>
-                </annotation>
-                <simpleType>
-                    <restriction base="string">
-                        <maxLength value="8" />
-                    </restriction>
-                </simpleType>
-            </element>
-            <element name="crdAcptNo">
-                <annotation>
-                    <documentation>카드접수번호</documentation>
-                    <appinfo>
-                        <p:description />
-                        <p:mandatory value="N" />
-                        <p:level value="1" />
-                        <p:encryption value="N" />
-                        <p:one_path_encp value="N" />
-                        <p:mask_type />
-                        <p:db_key value="N" />
-                        <p:krn_fld_yn value="N" />
-                    </appinfo>
-                </annotation>
-                <simpleType>
-                    <restriction base="string">
-                        <maxLength value="6" />
-                    </restriction>
-                </simpleType>
-            </element>
         </sequence>
     </complexType>
     <complexType name="QRY_LIST_TYPE">
@@ -174,6 +114,66 @@
                 <simpleType>
                     <restriction base="string">
                         <maxLength value="16" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="acptStoreCd">
+                <annotation>
+                    <documentation>접수점코드</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="3" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="crdAcptDt">
+                <annotation>
+                    <documentation>카드접수일자</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="8" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="crdAcptNo">
+                <annotation>
+                    <documentation>카드접수번호</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="6" />
                     </restriction>
                 </simpleType>
             </element>

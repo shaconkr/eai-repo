@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<deployment id="D00000000742">
+<deployment id="D00000000748">
     <deployer id="CIS018">송규택</deployer>
-    <deployment_date>2023-01-02 13:49:49.189618</deployment_date>
+    <deployment_date>2023-01-02 13:57:13.794911</deployment_date>
     <target_system id="EAI_D_01">EAI 대내</target_system>
 </deployment>
