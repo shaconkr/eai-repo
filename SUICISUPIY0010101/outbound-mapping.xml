@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="outbound" id="SUICISUPIY0010101" version="1" />
+    <interface bound="outbound" id="SUICISUPIY0010101" version="2" />
     <src_io id="SSUIUPIY0010101" />
     <target_io id="TCISUPIY0010101" />
     <mapping>
@@ -16,6 +16,11 @@
     <mapping>
         <source path="entity/ODUE_INTL_LST_LIST/EMP_NM" />
         <target path="entity/ODUE_INTL_LST_LIST/EMP_NM" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/ODUE_INTL_LST_LIST/ODUE_MNG_AREA_CD" />
+        <target path="entity/ODUE_INTL_LST_LIST/ODUE_MNG_AREA_CD" />
         <function ref="move" />
     </mapping>
     <mapping>
