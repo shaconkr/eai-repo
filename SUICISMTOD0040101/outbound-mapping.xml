@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="outbound" id="SUICISMTOD0040101" version="3" />
+    <src_io id="SSUIMTOD0040101" />
+    <target_io id="TCISMTOD0040101" />
+    <mapping>
+        <source path="entity/STORE_CD" />
+        <target path="entity/STORE_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/CHR_CRDC_CD" />
+        <target path="entity/CHR_CRDC_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/SALE_DT" />
+        <target path="entity/SALE_DT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/SALE_POS_NO" />
+        <target path="entity/SALE_POS_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/SALE_RCEIT_NO" />
+        <target path="entity/SALE_RCEIT_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/OTCO_CRD_NO" />
+        <target path="entity/OTCO_CRD_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/OTCO_CRD_APRVL_NO" />
+        <target path="entity/OTCO_CRD_APRVL_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/CRD_INSM_MTHS" />
+        <target path="entity/CRD_INSM_MTHS" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/NSALE_AMT" />
+        <target path="entity/NSALE_AMT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/CRDC_CD" />
+        <target path="entity/CRDC_CD" />
+        <function ref="move" />
+    </mapping>
+</map>
