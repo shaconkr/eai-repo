@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="inbound" id="SUICISCTCF0011403" version="1" />
+    <src_io id="SSUICTCF0011403" />
+    <target_io id="TCISCTCF0011403" />
+    <mapping>
+        <source path="entity/SEARCH_GROUP/CUST_NO" />
+        <target path="entity/SEARCH_GROUP/CUST_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/SEARCH_GROUP/SELF_MEM_NO" />
+        <target path="entity/SEARCH_GROUP/SELF_MEM_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/SEARCH_GROUP/BL_CD" />
+        <target path="entity/SEARCH_GROUP/BL_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/SEARCH_GROUP/LSTNG_STORE_CD" />
+        <target path="entity/SEARCH_GROUP/LSTNG_STORE_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/SEARCH_GROUP/BL_TSK_GBCD" />
+        <target path="entity/SEARCH_GROUP/BL_TSK_GBCD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/SEARCH_GROUP/BL_TYPE_CD" />
+        <target path="entity/SEARCH_GROUP/BL_TYPE_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/SEARCH_GROUP/REG_DTM1" />
+        <target path="entity/SEARCH_GROUP/REG_DTM1" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/SEARCH_GROUP/REG_DTM2" />
+        <target path="entity/SEARCH_GROUP/REG_DTM2" />
+        <function ref="move" />
+    </mapping>
+</map>
