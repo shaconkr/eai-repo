@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TCISCTJA0230201" version="2">
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TCISCTJA0230201" version="3">
     <common>
         <io_name><![CDATA[신청서 적합성 확인 정보 저장 타겟 IO]]></io_name>
         <!--I/O 명-->
@@ -91,47 +91,13 @@
     <element name="root" type="tns:TCISCTJA0230201_inbound" />
     <complexType name="TCISCTJA0230201_inbound">
         <sequence>
-            <element name="reqnRowcount">
-                <annotation>
-                    <documentation>요청건수</documentation>
-                    <appinfo>
-                        <p:description />
-                        <p:mandatory value="N" />
-                        <p:level value="1" />
-                        <p:encryption value="N" />
-                        <p:one_path_encp value="N" />
-                        <p:mask_type />
-                        <p:db_key value="N" />
-                        <p:krn_fld_yn value="N" />
-                    </appinfo>
-                </annotation>
-                <simpleType>
-                    <restriction base="long">
-                        <totalDigits value="5" />
-                    </restriction>
-                </simpleType>
-            </element>
-            <element maxOccurs="unbounded" name="reqnList" type="tns:REQN_LIST_TYPE">
-                <annotation>
-                    <documentation>요청내역</documentation>
-                    <appinfo>
-                        <p:adjustLength category="variableField" lengthFieldURL="REQN_ROWCOUNT" />
-                        <p:mandatory value="N" />
-                        <p:level value="1" />
-                    </appinfo>
-                </annotation>
-            </element>
-        </sequence>
-    </complexType>
-    <complexType name="REQN_LIST_TYPE">
-        <sequence>
             <element name="acptStoreCd">
                 <annotation>
                     <documentation>접수점코드</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="2" />
+                        <p:level value="1" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -151,7 +117,7 @@
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="2" />
+                        <p:level value="1" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -171,7 +137,7 @@
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="2" />
+                        <p:level value="1" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -191,7 +157,7 @@
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="2" />
+                        <p:level value="1" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -211,7 +177,7 @@
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="2" />
+                        <p:level value="1" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -231,7 +197,7 @@
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="2" />
+                        <p:level value="1" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -251,7 +217,7 @@
                     <appinfo>
                         <p:description value="금소법 설명서 발송 여부" />
                         <p:mandatory value="N" />
-                        <p:level value="2" />
+                        <p:level value="1" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -271,7 +237,7 @@
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="2" />
+                        <p:level value="1" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -291,7 +257,7 @@
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="2" />
+                        <p:level value="1" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -341,47 +307,13 @@
     <element name="root" type="tns:TCISCTJA0230201_outbound" />
     <complexType name="TCISCTJA0230201_outbound">
         <sequence>
-            <element name="reqnRowcount">
-                <annotation>
-                    <documentation>요청건수</documentation>
-                    <appinfo>
-                        <p:description />
-                        <p:mandatory value="N" />
-                        <p:level value="1" />
-                        <p:encryption value="N" />
-                        <p:one_path_encp value="N" />
-                        <p:mask_type />
-                        <p:db_key value="N" />
-                        <p:krn_fld_yn value="N" />
-                    </appinfo>
-                </annotation>
-                <simpleType>
-                    <restriction base="long">
-                        <totalDigits value="5" />
-                    </restriction>
-                </simpleType>
-            </element>
-            <element maxOccurs="unbounded" name="reqnList" type="tns:REQN_LIST_TYPE">
-                <annotation>
-                    <documentation>요청내역</documentation>
-                    <appinfo>
-                        <p:adjustLength category="variableField" lengthFieldURL="REQN_ROWCOUNT" />
-                        <p:mandatory value="N" />
-                        <p:level value="1" />
-                    </appinfo>
-                </annotation>
-            </element>
-        </sequence>
-    </complexType>
-    <complexType name="REQN_LIST_TYPE">
-        <sequence>
             <element name="acptStoreCd">
                 <annotation>
                     <documentation>접수점코드</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="2" />
+                        <p:level value="1" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -401,7 +333,7 @@
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="2" />
+                        <p:level value="1" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -421,7 +353,7 @@
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="2" />
+                        <p:level value="1" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -441,7 +373,7 @@
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="2" />
+                        <p:level value="1" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -461,7 +393,7 @@
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="2" />
+                        <p:level value="1" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -481,7 +413,7 @@
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="2" />
+                        <p:level value="1" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -501,7 +433,7 @@
                     <appinfo>
                         <p:description value="금소법 설명서 발송 여부" />
                         <p:mandatory value="N" />
-                        <p:level value="2" />
+                        <p:level value="1" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -521,7 +453,7 @@
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="2" />
+                        <p:level value="1" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -541,7 +473,7 @@
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="2" />
+                        <p:level value="1" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
