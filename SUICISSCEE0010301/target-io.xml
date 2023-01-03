@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TCISSCEE0010301" version="2">
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TCISSCEE0010301" version="3">
     <common>
         <io_name><![CDATA[깡업체관리등록]]></io_name>
         <!--I/O 명-->
@@ -91,7 +91,7 @@
     <element name="root" type="tns:TCISSCEE0010301_inbound" />
     <complexType name="TCISSCEE0010301_inbound">
         <sequence>
-            <element maxOccurs="1" minOccurs="1" name="srchGroup" type="tns:SRCH_GROUP_TYPE">
+            <element maxOccurs="1" minOccurs="1" name="regGroup" type="tns:REG_GROUP_TYPE">
                 <annotation>
                     <documentation>등록그룹</documentation>
                     <appinfo>
@@ -101,7 +101,7 @@
             </element>
         </sequence>
     </complexType>
-    <complexType name="SRCH_GROUP_TYPE">
+    <complexType name="REG_GROUP_TYPE">
         <sequence>
             <element name="dicoNm">
                 <annotation>
