@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="outbound" id="SUICISMTOD0040101" version="7" />
+    <interface bound="outbound" id="SUICISMTOD0040101" version="8" />
     <src_io id="SSUIMTOD0040101" />
     <target_io id="TCISMTOD0040101" />
-    <mapping>
-        <source path="entity/CNT" />
-        <target path="entity/CNT" />
-        <function ref="move" />
-    </mapping>
     <mapping>
         <source path="entity/GRID_ROWCOUNT" />
         <target path="entity/GRID_ROWCOUNT" />
@@ -61,11 +56,6 @@
     <mapping>
         <source path="entity/GRID_LIST/CRDC_CD" />
         <target path="entity/GRID_LIST/CRDC_CD" />
-        <function ref="move" />
-    </mapping>
-    <mapping>
-        <source path="entity/GRID_LIST/STORE_NM" />
-        <target path="entity/GRID_LIST/STORE_NM" />
         <function ref="move" />
     </mapping>
 </map>
