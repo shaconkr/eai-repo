@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SSUIMTOD0040101" version="6">
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SSUIMTOD0040101" version="7">
     <common>
         <io_name><![CDATA[타사카드사별포인트사용내역및매출]]></io_name>
         <!--I/O 명-->
@@ -199,6 +199,26 @@
     <element name="root" type="tns:SSUIMTOD0040101_outbound" />
     <complexType name="SSUIMTOD0040101_outbound">
         <sequence>
+            <element name="cnt">
+                <annotation>
+                    <documentation>건수</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="long">
+                        <totalDigits value="1" />
+                    </restriction>
+                </simpleType>
+            </element>
             <element name="gridRowcount">
                 <annotation>
                     <documentation>그리드건수</documentation>

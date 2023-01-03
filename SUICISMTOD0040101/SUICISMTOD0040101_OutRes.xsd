@@ -3,6 +3,26 @@
     <element name="root" type="tns:TCISMTOD0040101_outbound" />
     <complexType name="TCISMTOD0040101_outbound">
         <sequence>
+            <element name="cnt">
+                <annotation>
+                    <documentation>건수</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="long">
+                        <totalDigits value="1" />
+                    </restriction>
+                </simpleType>
+            </element>
             <element name="gridRowcount">
                 <annotation>
                     <documentation>그리드건수</documentation>
