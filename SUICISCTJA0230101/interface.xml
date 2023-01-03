@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SUICISCTJA0230101" name="신청서 적합성 설명서 전송 처리 정보 조회" version="1">
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SUICISCTJA0230101" name="신청서 적합성 설명서 전송 처리 정보 조회" version="2">
     <common>
         <description />
         <system code="SUI" name="통합단말" />
