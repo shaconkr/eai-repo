@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SSUIMTOD0040101" version="2">
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SSUIMTOD0040101" version="4">
     <common>
         <io_name><![CDATA[타사카드사별포인트사용내역및매출]]></io_name>
         <!--I/O 명-->
@@ -91,13 +91,25 @@
     <element name="root" type="tns:SSUIMTOD0040101_inbound" />
     <complexType name="SSUIMTOD0040101_inbound">
         <sequence>
+            <element maxOccurs="1" minOccurs="1" name="srchGroup" type="tns:SRCH_GROUP_TYPE">
+                <annotation>
+                    <documentation>검색그룹</documentation>
+                    <appinfo>
+                        <p:level value="1" />
+                    </appinfo>
+                </annotation>
+            </element>
+        </sequence>
+    </complexType>
+    <complexType name="SRCH_GROUP_TYPE">
+        <sequence>
             <element name="storeCd">
                 <annotation>
                     <documentation>점코드</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -117,7 +129,7 @@
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -137,7 +149,7 @@
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -187,13 +199,47 @@
     <element name="root" type="tns:SSUIMTOD0040101_outbound" />
     <complexType name="SSUIMTOD0040101_outbound">
         <sequence>
+            <element name="gridRowcount">
+                <annotation>
+                    <documentation>그리드건수</documentation>
+                    <appinfo>
+                        <p:description value="그리드 건수" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="long">
+                        <totalDigits value="5" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element maxOccurs="unbounded" name="gridList" type="tns:GRID_LIST_TYPE">
+                <annotation>
+                    <documentation>그리드목록</documentation>
+                    <appinfo>
+                        <p:adjustLength category="variableField" lengthFieldURL="GRID_ROWCOUNT" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                    </appinfo>
+                </annotation>
+            </element>
+        </sequence>
+    </complexType>
+    <complexType name="GRID_LIST_TYPE">
+        <sequence>
             <element name="storeCd">
                 <annotation>
                     <documentation>점코드</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -213,7 +259,7 @@
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -233,7 +279,7 @@
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -253,7 +299,7 @@
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -273,7 +319,7 @@
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -293,7 +339,7 @@
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -313,7 +359,7 @@
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -333,7 +379,7 @@
                     <appinfo>
                         <p:description value="카드 할부개월수" />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -353,7 +399,7 @@
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -373,7 +419,7 @@
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
