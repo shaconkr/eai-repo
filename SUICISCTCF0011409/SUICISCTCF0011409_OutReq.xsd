@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/">
+    <element name="root" type="tns:TCISCTCF0011409_inbound" />
+    <complexType name="TCISCTCF0011409_inbound">
+        <sequence>
+            <element maxOccurs="1" minOccurs="1" name="searchGroup" type="tns:SEARCH_GROUP_TYPE">
+                <annotation>
+                    <documentation>검색_그룹</documentation>
+                    <appinfo>
+                        <p:level value="1" />
+                    </appinfo>
+                </annotation>
+            </element>
+        </sequence>
+    </complexType>
+    <complexType name="SEARCH_GROUP_TYPE">
+        <sequence>
+            <element name="memIdntNo">
+                <annotation>
+                    <documentation>회원식별번호</documentation>
+                    <appinfo>
+                        <p:description value="개인일 경우 주민번호, 법인일 경우 사업자번호 등록한다." />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="Y" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="13" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="custNo">
+                <annotation>
+                    <documentation>고객번호</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="long">
+                        <totalDigits value="1" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="blCd">
+                <annotation>
+                    <documentation>BL코드</documentation>
+                    <appinfo>
+                        <p:description value="BLACK LIST고객이나 카드를 관리한다." />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="5" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="lstngStoreCd">
+                <annotation>
+                    <documentation>등재점코드</documentation>
+                    <appinfo>
+                        <p:description value="등재점코드" />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="3" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="blTskGbcd">
+                <annotation>
+                    <documentation>BL업무구분코드</documentation>
+                    <appinfo>
+                        <p:description value="BL코드(업무별 관리)" />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="1" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="blTypeCd">
+                <annotation>
+                    <documentation>BL유형코드</documentation>
+                    <appinfo>
+                        <p:description value="BL등록하는 유형을 관리한다." />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="2" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="selfCrdMemNo">
+                <annotation>
+                    <documentation>본인카드회원번호</documentation>
+                    <appinfo>
+                        <p:description value="카드정보 관리 본인회원 본호 추가" />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="9" />
+                    </restriction>
+                </simpleType>
+            </element>
+        </sequence>
+    </complexType>
+</schema>
