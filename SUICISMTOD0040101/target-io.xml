@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TCISMTOD0040101" version="7">
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TCISMTOD0040101" version="8">
     <common>
         <io_name><![CDATA[타사카드사별포인트사용내역및매출]]></io_name>
         <!--I/O 명-->
@@ -430,6 +430,26 @@
                 <simpleType>
                     <restriction base="string">
                         <maxLength value="2" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="storeNm">
+                <annotation>
+                    <documentation>점명</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="100" />
                     </restriction>
                 </simpleType>
             </element>
