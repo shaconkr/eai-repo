@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SSUIMTOD0040101" version="4">
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SSUIMTOD0040101" version="5">
     <common>
         <io_name><![CDATA[타사카드사별포인트사용내역및매출]]></io_name>
         <!--I/O 명-->
-        <description />
+        <description><![CDATA[타사카드사별포인트사용내역및매출.]]></description>
         <!--I/O 설명-->
         <system code="SUI" name="통합단말" />
         <!--시스템코드, 시스템명-->
