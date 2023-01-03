@@ -1,56 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="inbound" id="SUICISCTJA0230101" version="2" />
+    <interface bound="inbound" id="SUICISCTJA0230101" version="3" />
     <src_io id="SSUICTJA0230101" />
     <target_io id="TCISCTJA0230101" />
     <mapping>
-        <source path="entity/REQN_ROWCOUNT" />
-        <target path="entity/REQN_ROWCOUNT" />
+        <source path="entity/ACPT_STORE_CD" />
+        <target path="entity/ACPT_STORE_CD" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/REQN_LIST/ACPT_STORE_CD" />
-        <target path="entity/REQN_LIST/ACPT_STORE_CD" />
+        <source path="entity/CRD_ACPT_DT" />
+        <target path="entity/CRD_ACPT_DT" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/REQN_LIST/CRD_ACPT_DT" />
-        <target path="entity/REQN_LIST/CRD_ACPT_DT" />
+        <source path="entity/CRD_ACPT_NO" />
+        <target path="entity/CRD_ACPT_NO" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/REQN_LIST/CRD_ACPT_NO" />
-        <target path="entity/REQN_LIST/CRD_ACPT_NO" />
+        <source path="entity/CRD_MEM_NO" />
+        <target path="entity/CRD_MEM_NO" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/REQN_LIST/CRD_MEM_NO" />
-        <target path="entity/REQN_LIST/CRD_MEM_NO" />
+        <source path="entity/CRDT_SCRG_UNTD_CD" />
+        <target path="entity/CRDT_SCRG_UNTD_CD" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/REQN_LIST/CRDT_SCRG_UNTD_CD" />
-        <target path="entity/REQN_LIST/CRDT_SCRG_UNTD_CD" />
+        <source path="entity/ANNL_INCM_GBCD" />
+        <target path="entity/ANNL_INCM_GBCD" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/REQN_LIST/ANNL_INCM_GBCD" />
-        <target path="entity/REQN_LIST/ANNL_INCM_GBCD" />
+        <source path="entity/DSCN_SENM_YN" />
+        <target path="entity/DSCN_SENM_YN" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/REQN_LIST/DSCN_SENM_YN" />
-        <target path="entity/REQN_LIST/DSCN_SENM_YN" />
+        <source path="entity/MSO_CRD_GB" />
+        <target path="entity/MSO_CRD_GB" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/REQN_LIST/MSO_CRD_GB" />
-        <target path="entity/REQN_LIST/MSO_CRD_GB" />
-        <function ref="move" />
-    </mapping>
-    <mapping>
-        <source path="entity/REQN_LIST/PROC_RST_CD" />
-        <target path="entity/REQN_LIST/PROC_RST_CD" />
+        <source path="entity/PROC_RST_CD" />
+        <target path="entity/PROC_RST_CD" />
         <function ref="move" />
     </mapping>
 </map>
