@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="inbound" id="SUICISCTCF0011401" version="1" />
+    <interface bound="inbound" id="SUICISCTCF0011401" version="2" />
     <src_io id="SSUICTCF0011401" />
     <target_io id="TCISCTCF0011401" />
-    <mapping>
-        <source path="entity/MEM_IDNT_NO" />
-        <target path="entity/MEM_IDNT_NO" />
-        <function ref="move" />
-    </mapping>
     <mapping>
         <source path="entity/CRD_MEM_NO" />
         <target path="entity/CRD_MEM_NO" />

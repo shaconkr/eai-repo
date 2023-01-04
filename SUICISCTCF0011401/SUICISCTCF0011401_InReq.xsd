@@ -3,26 +3,6 @@
     <element name="root" type="tns:SSUICTCF0011401_inbound" />
     <complexType name="SSUICTCF0011401_inbound">
         <sequence>
-            <element name="memIdntNo">
-                <annotation>
-                    <documentation>회원식별번호</documentation>
-                    <appinfo>
-                        <p:description value="개인일 경우 주민번호, 법인일 경우 사업자번호 등록한다." />
-                        <p:mandatory value="N" />
-                        <p:level value="1" />
-                        <p:encryption value="Y" />
-                        <p:one_path_encp value="N" />
-                        <p:mask_type />
-                        <p:db_key value="N" />
-                        <p:krn_fld_yn value="N" />
-                    </appinfo>
-                </annotation>
-                <simpleType>
-                    <restriction base="string">
-                        <maxLength value="13" />
-                    </restriction>
-                </simpleType>
-            </element>
             <element name="crdMemNo">
                 <annotation>
                     <documentation>카드회원번호</documentation>
