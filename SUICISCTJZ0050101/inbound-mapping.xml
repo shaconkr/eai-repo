@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="inbound" id="SUICISCTJZ0050101" version="1" />
+    <interface bound="inbound" id="SUICISCTJZ0050101" version="2" />
     <src_io id="SSUICTJZ0050101" />
     <target_io id="TCISCTJZ0050101" />
     <mapping>
@@ -39,8 +39,8 @@
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/DEVT_STAT_CD" />
-        <target path="entity/DEVT_STAT_CD" />
+        <source path="entity/DEVT_STAT_CD_VAL" />
+        <target path="entity/DEVT_STAT_CD_VAL" />
         <function ref="move" />
     </mapping>
     <mapping>
