@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="inbound" id="SUICISCTRD0030101" version="3" />
+    <src_io id="SSUICTRD0030101" />
+    <target_io id="TCISCTRD0030101" />
+    <mapping>
+        <source path="entity/SRCH_GROUP/MNG_STORE_CD" />
+        <target path="entity/SRCH_GROUP/MNG_STORE_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/SRCH_GROUP/OCRN_YM" />
+        <target path="entity/SRCH_GROUP/OCRN_YM" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/SRCH_GROUP/SPCL_RCRTR_WTDW_GBCD" />
+        <target path="entity/SRCH_GROUP/SPCL_RCRTR_WTDW_GBCD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/SRCH_GROUP/RCRTR_NM" />
+        <target path="entity/SRCH_GROUP/RCRTR_NM" />
+        <function ref="move" />
+    </mapping>
+</map>
