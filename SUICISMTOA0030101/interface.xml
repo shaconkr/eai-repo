@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SUICISMTOA0030101" name="타사가맹점목록조회" version="5">
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SUICISMTOA0030101" name="타사가맹점목록조회" version="6">
     <common>
         <description><![CDATA[타사 가맹 현황 목록을 조회한다.]]></description>
         <system code="SUI" name="통합단말" />

@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="inbound" id="SUICISMTOA0030101" version="5" />
+    <interface bound="inbound" id="SUICISMTOA0030101" version="6" />
     <src_io id="SSUIMTOA0030101" />
     <target_io id="TCISMTOA0030101" />
     <mapping>
         <source path="entity/REP_STORE_CD" />
-        <target path="entity/REP_STORE_CD" />
+        <target path="entity/SRCH_GROUP/REP_STORE_CD" />
         <function ref="move" />
     </mapping>
     <mapping>
         <source path="entity/CHR_GATH_GBCD" />
-        <target path="entity/CHR_GATH_GBCD" />
+        <target path="entity/SRCH_GROUP/CHR_GATH_GBCD" />
         <function ref="move" />
     </mapping>
     <mapping>
         <source path="entity/CHR_CRDC_CD" />
-        <target path="entity/CHR_CRDC_CD" />
+        <target path="entity/SRCH_GROUP/CHR_CRDC_CD" />
         <function ref="move" />
     </mapping>
 </map>

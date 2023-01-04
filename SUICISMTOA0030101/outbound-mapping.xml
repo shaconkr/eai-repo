@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="outbound" id="SUICISMTOA0030101" version="5" />
+    <interface bound="outbound" id="SUICISMTOA0030101" version="6" />
     <src_io id="SSUIMTOA0030101" />
     <target_io id="TCISMTOA0030101" />
     <mapping>
@@ -9,82 +9,82 @@
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/CHR_GATH_GBCD" />
+        <source path="entity/GRID_LIST/CHR_GATH_GBCD" />
         <target path="entity/CHR_GATH_GBCD" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/CHR_CRDC_CD" />
+        <source path="entity/GRID_LIST/CHR_CRDC_CD" />
         <target path="entity/CHR_CRDC_CD" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/FRCS_NO" />
+        <source path="entity/GRID_LIST/FRCS_NO" />
         <target path="entity/FRCS_NO" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/VAN_CO_CD" />
+        <source path="entity/GRID_LIST/VAN_CO_CD" />
         <target path="entity/VAN_CO_CD" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/RGNO" />
+        <source path="entity/GRID_LIST/RGNO" />
         <target path="entity/RGNO" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/ACNC_BSCM_NO" />
+        <source path="entity/GRID_LIST/ACNC_BSCM_NO" />
         <target path="entity/ACNC_BSCM_NO" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/BANK_GBCD" />
+        <source path="entity/GRID_LIST/BANK_GBCD" />
         <target path="entity/BANK_GBCD" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/ACNO1" />
+        <source path="entity/GRID_LIST/ACNO1" />
         <target path="entity/ACNO1" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/AUTO_PROC_YN" />
+        <source path="entity/GRID_LIST/AUTO_PROC_YN" />
         <target path="entity/AUTO_PROC_YN" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/IAMT_ACPT_FRCS_NO" />
+        <source path="entity/GRID_LIST/IAMT_ACPT_FRCS_NO" />
         <target path="entity/IAMT_ACPT_FRCS_NO" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/PUSE_SLIP_UPRC" />
+        <source path="entity/GRID_LIST/PUSE_SLIP_UPRC" />
         <target path="entity/PUSE_SLIP_UPRC" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/BANK_CD" />
+        <source path="entity/GRID_LIST/BANK_CD" />
         <target path="entity/BANK_CD" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/ACNO2" />
+        <source path="entity/GRID_LIST/ACNO2" />
         <target path="entity/ACNO2" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/RCV_EMAIL_ADR" />
+        <source path="entity/GRID_LIST/RCV_EMAIL_ADR" />
         <target path="entity/RCV_EMAIL_ADR" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/REPP_NM" />
+        <source path="entity/GRID_LIST/REPP_NM" />
         <target path="entity/REPP_NM" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/SHNM_NM" />
+        <source path="entity/GRID_LIST/SHNM_NM" />
         <target path="entity/SHNM_NM" />
         <function ref="move" />
     </mapping>
