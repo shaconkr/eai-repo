@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SUICISOCCTJA02501" name="탈락사유정보조회" version="4">
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SUICISOCCTJA02501" name="탈락사유정보조회" version="8">
     <common>
         <description><![CDATA[탈락 세부 사유 조회]]></description>
         <system code="SUI" name="통합단말" />
