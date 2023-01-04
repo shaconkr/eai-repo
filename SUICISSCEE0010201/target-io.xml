@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TCISSCEE0010201" version="4">
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TCISSCEE0010201" version="7">
     <common>
         <io_name><![CDATA[깡업체관리조회]]></io_name>
         <!--I/O 명-->
@@ -91,13 +91,25 @@
     <element name="root" type="tns:TCISSCEE0010201_inbound" />
     <complexType name="TCISSCEE0010201_inbound">
         <sequence>
+            <element maxOccurs="1" minOccurs="1" name="srchGroup" type="tns:SRCH_GROUP_TYPE">
+                <annotation>
+                    <documentation>검색그룹</documentation>
+                    <appinfo>
+                        <p:level value="1" />
+                    </appinfo>
+                </annotation>
+            </element>
+        </sequence>
+    </complexType>
+    <complexType name="SRCH_GROUP_TYPE">
+        <sequence>
             <element name="telno">
                 <annotation>
                     <documentation>전화번호</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -117,7 +129,7 @@
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -137,7 +149,7 @@
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -157,7 +169,7 @@
                     <appinfo>
                         <p:description value="조건등록년도" />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -518,6 +530,26 @@
                 <simpleType>
                     <restriction base="string">
                         <maxLength value="14" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="wraclGbcd">
+                <annotation>
+                    <documentation>등해제구분코드</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="1" />
                     </restriction>
                 </simpleType>
             </element>
