@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="outbound" id="SUICISCTCF0011408" version="1" />
+    <interface bound="outbound" id="SUICISCTCF0011408" version="2" />
     <src_io id="SSUICTCF0011408" />
     <target_io id="TCISCTCF0011408" />
-    <mapping>
-        <source path="entity/GRID_DATA_PAGEROWCOUNT" />
-        <target path="entity/GRID_DATA_PAGEROWCOUNT" />
-        <function ref="move" />
-    </mapping>
     <mapping>
         <source path="entity/GRID_DATA_ROWCOUNT" />
         <target path="entity/GRID_DATA_ROWCOUNT" />

@@ -3,26 +3,6 @@
     <element name="root" type="tns:SSUICTCF0011408_outbound" />
     <complexType name="SSUICTCF0011408_outbound">
         <sequence>
-            <element name="gridDataPagerowcount">
-                <annotation>
-                    <documentation>그리드_데이터_원페이지당조회건수</documentation>
-                    <appinfo>
-                        <p:description />
-                        <p:mandatory value="N" />
-                        <p:level value="1" />
-                        <p:encryption value="N" />
-                        <p:one_path_encp value="N" />
-                        <p:mask_type />
-                        <p:db_key value="N" />
-                        <p:krn_fld_yn value="N" />
-                    </appinfo>
-                </annotation>
-                <simpleType>
-                    <restriction base="long">
-                        <totalDigits value="5" />
-                    </restriction>
-                </simpleType>
-            </element>
             <element name="gridDataRowcount">
                 <annotation>
                     <documentation>그리드_데이터_배열건수</documentation>
