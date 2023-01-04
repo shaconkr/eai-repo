@@ -1,51 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="outbound" id="SUICISCTJZ0050101" version="2" />
+    <interface bound="outbound" id="SUICISCTJZ0050101" version="3" />
     <src_io id="SSUICTJZ0050101" />
     <target_io id="TCISCTJZ0050101" />
     <mapping>
-        <source path="entity/RCRT_YR" />
-        <target path="entity/RCRT_YR" />
+        <source path="entity/QRY_ROWCOUNT" />
+        <target path="entity/QRY_ROWCOUNT" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/STORE_CD" />
-        <target path="entity/STORE_CD" />
+        <source path="entity/QRY_LIST/RCRT_YR" />
+        <target path="entity/QRY_LIST/RCRT_YR" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/MNG_STORE_NM" />
-        <target path="entity/MNG_STORE_NM" />
+        <source path="entity/QRY_LIST/STORE_CD" />
+        <target path="entity/QRY_LIST/STORE_CD" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/RCRT_FORM_CD" />
-        <target path="entity/RCRT_FORM_CD" />
+        <source path="entity/QRY_LIST/MNG_STORE_NM" />
+        <target path="entity/QRY_LIST/MNG_STORE_NM" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/RCRTR_NM" />
-        <target path="entity/RCRTR_NM" />
+        <source path="entity/QRY_LIST/RCRT_FORM_CD" />
+        <target path="entity/QRY_LIST/RCRT_FORM_CD" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/DEVT_SEQ" />
-        <target path="entity/DEVT_SEQ" />
+        <source path="entity/QRY_LIST/RCRTR_NM" />
+        <target path="entity/QRY_LIST/RCRTR_NM" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/DEVT_CNTN" />
-        <target path="entity/DEVT_CNTN" />
+        <source path="entity/QRY_LIST/DEVT_SEQ" />
+        <target path="entity/QRY_LIST/DEVT_SEQ" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/DEVT_STAT_CD_VAL" />
-        <target path="entity/DEVT_STAT_CD_VAL" />
+        <source path="entity/QRY_LIST/DEVT_CNTN" />
+        <target path="entity/QRY_LIST/DEVT_CNTN" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/RISSU_GB" />
-        <target path="entity/RISSU_GB" />
+        <source path="entity/QRY_LIST/DEVT_STAT_CD_VAL" />
+        <target path="entity/QRY_LIST/DEVT_STAT_CD_VAL" />
         <function ref="move" />
     </mapping>
 </map>
