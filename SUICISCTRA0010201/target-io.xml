@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TCISCTRA0010201" version="2">
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TCISCTRA0010201" version="3">
     <common>
         <io_name><![CDATA[모집계획저장(등록)]]></io_name>
         <!--I/O 명-->
