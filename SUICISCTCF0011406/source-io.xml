@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SSUICTCF0011406" version="1">
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SSUICTCF0011406" version="2">
     <common>
         <io_name><![CDATA[BL사용자미해제조회]]></io_name>
         <!--I/O 명-->
@@ -30,7 +30,7 @@
             <!--Output 거래 ID-->
             <syn-asyn code="1" name="동기" />
             <!--동기 / 비동기 여부-->
-            <bizhub code="000" name="고객X 마케팅X" />
+            <bizhub />
             <!--비즈허브 접촉정보거래종류-->
             <trncd_in />
             <!--Input 거래 코드-->
@@ -259,26 +259,6 @@
     <element name="root" type="tns:SSUICTCF0011406_outbound" />
     <complexType name="SSUICTCF0011406_outbound">
         <sequence>
-            <element name="gridDataPagerowcount">
-                <annotation>
-                    <documentation>그리드_데이터_원페이지당조회건수</documentation>
-                    <appinfo>
-                        <p:description />
-                        <p:mandatory value="N" />
-                        <p:level value="1" />
-                        <p:encryption value="N" />
-                        <p:one_path_encp value="N" />
-                        <p:mask_type />
-                        <p:db_key value="N" />
-                        <p:krn_fld_yn value="N" />
-                    </appinfo>
-                </annotation>
-                <simpleType>
-                    <restriction base="long">
-                        <totalDigits value="5" />
-                    </restriction>
-                </simpleType>
-            </element>
             <element name="gridDataRowcount">
                 <annotation>
                     <documentation>그리드_데이터_배열건수</documentation>
