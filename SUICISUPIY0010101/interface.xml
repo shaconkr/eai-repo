@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SUICISUPIY0010101" name="연체연동제공" version="2">
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SUICISUPIY0010101" name="연체연동제공" version="3">
     <common>
         <description><![CDATA[연체 연동 제공 관련 API]]></description>
         <system code="SUI" name="통합단말" />
