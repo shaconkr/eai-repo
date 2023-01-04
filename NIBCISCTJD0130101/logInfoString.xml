@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<deployment id="D00000001186">
+<deployment id="D00000001188">
     <deployer id="CIS063">박진성</deployer>
-    <deployment_date>2023-01-04 16:11:07.542942</deployment_date>
-    <target_system id="EAI_D_01">EAI 대내</target_system>
+    <deployment_date>2023-01-04 16:11:30.244615</deployment_date>
+    <target_system id="FEP_D_01">EAI 대외</target_system>
 </deployment>
