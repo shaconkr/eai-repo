@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="outbound" id="SUICISSCCE0020101" version="1" />
+    <src_io id="SSUISCCE0020101" />
+    <target_io id="TCISSCCE0020101" />
+    <mapping>
+        <source path="entity/RST_ROWCOUNT" />
+        <target path="entity/RST_ROWCOUNT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RST_LIST/CNFM_STORE_CD" />
+        <target path="entity/RST_LIST/CNFM_STORE_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RST_LIST/ACPT_DT" />
+        <target path="entity/RST_LIST/ACPT_DT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RST_LIST/CNFM_DT" />
+        <target path="entity/RST_LIST/CNFM_DT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RST_LIST/CRD_MEM_NO" />
+        <target path="entity/RST_LIST/CRD_MEM_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RST_LIST/ISSU_BNDS_AMT" />
+        <target path="entity/RST_LIST/ISSU_BNDS_AMT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RST_LIST/AS_SCRG" />
+        <target path="entity/RST_LIST/AS_SCRG" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RST_LIST/CUST_GRP_GBCD" />
+        <target path="entity/RST_LIST/CUST_GRP_GBCD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RST_LIST/ACPT_GBCD" />
+        <target path="entity/RST_LIST/ACPT_GBCD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RST_LIST/CB_GRD" />
+        <target path="entity/RST_LIST/CB_GRD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RST_LIST/TRGT_SALE_AMT" />
+        <target path="entity/RST_LIST/TRGT_SALE_AMT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RST_LIST/ODUE_YN" />
+        <target path="entity/RST_LIST/ODUE_YN" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RST_LIST/ODUE_MTHS" />
+        <target path="entity/RST_LIST/ODUE_MTHS" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RST_LIST/ODUE_AMT" />
+        <target path="entity/RST_LIST/ODUE_AMT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RST_LIST/CMPL_CNFM_YN_CD" />
+        <target path="entity/RST_LIST/CMPL_CNFM_YN_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RST_LIST/CMPL_CNFM_RSN" />
+        <target path="entity/RST_LIST/CMPL_CNFM_RSN" />
+        <function ref="move" />
+    </mapping>
+</map>

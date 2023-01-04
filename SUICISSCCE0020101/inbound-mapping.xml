@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="inbound" id="SUICISSCCE0020101" version="1" />
+    <src_io id="SSUISCCE0020101" />
+    <target_io id="TCISSCCE0020101" />
+    <mapping>
+        <source path="entity/STRT_CNFM_DT" />
+        <target path="entity/STRT_CNFM_DT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/END_CNFM_DT" />
+        <target path="entity/END_CNFM_DT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/SALE_STRT_DT" />
+        <target path="entity/SALE_STRT_DT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/SALE_END_DT" />
+        <target path="entity/SALE_END_DT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/CNFM_STORE_CD" />
+        <target path="entity/CNFM_STORE_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/ODUE_GBCD" />
+        <target path="entity/ODUE_GBCD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/CMPL_RSN_CD" />
+        <target path="entity/CMPL_RSN_CD" />
+        <function ref="move" />
+    </mapping>
+</map>
