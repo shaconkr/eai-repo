@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="outbound" id="SUICISUPIA0030101" version="1" />
+    <src_io id="SSUIUPIA0030101" />
+    <target_io id="TCISUPIA0030101" />
+    <mapping>
+        <source path="entity/APTM_RST_LST_ROWCOUNT" />
+        <target path="entity/APTM_RST_LST_ROWCOUNT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/APTM_RST_LST_LIST/ODUE_MNG_AREA_CD" />
+        <target path="entity/APTM_RST_LST_LIST/ODUE_MNG_AREA_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/APTM_RST_LST_LIST/ASGNR_ID" />
+        <target path="entity/APTM_RST_LST_LIST/ASGNR_ID" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/APTM_RST_LST_LIST/EMP_NM" />
+        <target path="entity/APTM_RST_LST_LIST/EMP_NM" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/APTM_RST_LST_LIST/MNG_CNT" />
+        <target path="entity/APTM_RST_LST_LIST/MNG_CNT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/APTM_RST_LST_LIST/NWRG_APTM_PRNC_AMT" />
+        <target path="entity/APTM_RST_LST_LIST/NWRG_APTM_PRNC_AMT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/APTM_RST_LST_LIST/MNG_AMT" />
+        <target path="entity/APTM_RST_LST_LIST/MNG_AMT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/APTM_RST_LST_LIST/CPLV_VAL" />
+        <target path="entity/APTM_RST_LST_LIST/CPLV_VAL" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/APTM_RST_LST_LIST/ASGNR_APTM_ADDV" />
+        <target path="entity/APTM_RST_LST_LIST/ASGNR_APTM_ADDV" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/APTM_RST_LST_LIST/APTM_STRT_ODUE_MTHS" />
+        <target path="entity/APTM_RST_LST_LIST/APTM_STRT_ODUE_MTHS" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/APTM_RST_LST_LIST/APTM_END_ODUE_MTHS" />
+        <target path="entity/APTM_RST_LST_LIST/APTM_END_ODUE_MTHS" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/APTM_RST_LST_LIST/APTM_STRT_ODUE_AMT" />
+        <target path="entity/APTM_RST_LST_LIST/APTM_STRT_ODUE_AMT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/APTM_RST_LST_LIST/APTM_END_ODUE_AMT" />
+        <target path="entity/APTM_RST_LST_LIST/APTM_END_ODUE_AMT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/APTM_RST_LST_LIST/APTM_CD" />
+        <target path="entity/APTM_RST_LST_LIST/APTM_CD" />
+        <function ref="move" />
+    </mapping>
+</map>
