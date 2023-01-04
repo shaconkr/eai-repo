@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="outbound" id="SUICISCTJA0370401" version="2" />
+    <interface bound="outbound" id="SUICISCTJA0370401" version="4" />
     <src_io id="SSUICTJA0370401" />
     <target_io id="TCISCTJA0370401" />
     <mapping>
-        <source path="entity/QRY_CNT" />
-        <target path="entity/QRY_CNT" />
+        <source path="entity/IQRY_ROWCOUNT" />
+        <target path="entity/IQRY_ROWCOUNT" />
         <function ref="move" />
     </mapping>
     <mapping>
