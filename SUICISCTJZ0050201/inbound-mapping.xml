@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="inbound" id="SUICISCTJZ0050201" version="1" />
+    <src_io id="SSUICTJZ0050201" />
+    <target_io id="TCISCTJZ0050201" />
+    <mapping>
+        <source path="entity/RCRTR_RRNO" />
+        <target path="entity/RCRTR_RRNO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RCRT_FORM_CD" />
+        <target path="entity/RCRT_FORM_CD" />
+        <function ref="move" />
+    </mapping>
+</map>
