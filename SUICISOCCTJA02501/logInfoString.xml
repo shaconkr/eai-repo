@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<deployment id="D00000001229">
-    <deployer id="CIS063">박진성</deployer>
-    <deployment_date>2023-01-04 16:57:48.418186</deployment_date>
-    <target_system id="MCI_D_01">MCI</target_system>
-</deployment>

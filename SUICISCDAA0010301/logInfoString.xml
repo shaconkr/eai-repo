@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<deployment id="D00000001595">
-    <deployer id="CIS012">김태우</deployer>
-    <deployment_date>2022-12-08 10:45:10.301378</deployment_date>
-    <target_system id="MCI_D_01">MCI</target_system>
-</deployment>
