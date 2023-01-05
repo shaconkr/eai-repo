@@ -106,7 +106,7 @@
     </common>
     <interface_type>
         <source>
-            <ioid version="4">SOSECTIC0050102</ioid>
+            <ioid version="5">SOSECTIC0050102</ioid>
             <!--소스 I/O ID-->
             <ioidn>DEFT_OSE_E2501</ioidn>
             <!--소스 관리 I/O ID-->
