@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="NIBCISCTJD0130101" idn="DEFT_NIB_EAH32S_NIBC" name="남인천방송제휴카드회원정보수신응답" version="13">
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SUICISMTOD0040101" name="타사카드사별포인트사용내역매출열람" version="17">
     <common>
-        <description><![CDATA[남인천방송제휴카드회원정보수신]]></description>
-        <system code="CIS" name="H-CIS" />
+        <description><![CDATA[타사카드사별포인트사용내역및매출]]></description>
+        <system code="SUI" name="통합단말" />
         <!--시스템구분코드-->
-        <work code="CTJD" name="제휴사" />
+        <work code="DEFT" name="어플리케이션 Default 코드" />
         <!--어플리케이션코드-->
-        <datetime>2023-01-03 10:05:00</datetime>
+        <datetime>2023-01-02 12:09:37</datetime>
         <!--작성일-->
-        <writer>CIS063</writer>
+        <writer>CIS106</writer>
         <!--작성자-->
         <user_field_1 />
         <!--참조I/F ID-->
@@ -16,12 +16,12 @@
         <!--유저필드-->
         <etc_con />
         <!--거래 ID-->
-        <transaction_id>OCCTJD01301P</transaction_id>
+        <transaction_id>OCMTOD00401R</transaction_id>
         <!--기타 정보-->
         <attribute>
-            <infra code="3" name="대외I/F" />
+            <infra code="2" name="대내I/F" />
             <!--연계구분 - 1:MCI / 2:대내I/F / 3:대외I/F / 6:통합UI / 7:승인I/F-->
-            <process code="2" name="온라인(대외)" />
+            <process code="1" name="온라인(대내)" />
             <!--처리유형 - 1:온라인(대내) / 2:온라인(대외) / 3:(배치)DBtoDB / 4:FILEtoFILE(대내) / 5:(실행주기)DBtoDB / 7:API(대외) / 8:FILEtoFILE(대외)-->
             <mapping code="Y" name="매핑함" />
             <!--매핑여부-->
@@ -33,24 +33,23 @@
                 <timeout />
                 <!--Timer값-->
                 <internal>
-                    <method />
+                    <method code="1" name="요청/응답" />
+                    <!--처리방법 - 1:요청/응답 / 2:요청 / 3:응답-->
                 </internal>
                 <external>
-                    <system code="NIB" name="남인천방송(NIB)" />
+                    <system />
                     <!--대외 기관 구분코드 / 대외 기관 명-->
-                    <work code="DEFT" name="대외 업무 기본값" />
+                    <work />
                     <!--대외 업무 코드 / 대외 업무 명-->
-                    <htdsp code="2" name="타발거래" />
+                    <htdsp />
                     <!--당타발 구분코드 - 1:당발 / 2:타발-->
-                    <send_receive code="E" name="수신" />
-                    <!--대외 송수신 구분 코드 - H:송신 / E:수신-->
-                    <no_timeout_async code="N" />
-                    <!--단방향 처리 여부 - Y:예 / N:아니오-->
-                    <syn-asyn_h code="2" name="비동기" />
+                    <service />
+                    <!--거래ID-->
+                    <syn-asyn_h />
                     <!--대내구간 동기비동기 구분 - 1:동기 / 2:비동기-->
-                    <msg code="AH32S" />
+                    <msg />
                     <!--대외 전문 종별 코드-->
-                    <tx code="NIBC" />
+                    <tx />
                     <!--대외 거래 구분 코드-->
                     <etc />
                     <!--대외 기타 구분 코드-->
@@ -60,13 +59,17 @@
                     <!--응답 인터페이스 관리ID-->
                     <method />
                     <!--처리 방법 - 1:요청응답 / 2:요청-->
-                    <saf code="N" name="SAF미사용" />
+                    <saf />
                     <!--SAF여부 - Y:SAF사용 / N:SAF미사용-->
-                    <netcheck code="N" name="체크안함" />
+                    <netcheck />
                     <!--NETCHECK구분 - Y:체크함 / N:체크안함-->
+                    <send_receive />
+                    <!--대외 송수신 구분 코드 - H:송신 / E:수신-->
+                    <no_timeout_async />
+                    <!--단방향 처리 여부 - Y:예 / N:아니오-->
                     <trn />
                     <!--거래 코드 3자리-->
-                    <no_res_type code="1" name="요청전문" />
+                    <no_res_type />
                     <!--무응답시 수신구분 - 1:요청전문 / 2:표준헤더-->
                 </external>
             </online>
@@ -106,11 +109,9 @@
     </common>
     <interface_type>
         <source>
-            <ioid version="1">SNIBCTJD0130101</ioid>
+            <ioid>SSUIMTOD0040101</ioid>
             <!--소스 I/O ID-->
-            <ioidn>DEFT_NIB_EAH32R</ioidn>
-            <!--소스 관리 I/O ID-->
-            <system code="NIB" name="남인천방송(NIB)" />
+            <system code="SUI" name="통합단말" />
             <!--소스 I/O 시스템 구분 코드 / 시스템 명-->
             <work code="DEFT" name="어플리케이션 Default 코드" />
             <!--소스 I/O 업무 코드 / 업무 코드 명-->
@@ -164,13 +165,11 @@
             </process_type>
         </source>
         <target>
-            <ioid version="1">TCISCTJD0130101</ioid>
+            <ioid>TCISMTOD0040101</ioid>
             <!--타겟 I/O ID-->
-            <ioidn>DEFT_NIB_HAH32R_NIBC</ioidn>
-            <!--타겟 관리 I/O ID-->
             <system code="CIS" name="H-CIS" />
             <!--타겟 I/O 시스템 구분 코드 / 시스템 명-->
-            <work code="CTJD" name="제휴사" />
+            <work code="MTOD" name="타사 매출 현황" />
             <!--타겟 I/O 업무 코드 / 업무 코드 명-->
             <person />
             <!--타겟 I/O 작성자-->
@@ -178,6 +177,7 @@
                 <online>
                     <internal>
                         <request_receive />
+                        <!--수신 거래 ID-->
                     </internal>
                 </online>
                 <eai>
