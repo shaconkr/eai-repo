@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TTADAHHB0011001" version="2">
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TTADAHHB0011001" version="3">
     <common>
         <io_name><![CDATA[한도정보 조회(승인서버)]]></io_name>
         <!--I/O 명-->
@@ -191,9 +191,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="spymUseAmt">
+            <element name="totUseAmt">
                 <annotation>
-                    <documentation>일시불사용금액</documentation>
+                    <documentation>총사용금액</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />

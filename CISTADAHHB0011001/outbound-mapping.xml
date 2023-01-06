@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="outbound" id="CISTADAHHB0011001" version="2" />
+    <interface bound="outbound" id="CISTADAHHB0011001" version="3" />
     <src_io id="SCISAHHB0011001" />
     <target_io id="TTADAHHB0011001" />
     <mapping>
@@ -9,8 +9,8 @@
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/RST_GROUP/SPYM_USE_AMT" />
-        <target path="entity/RST_GROUP/SPYM_USE_AMT" />
+        <source path="entity/RST_GROUP/TOT_USE_AMT" />
+        <target path="entity/RST_GROUP/TOT_USE_AMT" />
         <function ref="move" />
     </mapping>
     <mapping>

@@ -35,9 +35,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="spymUseAmt">
+            <element name="totUseAmt">
                 <annotation>
-                    <documentation>일시불사용금액</documentation>
+                    <documentation>총사용금액</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
