@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/">
-    <element name="root" type="tns:TCISFNDX0010102_inbound" />
-    <complexType name="TCISFNDX0010102_inbound">
+    <element name="root" type="tns:TCISFNDX0010201_inbound" />
+    <complexType name="TCISFNDX0010201_inbound">
         <sequence>
             <element name="crdMemNo">
                 <annotation>

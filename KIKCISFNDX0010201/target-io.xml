@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TCISFNDX0010102" version="4">
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TCISFNDX0010201" version="1">
     <common>
         <io_name><![CDATA[키오스크결제예정금액조회]]></io_name>
         <!--I/O 명-->
-        <description><![CDATA[키오스크 결제예정금액을 조회한다.]]></description>
+        <description><![CDATA[키오스크결제예정금액조회]]></description>
         <!--I/O 설명-->
         <system code="CIS" name="H-CIS" />
         <!--시스템코드, 시스템명-->
         <work code="FNDX" name="청구외부제공" />
         <!--업무구분코드-->
-        <datetime>2022-11-16 13:01:22</datetime>
+        <datetime>2023-01-06 17:58:17</datetime>
         <!--작성 시간-->
         <writer>CIS066</writer>
         <!--작성자-->
@@ -30,7 +30,7 @@
             <!--Output 거래 ID-->
             <syn-asyn code="1" name="동기" />
             <!--동기 / 비동기 여부-->
-            <bizhub />
+            <bizhub code="000" name="고객X 마케팅X" />
             <!--비즈허브 접촉정보거래종류-->
             <trncd_in />
             <!--Input 거래 코드-->
@@ -60,21 +60,21 @@
             <!--DB 테이블 명-->
         </eai>
     </process_type>
-    <!--IO처리유형 : O - 온라인, D - DB, F - FILE-->
+    <!--IO처리유형 : O - 온라인, D - DB, F - FILE, A - API-->
     <inbound>
         <message>
-            <io id="C00000000975" idn="" version="1" name="TCISFNDX0010102_INBOUND" type="Message" />
+            <io id="C00000002361" idn="" version="1" name="TCISFNDX0010201_INBOUND" type="Message" />
         </message>
         <header />
         <unit>
-            <io id="C00000000975" idn="" name="TCISFNDX0010102_INBOUND" version="1" type="Entity" squencename="entity">
+            <io id="C00000002361" idn="" name="TCISFNDX0010201_INBOUND" version="1" type="Entity" squencename="entity">
                 <common>
                     <description />
                     <system />
                     <!--시스템코드, 시스템명-->
                     <work />
                     <!--업무 구분 코드-->
-                    <datetime>2022-11-16 13:01:22</datetime>
+                    <datetime>2023-01-06 17:58:17</datetime>
                     <!--작성 시간-->
                     <writer>CIS066</writer>
                     <!--작성자-->
@@ -88,8 +88,8 @@
                 <process_type />
                 <data><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/">
-    <element name="root" type="tns:TCISFNDX0010102_inbound" />
-    <complexType name="TCISFNDX0010102_inbound">
+    <element name="root" type="tns:TCISFNDX0010201_inbound" />
+    <complexType name="TCISFNDX0010201_inbound">
         <sequence>
             <element name="crdMemNo">
                 <annotation>
@@ -299,18 +299,18 @@
     </inbound>
     <outbound>
         <message>
-            <io id="C00000000977" idn="" version="1" name="TCISFNDX0010102_OUTBOUND" type="Message" />
+            <io id="C00000002363" idn="" version="1" name="TCISFNDX0010201_OUTBOUND" type="Message" />
         </message>
         <header />
         <unit>
-            <io id="C00000000977" idn="" name="TCISFNDX0010102_OUTBOUND" version="1" type="Entity" squencename="entity">
+            <io id="C00000002363" idn="" name="TCISFNDX0010201_OUTBOUND" version="1" type="Entity" squencename="entity">
                 <common>
                     <description />
                     <system />
                     <!--시스템코드, 시스템명-->
                     <work />
                     <!--업무 구분 코드-->
-                    <datetime>2022-11-16 13:01:22</datetime>
+                    <datetime>2023-01-06 17:58:17</datetime>
                     <!--작성 시간-->
                     <writer>CIS066</writer>
                     <!--작성자-->
@@ -324,12 +324,12 @@
                 <process_type />
                 <data><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/">
-    <element name="root" type="tns:TCISFNDX0010102_outbound" />
-    <complexType name="TCISFNDX0010102_outbound">
+    <element name="root" type="tns:TCISFNDX0010201_outbound" />
+    <complexType name="TCISFNDX0010201_outbound">
         <sequence>
-            <element name="stlmExpAmt">
+            <element name="stlmPrrgAmt">
                 <annotation>
-                    <documentation>결제예상금액</documentation>
+                    <documentation>결제예정금액</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
@@ -342,14 +342,15 @@
                     </appinfo>
                 </annotation>
                 <simpleType>
-                    <restriction base="long">
-                        <totalDigits value="22" />
+                    <restriction base="decimal">
+                        <totalDigits value="20" />
+                        <fractionDigits value="2" />
                     </restriction>
                 </simpleType>
             </element>
-            <element name="stlmAmtRowcount">
+            <element name="rsltRowcount">
                 <annotation>
-                    <documentation>결제금액_배열건수</documentation>
+                    <documentation>조회결과_배열건수</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
@@ -367,11 +368,11 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element maxOccurs="unbounded" name="stlmAmtList" type="tns:STLM_AMT_LIST_TYPE">
+            <element maxOccurs="unbounded" name="rsltList" type="tns:RSLT_LIST_TYPE">
                 <annotation>
-                    <documentation>결제금액_배열</documentation>
+                    <documentation>조회결과_배열</documentation>
                     <appinfo>
-                        <p:adjustLength category="variableField" lengthFieldURL="STLM_AMT_ROWCOUNT" />
+                        <p:adjustLength category="variableField" lengthFieldURL="RSLT_ROWCOUNT" />
                         <p:mandatory value="N" />
                         <p:level value="1" />
                     </appinfo>
@@ -379,7 +380,7 @@
             </element>
         </sequence>
     </complexType>
-    <complexType name="STLM_AMT_LIST_TYPE">
+    <complexType name="RSLT_LIST_TYPE">
         <sequence>
             <element name="chrDt">
                 <annotation>
@@ -401,9 +402,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="totReqAmt">
+            <element name="totStlmAmt">
                 <annotation>
-                    <documentation>총청구금액</documentation>
+                    <documentation>총결제금액</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
@@ -417,7 +418,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="long">
-                        <totalDigits value="22" />
+                        <totalDigits value="18" />
                     </restriction>
                 </simpleType>
             </element>

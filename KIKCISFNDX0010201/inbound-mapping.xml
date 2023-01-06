@@ -2,7 +2,7 @@
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <interface bound="inbound" id="KIKCISFNDX0010201" version="1" />
     <src_io id="SKIKFNDX0010201" />
-    <target_io id="TCISFNDX0010102" />
+    <target_io id="TCISFNDX0010201" />
     <mapping>
         <source path="entity/CRD_MEM_NO" />
         <target path="entity/CRD_MEM_NO" />

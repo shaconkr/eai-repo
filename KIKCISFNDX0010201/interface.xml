@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="KIKCISFNDX0010201" name="키오스크결제예정금액조회" version="1">
     <common>
-        <description><![CDATA[키오스크 결제예정금액을 조회한다.]]></description>
+        <description><![CDATA[키오스크결제예정금액조회]]></description>
         <system code="KIK" name="키오스크" />
         <!--시스템구분코드-->
         <work code="DEFT" name="어플리케이션 Default 코드" />
         <!--어플리케이션코드-->
-        <datetime>2022-11-16 13:14:16</datetime>
+        <datetime>2023-01-06 17:59:41</datetime>
         <!--작성일-->
         <writer>CIS066</writer>
         <!--작성자-->
@@ -20,9 +20,9 @@
         <!--기타 정보-->
         <attribute>
             <infra code="2" name="대내I/F" />
-            <!--연계구분 - 1:MCI / 2:대내 I/F / 3:대외 I/F / 6:통합 UI-->
+            <!--연계구분 - 1:MCI / 2:대내I/F / 3:대외I/F / 6:통합UI / 7:승인I/F-->
             <process code="1" name="온라인(대내)" />
-            <!--처리유형 - 1:온라인(대내) / 2:온라인(대외) / 3:(배치)DBtoDB / 4:FILEtoFILE(대내) / 5:(실행주기)DBtoDB / 8:FILEtoFILE(대외)-->
+            <!--처리유형 - 1:온라인(대내) / 2:온라인(대외) / 3:(배치)DBtoDB / 4:FILEtoFILE(대내) / 5:(실행주기)DBtoDB / 7:API(대외) / 8:FILEtoFILE(대외)-->
             <mapping code="Y" name="매핑함" />
             <!--매핑여부-->
             <occur_cycle code="2" name="일별 수시" />
@@ -71,8 +71,6 @@
                     <!--거래 코드 3자리-->
                     <no_res_type />
                     <!--무응답시 수신구분 - 1:요청전문 / 2:표준헤더-->
-                    <chn_tp_c />
-                    <!--채널 유형 코드-->
                 </external>
             </online>
             <batch>
@@ -167,7 +165,7 @@
             </process_type>
         </source>
         <target>
-            <ioid>TCISFNDX0010102</ioid>
+            <ioid>TCISFNDX0010201</ioid>
             <!--타겟 I/O ID-->
             <system code="CIS" name="H-CIS" />
             <!--타겟 I/O 시스템 구분 코드 / 시스템 명-->
