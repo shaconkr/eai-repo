@@ -9,7 +9,7 @@
         <!--시스템코드, 시스템명-->
         <work code="DEFT" name="어플리케이션 Default 코드" />
         <!--업무구분코드-->
-        <datetime>2022-11-16 11:37:22</datetime>
+        <datetime>2023-01-06 17:45:13</datetime>
         <!--작성 시간-->
         <writer>CIS066</writer>
         <!--작성자-->
@@ -60,21 +60,21 @@
             <!--DB 테이블 명-->
         </eai>
     </process_type>
-    <!--IO처리유형 : O - 온라인, D - DB, F - FILE-->
+    <!--IO처리유형 : O - 온라인, D - DB, F - FILE, A - API-->
     <inbound>
         <message>
-            <io id="C00000000967" idn="" version="1" name="SKIKFNDX0010101_INBOUND" type="Message" />
+            <io id="C00000002357" idn="" version="1" name="SKIKFNDX0010101_INBOUND" type="Message" />
         </message>
         <header />
         <unit>
-            <io id="C00000000967" idn="" name="SKIKFNDX0010101_INBOUND" version="1" type="Entity" squencename="entity">
+            <io id="C00000002357" idn="" name="SKIKFNDX0010101_INBOUND" version="1" type="Entity" squencename="entity">
                 <common>
                     <description />
                     <system />
                     <!--시스템코드, 시스템명-->
                     <work />
                     <!--업무 구분 코드-->
-                    <datetime>2022-11-16 11:37:22</datetime>
+                    <datetime>2023-01-06 17:45:13</datetime>
                     <!--작성 시간-->
                     <writer>CIS066</writer>
                     <!--작성자-->
@@ -299,18 +299,18 @@
     </inbound>
     <outbound>
         <message>
-            <io id="C00000000969" idn="" version="1" name="SKIKFNDX0010101_OUTBOUND" type="Message" />
+            <io id="C00000002359" idn="" version="1" name="SKIKFNDX0010101_OUTBOUND" type="Message" />
         </message>
         <header />
         <unit>
-            <io id="C00000000969" idn="" name="SKIKFNDX0010101_OUTBOUND" version="1" type="Entity" squencename="entity">
+            <io id="C00000002359" idn="" name="SKIKFNDX0010101_OUTBOUND" version="1" type="Entity" squencename="entity">
                 <common>
                     <description />
                     <system />
                     <!--시스템코드, 시스템명-->
                     <work />
                     <!--업무 구분 코드-->
-                    <datetime>2022-11-16 11:37:22</datetime>
+                    <datetime>2023-01-06 17:45:13</datetime>
                     <!--작성 시간-->
                     <writer>CIS066</writer>
                     <!--작성자-->
@@ -327,9 +327,9 @@
     <element name="root" type="tns:SKIKFNDX0010101_outbound" />
     <complexType name="SKIKFNDX0010101_outbound">
         <sequence>
-            <element name="utlzDtlRowcount">
+            <element name="rsltRowcount">
                 <annotation>
-                    <documentation>이용내역_배열건수</documentation>
+                    <documentation>조회결과_배열건수</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
@@ -347,11 +347,11 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element maxOccurs="unbounded" name="utlzDtlList" type="tns:UTLZ_DTL_LIST_TYPE">
+            <element maxOccurs="unbounded" name="rsltList" type="tns:RSLT_LIST_TYPE">
                 <annotation>
-                    <documentation>이용내역_배열</documentation>
+                    <documentation>조회결과_배열</documentation>
                     <appinfo>
-                        <p:adjustLength category="variableField" lengthFieldURL="UTLZ_DTL_ROWCOUNT" />
+                        <p:adjustLength category="variableField" lengthFieldURL="RSLT_ROWCOUNT" />
                         <p:mandatory value="N" />
                         <p:level value="1" />
                     </appinfo>
@@ -359,7 +359,7 @@
             </element>
         </sequence>
     </complexType>
-    <complexType name="UTLZ_DTL_LIST_TYPE">
+    <complexType name="RSLT_LIST_TYPE">
         <sequence>
             <element name="crdMemNo">
                 <annotation>
@@ -401,9 +401,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="mngNo">
+            <element name="saleMngNo">
                 <annotation>
-                    <documentation>관리번호</documentation>
+                    <documentation>매출관리번호</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
@@ -417,7 +417,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="string">
-                        <maxLength value="20" />
+                        <maxLength value="18" />
                     </restriction>
                 </simpleType>
             </element>
@@ -481,9 +481,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="userGbcd">
+            <element name="selfFamlMemSeq">
                 <annotation>
-                    <documentation>사용자구분코드</documentation>
+                    <documentation>본인가족회원순번</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
@@ -537,7 +537,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="string">
-                        <maxLength value="9" />
+                        <maxLength value="20" />
                     </restriction>
                 </simpleType>
             </element>
@@ -557,7 +557,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="string">
-                        <maxLength value="40" />
+                        <maxLength value="100" />
                     </restriction>
                 </simpleType>
             </element>
@@ -577,7 +577,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="string">
-                        <maxLength value="1" />
+                        <maxLength value="20" />
                     </restriction>
                 </simpleType>
             </element>
@@ -597,7 +597,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="string">
-                        <maxLength value="40" />
+                        <maxLength value="200" />
                     </restriction>
                 </simpleType>
             </element>
@@ -617,7 +617,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="long">
-                        <totalDigits value="1" />
+                        <totalDigits value="18" />
                     </restriction>
                 </simpleType>
             </element>
@@ -637,13 +637,13 @@
                 </annotation>
                 <simpleType>
                     <restriction base="long">
-                        <totalDigits value="1" />
+                        <totalDigits value="18" />
                     </restriction>
                 </simpleType>
             </element>
-            <element name="saleAmt">
+            <element name="nsaleAmt">
                 <annotation>
-                    <documentation>매출금액</documentation>
+                    <documentation>순매출금액</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
@@ -657,15 +657,15 @@
                 </annotation>
                 <simpleType>
                     <restriction base="long">
-                        <totalDigits value="1" />
+                        <totalDigits value="18" />
                     </restriction>
                 </simpleType>
             </element>
-            <element name="insmMths">
+            <element name="crdInsmMths">
                 <annotation>
-                    <documentation>할부개월수</documentation>
+                    <documentation>카드할부개월수</documentation>
                     <appinfo>
-                        <p:description />
+                        <p:description value="카드 할부개월수" />
                         <p:mandatory value="N" />
                         <p:level value="2" />
                         <p:encryption value="N" />
@@ -677,7 +677,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="long">
-                        <totalDigits value="1" />
+                        <totalDigits value="3" />
                     </restriction>
                 </simpleType>
             </element>
@@ -697,7 +697,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="string">
-                        <maxLength value="14" />
+                        <maxLength value="27" />
                     </restriction>
                 </simpleType>
             </element>
@@ -721,9 +721,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="aprvlNo">
+            <element name="owcoAprvlNo">
                 <annotation>
-                    <documentation>승인번호</documentation>
+                    <documentation>자사승인번호</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
@@ -777,7 +777,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="string">
-                        <maxLength value="20" />
+                        <maxLength value="22" />
                     </restriction>
                 </simpleType>
             </element>

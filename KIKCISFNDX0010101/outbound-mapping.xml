@@ -4,113 +4,113 @@
     <src_io id="SKIKFNDX0010101" />
     <target_io id="TCISFNDX0010101" />
     <mapping>
-        <source path="entity/UTLZ_DTL_ROWCOUNT" />
-        <target path="entity/UTLZ_DTL_ROWCOUNT" />
+        <source path="entity/RSLT_ROWCOUNT" />
+        <target path="entity/RSLT_ROWCOUNT" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/UTLZ_DTL_LIST/CRD_MEM_NO" />
-        <target path="entity/UTLZ_DTL_LIST/CRD_MEM_NO" />
+        <source path="entity/RSLT_LIST/CRD_MEM_NO" />
+        <target path="entity/RSLT_LIST/CRD_MEM_NO" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/UTLZ_DTL_LIST/REQ_STLM_UNIT_NO" />
-        <target path="entity/UTLZ_DTL_LIST/REQ_STLM_UNIT_NO" />
+        <source path="entity/RSLT_LIST/REQ_STLM_UNIT_NO" />
+        <target path="entity/RSLT_LIST/REQ_STLM_UNIT_NO" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/UTLZ_DTL_LIST/MNG_NO" />
-        <target path="entity/UTLZ_DTL_LIST/MNG_NO" />
+        <source path="entity/RSLT_LIST/SALE_MNG_NO" />
+        <target path="entity/RSLT_LIST/SALE_MNG_NO" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/UTLZ_DTL_LIST/UTLZ_GBCD" />
-        <target path="entity/UTLZ_DTL_LIST/UTLZ_GBCD" />
+        <source path="entity/RSLT_LIST/UTLZ_GBCD" />
+        <target path="entity/RSLT_LIST/UTLZ_GBCD" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/UTLZ_DTL_LIST/DLINE_DT" />
-        <target path="entity/UTLZ_DTL_LIST/DLINE_DT" />
+        <source path="entity/RSLT_LIST/DLINE_DT" />
+        <target path="entity/RSLT_LIST/DLINE_DT" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/UTLZ_DTL_LIST/CRD_NO" />
-        <target path="entity/UTLZ_DTL_LIST/CRD_NO" />
+        <source path="entity/RSLT_LIST/CRD_NO" />
+        <target path="entity/RSLT_LIST/CRD_NO" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/UTLZ_DTL_LIST/USER_GBCD" />
-        <target path="entity/UTLZ_DTL_LIST/USER_GBCD" />
+        <source path="entity/RSLT_LIST/SELF_FAML_MEM_SEQ" />
+        <target path="entity/RSLT_LIST/SELF_FAML_MEM_SEQ" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/UTLZ_DTL_LIST/SALE_DT" />
-        <target path="entity/UTLZ_DTL_LIST/SALE_DT" />
+        <source path="entity/RSLT_LIST/SALE_DT" />
+        <target path="entity/RSLT_LIST/SALE_DT" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/UTLZ_DTL_LIST/FRCS_CD" />
-        <target path="entity/UTLZ_DTL_LIST/FRCS_CD" />
+        <source path="entity/RSLT_LIST/FRCS_CD" />
+        <target path="entity/RSLT_LIST/FRCS_CD" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/UTLZ_DTL_LIST/FRCS_NM" />
-        <target path="entity/UTLZ_DTL_LIST/FRCS_NM" />
+        <source path="entity/RSLT_LIST/FRCS_NM" />
+        <target path="entity/RSLT_LIST/FRCS_NM" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/UTLZ_DTL_LIST/ITEM_CD" />
-        <target path="entity/UTLZ_DTL_LIST/ITEM_CD" />
+        <source path="entity/RSLT_LIST/ITEM_CD" />
+        <target path="entity/RSLT_LIST/ITEM_CD" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/UTLZ_DTL_LIST/ITEM_NM" />
-        <target path="entity/UTLZ_DTL_LIST/ITEM_NM" />
+        <source path="entity/RSLT_LIST/ITEM_NM" />
+        <target path="entity/RSLT_LIST/ITEM_NM" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/UTLZ_DTL_LIST/TSALE_AMT" />
-        <target path="entity/UTLZ_DTL_LIST/TSALE_AMT" />
+        <source path="entity/RSLT_LIST/TSALE_AMT" />
+        <target path="entity/RSLT_LIST/TSALE_AMT" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/UTLZ_DTL_LIST/ENURI_AMT" />
-        <target path="entity/UTLZ_DTL_LIST/ENURI_AMT" />
+        <source path="entity/RSLT_LIST/ENURI_AMT" />
+        <target path="entity/RSLT_LIST/ENURI_AMT" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/UTLZ_DTL_LIST/SALE_AMT" />
-        <target path="entity/UTLZ_DTL_LIST/SALE_AMT" />
+        <source path="entity/RSLT_LIST/NSALE_AMT" />
+        <target path="entity/RSLT_LIST/NSALE_AMT" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/UTLZ_DTL_LIST/INSM_MTHS" />
-        <target path="entity/UTLZ_DTL_LIST/INSM_MTHS" />
+        <source path="entity/RSLT_LIST/CRD_INSM_MTHS" />
+        <target path="entity/RSLT_LIST/CRD_INSM_MTHS" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/UTLZ_DTL_LIST/ORGSALE_SLIP_NO" />
-        <target path="entity/UTLZ_DTL_LIST/ORGSALE_SLIP_NO" />
+        <source path="entity/RSLT_LIST/ORGSALE_SLIP_NO" />
+        <target path="entity/RSLT_LIST/ORGSALE_SLIP_NO" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/UTLZ_DTL_LIST/CHR_STAT_CD" />
-        <target path="entity/UTLZ_DTL_LIST/CHR_STAT_CD" />
+        <source path="entity/RSLT_LIST/CHR_STAT_CD" />
+        <target path="entity/RSLT_LIST/CHR_STAT_CD" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/UTLZ_DTL_LIST/APRVL_NO" />
-        <target path="entity/UTLZ_DTL_LIST/APRVL_NO" />
+        <source path="entity/RSLT_LIST/OWCO_APRVL_NO" />
+        <target path="entity/RSLT_LIST/OWCO_APRVL_NO" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/UTLZ_DTL_LIST/APRVL_DT" />
-        <target path="entity/UTLZ_DTL_LIST/APRVL_DT" />
+        <source path="entity/RSLT_LIST/APRVL_DT" />
+        <target path="entity/RSLT_LIST/APRVL_DT" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/UTLZ_DTL_LIST/SALE_SLIP_NO" />
-        <target path="entity/UTLZ_DTL_LIST/SALE_SLIP_NO" />
+        <source path="entity/RSLT_LIST/SALE_SLIP_NO" />
+        <target path="entity/RSLT_LIST/SALE_SLIP_NO" />
         <function ref="move" />
     </mapping>
 </map>
