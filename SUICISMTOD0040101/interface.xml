@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SUICISMTOD0040101" name="타사카드사별포인트사용내역매출열람" version="17">
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SUICISMTOD0040101" name="타사카드사별포인트사용내역매출열람" version="18">
     <common>
         <description><![CDATA[타사카드사별포인트사용내역및매출]]></description>
         <system code="SUI" name="통합단말" />
