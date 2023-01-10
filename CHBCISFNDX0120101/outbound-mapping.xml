@@ -4,8 +4,8 @@
     <src_io id="SCHBFNDX0120101" />
     <target_io id="TCISFNDX0120101" />
     <mapping>
-        <source path="entity/TOT_BLNC" />
-        <target path="entity/TOT_BLNC" />
+        <source path="entity/TOT_NADV_BLNC" />
+        <target path="entity/TOT_NADV_BLNC" />
         <function ref="move" />
     </mapping>
 </map>

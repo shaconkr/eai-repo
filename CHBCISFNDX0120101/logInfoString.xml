@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<deployment id="D00000001548">
+<deployment id="D00000001945">
     <deployer id="CIS066">조영래</deployer>
-    <deployment_date>2022-12-06 17:23:03.497266</deployment_date>
+    <deployment_date>2023-01-10 10:58:36.437478</deployment_date>
     <target_system id="EAI_D_01">EAI 대내</target_system>
 </deployment>

@@ -9,7 +9,7 @@
         <!--시스템코드, 시스템명-->
         <work code="FNDX" name="청구외부제공" />
         <!--업무구분코드-->
-        <datetime>2022-11-29 09:46:42</datetime>
+        <datetime>2023-01-10 10:31:10</datetime>
         <!--작성 시간-->
         <writer>CIS066</writer>
         <!--작성자-->
@@ -60,21 +60,21 @@
             <!--DB 테이블 명-->
         </eai>
     </process_type>
-    <!--IO처리유형 : O - 온라인, D - DB, F - FILE-->
+    <!--IO처리유형 : O - 온라인, D - DB, F - FILE, A - API-->
     <inbound>
         <message>
-            <io id="C00000001320" idn="" version="1" name="TCISFNDX0120101_INBOUND" type="Message" />
+            <io id="C00000002573" idn="" version="1" name="TCISFNDX0120101_INBOUND" type="Message" />
         </message>
         <header />
         <unit>
-            <io id="C00000001320" idn="" name="TCISFNDX0120101_INBOUND" version="1" type="Entity" squencename="entity">
+            <io id="C00000002573" idn="" name="TCISFNDX0120101_INBOUND" version="1" type="Entity" squencename="entity">
                 <common>
                     <description />
                     <system />
                     <!--시스템코드, 시스템명-->
                     <work />
                     <!--업무 구분 코드-->
-                    <datetime>2022-11-29 09:46:42</datetime>
+                    <datetime>2023-01-10 10:31:10</datetime>
                     <!--작성 시간-->
                     <writer>CIS066</writer>
                     <!--작성자-->
@@ -119,18 +119,18 @@
     </inbound>
     <outbound>
         <message>
-            <io id="C00000001322" idn="" version="1" name="TCISFNDX0120101_OUTBOUND" type="Message" />
+            <io id="C00000002575" idn="" version="1" name="TCISFNDX0120101_OUTBOUND" type="Message" />
         </message>
         <header />
         <unit>
-            <io id="C00000001322" idn="" name="TCISFNDX0120101_OUTBOUND" version="1" type="Entity" squencename="entity">
+            <io id="C00000002575" idn="" name="TCISFNDX0120101_OUTBOUND" version="1" type="Entity" squencename="entity">
                 <common>
                     <description />
                     <system />
                     <!--시스템코드, 시스템명-->
                     <work />
                     <!--업무 구분 코드-->
-                    <datetime>2022-11-29 09:46:42</datetime>
+                    <datetime>2023-01-10 10:31:10</datetime>
                     <!--작성 시간-->
                     <writer>CIS066</writer>
                     <!--작성자-->
@@ -147,9 +147,9 @@
     <element name="root" type="tns:TCISFNDX0120101_outbound" />
     <complexType name="TCISFNDX0120101_outbound">
         <sequence>
-            <element name="totBlnc">
+            <element name="totNadvBlnc">
                 <annotation>
-                    <documentation>총잔액</documentation>
+                    <documentation>총미도래잔액</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
@@ -163,7 +163,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="long">
-                        <totalDigits value="22" />
+                        <totalDigits value="18" />
                     </restriction>
                 </simpleType>
             </element>
