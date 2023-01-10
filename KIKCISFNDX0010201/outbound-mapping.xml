@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="outbound" id="KIKCISFNDX0010201" version="1" />
+    <src_io id="SKIKFNDX0010201" />
+    <target_io id="TCISFNDX0010201" />
+    <mapping>
+        <source path="entity/STLM_PRRG_AMT" />
+        <target path="entity/STLM_PRRG_AMT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RSLT_ROWCOUNT" />
+        <target path="entity/RSLT_ROWCOUNT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RSLT_LIST/CHR_DT" />
+        <target path="entity/RSLT_LIST/CHR_DT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RSLT_LIST/TOT_STLM_AMT" />
+        <target path="entity/RSLT_LIST/TOT_STLM_AMT" />
+        <function ref="move" />
+    </mapping>
+</map>
