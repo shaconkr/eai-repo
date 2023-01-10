@@ -4,8 +4,8 @@
     <src_io id="SCHBFNDX0140101" />
     <target_io id="TCISFNDX0140101" />
     <mapping>
-        <source path="entity/KOR_NM" />
-        <target path="entity/KOR_NM" />
+        <source path="entity/MEM_NM" />
+        <target path="entity/MEM_NM" />
         <function ref="move" />
     </mapping>
     <mapping>
@@ -39,33 +39,33 @@
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/TOT_IAMT_AMT" />
-        <target path="entity/TOT_IAMT_AMT" />
+        <source path="entity/PYM_SUM_AMT" />
+        <target path="entity/PYM_SUM_AMT" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/RST_ROWCOUNT" />
-        <target path="entity/RST_ROWCOUNT" />
+        <source path="entity/RSLT_ROWCOUNT" />
+        <target path="entity/RSLT_ROWCOUNT" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/RST_LIST/SALE_MNG_NO" />
-        <target path="entity/RST_LIST/SALE_MNG_NO" />
+        <source path="entity/RSLT_LIST/SALE_MNG_NO" />
+        <target path="entity/RSLT_LIST/SALE_MNG_NO" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/RST_LIST/INSM_MTHS_NM" />
-        <target path="entity/RST_LIST/INSM_MTHS_NM" />
+        <source path="entity/RSLT_LIST/INSM_MTHS_NM" />
+        <target path="entity/RSLT_LIST/INSM_MTHS_NM" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/RST_LIST/THMN_PYM_PRNC_AMT" />
-        <target path="entity/RST_LIST/THMN_PYM_PRNC_AMT" />
+        <source path="entity/RSLT_LIST/THMN_PYM_PRNC_AMT" />
+        <target path="entity/RSLT_LIST/THMN_PYM_PRNC_AMT" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/RST_LIST/THMN_PYM_CMIS" />
-        <target path="entity/RST_LIST/THMN_PYM_CMIS" />
+        <source path="entity/RSLT_LIST/THMN_PYM_CMIS" />
+        <target path="entity/RSLT_LIST/THMN_PYM_CMIS" />
         <function ref="move" />
     </mapping>
 </map>

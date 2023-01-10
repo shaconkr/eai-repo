@@ -3,9 +3,9 @@
     <element name="root" type="tns:SCHBFNDX0140101_outbound" />
     <complexType name="SCHBFNDX0140101_outbound">
         <sequence>
-            <element name="korNm">
+            <element name="memNm">
                 <annotation>
-                    <documentation>한글명</documentation>
+                    <documentation>회원명</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
@@ -19,7 +19,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="string">
-                        <maxLength value="50" />
+                        <maxLength value="100" />
                     </restriction>
                 </simpleType>
             </element>
@@ -79,7 +79,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="long">
-                        <totalDigits value="22" />
+                        <totalDigits value="18" />
                     </restriction>
                 </simpleType>
             </element>
@@ -99,7 +99,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="long">
-                        <totalDigits value="22" />
+                        <totalDigits value="18" />
                     </restriction>
                 </simpleType>
             </element>
@@ -119,7 +119,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="long">
-                        <totalDigits value="22" />
+                        <totalDigits value="18" />
                     </restriction>
                 </simpleType>
             </element>
@@ -139,13 +139,13 @@
                 </annotation>
                 <simpleType>
                     <restriction base="long">
-                        <totalDigits value="22" />
+                        <totalDigits value="18" />
                     </restriction>
                 </simpleType>
             </element>
-            <element name="totIamtAmt">
+            <element name="pymSumAmt">
                 <annotation>
-                    <documentation>총입금금액</documentation>
+                    <documentation>납부합계금액</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
@@ -159,13 +159,13 @@
                 </annotation>
                 <simpleType>
                     <restriction base="long">
-                        <totalDigits value="22" />
+                        <totalDigits value="18" />
                     </restriction>
                 </simpleType>
             </element>
-            <element name="rstRowcount">
+            <element name="rsltRowcount">
                 <annotation>
-                    <documentation>결과List_배열건수</documentation>
+                    <documentation>결과리스트_배열건수</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
@@ -183,11 +183,11 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element maxOccurs="unbounded" name="rstList" type="tns:RST_LIST_TYPE">
+            <element maxOccurs="unbounded" name="rsltList" type="tns:RSLT_LIST_TYPE">
                 <annotation>
-                    <documentation>결과List_배열</documentation>
+                    <documentation>결과리스트_배열</documentation>
                     <appinfo>
-                        <p:adjustLength category="variableField" lengthFieldURL="RST_ROWCOUNT" />
+                        <p:adjustLength category="variableField" lengthFieldURL="RSLT_ROWCOUNT" />
                         <p:mandatory value="N" />
                         <p:level value="1" />
                     </appinfo>
@@ -195,7 +195,7 @@
             </element>
         </sequence>
     </complexType>
-    <complexType name="RST_LIST_TYPE">
+    <complexType name="RSLT_LIST_TYPE">
         <sequence>
             <element name="saleMngNo">
                 <annotation>
@@ -213,7 +213,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="string">
-                        <maxLength value="20" />
+                        <maxLength value="18" />
                     </restriction>
                 </simpleType>
             </element>
@@ -253,7 +253,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="long">
-                        <totalDigits value="22" />
+                        <totalDigits value="18" />
                     </restriction>
                 </simpleType>
             </element>
@@ -273,7 +273,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="long">
-                        <totalDigits value="22" />
+                        <totalDigits value="18" />
                     </restriction>
                 </simpleType>
             </element>

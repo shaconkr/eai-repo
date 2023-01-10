@@ -6,7 +6,7 @@
         <!--시스템구분코드-->
         <work code="DEFT" name="어플리케이션 Default 코드" />
         <!--어플리케이션코드-->
-        <datetime>2022-11-29 10:21:49</datetime>
+        <datetime>2023-01-10 10:48:02</datetime>
         <!--작성일-->
         <writer>CIS066</writer>
         <!--작성자-->
@@ -20,17 +20,17 @@
         <!--기타 정보-->
         <attribute>
             <infra code="2" name="대내I/F" />
-            <!--연계구분 - 1:MCI / 2:대내 I/F / 3:대외 I/F / 6:통합 UI-->
+            <!--연계구분 - 1:MCI / 2:대내I/F / 3:대외I/F / 6:통합UI / 7:승인I/F-->
             <process code="1" name="온라인(대내)" />
-            <!--처리유형 - 1:온라인(대내) / 2:온라인(대외) / 3:(배치)DBtoDB / 4:FILEtoFILE(대내) / 5:(실행주기)DBtoDB / 8:FILEtoFILE(대외)-->
+            <!--처리유형 - 1:온라인(대내) / 2:온라인(대외) / 3:(배치)DBtoDB / 4:FILEtoFILE(대내) / 5:(실행주기)DBtoDB / 7:API(대외) / 8:FILEtoFILE(대외)-->
             <mapping code="Y" name="매핑함" />
             <!--매핑여부-->
-            <occur_cycle />
+            <occur_cycle code="2" name="일별 수시" />
             <!--발생주기 - 1:일별1회 / 2:일별 수시 / 3:주별1회 / 4:주별 수시 / 5:월별1회 / 6:월별수시-->
-            <frequency />
+            <frequency>100</frequency>
             <!--예상건수-->
             <online>
-                <timeout />
+                <timeout>30</timeout>
                 <!--Timer값-->
                 <internal>
                     <method code="1" name="요청/응답" />
@@ -71,8 +71,6 @@
                     <!--거래 코드 3자리-->
                     <no_res_type />
                     <!--무응답시 수신구분 - 1:요청전문 / 2:표준헤더-->
-                    <chn_tp_c />
-                    <!--채널 유형 코드-->
                 </external>
             </online>
             <batch>
