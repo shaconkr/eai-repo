@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<deployment id="D00000000598">
-    <deployer id="CIS058">하중구</deployer>
-    <deployment_date>2022-12-29 18:22:23.454632</deployment_date>
-    <target_system id="FEP_D_01">EAI 대외</target_system>
-</deployment>
