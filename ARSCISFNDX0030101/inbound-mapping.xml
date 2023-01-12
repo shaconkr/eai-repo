@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="inbound" id="ARSCISFNDX0030101" version="1" />
+    <src_io id="SARSFNDX0030101" />
+    <target_io id="TCISFNDX0030101" />
+    <mapping>
+        <source path="entity/CRD_MEM_NO" />
+        <target path="entity/CRD_MEM_NO" />
+        <function ref="move" />
+    </mapping>
+</map>
