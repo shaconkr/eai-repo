@@ -89,11 +89,6 @@
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/RSLT_LIST/OWCO_APRVL_NO" />
-        <target path="entity/RSLT_LIST/OWCO_APRVL_NO" />
-        <function ref="move" />
-    </mapping>
-    <mapping>
         <source path="entity/RSLT_LIST/ORGSALE_SLIP_NO" />
         <target path="entity/RSLT_LIST/ORGSALE_SLIP_NO" />
         <function ref="move" />
@@ -101,6 +96,11 @@
     <mapping>
         <source path="entity/RSLT_LIST/CHR_STAT_CD" />
         <target path="entity/RSLT_LIST/CHR_STAT_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RSLT_LIST/OWCO_APRVL_NO" />
+        <target path="entity/RSLT_LIST/OWCO_APRVL_NO" />
         <function ref="move" />
     </mapping>
     <mapping>
