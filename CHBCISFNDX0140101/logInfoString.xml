@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<deployment id="D00000002068">
+<deployment id="D00000002463">
     <deployer id="ADMIN">관리자</deployer>
-    <deployment_date>2023-01-10 16:50:19.670644</deployment_date>
+    <deployment_date>2023-01-12 16:20:45.589251</deployment_date>
     <target_system id="EAI_D_01">EAI 대내</target_system>
 </deployment>
