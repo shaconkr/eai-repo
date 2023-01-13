@@ -3,9 +3,9 @@
     <element name="root" type="tns:SCISAHHE0020301_outbound" />
     <complexType name="SCISAHHE0020301_outbound">
         <sequence>
-            <element name="rstRowcount">
+            <element name="nxtSrchKey">
                 <annotation>
-                    <documentation>결과건수</documentation>
+                    <documentation>다음검색KEY</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
@@ -18,16 +18,15 @@
                     </appinfo>
                 </annotation>
                 <simpleType>
-                    <restriction base="long">
-                        <totalDigits value="5" />
+                    <restriction base="string">
+                        <maxLength value="101" />
                     </restriction>
                 </simpleType>
             </element>
-            <element maxOccurs="unbounded" name="rstList" type="tns:RST_LIST_TYPE">
+            <element minOccurs="50" maxOccurs="50" name="rstList" type="tns:RST_LIST_TYPE">
                 <annotation>
                     <documentation>결과리스트</documentation>
                     <appinfo>
-                        <p:adjustLength category="variableField" lengthFieldURL="RST_ROWCOUNT" />
                         <p:mandatory value="N" />
                         <p:level value="1" />
                     </appinfo>
