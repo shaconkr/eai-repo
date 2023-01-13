@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TJNICTIC0030102" idn="JN01_JNI_EAH30R_JNIL" version="1">
+    <common>
+        <io_name><![CDATA[제니엘카드배송PDA실시간전문수신_응답]]></io_name>
+        <!--I/O 명-->
+        <description />
+        <!--I/O 설명-->
+        <system code="JNI" name="제니엘" />
+        <!--시스템코드, 시스템명-->
+        <work code="DEFT" name="어플리케이션 Default 코드" />
+        <!--업무구분코드-->
+        <datetime>2023-01-12 17:12:42</datetime>
+        <!--작성 시간-->
+        <writer>하중구</writer>
+        <!--작성자-->
+        <charset>KSC5601</charset>
+        <!--캐릭터셋-->
+        <package_name />
+        <!--패키지경로-->
+        <class_name />
+        <!--클래스명-->
+        <sttl_yn>Y</sttl_yn>
+        <!--표준전문여부-->
+    </common>
+    <process_type type="O" name="온라인">
+        <online>
+            <service_in />
+            <!--Input 거래 ID-->
+            <service_out />
+            <!--Output 거래 ID-->
+            <syn-asyn />
+            <!--동기 / 비동기 여부-->
+            <trncd_in />
+            <!--Input 거래 코드-->
+            <trncd_out />
+            <!--Output 거래 코드-->
+            <ext_inop code="2" />
+            <!--대내외 (일반/공유 I/O) 구분 코드 : 1 대내 (일반), 2 대외 (공유)-->
+            <external>
+                <system code="JNI" name="제니엘" />
+                <!--대외 기관 구분 코드-->
+                <work code="JN01" name="[제니엘] 온라인" />
+                <!--대외 업무 코드-->
+                <msg code="AH30R" />
+                <!--대외 전문 종별 코드-->
+                <tx code="JNIL" />
+                <!--대외 거래 구분 코드-->
+                <etc />
+                <!--대외 기타 구분 코드-->
+                <inao code="2" />
+                <!--대내외 구간 코드 : 1 대내, 2 대외-->
+            </external>
+        </online>
+    </process_type>
+    <!--IO처리유형 : O - 온라인, D - DB, F - FILE, A - API-->
+    <inbound>
+        <message>
+            <io id="C00000002996" idn="JN01_JNI_EAH30R_JNIL" version="1" name="jmims.message.jn01.jni.EAH30R_JNIL" type="Message">
+                <common>
+                    <description />
+                    <system code="JNI" name="제니엘" />
+                    <!--시스템코드, 시스템명-->
+                    <work code="DEFT" name="어플리케이션 Default 코드" />
+                    <!--업무 구분 코드-->
+                    <datetime>2023-01-12 17:12:42</datetime>
+                    <!--작성 시간-->
+                    <writer>하중구</writer>
+                    <!--작성자-->
+                    <package_name />
+                    <!--패키지경로-->
+                    <class_name />
+                    <!--클래스명-->
+                    <sttl_yn>Y</sttl_yn>
+                    <!--표준전문여부-->
+                </common>
+                <process_type>
+                    <online>
+                        <external>
+                            <system code="JNI" name="제니엘" />
+                            <!--대외 기관 코드, 대외 기관 명-->
+                            <work code="JN01" name="[제니엘] 온라인" />
+                            <!--대외 업무 코드-->
+                            <msg code="ah30r" />
+                            <!--대외 전문 종별 코드-->
+                            <tx code="jnil" />
+                            <!--대외 거래 구분 코드-->
+                            <etc />
+                            <!--대외 기타 구분코드-->
+                            <rspn />
+                            <!--대외 응답 코드-->
+                            <utrace />
+                            <!--고유 TraceKey-->
+                            <extwork />
+                            <!--Work 코드-->
+                            <error />
+                            <!--Error 코드-->
+                            <encoding style="KSC5601" />
+                            <!--Encoding-->
+                        </external>
+                    </online>
+                </process_type>
+            </io>
+        </message>
+        <header>
+            <io id="H00000002992" idn="JN01_JNI_ECommonHeader" version="1" name="jmims.header.jn01.jni.ECommonHeader" type="Header" squencename="header">
+                <common>
+                    <description><![CDATA[제니엘에서 카드 배송완료 후 PDA로 배송완료 전문을 수신하여 반영 후 응답하는 인터페이스 HEADER]]></description>
+                    <system code="JNI" name="제니엘" />
+                    <!--시스템코드, 시스템명-->
+                    <work code="DEFT" name="어플리케이션 Default 코드" />
+                    <!--업무 구분 코드-->
+                    <datetime>2023-01-12 17:12:27</datetime>
+                    <!--작성 시간-->
+                    <writer>하중구</writer>
+                    <!--작성자-->
+                    <package_name>hdc.cis.ct.cti.ctic.onl.sc.io</package_name>
+                    <!--패키지경로-->
+                    <class_name>CrdDlvPdaRltmSpclExHdr</class_name>
+                    <!--클래스명-->
+                    <sttl_yn>Y</sttl_yn>
+                    <!--표준전문여부-->
+                </common>
+                <process_type>
+                    <online>
+                        <external>
+                            <system code="JNI" name="제니엘" />
+                            <!--대외 기관 코드, 대외 기관 명-->
+                            <work code="JN01" name="[제니엘] 온라인" />
+                            <!--대외 업무 코드-->
+                            <msg code="tgrmCd" />
+                            <!--대외 전문 종별 코드-->
+                            <tx code="trdCd" />
+                            <!--대외 거래 구분 코드-->
+                            <etc />
+                            <!--대외 기타 구분코드-->
+                            <rspn code="respCd" />
+                            <!--대외 응답 코드-->
+                            <utrace />
+                            <!--고유 TraceKey-->
+                            <extwork />
+                            <!--Work 코드-->
+                            <error />
+                            <!--Error 코드-->
+                            <encoding />
+                            <!--Encoding-->
+                        </external>
+                    </online>
+                </process_type>
+            </io>
+            <io id="S00000002991" idn="JN01_JNI_ECommonUnit" name="jmims.entity.jn01.jni.ECommonUnit" version="1" type="Entity" squencename="entity1">
+                <common>
+                    <description><![CDATA[제니엘에서 카드 배송완료 후 PDA로 배송완료 전문을 수신하여 반영 후 응답하는 인터페이스 HEADER]]></description>
+                    <system code="JNI" name="제니엘" />
+                    <!--시스템코드, 시스템명-->
+                    <work code="DEFT" name="어플리케이션 Default 코드" />
+                    <!--업무 구분 코드-->
+                    <datetime>2023-01-12 17:12:27</datetime>
+                    <!--작성 시간-->
+                    <writer>하중구</writer>
+                    <!--작성자-->
+                    <package_name>hdc.cis.ct.cti.ctic.onl.sc.io</package_name>
+                    <!--패키지경로-->
+                    <class_name>CrdDlvPdaRltmSpclExHdr</class_name>
+                    <!--클래스명-->
+                    <sttl_yn>Y</sttl_yn>
+                    <!--표준전문여부-->
+                </common>
+                <process_type>
+                    <online>
+                        <external>
+                            <system code="JNI" name="제니엘" />
+                            <!--대외 기관 코드, 대외 기관 명-->
+                            <work code="JN01" name="[제니엘] 온라인" />
+                            <!--대외 업무 코드-->
+                            <msg code="tgrmCd" />
+                            <!--대외 전문 종별 코드-->
+                            <tx code="trdCd" />
+                            <!--대외 거래 구분 코드-->
+                            <etc />
+                            <!--대외 기타 구분코드-->
+                            <rspn />
+                            <!--대외 응답 코드-->
+                            <utrace />
+                            <!--고유 TraceKey-->
+                            <extwork />
+                            <!--Work 코드-->
+                            <error />
+                            <!--Error 코드-->
+                            <encoding />
+                            <!--Encoding-->
+                        </external>
+                    </online>
+                </process_type>
+                <data><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/" version="S00000002991.1">
+    <element name="root" type="tns:JN01_JNI_ECommonUnit_ENT_inbound" />
+    <complexType name="JN01_JNI_ECommonUnit_ENT_inbound">
+        <sequence>
+            <element name="trdCd">
+                <annotation>
+                    <documentation>거래코드</documentation>
+                    <appinfo>
+                        <p:description value="JNIL" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="4" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="tgrmCd">
+                <annotation>
+                    <documentation>전문코드</documentation>
+                    <appinfo>
+                        <p:description value="전문 코드" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="5" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="tgrmNo">
+                <annotation>
+                    <documentation>전문번호</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="Y" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="8" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="tgrmSendDtm">
+                <annotation>
+                    <documentation>전문전송일시</documentation>
+                    <appinfo>
+                        <p:description value="전문+전송+일시" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="Y" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="16" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="testYn">
+                <annotation>
+                    <documentation>테스트여부</documentation>
+                    <appinfo>
+                        <p:description value="0:정상전문, 1:테스트전문" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="1" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="tgrmType">
+                <annotation>
+                    <documentation>전문유형</documentation>
+                    <appinfo>
+                        <p:description value="0:일반,1:ACK,2:장애통보,3:복구통보" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="1" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="prepVal">
+                <annotation>
+                    <documentation>예비값</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="19" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="tgrmLen">
+                <annotation>
+                    <documentation>전문길이</documentation>
+                    <appinfo>
+                        <p:description value="요청시 : 000300, 응답시 : 000300" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="6" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="respCd">
+                <annotation>
+                    <documentation>응답코드</documentation>
+                    <appinfo>
+                        <p:description value="0000: 처리 정상,오류코드 참조&#xA;요청시 ‘0000’ 으로 요청" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="4" />
+                    </restriction>
+                </simpleType>
+            </element>
+        </sequence>
+    </complexType>
+</schema>]]></data>
+            </io>
+        </header>
+        <unit>
+            <io id="S00000002987" idn="JN01_JNI_EAH30R_JNIL" name="jmims.entity.jn01.jni.EAH30R_JNIL" version="1" type="Entity" squencename="entity">
+                <common>
+                    <description><![CDATA[제니엘에서 카드 배송완료 후 PDA로 배송완료 전문을 수신하여 반영 후 응답하는 인터페이스 DATA]]></description>
+                    <system code="JNI" name="제니엘" />
+                    <!--시스템코드, 시스템명-->
+                    <work code="DEFT" name="어플리케이션 Default 코드" />
+                    <!--업무 구분 코드-->
+                    <datetime>2023-01-12 17:08:08</datetime>
+                    <!--작성 시간-->
+                    <writer>하중구</writer>
+                    <!--작성자-->
+                    <package_name />
+                    <!--패키지경로-->
+                    <class_name />
+                    <!--클래스명-->
+                    <sttl_yn>Y</sttl_yn>
+                    <!--표준전문여부-->
+                </common>
+                <process_type>
+                    <online>
+                        <external>
+                            <system code="JNI" name="제니엘" />
+                            <!--대외 기관 코드, 대외 기관 명-->
+                            <work code="JN01" name="[제니엘] 온라인" />
+                            <!--대외 업무 코드-->
+                            <msg code="ah30r" />
+                            <!--대외 전문 종별 코드-->
+                            <tx code="jnil" />
+                            <!--대외 거래 구분 코드-->
+                            <etc />
+                            <!--대외 기타 구분코드-->
+                            <rspn />
+                            <!--대외 응답 코드-->
+                            <utrace />
+                            <!--고유 TraceKey-->
+                            <extwork />
+                            <!--Work 코드-->
+                            <error />
+                            <!--Error 코드-->
+                            <encoding />
+                            <!--Encoding-->
+                        </external>
+                    </online>
+                </process_type>
+                <data><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/" version="S00000002987.1">
+    <element name="root" type="tns:JN01_JNI_EAH30R_JNIL_ENT_inbound" />
+    <complexType name="JN01_JNI_EAH30R_JNIL_ENT_inbound">
+        <sequence>
+            <element name="tgrmLen">
+                <annotation>
+                    <documentation>전문길이</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="6" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="prepVal">
+                <annotation>
+                    <documentation>예비값</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="236" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="respCd">
+                <annotation>
+                    <documentation>응답코드</documentation>
+                    <appinfo>
+                        <p:description value="오류코드 참조" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="4" />
+                    </restriction>
+                </simpleType>
+            </element>
+        </sequence>
+    </complexType>
+</schema>]]></data>
+            </io>
+        </unit>
+    </inbound>
+    <outbound>
+        <message />
+        <header />
+        <unit />
+    </outbound>
+</io>
