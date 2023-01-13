@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="CISTADAHHE0020301" name="점별 승인자별 승인결과 집계(승인서버)" version="3">
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="CISTADAHHE0020301" name="점별 승인자별 승인결과 집계(승인서버)" version="4">
     <common>
         <description />
         <system code="CIS" name="H-CIS" />

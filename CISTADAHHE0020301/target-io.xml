@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TTADAHHE0020301" version="3">
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TTADAHHE0020301" version="4">
     <common>
         <io_name><![CDATA[점별 승인자별 승인결과 집계(승인서버)]]></io_name>
         <!--I/O 명-->
@@ -180,6 +180,26 @@
                 <simpleType>
                     <restriction base="string">
                         <maxLength value="6" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="nxtSrchKey">
+                <annotation>
+                    <documentation>다음검색KEY</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="101" />
                     </restriction>
                 </simpleType>
             </element>
