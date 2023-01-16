@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="outbound" id="CISTADAHHE0010910" version="1" />
+    <src_io id="SCISAHHE0010910" />
+    <target_io id="TTADAHHE0010910" />
+    <mapping>
+        <source path="entity/NXT_SRCH_KEY" />
+        <target path="entity/NXT_SRCH_KEY" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RST_ROWCOUNT" />
+        <target path="entity/RST_ROWCOUNT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RST_LIST/YR" />
+        <target path="entity/RST_LIST/YR" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RST_LIST/MM" />
+        <target path="entity/RST_LIST/MM" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RST_LIST/LDIN_CNT" />
+        <target path="entity/RST_LIST/LDIN_CNT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RST_LIST/LDIN_AMT" />
+        <target path="entity/RST_LIST/LDIN_AMT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RST_LIST/LDIN_CNT_PER_UPRC" />
+        <target path="entity/RST_LIST/LDIN_CNT_PER_UPRC" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RST_LIST/PUP_APRVL_CNT" />
+        <target path="entity/RST_LIST/PUP_APRVL_CNT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RST_LIST/PUP_APRVL_CNT_RT" />
+        <target path="entity/RST_LIST/PUP_APRVL_CNT_RT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RST_LIST/PUP_APRVL_AMT" />
+        <target path="entity/RST_LIST/PUP_APRVL_AMT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RST_LIST/PUP_APRVL_AMT_RT" />
+        <target path="entity/RST_LIST/PUP_APRVL_AMT_RT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RST_LIST/PUP_APRVL_CNT_PER_UPRC" />
+        <target path="entity/RST_LIST/PUP_APRVL_CNT_PER_UPRC" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RST_LIST/WIRD_APRVL_CNT" />
+        <target path="entity/RST_LIST/WIRD_APRVL_CNT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RST_LIST/WIRD_APRVL_CNT_RT" />
+        <target path="entity/RST_LIST/WIRD_APRVL_CNT_RT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RST_LIST/WIRD_APRVL_AMT" />
+        <target path="entity/RST_LIST/WIRD_APRVL_AMT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RST_LIST/WIRD_APRVL_AMT_RT" />
+        <target path="entity/RST_LIST/WIRD_APRVL_AMT_RT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RST_LIST/WIRD_APRVL_CNT_PER_UPRC" />
+        <target path="entity/RST_LIST/WIRD_APRVL_CNT_PER_UPRC" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RST_LIST/TOT_CNT" />
+        <target path="entity/RST_LIST/TOT_CNT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RST_LIST/APRVL_CNT_RT" />
+        <target path="entity/RST_LIST/APRVL_CNT_RT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RST_LIST/TOT_AMT" />
+        <target path="entity/RST_LIST/TOT_AMT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RST_LIST/APRVL_AMT_RT" />
+        <target path="entity/RST_LIST/APRVL_AMT_RT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RST_LIST/CNT_PER_UPRC" />
+        <target path="entity/RST_LIST/CNT_PER_UPRC" />
+        <function ref="move" />
+    </mapping>
+</map>
