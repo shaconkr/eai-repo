@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="inbound" id="CISTADAHHB0011001" version="4" />
+    <interface bound="inbound" id="CISTADAHHB0011001" version="6" />
     <src_io id="SCISAHHB0011001" />
     <target_io id="TTADAHHB0011001" />
     <mapping>
         <source path="entity/SRCH_GROUP/CRD_NO" />
         <target path="entity/SRCH_GROUP/CRD_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/SRCH_GROUP/WRK_GB_VAL" />
+        <target path="entity/SRCH_GROUP/WRK_GB_VAL" />
         <function ref="move" />
     </mapping>
 </map>

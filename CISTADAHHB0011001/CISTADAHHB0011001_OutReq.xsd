@@ -35,6 +35,26 @@
                     </restriction>
                 </simpleType>
             </element>
+            <element name="wrkGbVal">
+                <annotation>
+                    <documentation>작업구분값</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="2" />
+                    </restriction>
+                </simpleType>
+            </element>
         </sequence>
     </complexType>
 </schema>
