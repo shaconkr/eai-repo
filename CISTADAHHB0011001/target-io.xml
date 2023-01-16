@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TTADAHHB0011001" version="6">
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TTADAHHB0011001" version="7">
     <common>
         <io_name><![CDATA[한도정보 조회(승인서버)]]></io_name>
         <!--I/O 명-->
@@ -291,9 +291,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="speclTmpBndsAplyTerm">
+            <element name="tmpBndsAplyDt">
                 <annotation>
-                    <documentation>특별임시한도적용기간</documentation>
+                    <documentation>임시한도적용일자</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
@@ -307,7 +307,67 @@
                 </annotation>
                 <simpleType>
                     <restriction base="string">
-                        <maxLength value="23" />
+                        <maxLength value="8" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="tmpBndsEndDt">
+                <annotation>
+                    <documentation>임시한도종료일자</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="8" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="speclBndsAplyDt">
+                <annotation>
+                    <documentation>특별한도적용일자</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="8" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="speclBndsEndDt">
+                <annotation>
+                    <documentation>특별한도종료일자</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="8" />
                     </restriction>
                 </simpleType>
             </element>

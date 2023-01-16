@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="outbound" id="CISTADAHHB0011001" version="6" />
+    <interface bound="outbound" id="CISTADAHHB0011001" version="7" />
     <src_io id="SCISAHHB0011001" />
     <target_io id="TTADAHHB0011001" />
     <mapping>
@@ -29,8 +29,23 @@
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/RST_GROUP/SPECL_TMP_BNDS_APLY_TERM" />
-        <target path="entity/RST_GROUP/SPECL_TMP_BNDS_APLY_TERM" />
+        <source path="entity/RST_GROUP/TMP_BNDS_APLY_DT" />
+        <target path="entity/RST_GROUP/TMP_BNDS_APLY_DT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RST_GROUP/TMP_BNDS_END_DT" />
+        <target path="entity/RST_GROUP/TMP_BNDS_END_DT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RST_GROUP/SPECL_BNDS_APLY_DT" />
+        <target path="entity/RST_GROUP/SPECL_BNDS_APLY_DT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RST_GROUP/SPECL_BNDS_END_DT" />
+        <target path="entity/RST_GROUP/SPECL_BNDS_END_DT" />
         <function ref="move" />
     </mapping>
     <mapping>
