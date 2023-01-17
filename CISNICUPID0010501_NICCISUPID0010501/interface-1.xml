@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="NICCISUPID0010501" idn="NC02_NIC_E0310_32000" name="NICE채무불이행 소스 대내 구간 IO" version="1">
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="NICCISUPID0010501" idn="NC02_NIC_E0310_32000" name="NICE채무불이행 소스 대내 구간 IO" version="2">
     <common>
         <description><![CDATA[NICE 채무불이행 응답 전문]]></description>
         <system code="CIS" name="H-CIS" />
@@ -106,7 +106,7 @@
     </common>
     <interface_type>
         <source>
-            <ioid version="1">SNICUPID0010501</ioid>
+            <ioid version="2">SNICUPID0010501</ioid>
             <!--소스 I/O ID-->
             <ioidn>NC02_NIC_ETGRM_SUB_C_CD_TRD_GBCD</ioidn>
             <!--소스 관리 I/O ID-->
@@ -164,7 +164,7 @@
             </process_type>
         </source>
         <target>
-            <ioid version="1">TCISUPID0010501</ioid>
+            <ioid version="2">TCISUPID0010501</ioid>
             <!--타겟 I/O ID-->
             <ioidn>NC02_NIC_HTGRM_SUB_C_CD_TRD_GBCD</ioidn>
             <!--타겟 관리 I/O ID-->

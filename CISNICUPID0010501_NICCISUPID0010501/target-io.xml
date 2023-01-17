@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TNICUPID0010501" idn="NC02_NIC_ETGRM_SUB_C_CD_TRD_GBCD" version="1">
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TNICUPID0010501" idn="NC02_NIC_ETGRM_SUB_C_CD_TRD_GBCD" version="2">
     <common>
         <io_name><![CDATA[NICE채무불이행 타겟 대외 구간 IO]]></io_name>
         <!--I/O 명-->
@@ -55,7 +55,7 @@
     <!--IO처리유형 : O - 온라인, D - DB, F - FILE, A - API-->
     <inbound>
         <message>
-            <io id="C00000003460" idn="NC02_NIC_ETGRM_SUB_C_CD_TRD_GBCD" version="1" name="jmims.message.nc02.nic.ETGRM_SUB_C_CD_TRD_GBCD" type="Message">
+            <io id="C00000003460" idn="NC02_NIC_ETGRM_SUB_C_CD_TRD_GBCD" version="2" name="jmims.message.nc02.nic.ETGRM_SUB_C_CD_TRD_GBCD" type="Message">
                 <common>
                     <description />
                     <system code="NIC" name="NICE(나이스정보통신)" />
@@ -449,7 +449,7 @@
             </io>
         </header>
         <unit>
-            <io id="S00000003450" idn="NC02_NIC_ETGRM_SUB_C_CD_TRD_GBCD" name="jmims.entity.nc02.nic.ETGRM_SUB_C_CD_TRD_GBCD" version="1" type="Entity" squencename="entity">
+            <io id="S00000003450" idn="NC02_NIC_ETGRM_SUB_C_CD_TRD_GBCD" name="jmims.entity.nc02.nic.ETGRM_SUB_C_CD_TRD_GBCD" version="2" type="Entity" squencename="entity">
                 <common>
                     <description><![CDATA[대외 NICE 채무불이행 송수신 등록 전문부]]></description>
                     <system code="NIC" name="NICE(나이스정보통신)" />
@@ -494,7 +494,7 @@
                     </online>
                 </process_type>
                 <data><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/" version="S00000003450.1">
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/" version="S00000003450.2">
     <element name="root" type="tns:NC02_NIC_ETGRM_SUB_C_CD_TRD_GBCD_ENT_inbound" />
     <complexType name="NC02_NIC_ETGRM_SUB_C_CD_TRD_GBCD_ENT_inbound">
         <sequence>
@@ -512,8 +512,8 @@
                     </appinfo>
                 </annotation>
                 <simpleType>
-                    <restriction base="string">
-                        <maxLength value="2" />
+                    <restriction base="long">
+                        <totalDigits value="2" />
                     </restriction>
                 </simpleType>
             </element>
@@ -531,8 +531,8 @@
                     </appinfo>
                 </annotation>
                 <simpleType>
-                    <restriction base="string">
-                        <maxLength value="2" />
+                    <restriction base="long">
+                        <totalDigits value="2" />
                     </restriction>
                 </simpleType>
             </element>
@@ -550,8 +550,8 @@
                     </appinfo>
                 </annotation>
                 <simpleType>
-                    <restriction base="string">
-                        <maxLength value="2" />
+                    <restriction base="long">
+                        <totalDigits value="2" />
                     </restriction>
                 </simpleType>
             </element>
@@ -778,8 +778,8 @@
                     </appinfo>
                 </annotation>
                 <simpleType>
-                    <restriction base="string">
-                        <maxLength value="1" />
+                    <restriction base="long">
+                        <totalDigits value="1" />
                     </restriction>
                 </simpleType>
             </element>
