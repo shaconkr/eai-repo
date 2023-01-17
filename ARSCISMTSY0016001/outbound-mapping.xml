@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="outbound" id="ARSCISMTSY0016001" version="2" />
+    <src_io id="SARSMTSY0016001" />
+    <target_io id="TCISMTSY0016001" />
+    <mapping>
+        <source path="entity/NSALE_AMT" />
+        <target path="entity/NSALE_AMT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RESP_CD" />
+        <target path="entity/RESP_CD" />
+        <function ref="move" />
+    </mapping>
+</map>
