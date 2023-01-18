@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="inbound" id="ARSCISMTPH9000801" version="1" />
+    <src_io id="SARSMTPH9000801" />
+    <target_io id="TCISMTPH9000801" />
+    <mapping>
+        <source path="entity/CRD_MEM_NO" />
+        <target path="entity/CRD_MEM_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/BSIC_YR" />
+        <target path="entity/BSIC_YR" />
+        <function ref="move" />
+    </mapping>
+</map>
