@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TTADAHHE0020201" version="3">
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TTADAHHE0020201" version="4">
     <common>
         <io_name><![CDATA[자동초과 승인결과 현황 조회(승인서버)]]></io_name>
         <!--I/O 명-->
@@ -99,13 +99,17 @@
                     </appinfo>
                 </annotation>
             </element>
+        </sequence>
+    </complexType>
+    <complexType name="SRCH_GROUP_TYPE">
+        <sequence>
             <element name="qryStrtDt">
                 <annotation>
                     <documentation>조회시작일자</documentation>
                     <appinfo>
                         <p:description value="조회기간의 시작일자" />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -125,7 +129,7 @@
                     <appinfo>
                         <p:description value="조회기간의 종료일자" />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -145,7 +149,7 @@
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />

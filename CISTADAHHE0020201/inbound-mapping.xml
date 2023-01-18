@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="inbound" id="CISTADAHHE0020201" version="2" />
+    <interface bound="inbound" id="CISTADAHHE0020201" version="3" />
     <src_io id="SCISAHHE0020201" />
     <target_io id="TTADAHHE0020201" />
     <mapping>
-        <source path="entity/QRY_STRT_DT" />
-        <target path="entity/QRY_STRT_DT" />
+        <source path="entity/SRCH_GROUP/QRY_STRT_DT" />
+        <target path="entity/SRCH_GROUP/QRY_STRT_DT" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/QRY_END_DT" />
-        <target path="entity/QRY_END_DT" />
+        <source path="entity/SRCH_GROUP/QRY_END_DT" />
+        <target path="entity/SRCH_GROUP/QRY_END_DT" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/NXT_SRCH_KEY" />
-        <target path="entity/NXT_SRCH_KEY" />
+        <source path="entity/SRCH_GROUP/NXT_SRCH_KEY" />
+        <target path="entity/SRCH_GROUP/NXT_SRCH_KEY" />
         <function ref="move" />
     </mapping>
 </map>
