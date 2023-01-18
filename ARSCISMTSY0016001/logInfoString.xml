@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<deployment id="D00000003216">
+<deployment id="D00000003228">
     <deployer id="CIS046">정장형</deployer>
-    <deployment_date>2023-01-18 09:23:24.219632</deployment_date>
+    <deployment_date>2023-01-18 09:30:05.42909</deployment_date>
     <target_system id="EAI_D_01">EAI 대내</target_system>
 </deployment>
