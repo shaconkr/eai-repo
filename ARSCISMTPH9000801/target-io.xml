@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TCISMTPH9000801" version="3">
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TCISMTPH9000801" version="4">
     <common>
         <io_name><![CDATA[ARS마일리지조회]]></io_name>
         <!--I/O 명-->
@@ -17,7 +17,7 @@
         <!--캐릭터셋-->
         <package_name>hdc.cis.mt.mtp.mtph.onl.sc.io</package_name>
         <!--패키지경로-->
-        <class_name>RetrieveArsMlg</class_name>
+        <class_name>RetrieveArsReqnMlg</class_name>
         <!--클래스명-->
         <sttl_yn>Y</sttl_yn>
         <!--표준전문여부-->

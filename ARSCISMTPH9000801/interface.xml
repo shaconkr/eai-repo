@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="ARSCISMTPH9000801" name="ARS마일리지조회" version="3">
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="ARSCISMTPH9000801" name="ARS마일리지조회" version="4">
     <common>
         <description><![CDATA[ARS마일리지조회]]></description>
         <system code="ARS" name="ARS" />
