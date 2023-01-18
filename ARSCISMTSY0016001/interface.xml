@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="ARSCISMTSY0016001" name="매출금액조회" version="5">
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="ARSCISMTSY0016001" name="매출금액조회" version="8">
     <common>
         <description />
         <system code="ARS" name="ARS" />
@@ -16,7 +16,7 @@
         <!--유저필드-->
         <etc_con />
         <!--거래 ID-->
-        <transaction_id>MTSY00160011</transaction_id>
+        <transaction_id>OCMTSY90016R</transaction_id>
         <!--기타 정보-->
         <attribute>
             <infra code="2" name="대내I/F" />
@@ -115,7 +115,7 @@
             <!--소스 I/O 시스템 구분 코드 / 시스템 명-->
             <work code="DEFT" name="어플리케이션 Default 코드" />
             <!--소스 I/O 업무 코드 / 업무 코드 명-->
-            <person>정장형</person>
+            <person />
             <!--소스 I/O 작성자-->
             <process_type>
                 <eai>
@@ -171,7 +171,7 @@
             <!--타겟 I/O 시스템 구분 코드 / 시스템 명-->
             <work code="MTSY" name="자사매출업무연동" />
             <!--타겟 I/O 업무 코드 / 업무 코드 명-->
-            <person>정장형</person>
+            <person />
             <!--타겟 I/O 작성자-->
             <process_type>
                 <online>
