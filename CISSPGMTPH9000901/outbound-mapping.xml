@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="outbound" id="CISSPGMTPH9000901" version="3" />
+    <src_io id="SCISMTPH9000901" />
+    <target_io id="TSPGMTPH9000901" />
+    <mapping>
+        <source path="entity/TGRM_CD" />
+        <target path="entity/TGRM_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/TGRM_LEN" />
+        <target path="entity/TGRM_LEN" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/ISTN_CD" />
+        <target path="entity/ISTN_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/TGRM_SEQ" />
+        <target path="entity/TGRM_SEQ" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/GB_CNTN1" />
+        <target path="entity/GB_CNTN1" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/GB_CNTN2" />
+        <target path="entity/GB_CNTN2" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/GB_CNTN3" />
+        <target path="entity/GB_CNTN3" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/TGRM_SUB_C_CD" />
+        <target path="entity/TGRM_SUB_C_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/GB_CNTN4" />
+        <target path="entity/GB_CNTN4" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/NULL_VAL1" />
+        <target path="entity/NULL_VAL1" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/GB_CNTN5" />
+        <target path="entity/GB_CNTN5" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RESP_CD" />
+        <target path="entity/RESP_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/MSG_RESP_CNTN" />
+        <target path="entity/MSG_RESP_CNTN" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/NULL_VAL2" />
+        <target path="entity/NULL_VAL2" />
+        <function ref="move" />
+    </mapping>
+</map>
