@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deployment id="D00000003480">
+    <deployer id="CIS050">박준석</deployer>
+    <deployment_date>2023-01-19 10:09:42.393968</deployment_date>
+    <target_system id="FEP_D_01">EAI 대외</target_system>
+</deployment>
+<?xml version="1.0" encoding="UTF-8"?>
+<deployment id="D00000003480">
+    <deployer id="CIS050">박준석</deployer>
+    <deployment_date>2023-01-19 10:09:42.393968</deployment_date>
+    <target_system id="FEP_D_01">EAI 대외</target_system>
+</deployment>
