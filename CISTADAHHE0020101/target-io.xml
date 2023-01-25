@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TTADAHHE0020101" version="3">
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TTADAHHE0020101" version="4">
     <common>
         <io_name><![CDATA[승인결과내역 목록조회(승인서버)]]></io_name>
         <!--I/O 명-->
@@ -219,7 +219,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="string">
-                        <maxLength value="14" />
+                        <maxLength value="34" />
                     </restriction>
                 </simpleType>
             </element>
@@ -259,9 +259,9 @@
     <element name="root" type="tns:TTADAHHE0020101_outbound" />
     <complexType name="TTADAHHE0020101_outbound">
         <sequence>
-            <element name="rstRowcount">
+            <element name="nxtSrchKey">
                 <annotation>
-                    <documentation>결과건수</documentation>
+                    <documentation>다음검색KEY</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
@@ -274,8 +274,8 @@
                     </appinfo>
                 </annotation>
                 <simpleType>
-                    <restriction base="long">
-                        <totalDigits value="5" />
+                    <restriction base="string">
+                        <maxLength value="34" />
                     </restriction>
                 </simpleType>
             </element>

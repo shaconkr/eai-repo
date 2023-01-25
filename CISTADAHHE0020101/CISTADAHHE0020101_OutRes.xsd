@@ -3,9 +3,9 @@
     <element name="root" type="tns:TTADAHHE0020101_outbound" />
     <complexType name="TTADAHHE0020101_outbound">
         <sequence>
-            <element name="rstRowcount">
+            <element name="nxtSrchKey">
                 <annotation>
-                    <documentation>결과건수</documentation>
+                    <documentation>다음검색KEY</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
@@ -18,8 +18,8 @@
                     </appinfo>
                 </annotation>
                 <simpleType>
-                    <restriction base="long">
-                        <totalDigits value="5" />
+                    <restriction base="string">
+                        <maxLength value="34" />
                     </restriction>
                 </simpleType>
             </element>
