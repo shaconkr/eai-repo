@@ -97,9 +97,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="dptsOutltStoreCd">
+            <element name="storeCd">
                 <annotation>
-                    <documentation>백화점아울렛점코드</documentation>
+                    <documentation>점코드</documentation>
                     <appinfo>
                         <p:description value="매출기준백화점아울렛점코드" />
                         <p:mandatory value="N" />
@@ -213,7 +213,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="long">
-                        <totalDigits value="1" />
+                        <totalDigits value="2" />
                     </restriction>
                 </simpleType>
             </element>
@@ -253,7 +253,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="long">
-                        <totalDigits value="1" />
+                        <totalDigits value="18" />
                     </restriction>
                 </simpleType>
             </element>
@@ -273,7 +273,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="long">
-                        <totalDigits value="1" />
+                        <totalDigits value="18" />
                     </restriction>
                 </simpleType>
             </element>
@@ -293,7 +293,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="long">
-                        <totalDigits value="1" />
+                        <totalDigits value="18" />
                     </restriction>
                 </simpleType>
             </element>
@@ -313,7 +313,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="long">
-                        <totalDigits value="1" />
+                        <totalDigits value="18" />
                     </restriction>
                 </simpleType>
             </element>
@@ -333,7 +333,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="long">
-                        <totalDigits value="19" />
+                        <totalDigits value="18" />
                     </restriction>
                 </simpleType>
             </element>
@@ -453,7 +453,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="long">
-                        <totalDigits value="1" />
+                        <totalDigits value="18" />
                     </restriction>
                 </simpleType>
             </element>

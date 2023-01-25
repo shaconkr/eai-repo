@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SCISAHHE0020101" version="3">
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SCISAHHE0020101" version="4">
     <common>
         <io_name><![CDATA[승인결과내역 목록조회(승인서버)]]></io_name>
         <!--I/O 명-->
@@ -353,9 +353,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="dptsOutltStoreCd">
+            <element name="storeCd">
                 <annotation>
-                    <documentation>백화점아울렛점코드</documentation>
+                    <documentation>점코드</documentation>
                     <appinfo>
                         <p:description value="매출기준백화점아울렛점코드" />
                         <p:mandatory value="N" />
@@ -469,7 +469,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="long">
-                        <totalDigits value="1" />
+                        <totalDigits value="2" />
                     </restriction>
                 </simpleType>
             </element>
@@ -509,7 +509,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="long">
-                        <totalDigits value="1" />
+                        <totalDigits value="18" />
                     </restriction>
                 </simpleType>
             </element>
@@ -529,7 +529,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="long">
-                        <totalDigits value="1" />
+                        <totalDigits value="18" />
                     </restriction>
                 </simpleType>
             </element>
@@ -549,7 +549,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="long">
-                        <totalDigits value="1" />
+                        <totalDigits value="18" />
                     </restriction>
                 </simpleType>
             </element>
@@ -569,7 +569,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="long">
-                        <totalDigits value="1" />
+                        <totalDigits value="18" />
                     </restriction>
                 </simpleType>
             </element>
@@ -589,7 +589,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="long">
-                        <totalDigits value="19" />
+                        <totalDigits value="18" />
                     </restriction>
                 </simpleType>
             </element>
@@ -709,7 +709,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="long">
-                        <totalDigits value="1" />
+                        <totalDigits value="18" />
                     </restriction>
                 </simpleType>
             </element>

@@ -23,11 +23,10 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element maxOccurs="unbounded" name="rstList" type="tns:RST_LIST_TYPE">
+            <element minOccurs="50" maxOccurs="50" name="rstList" type="tns:RST_LIST_TYPE">
                 <annotation>
                     <documentation>결과리스트</documentation>
                     <appinfo>
-                        <p:adjustLength category="variableField" lengthFieldURL="RST_ROWCOUNT" />
                         <p:mandatory value="N" />
                         <p:level value="1" />
                     </appinfo>
@@ -97,9 +96,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="dptsOutltStoreCd">
+            <element name="storeCd">
                 <annotation>
-                    <documentation>백화점아울렛점코드</documentation>
+                    <documentation>점코드</documentation>
                     <appinfo>
                         <p:description value="매출기준백화점아울렛점코드" />
                         <p:mandatory value="N" />
@@ -213,7 +212,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="string">
-                        <maxLength value="1" />
+                        <maxLength value="2" />
                     </restriction>
                 </simpleType>
             </element>
@@ -253,7 +252,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="string">
-                        <maxLength value="1" />
+                        <maxLength value="18" />
                     </restriction>
                 </simpleType>
             </element>
@@ -273,7 +272,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="string">
-                        <maxLength value="1" />
+                        <maxLength value="18" />
                     </restriction>
                 </simpleType>
             </element>
@@ -293,7 +292,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="string">
-                        <maxLength value="1" />
+                        <maxLength value="18" />
                     </restriction>
                 </simpleType>
             </element>
@@ -313,7 +312,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="string">
-                        <maxLength value="1" />
+                        <maxLength value="18" />
                     </restriction>
                 </simpleType>
             </element>
@@ -333,7 +332,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="string">
-                        <maxLength value="19" />
+                        <maxLength value="18" />
                     </restriction>
                 </simpleType>
             </element>
@@ -453,7 +452,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="string">
-                        <maxLength value="1" />
+                        <maxLength value="18" />
                     </restriction>
                 </simpleType>
             </element>
