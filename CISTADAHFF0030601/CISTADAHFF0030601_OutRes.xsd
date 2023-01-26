@@ -75,9 +75,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="aprvlCareEndDt">
+            <element name="aprvlCareAplyDt">
                 <annotation>
-                    <documentation>승인주의종료일자</documentation>
+                    <documentation>승인주의적용일자</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="outbound" id="CISTADAHFF0030601" version="2" />
+    <interface bound="outbound" id="CISTADAHFF0030601" version="3" />
     <src_io id="SCISAHFF0030601" />
     <target_io id="TTADAHFF0030601" />
     <mapping>
@@ -19,8 +19,8 @@
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/RST_GROUP/APRVL_CARE_END_DT" />
-        <target path="entity/RST_GROUP/APRVL_CARE_END_DT" />
+        <source path="entity/RST_GROUP/APRVL_CARE_APLY_DT" />
+        <target path="entity/RST_GROUP/APRVL_CARE_APLY_DT" />
         <function ref="move" />
     </mapping>
 </map>
