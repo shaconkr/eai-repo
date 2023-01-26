@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="CISTADAHFA0070101" name="특정회원관리 등록,수정,삭제" version="1">
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="CISTADAHFA0070101" name="특정회원관리 등록,수정,삭제" version="2">
     <common>
         <description />
         <system code="CIS" name="H-CIS" />
