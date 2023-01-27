@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="inbound" id="ARSCISFNDX0080101" version="1" />
+    <src_io id="SARSFNDX0080101" />
+    <target_io id="TCISFNDX0080101" />
+    <mapping>
+        <source path="entity/SELF_RRNO" />
+        <target path="entity/SELF_RRNO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/ACNC_YM" />
+        <target path="entity/ACNC_YM" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/FAML_INCL_YN" />
+        <target path="entity/FAML_INCL_YN" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/SELF_MEM_NO" />
+        <target path="entity/SELF_MEM_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/EMP_NO" />
+        <target path="entity/EMP_NO" />
+        <function ref="move" />
+    </mapping>
+</map>

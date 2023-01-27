@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/">
+    <element name="root" type="tns:SARSFNDX0080101_inbound" />
+    <complexType name="SARSFNDX0080101_inbound">
+        <sequence>
+            <element name="selfRrno">
+                <annotation>
+                    <documentation>본인주민등록번호</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="13" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="acncYm">
+                <annotation>
+                    <documentation>회계년월</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="6" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="famlInclYn">
+                <annotation>
+                    <documentation>가족포함여부</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="1" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="selfMemNo">
+                <annotation>
+                    <documentation>본인회원번호</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="9" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="empNo">
+                <annotation>
+                    <documentation>사원번호</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="10" />
+                    </restriction>
+                </simpleType>
+            </element>
+        </sequence>
+    </complexType>
+</schema>
