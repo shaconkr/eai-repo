@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="outbound" id="KIKCISPMCK0120501" version="2" />
+    <src_io id="SKIKPMCK0120501" />
+    <target_io id="TCISPMCK0120501" />
+    <mapping>
+        <source path="entity/STORE_CD" />
+        <target path="entity/STORE_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/SALE_DT" />
+        <target path="entity/SALE_DT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/GRID_ROWCOUNT" />
+        <target path="entity/GRID_ROWCOUNT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/GRID_LIST/SALE_MNG_NO" />
+        <target path="entity/GRID_LIST/SALE_MNG_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/GRID_LIST/SALE_UTLZ_GBCD" />
+        <target path="entity/GRID_LIST/SALE_UTLZ_GBCD" />
+        <function ref="move" />
+    </mapping>
+</map>
