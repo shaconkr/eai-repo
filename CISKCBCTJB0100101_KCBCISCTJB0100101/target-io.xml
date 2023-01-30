@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TKCBCTJB0100101" idn="KB01_KCB_E0600_614" version="2">
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TKCBCTJB0100101" idn="KB01_KCB_E0600_614" version="1">
     <common>
-        <io_name><![CDATA[KCB 주민번호 대체키 등록 전문 타겟 IO]]></io_name>
+        <io_name><![CDATA[KCB 주민번호 대체키 등록 전문 송신 타겟 IO]]></io_name>
         <!--I/O 명-->
         <description />
         <!--I/O 설명-->
@@ -9,7 +9,7 @@
         <!--시스템코드, 시스템명-->
         <work code="DEFT" name="어플리케이션 Default 코드" />
         <!--업무구분코드-->
-        <datetime>2023-01-30 08:51:35</datetime>
+        <datetime>2023-01-30 14:09:47</datetime>
         <!--작성 시간-->
         <writer>송규택</writer>
         <!--작성자-->
@@ -55,14 +55,14 @@
     <!--IO처리유형 : O - 온라인, D - DB, F - FILE, A - API-->
     <inbound>
         <message>
-            <io id="C00000005295" idn="KB01_KCB_E0600_614" version="2" name="jmims.message.kb01.kcb.E0600_614" type="Message">
+            <io id="C00000005425" idn="KB01_KCB_E0600_614" version="1" name="jmims.message.kb01.kcb.E0600_614" type="Message">
                 <common>
                     <description />
                     <system code="KCB" name="올크레딧" />
                     <!--시스템코드, 시스템명-->
                     <work code="DEFT" name="어플리케이션 Default 코드" />
                     <!--업무 구분 코드-->
-                    <datetime>2023-01-30 08:51:35</datetime>
+                    <datetime>2023-01-30 14:09:47</datetime>
                     <!--작성 시간-->
                     <writer>송규택</writer>
                     <!--작성자-->

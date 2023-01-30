@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/" version="S00000005298.1">
-    <element name="root" type="tns:KB01_KCB_E0610_614_ENT_inbound" />
-    <complexType name="KB01_KCB_E0610_614_ENT_inbound">
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/" version="S00000005381.1">
+    <element name="root" type="tns:KB01_KCB_H0610_614_ENT_inbound" />
+    <complexType name="KB01_KCB_H0610_614_ENT_inbound">
         <sequence>
             <element name="segId">
                 <annotation>

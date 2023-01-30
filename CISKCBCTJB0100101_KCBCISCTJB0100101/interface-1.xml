@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="KCBCISCTJB0100101" idn="KB01_KCB_E0610_614" name="KCB 주민번호 대체키 등록 전문 수신" version="2">
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="KCBCISCTJB0100101" idn="KB01_KCB_E0610_614" name="KCB 주민번호 대체키 등록 전문 수신" version="1">
     <common>
-        <description><![CDATA[KCB 주민번호 대체키 등록 전문 수신]]></description>
+        <description />
         <system code="CIS" name="H-CIS" />
         <!--시스템구분코드-->
         <work code="CTJB" name="심사처리" />
         <!--어플리케이션코드-->
-        <datetime>2023-01-30 13:34:34</datetime>
+        <datetime>2023-01-30 14:50:13</datetime>
         <!--작성일-->
         <writer>CIS018</writer>
         <!--작성자-->
@@ -16,7 +16,7 @@
         <!--유저필드-->
         <etc_con />
         <!--거래 ID-->
-        <transaction_id>ZZZZCTJB0000</transaction_id>
+        <transaction_id>OCCTJBZZZZZZ</transaction_id>
         <!--기타 정보-->
         <attribute>
             <infra code="3" name="대외I/F" />
@@ -114,7 +114,7 @@
             <!--소스 I/O 시스템 구분 코드 / 시스템 명-->
             <work code="DEFT" name="어플리케이션 Default 코드" />
             <!--소스 I/O 업무 코드 / 업무 코드 명-->
-            <person />
+            <person>송규택</person>
             <!--소스 I/O 작성자-->
             <process_type>
                 <eai>
@@ -164,7 +164,7 @@
             </process_type>
         </source>
         <target>
-            <ioid version="2">TCISCTJB0100101</ioid>
+            <ioid version="1">TCISCTJB0100101</ioid>
             <!--타겟 I/O ID-->
             <ioidn>KB01_KCB_H0610_614</ioidn>
             <!--타겟 관리 I/O ID-->
@@ -172,7 +172,7 @@
             <!--타겟 I/O 시스템 구분 코드 / 시스템 명-->
             <work code="CTJB" name="심사처리" />
             <!--타겟 I/O 업무 코드 / 업무 코드 명-->
-            <person />
+            <person>송규택</person>
             <!--타겟 I/O 작성자-->
             <process_type>
                 <online>

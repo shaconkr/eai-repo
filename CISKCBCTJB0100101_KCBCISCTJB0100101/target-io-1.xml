@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TCISCTJB0100101" idn="KB01_KCB_H0610_614" version="2">
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TCISCTJB0100101" idn="KB01_KCB_H0610_614" version="1">
     <common>
         <io_name><![CDATA[KCB 주민번호 대체키 등록 전문 수신 타겟 IO]]></io_name>
         <!--I/O 명-->
@@ -9,7 +9,7 @@
         <!--시스템코드, 시스템명-->
         <work code="CTJB" name="심사처리" />
         <!--업무구분코드-->
-        <datetime>2023-01-30 13:30:41</datetime>
+        <datetime>2023-01-30 14:11:12</datetime>
         <!--작성 시간-->
         <writer>송규택</writer>
         <!--작성자-->
@@ -55,14 +55,14 @@
     <!--IO처리유형 : O - 온라인, D - DB, F - FILE, A - API-->
     <inbound>
         <message>
-            <io id="C00000005383" idn="KB01_KCB_H0610_614" version="2" name="jmims.message.kb01.kcb.H0610_614" type="Message">
+            <io id="C00000005427" idn="KB01_KCB_H0610_614" version="1" name="jmims.message.kb01.kcb.H0610_614" type="Message">
                 <common>
                     <description />
                     <system code="CIS" name="H-CIS" />
                     <!--시스템코드, 시스템명-->
                     <work code="CTJB" name="심사처리" />
                     <!--업무 구분 코드-->
-                    <datetime>2023-01-30 13:30:41</datetime>
+                    <datetime>2023-01-30 14:11:12</datetime>
                     <!--작성 시간-->
                     <writer>송규택</writer>
                     <!--작성자-->
@@ -102,22 +102,22 @@
             </io>
         </message>
         <header>
-            <io id="H00000005217" idn="KB01_KCB_ECommHeader" version="2" name="jmims.header.kb01.kcb.ECommHeader" type="Header" squencename="header">
+            <io id="H00000005235" idn="KB01_KCB_HCommHeader" version="3" name="jmims.header.kb01.kcb.HCommHeader" type="Header" squencename="header">
                 <common>
-                    <description><![CDATA[[KCB] 부동산소유확인 헤더 대외 IO]]></description>
-                    <system code="KCB" name="올크레딧" />
+                    <description />
+                    <system code="CIS" name="H-CIS" />
                     <!--시스템코드, 시스템명-->
-                    <work code="DEFT" name="어플리케이션 Default 코드" />
+                    <work code="CTJB" name="심사처리" />
                     <!--업무 구분 코드-->
-                    <datetime>2023-01-27 16:48:01</datetime>
+                    <datetime>2023-01-27 17:39:55</datetime>
                     <!--작성 시간-->
                     <writer>송규택</writer>
                     <!--작성자-->
-                    <package_name />
+                    <package_name>hdc.cis.com.onl.eh.io</package_name>
                     <!--패키지경로-->
-                    <class_name />
+                    <class_name>RltyOwnrInfHdr</class_name>
                     <!--클래스명-->
-                    <sttl_yn>N</sttl_yn>
+                    <sttl_yn>Y</sttl_yn>
                     <!--표준전문여부-->
                 </common>
                 <process_type>
@@ -147,22 +147,22 @@
                     </online>
                 </process_type>
             </io>
-            <io id="S00000005216" idn="KB01_KCB_ECommHeader" name="jmims.entity.kb01.kcb.ECommHeader" version="2" type="Entity" squencename="entity1">
+            <io id="S00000005234" idn="KB01_KCB_HCommHeader" name="jmims.entity.kb01.kcb.HCommHeader" version="3" type="Entity" squencename="entity1">
                 <common>
-                    <description><![CDATA[[KCB] 부동산소유확인 헤더 대외 IO]]></description>
-                    <system code="KCB" name="올크레딧" />
+                    <description />
+                    <system code="CIS" name="H-CIS" />
                     <!--시스템코드, 시스템명-->
-                    <work code="DEFT" name="어플리케이션 Default 코드" />
+                    <work code="CTJB" name="심사처리" />
                     <!--업무 구분 코드-->
-                    <datetime>2023-01-27 16:48:01</datetime>
+                    <datetime>2023-01-27 17:39:55</datetime>
                     <!--작성 시간-->
                     <writer>송규택</writer>
                     <!--작성자-->
-                    <package_name />
+                    <package_name>hdc.cis.com.onl.eh.io</package_name>
                     <!--패키지경로-->
-                    <class_name />
+                    <class_name>RltyOwnrInfHdr</class_name>
                     <!--클래스명-->
-                    <sttl_yn>N</sttl_yn>
+                    <sttl_yn>Y</sttl_yn>
                     <!--표준전문여부-->
                 </common>
                 <process_type>
@@ -192,9 +192,9 @@
                     </online>
                 </process_type>
                 <data><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/" version="S00000005216.2">
-    <element name="root" type="tns:KB01_KCB_ECommHeader_ENT_inbound" />
-    <complexType name="KB01_KCB_ECommHeader_ENT_inbound">
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/" version="S00000005234.3">
+    <element name="root" type="tns:KB01_KCB_HCommHeader_ENT_inbound" />
+    <complexType name="KB01_KCB_HCommHeader_ENT_inbound">
         <sequence>
             <element name="tgrmLen">
                 <annotation>
@@ -468,22 +468,22 @@
             </io>
         </header>
         <unit>
-            <io id="S00000005298" idn="KB01_KCB_E0610_614" name="jmims.entity.kb01.kcb.E0610_614" version="1" type="Entity" squencename="entity">
+            <io id="S00000005381" idn="KB01_KCB_H0610_614" name="jmims.entity.kb01.kcb.H0610_614" version="1" type="Entity" squencename="entity">
                 <common>
-                    <description><![CDATA[KCB 주민번호 대체키 등록 전문 수신 소스 Unit]]></description>
-                    <system code="KCB" name="올크레딧" />
+                    <description><![CDATA[KCB 주민번호 대체키 등록 전문 수신 타겟 Unit]]></description>
+                    <system code="CIS" name="H-CIS" />
                     <!--시스템코드, 시스템명-->
-                    <work code="DEFT" name="어플리케이션 Default 코드" />
+                    <work code="CTJB" name="심사처리" />
                     <!--업무 구분 코드-->
-                    <datetime>2023-01-30 09:03:21</datetime>
+                    <datetime>2023-01-30 13:27:22</datetime>
                     <!--작성 시간-->
                     <writer>송규택</writer>
                     <!--작성자-->
-                    <package_name />
+                    <package_name>hdc.cis.ct.ctj.ctjb.onl.cbc.io</package_name>
                     <!--패키지경로-->
-                    <class_name />
+                    <class_name>KcbRrnoRplcReg02</class_name>
                     <!--클래스명-->
-                    <sttl_yn>N</sttl_yn>
+                    <sttl_yn>Y</sttl_yn>
                     <!--표준전문여부-->
                 </common>
                 <process_type>
@@ -513,9 +513,9 @@
                     </online>
                 </process_type>
                 <data><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/" version="S00000005298.1">
-    <element name="root" type="tns:KB01_KCB_E0610_614_ENT_inbound" />
-    <complexType name="KB01_KCB_E0610_614_ENT_inbound">
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/" version="S00000005381.1">
+    <element name="root" type="tns:KB01_KCB_H0610_614_ENT_inbound" />
+    <complexType name="KB01_KCB_H0610_614_ENT_inbound">
         <sequence>
             <element name="segId">
                 <annotation>

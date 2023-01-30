@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="CISKCBCTJB0100101" idn="KB01_KCB_H0600_614" name="KCB 주민번호 대체키 등록 전문 송신" version="3">
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="CISKCBCTJB0100101" idn="KB01_KCB_H0600_614" name="KCB 주민번호 대체키 등록 전문 송신" version="2">
     <common>
-        <description><![CDATA[KCB 주민번호 대체키 등록 전문]]></description>
+        <description />
         <system code="CIS" name="H-CIS" />
         <!--시스템구분코드-->
         <work code="CTJB" name="심사처리" />
         <!--어플리케이션코드-->
-        <datetime>2023-01-30 13:32:40</datetime>
+        <datetime>2023-01-30 14:49:09</datetime>
         <!--작성일-->
         <writer>CIS018</writer>
         <!--작성자-->
-        <user_field_1>CISKCBCTJB0100101</user_field_1>
+        <user_field_1>KCBCISCTJB0100101</user_field_1>
         <!--참조I/F ID-->
         <user_field_2 />
         <!--유저필드-->
@@ -106,7 +106,7 @@
     </common>
     <interface_type>
         <source>
-            <ioid version="3">SCISCTJB0100101</ioid>
+            <ioid version="1">SCISCTJB0100101</ioid>
             <!--소스 I/O ID-->
             <ioidn>KB01_KCB_H0600_614</ioidn>
             <!--소스 관리 I/O ID-->
@@ -164,7 +164,7 @@
             </process_type>
         </source>
         <target>
-            <ioid version="2">TKCBCTJB0100101</ioid>
+            <ioid version="1">TKCBCTJB0100101</ioid>
             <!--타겟 I/O ID-->
             <ioidn>KB01_KCB_E0600_614</ioidn>
             <!--타겟 관리 I/O ID-->
