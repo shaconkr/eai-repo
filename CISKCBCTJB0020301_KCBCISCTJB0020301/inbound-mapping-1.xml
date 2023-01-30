@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="inbound" id="KCBCISCTJB0020301" version="1" />
+    <src_io id="SKCBCTJB0020301" />
+    <target_io id="TCISCTJB0020301" />
+    <mapping>
+        <source path="header/entity1/TGRM_LEN" />
+        <target path="header/entity1/TGRM_LEN" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/TRD_CD" />
+        <target path="header/entity1/TRD_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/MMCO_CD" />
+        <target path="header/entity1/MMCO_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/TGRM_SUB_C_CD" />
+        <target path="header/entity1/TGRM_SUB_C_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/TSK_GBCD" />
+        <target path="header/entity1/TSK_GBCD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/TNR_GB" />
+        <target path="header/entity1/TNR_GB" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/RESP_CD" />
+        <target path="header/entity1/RESP_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/KCB_TGRM_MNG_NO" />
+        <target path="header/entity1/KCB_TGRM_MNG_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/KCB_TGRM_SEND_TIME" />
+        <target path="header/entity1/KCB_TGRM_SEND_TIME" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/MMCO_TGRM_MNG_NO" />
+        <target path="header/entity1/MMCO_TGRM_MNG_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/MMCO_TGRM_SEND_TIME" />
+        <target path="header/entity1/MMCO_TGRM_SEND_TIME" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/SYS_INF" />
+        <target path="header/entity1/SYS_INF" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/QRY_AGR_CD" />
+        <target path="header/entity1/QRY_AGR_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/PREP_VAL" />
+        <target path="header/entity1/PREP_VAL" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/CERT_NO" />
+        <target path="entity/CERT_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/INF_CNSC_YN" />
+        <target path="entity/INF_CNSC_YN" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RE_REQN_CNT" />
+        <target path="entity/RE_REQN_CNT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/IDNT_NO_GBCD" />
+        <target path="entity/IDNT_NO_GBCD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/IDNT_NO" />
+        <target path="entity/IDNT_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/FNM_NM" />
+        <target path="entity/FNM_NM" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/INF_EN_CHK_BIT" />
+        <target path="entity/INF_EN_CHK_BIT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/PINF_INF_TOT_CNT" />
+        <target path="entity/PINF_INF_TOT_CNT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/PINF_INF_TOT_TRS_CNT" />
+        <target path="entity/PINF_INF_TOT_TRS_CNT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/PINF_INF_RESP_CNT" />
+        <target path="entity/PINF_INF_RESP_CNT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/APS_TOT_CNT" />
+        <target path="entity/APS_TOT_CNT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/APS_TOT_TRS_CNT" />
+        <target path="entity/APS_TOT_TRS_CNT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/APS_RESP_CNT" />
+        <target path="entity/APS_RESP_CNT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RLTY_OWN_INF_TOT_CNT" />
+        <target path="entity/RLTY_OWN_INF_TOT_CNT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RLTY_OWN_INF_TOT_TRS_CNT" />
+        <target path="entity/RLTY_OWN_INF_TOT_TRS_CNT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RLTY_OWN_INF_RESP_CNT" />
+        <target path="entity/RLTY_OWN_INF_RESP_CNT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/PINF_INF_RESP_LIST[]/SEG_ID" />
+        <target path="entity/PINF_INF_RESP_LIST[]/SEG_ID" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/PINF_INF_RESP_LIST[]/HM_ADR_REG_DT" />
+        <target path="entity/PINF_INF_RESP_LIST[]/HM_ADR_REG_DT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/PINF_INF_RESP_LIST[]/HM_POST_NO" />
+        <target path="entity/PINF_INF_RESP_LIST[]/HM_POST_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/PINF_INF_RESP_LIST[]/HM_ADR1" />
+        <target path="entity/PINF_INF_RESP_LIST[]/HM_ADR1" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/PINF_INF_RESP_LIST[]/HM_ADR2" />
+        <target path="entity/PINF_INF_RESP_LIST[]/HM_ADR2" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/PINF_INF_RESP_LIST[]/HM_TELNO" />
+        <target path="entity/PINF_INF_RESP_LIST[]/HM_TELNO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/PINF_INF_RESP_LIST[]/REAL_LIVE_ADR_REG_DT" />
+        <target path="entity/PINF_INF_RESP_LIST[]/REAL_LIVE_ADR_REG_DT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/PINF_INF_RESP_LIST[]/REAL_LIVE_POST_NO" />
+        <target path="entity/PINF_INF_RESP_LIST[]/REAL_LIVE_POST_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/PINF_INF_RESP_LIST[]/REAL_LIVE_ADR1" />
+        <target path="entity/PINF_INF_RESP_LIST[]/REAL_LIVE_ADR1" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/PINF_INF_RESP_LIST[]/REAL_LIVE_ADR2" />
+        <target path="entity/PINF_INF_RESP_LIST[]/REAL_LIVE_ADR2" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/PINF_INF_RESP_LIST[]/REAL_LIVE_TELNO" />
+        <target path="entity/PINF_INF_RESP_LIST[]/REAL_LIVE_TELNO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/PINF_INF_RESP_LIST[]/OFC_ADR_REG_DT" />
+        <target path="entity/PINF_INF_RESP_LIST[]/OFC_ADR_REG_DT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/PINF_INF_RESP_LIST[]/OFC_POST_NO" />
+        <target path="entity/PINF_INF_RESP_LIST[]/OFC_POST_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/PINF_INF_RESP_LIST[]/OFC_ADR1" />
+        <target path="entity/PINF_INF_RESP_LIST[]/OFC_ADR1" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/PINF_INF_RESP_LIST[]/OFC_ADR2" />
+        <target path="entity/PINF_INF_RESP_LIST[]/OFC_ADR2" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/PINF_INF_RESP_LIST[]/OFC_TELNO" />
+        <target path="entity/PINF_INF_RESP_LIST[]/OFC_TELNO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/PINF_INF_RESP_LIST[]/OFC_TELPN_EXTS_NO" />
+        <target path="entity/PINF_INF_RESP_LIST[]/OFC_TELPN_EXTS_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/PINF_INF_RESP_LIST[]/OFC_NM" />
+        <target path="entity/PINF_INF_RESP_LIST[]/OFC_NM" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/PINF_INF_RESP_LIST[]/DEPT_NM" />
+        <target path="entity/PINF_INF_RESP_LIST[]/DEPT_NM" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/PINF_INF_RESP_LIST[]/CRRN_OFC_JNCO_YM" />
+        <target path="entity/PINF_INF_RESP_LIST[]/CRRN_OFC_JNCO_YM" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/PINF_INF_RESP_LIST[]/YR_INCM_REG_DT" />
+        <target path="entity/PINF_INF_RESP_LIST[]/YR_INCM_REG_DT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/PINF_INF_RESP_LIST[]/YR_INCM_AMT" />
+        <target path="entity/PINF_INF_RESP_LIST[]/YR_INCM_AMT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/PINF_INF_RESP_LIST[]/PPTAX_REG_DT" />
+        <target path="entity/PINF_INF_RESP_LIST[]/PPTAX_REG_DT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/PINF_INF_RESP_LIST[]/PPTAX_AMT" />
+        <target path="entity/PINF_INF_RESP_LIST[]/PPTAX_AMT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/PINF_INF_RESP_LIST[]/MPHON_NO_REG_DT" />
+        <target path="entity/PINF_INF_RESP_LIST[]/MPHON_NO_REG_DT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/PINF_INF_RESP_LIST[]/MPHON_NO" />
+        <target path="entity/PINF_INF_RESP_LIST[]/MPHON_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/PINF_INF_RESP_LIST[]/HM_ADR_GB" />
+        <target path="entity/PINF_INF_RESP_LIST[]/HM_ADR_GB" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/PINF_INF_RESP_LIST[]/REAL_LIVE_ADR_GB" />
+        <target path="entity/PINF_INF_RESP_LIST[]/REAL_LIVE_ADR_GB" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/PINF_INF_RESP_LIST[]/OFC_ADR_GB" />
+        <target path="entity/PINF_INF_RESP_LIST[]/OFC_ADR_GB" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/PINF_INF_RESP_LIST[]/EMAIL_ADR_REG_DT" />
+        <target path="entity/PINF_INF_RESP_LIST[]/EMAIL_ADR_REG_DT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/PINF_INF_RESP_LIST[]/EMAIL_ADR" />
+        <target path="entity/PINF_INF_RESP_LIST[]/EMAIL_ADR" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/PINF_INF_RESP_LIST[]/PREP_VAL" />
+        <target path="entity/PINF_INF_RESP_LIST[]/PREP_VAL" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/APS_INF_LIST[]/SEG_ID" />
+        <target path="entity/APS_INF_LIST[]/SEG_ID" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/APS_INF_LIST[]/PRF_CD" />
+        <target path="entity/APS_INF_LIST[]/PRF_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/APS_INF_LIST[]/PRF_RST_VAL" />
+        <target path="entity/APS_INF_LIST[]/PRF_RST_VAL" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RLTY_OWN_INF_LIST[]/SEG_ID" />
+        <target path="entity/RLTY_OWN_INF_LIST[]/SEG_ID" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RLTY_OWN_INF_LIST[]/RMAIL_INNT_NO" />
+        <target path="entity/RLTY_OWN_INF_LIST[]/RMAIL_INNT_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RLTY_OWN_INF_LIST[]/RLTY_INNT_NO" />
+        <target path="entity/RLTY_OWN_INF_LIST[]/RLTY_INNT_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RLTY_OWN_INF_LIST[]/OWN_RDNM_ADR" />
+        <target path="entity/RLTY_OWN_INF_LIST[]/OWN_RDNM_ADR" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RLTY_OWN_INF_LIST[]/OWN_JIBUN_ADR" />
+        <target path="entity/RLTY_OWN_INF_LIST[]/OWN_JIBUN_ADR" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RLTY_OWN_INF_LIST[]/LGTD" />
+        <target path="entity/RLTY_OWN_INF_LIST[]/LGTD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RLTY_OWN_INF_LIST[]/LTTD" />
+        <target path="entity/RLTY_OWN_INF_LIST[]/LTTD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RLTY_OWN_INF_LIST[]/RLTY_GB" />
+        <target path="entity/RLTY_OWN_INF_LIST[]/RLTY_GB" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RLTY_OWN_INF_LIST[]/OWN_SHA_NUME" />
+        <target path="entity/RLTY_OWN_INF_LIST[]/OWN_SHA_NUME" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RLTY_OWN_INF_LIST[]/OWN_SHA_DNOM" />
+        <target path="entity/RLTY_OWN_INF_LIST[]/OWN_SHA_DNOM" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RLTY_OWN_INF_LIST[]/OWN_BSIC_DT" />
+        <target path="entity/RLTY_OWN_INF_LIST[]/OWN_BSIC_DT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RLTY_OWN_INF_LIST[]/LAST_OWN_MVMT_RMAIL_DT" />
+        <target path="entity/RLTY_OWN_INF_LIST[]/LAST_OWN_MVMT_RMAIL_DT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RLTY_OWN_INF_LIST[]/STOF_POSS_IDNF_NEED_YN" />
+        <target path="entity/RLTY_OWN_INF_LIST[]/STOF_POSS_IDNF_NEED_YN" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RLTY_OWN_INF_LIST[]/RMAIL_ACBO_KND_CD" />
+        <target path="entity/RLTY_OWN_INF_LIST[]/RMAIL_ACBO_KND_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RLTY_OWN_INF_LIST[]/PREP_VAL111" />
+        <target path="entity/RLTY_OWN_INF_LIST[]/PREP_VAL111" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RLTY_OWN_INF_LIST[]/BLD_DSCLS_PRC" />
+        <target path="entity/RLTY_OWN_INF_LIST[]/BLD_DSCLS_PRC" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RLTY_OWN_INF_LIST[]/BLD_REAL_TRD_PRC" />
+        <target path="entity/RLTY_OWN_INF_LIST[]/BLD_REAL_TRD_PRC" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RLTY_OWN_INF_LIST[]/LAND_TOT_DSCLS_PRC" />
+        <target path="entity/RLTY_OWN_INF_LIST[]/LAND_TOT_DSCLS_PRC" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RLTY_OWN_INF_LIST[]/BLD_WK_USAGE_CD" />
+        <target path="entity/RLTY_OWN_INF_LIST[]/BLD_WK_USAGE_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RLTY_OWN_INF_LIST[]/PREP_VAL" />
+        <target path="entity/RLTY_OWN_INF_LIST[]/PREP_VAL" />
+        <function ref="move" />
+    </mapping>
+</map>
