@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="outbound" id="KIKCISPMCK0120601" version="2" />
+    <src_io id="SKIKPMCK0120601" />
+    <target_io id="TCISPMCK0120601" />
+    <mapping>
+        <source path="entity/GRID_ROWCOUNT" />
+        <target path="entity/GRID_ROWCOUNT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/GRID_LIST/SALE_MNG_NO" />
+        <target path="entity/GRID_LIST/SALE_MNG_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/GRID_LIST/SALE_UTLZ_GBCD" />
+        <target path="entity/GRID_LIST/SALE_UTLZ_GBCD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/GRID_LIST/OWCO_APRVL_NO" />
+        <target path="entity/GRID_LIST/OWCO_APRVL_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/GRID_LIST/SELF_FAML_MEM_SEQ" />
+        <target path="entity/GRID_LIST/SELF_FAML_MEM_SEQ" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/GRID_LIST/SALE_DT" />
+        <target path="entity/GRID_LIST/SALE_DT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/GRID_LIST/CHR_DT" />
+        <target path="entity/GRID_LIST/CHR_DT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/GRID_LIST/ITEM_NM" />
+        <target path="entity/GRID_LIST/ITEM_NM" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/GRID_LIST/NSALE_AMT" />
+        <target path="entity/GRID_LIST/NSALE_AMT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/GRID_LIST/CRD_INSM_MTHS" />
+        <target path="entity/GRID_LIST/CRD_INSM_MTHS" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/GRID_LIST/STORE_CD" />
+        <target path="entity/GRID_LIST/STORE_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/GRID_LIST/REQ_TMNM" />
+        <target path="entity/GRID_LIST/REQ_TMNM" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/GRID_LIST/REQ_PRNC_AMT" />
+        <target path="entity/GRID_LIST/REQ_PRNC_AMT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/GRID_LIST/THMN_GBCD" />
+        <target path="entity/GRID_LIST/THMN_GBCD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/GRID_LIST/IAMT_FLLPMT_YN" />
+        <target path="entity/GRID_LIST/IAMT_FLLPMT_YN" />
+        <function ref="move" />
+    </mapping>
+</map>
