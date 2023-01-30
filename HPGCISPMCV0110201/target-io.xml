@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TCISPMCV0110201" version="2">
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TCISPMCV0110201" version="3">
     <common>
-        <io_name><![CDATA[홈페이지회원가상계좌조회]]></io_name>
+        <io_name><![CDATA[홈페이지회원가상계좌목록조회]]></io_name>
         <!--I/O 명-->
         <description><![CDATA[회원이 보유한 가상계좌번호를 조회한다.]]></description>
         <!--I/O 설명-->
@@ -17,7 +17,7 @@
         <!--캐릭터셋-->
         <package_name>hdc.cis.pm.pmc.pmcv.onl.sc.io</package_name>
         <!--패키지경로-->
-        <class_name>HmpgMemVirtAcntQry</class_name>
+        <class_name>HmpgMemVirtAcntLstQry</class_name>
         <!--클래스명-->
         <sttl_yn>Y</sttl_yn>
         <!--표준전문여부-->
