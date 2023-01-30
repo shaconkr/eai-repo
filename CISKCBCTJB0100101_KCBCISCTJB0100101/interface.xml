@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="CISKCBCTJB0100101" idn="KB01_KCB_H0600_614" name="KCB 주민번호 대체키 등록 전문 송신" version="2">
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="CISKCBCTJB0100101" idn="KB01_KCB_H0600_614" name="KCB 주민번호 대체키 등록 전문 송신" version="3">
     <common>
         <description><![CDATA[KCB 주민번호 대체키 등록 전문]]></description>
         <system code="CIS" name="H-CIS" />
@@ -106,7 +106,7 @@
     </common>
     <interface_type>
         <source>
-            <ioid version="2">SCISCTJB0100101</ioid>
+            <ioid version="3">SCISCTJB0100101</ioid>
             <!--소스 I/O ID-->
             <ioidn>KB01_KCB_H0600_614</ioidn>
             <!--소스 관리 I/O ID-->
