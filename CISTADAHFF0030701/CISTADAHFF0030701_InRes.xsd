@@ -18,8 +18,8 @@
                     </appinfo>
                 </annotation>
                 <simpleType>
-                    <restriction base="long">
-                        <totalDigits value="11" />
+                    <restriction base="string">
+                        <maxLength value="10" />
                     </restriction>
                 </simpleType>
             </element>
