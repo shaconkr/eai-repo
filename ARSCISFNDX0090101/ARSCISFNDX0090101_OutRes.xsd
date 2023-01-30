@@ -3,13 +3,47 @@
     <element name="root" type="tns:TCISFNDX0090101_outbound" />
     <complexType name="TCISFNDX0090101_outbound">
         <sequence>
+            <element name="rsltRowcount">
+                <annotation>
+                    <documentation>결과_배열건수</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="long">
+                        <totalDigits value="5" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element maxOccurs="unbounded" name="rsltList" type="tns:RSLT_LIST_TYPE">
+                <annotation>
+                    <documentation>결과_배열</documentation>
+                    <appinfo>
+                        <p:adjustLength category="variableField" lengthFieldURL="RSLT_ROWCOUNT" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                    </appinfo>
+                </annotation>
+            </element>
+        </sequence>
+    </complexType>
+    <complexType name="RSLT_LIST_TYPE">
+        <sequence>
             <element name="sendDt">
                 <annotation>
                     <documentation>전송일자</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -29,7 +63,7 @@
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -49,7 +83,7 @@
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -69,7 +103,7 @@
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -89,7 +123,7 @@
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -109,7 +143,7 @@
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -129,7 +163,7 @@
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -149,7 +183,7 @@
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -169,7 +203,7 @@
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -189,7 +223,7 @@
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -209,7 +243,7 @@
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -229,7 +263,7 @@
                     <appinfo>
                         <p:description value="공제제외대상금액" />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -249,7 +283,7 @@
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -269,7 +303,7 @@
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -289,7 +323,7 @@
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -309,7 +343,7 @@
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -329,7 +363,7 @@
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />

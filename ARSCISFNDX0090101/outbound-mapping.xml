@@ -1,91 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="outbound" id="ARSCISFNDX0090101" version="1" />
+    <interface bound="outbound" id="ARSCISFNDX0090101" version="2" />
     <src_io id="SARSFNDX0090101" />
     <target_io id="TCISFNDX0090101" />
     <mapping>
-        <source path="entity/SEND_DT" />
-        <target path="entity/SEND_DT" />
+        <source path="entity/RSLT_ROWCOUNT" />
+        <target path="entity/RSLT_ROWCOUNT" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/SEND_TIME" />
-        <target path="entity/SEND_TIME" />
+        <source path="entity/RSLT_LIST/SEND_DT" />
+        <target path="entity/RSLT_LIST/SEND_DT" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/RESP_CD" />
-        <target path="entity/RESP_CD" />
+        <source path="entity/RSLT_LIST/SEND_TIME" />
+        <target path="entity/RSLT_LIST/SEND_TIME" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/RRNO" />
-        <target path="entity/RRNO" />
+        <source path="entity/RSLT_LIST/RESP_CD" />
+        <target path="entity/RSLT_LIST/RESP_CD" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/ACNC_YR" />
-        <target path="entity/ACNC_YR" />
+        <source path="entity/RSLT_LIST/RRNO" />
+        <target path="entity/RSLT_LIST/RRNO" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/CUST_NM" />
-        <target path="entity/CUST_NM" />
+        <source path="entity/RSLT_LIST/ACNC_YR" />
+        <target path="entity/RSLT_LIST/ACNC_YR" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/HM_ADR" />
-        <target path="entity/HM_ADR" />
+        <source path="entity/RSLT_LIST/CUST_NM" />
+        <target path="entity/RSLT_LIST/CUST_NM" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/TOT_CNT" />
-        <target path="entity/TOT_CNT" />
+        <source path="entity/RSLT_LIST/HM_ADR" />
+        <target path="entity/RSLT_LIST/HM_ADR" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/SALE_YM" />
-        <target path="entity/SALE_YM" />
+        <source path="entity/RSLT_LIST/TOT_CNT" />
+        <target path="entity/RSLT_LIST/TOT_CNT" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/CRD_USE_AMT" />
-        <target path="entity/CRD_USE_AMT" />
+        <source path="entity/RSLT_LIST/SALE_YM" />
+        <target path="entity/RSLT_LIST/SALE_YM" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/ANML_USE_AMT" />
-        <target path="entity/ANML_USE_AMT" />
+        <source path="entity/RSLT_LIST/CRD_USE_AMT" />
+        <target path="entity/RSLT_LIST/CRD_USE_AMT" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/DDCT_EXCLD_AMT" />
-        <target path="entity/DDCT_EXCLD_AMT" />
+        <source path="entity/RSLT_LIST/ANML_USE_AMT" />
+        <target path="entity/RSLT_LIST/ANML_USE_AMT" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/DDCT_TGAMT" />
-        <target path="entity/DDCT_TGAMT" />
+        <source path="entity/RSLT_LIST/DDCT_EXCLD_AMT" />
+        <target path="entity/RSLT_LIST/DDCT_EXCLD_AMT" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/CULTR_IRGN_AMT" />
-        <target path="entity/CULTR_IRGN_AMT" />
+        <source path="entity/RSLT_LIST/DDCT_TGAMT" />
+        <target path="entity/RSLT_LIST/DDCT_TGAMT" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/CULTR_IRGN_ANML_AMT" />
-        <target path="entity/CULTR_IRGN_ANML_AMT" />
+        <source path="entity/RSLT_LIST/CULTR_IRGN_AMT" />
+        <target path="entity/RSLT_LIST/CULTR_IRGN_AMT" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/CULTR_IRGN_DDCT_EXCLD_AMT" />
-        <target path="entity/CULTR_IRGN_DDCT_EXCLD_AMT" />
+        <source path="entity/RSLT_LIST/CULTR_IRGN_ANML_AMT" />
+        <target path="entity/RSLT_LIST/CULTR_IRGN_ANML_AMT" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/CULTR_IRGN_DDCT_AMT" />
-        <target path="entity/CULTR_IRGN_DDCT_AMT" />
+        <source path="entity/RSLT_LIST/CULTR_IRGN_DDCT_EXCLD_AMT" />
+        <target path="entity/RSLT_LIST/CULTR_IRGN_DDCT_EXCLD_AMT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RSLT_LIST/CULTR_IRGN_DDCT_AMT" />
+        <target path="entity/RSLT_LIST/CULTR_IRGN_DDCT_AMT" />
         <function ref="move" />
     </mapping>
 </map>
