@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="CISTADAHFF0030701" name="승인주의메시지 목록조회(승인서버)" version="2">
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="CISTADAHFF0030701" name="승인주의메시지 목록조회(승인서버)" version="3">
     <common>
         <description />
         <system code="CIS" name="H-CIS" />

@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="outbound" id="CISTADAHFF0030701" version="2" />
+    <interface bound="outbound" id="CISTADAHFF0030701" version="3" />
     <src_io id="SCISAHFF0030701" />
     <target_io id="TTADAHFF0030701" />
+    <mapping>
+        <source path="entity/RECD_TOT_CNT" />
+        <target path="entity/RECD_TOT_CNT" />
+        <function ref="move" />
+    </mapping>
     <mapping>
         <source path="entity/NXT_SRCH_KEY" />
         <target path="entity/NXT_SRCH_KEY" />

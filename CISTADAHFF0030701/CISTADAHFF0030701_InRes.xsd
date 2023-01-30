@@ -3,6 +3,26 @@
     <element name="root" type="tns:SCISAHFF0030701_outbound" />
     <complexType name="SCISAHFF0030701_outbound">
         <sequence>
+            <element name="recdTotCnt">
+                <annotation>
+                    <documentation>레코드총건수</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="long">
+                        <totalDigits value="11" />
+                    </restriction>
+                </simpleType>
+            </element>
             <element name="nxtSrchKey">
                 <annotation>
                     <documentation>다음검색KEY</documentation>
