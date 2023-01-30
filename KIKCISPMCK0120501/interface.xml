@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="KIKCISPMCK0120501" name="키오스크 영수증입금대상내역조회" version="3">
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="KIKCISPMCK0120501" name="키오스크 영수증입금대상내역조회" version="5">
     <common>
         <description><![CDATA[키오스크 영수증입금대상내역조회]]></description>
         <system code="KIK" name="키오스크" />
