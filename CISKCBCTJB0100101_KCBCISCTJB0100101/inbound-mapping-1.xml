@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="inbound" id="KCBCISCTJB0100101" version="1" />
+    <src_io id="SKCBCTJB0100101" />
+    <target_io id="TCISCTJB0100101" />
+    <mapping>
+        <source path="header/entity1/TGRM_LEN" />
+        <target path="header/entity1/TGRM_LEN" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/TRD_CD" />
+        <target path="header/entity1/TRD_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/MMCO_CD" />
+        <target path="header/entity1/MMCO_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/TGRM_SUB_C_CD" />
+        <target path="header/entity1/TGRM_SUB_C_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/TSK_GBCD" />
+        <target path="header/entity1/TSK_GBCD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/TNR_GB" />
+        <target path="header/entity1/TNR_GB" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/RESP_CD" />
+        <target path="header/entity1/RESP_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/KCB_TGRM_MNG_NO" />
+        <target path="header/entity1/KCB_TGRM_MNG_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/KCB_TGRM_SEND_TIME" />
+        <target path="header/entity1/KCB_TGRM_SEND_TIME" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/MMCO_TGRM_MNG_NO" />
+        <target path="header/entity1/MMCO_TGRM_MNG_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/MMCO_TGRM_SEND_TIME" />
+        <target path="header/entity1/MMCO_TGRM_SEND_TIME" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/SYS_INF" />
+        <target path="header/entity1/SYS_INF" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/QRY_AGR_CD" />
+        <target path="header/entity1/QRY_AGR_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/PREP_VAL" />
+        <target path="header/entity1/PREP_VAL" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/SEG_ID" />
+        <target path="entity/SEG_ID" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/REG_RSN_CD" />
+        <target path="entity/REG_RSN_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/CUST_NO_GBCD" />
+        <target path="entity/CUST_NO_GBCD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/MEM_NO" />
+        <target path="entity/MEM_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/MEM_NM" />
+        <target path="entity/MEM_NM" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/BYMD" />
+        <target path="entity/BYMD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/SEX_CD" />
+        <target path="entity/SEX_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/MOPH_IDNT_NO" />
+        <target path="entity/MOPH_IDNT_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/MOBI_TELS" />
+        <target path="entity/MOBI_TELS" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/MOBI_TELI" />
+        <target path="entity/MOBI_TELI" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/IDINF_GBCD" />
+        <target path="entity/IDINF_GBCD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/IDINF" />
+        <target path="entity/IDINF" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/BSIC_DT" />
+        <target path="entity/BSIC_DT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/PREP_VAL" />
+        <target path="entity/PREP_VAL" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/ERR_RESP_CD" />
+        <target path="entity/ERR_RESP_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/ERR_CHK_BIT_VAL" />
+        <target path="entity/ERR_CHK_BIT_VAL" />
+        <function ref="move" />
+    </mapping>
+</map>
