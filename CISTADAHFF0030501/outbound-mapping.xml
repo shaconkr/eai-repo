@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="outbound" id="CISTADAHFF0030501" version="2" />
+    <src_io id="SCISAHFF0030501" />
+    <target_io id="TTADAHFF0030501" />
+    <mapping>
+        <source path="entity/WRK_PROC_GBCD" />
+        <target path="entity/WRK_PROC_GBCD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/CRD_MEM_NO" />
+        <target path="entity/CRD_MEM_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/APRVL_CARE_REG_DTM" />
+        <target path="entity/APRVL_CARE_REG_DTM" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/APRVL_CARE_GBCD" />
+        <target path="entity/APRVL_CARE_GBCD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/APRVL_CD" />
+        <target path="entity/APRVL_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/APRVL_CARE_APLY_DT" />
+        <target path="entity/APRVL_CARE_APLY_DT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/APRVL_CARE_END_DT" />
+        <target path="entity/APRVL_CARE_END_DT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/APRVL_CARE_CNTN" />
+        <target path="entity/APRVL_CARE_CNTN" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/CNSL_STORE_CD" />
+        <target path="entity/CNSL_STORE_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/CONPS_ID" />
+        <target path="entity/CONPS_ID" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/REG_ID" />
+        <target path="entity/REG_ID" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/REG_DTM" />
+        <target path="entity/REG_DTM" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/REG_PRG_ID" />
+        <target path="entity/REG_PRG_ID" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/CHG_ID" />
+        <target path="entity/CHG_ID" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/CHG_DTM" />
+        <target path="entity/CHG_DTM" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/CHG_PRG_ID" />
+        <target path="entity/CHG_PRG_ID" />
+        <function ref="move" />
+    </mapping>
+</map>
