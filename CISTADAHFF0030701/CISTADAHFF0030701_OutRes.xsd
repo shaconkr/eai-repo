@@ -56,9 +56,9 @@
     </complexType>
     <complexType name="RST_LIST_TYPE">
         <sequence>
-            <element name="regDtm">
+            <element name="aprvlCareRegDtm">
                 <annotation>
-                    <documentation>등록일시</documentation>
+                    <documentation>승인주의등록일시</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
