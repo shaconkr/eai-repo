@@ -339,7 +339,7 @@
             </element>
         </sequence>
     </complexType>
-    <element name="root" type="tns:PINF_INF_RESP_LIST_TYPE_inbound" />
+    <!--element name="root" type="tns:PINF_INF_RESP_LIST_TYPE_inbound" /-->
     <complexType name="PINF_INF_RESP_LIST_TYPE">
         <sequence>
             <element name="segId">
@@ -952,7 +952,7 @@
             </element>
         </sequence>
     </complexType>
-    <element name="root" type="tns:APS_INF_LIST_TYPE_inbound" />
+    <!--element name="root" type="tns:APS_INF_LIST_TYPE_inbound" /-->
     <complexType name="APS_INF_LIST_TYPE">
         <sequence>
             <element name="segId">
@@ -1014,7 +1014,7 @@
             </element>
         </sequence>
     </complexType>
-    <element name="root" type="tns:RLTY_OWN_INF_LIST_TYPE_inbound" />
+    <!--element name="root" type="tns:RLTY_OWN_INF_LIST_TYPE_inbound" /-->
     <complexType name="RLTY_OWN_INF_LIST_TYPE">
         <sequence>
             <element name="segId">
