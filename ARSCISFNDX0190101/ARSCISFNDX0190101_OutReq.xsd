@@ -3,26 +3,6 @@
     <element name="root" type="tns:TCISFNDX0190101_inbound" />
     <complexType name="TCISFNDX0190101_inbound">
         <sequence>
-            <element name="dataCntn">
-                <annotation>
-                    <documentation>데이터내용</documentation>
-                    <appinfo>
-                        <p:description value="데이터내용" />
-                        <p:mandatory value="N" />
-                        <p:level value="1" />
-                        <p:encryption value="N" />
-                        <p:one_path_encp value="N" />
-                        <p:mask_type />
-                        <p:db_key value="N" />
-                        <p:krn_fld_yn value="N" />
-                    </appinfo>
-                </annotation>
-                <simpleType>
-                    <restriction base="string">
-                        <maxLength value="1000" />
-                    </restriction>
-                </simpleType>
-            </element>
             <element name="umsGbcd">
                 <annotation>
                     <documentation>UMS구분코드</documentation>

@@ -1,141 +1,141 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="inbound" id="ARSCISFNDX0190101" version="2" />
+    <interface bound="inbound" id="ARSCISFNDX0190101" version="4" />
     <src_io id="SARSFNDX0190101" />
     <target_io id="TCISFNDX0190101" />
     <mapping>
         <source path="entity/UMS_GBCD" />
-        <target path="entity/DATA_CNTN" />
-        <function ref="move" />
-    </mapping>
-    <mapping>
-        <source path="entity/REG_DTM" />
         <target path="entity/UMS_GBCD" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/CRD_MEM_NO" />
+        <source path="entity/REG_DTM" />
         <target path="entity/REG_DTM" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/CRD_NO" />
+        <source path="entity/CRD_MEM_NO" />
         <target path="entity/CRD_MEM_NO" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/CRD_BRND_GBCD" />
+        <source path="entity/CRD_NO" />
         <target path="entity/CRD_NO" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/MEM_NM" />
+        <source path="entity/CRD_BRND_GBCD" />
         <target path="entity/CRD_BRND_GBCD" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/MEM_GRD" />
+        <source path="entity/MEM_NM" />
         <target path="entity/MEM_NM" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/BSIC_DT" />
+        <source path="entity/MEM_GRD" />
         <target path="entity/MEM_GRD" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/END_DT" />
+        <source path="entity/BSIC_DT" />
         <target path="entity/BSIC_DT" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/REQ_FORM_CD" />
+        <source path="entity/END_DT" />
         <target path="entity/END_DT" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/SALE_QRY_FORM_CD" />
+        <source path="entity/REQ_FORM_CD" />
         <target path="entity/REQ_FORM_CD" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/UMS_SENM_TSK_TYPE_CD" />
+        <source path="entity/SALE_QRY_FORM_CD" />
         <target path="entity/SALE_QRY_FORM_CD" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/SMS_SENM_CNTN" />
+        <source path="entity/UMS_SENM_TSK_TYPE_CD" />
         <target path="entity/UMS_SENM_TSK_TYPE_CD" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/SENM_NO" />
+        <source path="entity/SMS_SENM_CNTN" />
         <target path="entity/SMS_SENM_CNTN" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/SENM_RST_STAT_CD" />
+        <source path="entity/SENM_NO" />
         <target path="entity/SENM_NO" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/SENM_RST_DTM" />
+        <source path="entity/SENM_RST_STAT_CD" />
         <target path="entity/SENM_RST_STAT_CD" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/EMP_NO" />
+        <source path="entity/SENM_RST_DTM" />
         <target path="entity/SENM_RST_DTM" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/EMP_NM" />
+        <source path="entity/EMP_NO" />
         <target path="entity/EMP_NO" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/SENM_STORE_CD" />
+        <source path="entity/EMP_NM" />
         <target path="entity/EMP_NM" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/SENM_REQN_GBCD" />
+        <source path="entity/SENM_STORE_CD" />
         <target path="entity/SENM_STORE_CD" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/SCRN_ID" />
+        <source path="entity/SENM_REQN_GBCD" />
         <target path="entity/SENM_REQN_GBCD" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/MNG_AREA_CD" />
+        <source path="entity/SCRN_ID" />
         <target path="entity/SCRN_ID" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/SENM_CNT_GBCD" />
+        <source path="entity/MNG_AREA_CD" />
         <target path="entity/MNG_AREA_CD" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/HLER_MEM_NO" />
+        <source path="entity/SENM_CNT_GBCD" />
         <target path="entity/SENM_CNT_GBCD" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/TOT_SENM_YN" />
+        <source path="entity/HLER_MEM_NO" />
         <target path="entity/HLER_MEM_NO" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/SENM_RSV_DTM" />
+        <source path="entity/TOT_SENM_YN" />
         <target path="entity/TOT_SENM_YN" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/TBL_NM" />
+        <source path="entity/SENM_RSV_DTM" />
         <target path="entity/SENM_RSV_DTM" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/TBL_NM" />
+        <target path="entity/TBL_NM" />
         <function ref="move" />
     </mapping>
 </map>
