@@ -3,11 +3,11 @@
     <element name="root" type="tns:SARSFNDX0190101_outbound" />
     <complexType name="SARSFNDX0190101_outbound">
         <sequence>
-            <element name="wrkRstCd">
+            <element name="umsSeq">
                 <annotation>
-                    <documentation>작업결과코드</documentation>
+                    <documentation>UMS순번</documentation>
                     <appinfo>
-                        <p:description value="작업결과코드" />
+                        <p:description />
                         <p:mandatory value="N" />
                         <p:level value="1" />
                         <p:encryption value="N" />
@@ -18,8 +18,8 @@
                     </appinfo>
                 </annotation>
                 <simpleType>
-                    <restriction base="string">
-                        <maxLength value="2" />
+                    <restriction base="long">
+                        <totalDigits value="14" />
                     </restriction>
                 </simpleType>
             </element>

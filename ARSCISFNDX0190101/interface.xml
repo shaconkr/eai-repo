@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="ARSCISFNDX0190101" name="소득공제FAX재발송등록" version="4">
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="ARSCISFNDX0190101" name="소득공제FAX재발송등록" version="5">
     <common>
         <description />
         <system code="ARS" name="ARS" />

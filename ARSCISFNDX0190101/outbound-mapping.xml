@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="outbound" id="ARSCISFNDX0190101" version="4" />
+    <interface bound="outbound" id="ARSCISFNDX0190101" version="5" />
     <src_io id="SARSFNDX0190101" />
     <target_io id="TCISFNDX0190101" />
     <mapping>
-        <source path="entity/WRK_RST_CD" />
-        <target path="entity/WRK_RST_CD" />
+        <source path="entity/UMS_SEQ" />
+        <target path="entity/UMS_SEQ" />
         <function ref="move" />
     </mapping>
 </map>
