@@ -102,7 +102,7 @@
             </io>
         </message>
         <header>
-            <io id="H00000003952" idn="TS01_TOS_HCommHeader" version="2" name="jmims.header.ts01.tos.HCommHeader" type="Header" squencename="header">
+            <io id="H00000003952" idn="TS01_TOS_HCommHeader" version="3" name="jmims.header.ts01.tos.HCommHeader" type="Header" squencename="header">
                 <common>
                     <description><![CDATA[토스 페이먼츠 공통부 헤더]]></description>
                     <system code="CIS" name="H-CIS" />
@@ -113,7 +113,7 @@
                     <!--작성 시간-->
                     <writer>박준석</writer>
                     <!--작성자-->
-                    <package_name>hdc.cis.pm.pmx.pmxx.onl.io</package_name>
+                    <package_name>hdc.cis.com.onl.eh.io</package_name>
                     <!--패키지경로-->
                     <class_name>TossCommHdr</class_name>
                     <!--클래스명-->
@@ -147,7 +147,7 @@
                     </online>
                 </process_type>
             </io>
-            <io id="S00000003951" idn="TS01_TOS_HCommHeader" name="jmims.entity.ts01.tos.HCommHeader" version="2" type="Entity" squencename="entity1">
+            <io id="S00000003951" idn="TS01_TOS_HCommHeader" name="jmims.entity.ts01.tos.HCommHeader" version="3" type="Entity" squencename="entity1">
                 <common>
                     <description><![CDATA[토스 페이먼츠 공통부 헤더]]></description>
                     <system code="CIS" name="H-CIS" />
@@ -158,7 +158,7 @@
                     <!--작성 시간-->
                     <writer>박준석</writer>
                     <!--작성자-->
-                    <package_name>hdc.cis.pm.pmx.pmxx.onl.io</package_name>
+                    <package_name>hdc.cis.com.onl.eh.io</package_name>
                     <!--패키지경로-->
                     <class_name>TossCommHdr</class_name>
                     <!--클래스명-->
@@ -192,7 +192,7 @@
                     </online>
                 </process_type>
                 <data><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/" version="S00000003951.2">
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/" version="S00000003951.3">
     <element name="root" type="tns:TS01_TOS_HCommHeader_ENT_inbound" />
     <complexType name="TS01_TOS_HCommHeader_ENT_inbound">
         <sequence>
