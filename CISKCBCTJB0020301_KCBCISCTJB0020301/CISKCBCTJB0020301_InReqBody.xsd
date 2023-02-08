@@ -281,7 +281,6 @@
             </element>
         </sequence>
     </complexType>
-    <!--element name="root" type="tns:APS_REQN_LIST_TYPE_inbound" /-->
     <complexType name="APS_REQN_LIST_TYPE">
         <sequence>
             <element name="segId">

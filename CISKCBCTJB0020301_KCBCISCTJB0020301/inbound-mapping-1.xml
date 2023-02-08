@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="inbound" id="KCBCISCTJB0020301" version="1" />
+    <interface bound="inbound" id="KCBCISCTJB0020301" version="2" />
     <src_io id="SKCBCTJB0020301" />
     <target_io id="TCISCTJB0020301" />
     <mapping>
@@ -399,8 +399,8 @@
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/RLTY_OWN_INF_LIST[]/PREP_VAL111" />
-        <target path="entity/RLTY_OWN_INF_LIST[]/PREP_VAL111" />
+        <source path="entity/RLTY_OWN_INF_LIST[]/RCNT_1_INYR_RECT_PEJD_YN" />
+        <target path="entity/RLTY_OWN_INF_LIST[]/RCNT_1_INYR_RECT_PEJD_YN" />
         <function ref="move" />
     </mapping>
     <mapping>

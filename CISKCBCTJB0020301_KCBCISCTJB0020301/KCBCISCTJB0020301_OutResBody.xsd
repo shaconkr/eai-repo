@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/" version="S00000005522.1">
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/" version="S00000005522.2">
     <element name="root" type="tns:KB01_KCB_E0210_212_ENT_inbound" />
     <complexType name="KB01_KCB_E0210_212_ENT_inbound">
         <sequence>
@@ -339,7 +339,6 @@
             </element>
         </sequence>
     </complexType>
-    <!--element name="root" type="tns:PINF_INF_RESP_LIST_TYPE_inbound" /-->
     <complexType name="PINF_INF_RESP_LIST_TYPE">
         <sequence>
             <element name="segId">
@@ -952,7 +951,6 @@
             </element>
         </sequence>
     </complexType>
-    <!--element name="root" type="tns:APS_INF_LIST_TYPE_inbound" /-->
     <complexType name="APS_INF_LIST_TYPE">
         <sequence>
             <element name="segId">
@@ -1014,7 +1012,6 @@
             </element>
         </sequence>
     </complexType>
-    <!--element name="root" type="tns:RLTY_OWN_INF_LIST_TYPE_inbound" /-->
     <complexType name="RLTY_OWN_INF_LIST_TYPE">
         <sequence>
             <element name="segId">
@@ -1283,9 +1280,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="prepVal111">
+            <element name="rcnt1InyrRectPejdYn">
                 <annotation>
-                    <documentation>예비값111</documentation>
+                    <documentation>최근1년내권리침해여부</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
