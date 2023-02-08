@@ -468,7 +468,7 @@
             </io>
         </header>
         <unit>
-            <io id="S00000005528" idn="KB01_KCB_H0500_212" name="jmims.entity.kb01.kcb.H0500_212" version="1" type="Entity" squencename="entity">
+            <io id="S00000005528" idn="KB01_KCB_H0500_212" name="jmims.entity.kb01.kcb.H0500_212" version="2" type="Entity" squencename="entity">
                 <common>
                     <description><![CDATA[KCB부동산소유확인 다음조회 송신 소스 UNIT IO]]></description>
                     <system code="CIS" name="H-CIS" />
@@ -513,7 +513,7 @@
                     </online>
                 </process_type>
                 <data><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/" version="S00000005528.1">
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/" version="S00000005528.2">
     <element name="root" type="tns:KB01_KCB_H0500_212_ENT_inbound" />
     <complexType name="KB01_KCB_H0500_212_ENT_inbound">
         <sequence>
@@ -795,7 +795,6 @@
             </element>
         </sequence>
     </complexType>
-    <element name="root" type="tns:APS_REQN_LIST_TYPE_inbound" />
     <complexType name="APS_REQN_LIST_TYPE">
         <sequence>
             <element name="segId">

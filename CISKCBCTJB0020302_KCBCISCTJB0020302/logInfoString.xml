@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<deployment id="D00000004675">
+<deployment id="D00000006152">
     <deployer id="CIS018">송규택</deployer>
-    <deployment_date>2023-01-30 17:39:01.300115</deployment_date>
+    <deployment_date>2023-02-08 10:55:28.889703</deployment_date>
     <target_system id="FEP_D_01">EAI 대외</target_system>
 </deployment>
 <?xml version="1.0" encoding="UTF-8"?>
-<deployment id="D00000004675">
+<deployment id="D00000006152">
     <deployer id="CIS018">송규택</deployer>
-    <deployment_date>2023-01-30 17:39:01.300115</deployment_date>
+    <deployment_date>2023-02-08 10:55:28.889703</deployment_date>
     <target_system id="FEP_D_01">EAI 대외</target_system>
 </deployment>
