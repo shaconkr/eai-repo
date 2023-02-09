@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="inbound" id="TADCISMTSY0008001" version="2" />
+    <interface bound="inbound" id="TADCISMTSY0008001" version="3" />
     <src_io id="STADMTSY0008001" />
     <target_io id="TCISMTSY0008001" />
     <mapping>
@@ -164,13 +164,13 @@
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/ITEM_LIST/ITEM_CD" />
-        <target path="entity/ITEM_LIST/ITEM_CD" />
+        <source path="entity/ITEM_CD" />
+        <target path="entity/ITEM_CD" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/ITEM_LIST/ITEM_AMT" />
-        <target path="entity/ITEM_LIST/ITEM_AMT" />
+        <source path="entity/ITEM_AMT" />
+        <target path="entity/ITEM_AMT" />
         <function ref="move" />
     </mapping>
     <mapping>

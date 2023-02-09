@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TCISMTSY0008001" version="2">
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TCISMTSY0008001" version="3">
     <common>
         <io_name><![CDATA[자사비POS승인내역반영]]></io_name>
         <!--I/O 명-->
@@ -733,9 +733,29 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="itemRowcount">
+            <element name="itemCd">
                 <annotation>
-                    <documentation>상품갯수</documentation>
+                    <documentation>상품코드</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="13" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="itemAmt">
+                <annotation>
+                    <documentation>상품금액</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
@@ -749,19 +769,9 @@
                 </annotation>
                 <simpleType>
                     <restriction base="long">
-                        <totalDigits value="5" />
+                        <totalDigits value="18" />
                     </restriction>
                 </simpleType>
-            </element>
-            <element maxOccurs="unbounded" name="itemList" type="tns:ITEM_LIST_TYPE">
-                <annotation>
-                    <documentation>상품리스트</documentation>
-                    <appinfo>
-                        <p:adjustLength category="variableField" lengthFieldURL="ITEM_ROWCOUNT" />
-                        <p:mandatory value="N" />
-                        <p:level value="1" />
-                    </appinfo>
-                </annotation>
             </element>
             <element name="tcktNo">
                 <annotation>
@@ -790,50 +800,6 @@
                         <p:description />
                         <p:mandatory value="N" />
                         <p:level value="1" />
-                        <p:encryption value="N" />
-                        <p:one_path_encp value="N" />
-                        <p:mask_type />
-                        <p:db_key value="N" />
-                        <p:krn_fld_yn value="N" />
-                    </appinfo>
-                </annotation>
-                <simpleType>
-                    <restriction base="long">
-                        <totalDigits value="18" />
-                    </restriction>
-                </simpleType>
-            </element>
-        </sequence>
-    </complexType>
-    <complexType name="ITEM_LIST_TYPE">
-        <sequence>
-            <element name="itemCd">
-                <annotation>
-                    <documentation>상품코드</documentation>
-                    <appinfo>
-                        <p:description />
-                        <p:mandatory value="N" />
-                        <p:level value="2" />
-                        <p:encryption value="N" />
-                        <p:one_path_encp value="N" />
-                        <p:mask_type />
-                        <p:db_key value="N" />
-                        <p:krn_fld_yn value="N" />
-                    </appinfo>
-                </annotation>
-                <simpleType>
-                    <restriction base="string">
-                        <maxLength value="13" />
-                    </restriction>
-                </simpleType>
-            </element>
-            <element name="itemAmt">
-                <annotation>
-                    <documentation>상품금액</documentation>
-                    <appinfo>
-                        <p:description />
-                        <p:mandatory value="N" />
-                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -1525,9 +1491,29 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="itemRowcount">
+            <element name="itemCd">
                 <annotation>
-                    <documentation>상품갯수</documentation>
+                    <documentation>상품코드</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="13" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="itemAmt">
+                <annotation>
+                    <documentation>상품금액</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
@@ -1541,19 +1527,9 @@
                 </annotation>
                 <simpleType>
                     <restriction base="long">
-                        <totalDigits value="5" />
+                        <totalDigits value="18" />
                     </restriction>
                 </simpleType>
-            </element>
-            <element maxOccurs="unbounded" name="itemList" type="tns:ITEM_LIST_TYPE">
-                <annotation>
-                    <documentation>상품리스트</documentation>
-                    <appinfo>
-                        <p:adjustLength category="variableField" lengthFieldURL="ITEM_ROWCOUNT" />
-                        <p:mandatory value="N" />
-                        <p:level value="1" />
-                    </appinfo>
-                </annotation>
             </element>
             <element name="tcktNo">
                 <annotation>
@@ -1582,50 +1558,6 @@
                         <p:description />
                         <p:mandatory value="N" />
                         <p:level value="1" />
-                        <p:encryption value="N" />
-                        <p:one_path_encp value="N" />
-                        <p:mask_type />
-                        <p:db_key value="N" />
-                        <p:krn_fld_yn value="N" />
-                    </appinfo>
-                </annotation>
-                <simpleType>
-                    <restriction base="long">
-                        <totalDigits value="18" />
-                    </restriction>
-                </simpleType>
-            </element>
-        </sequence>
-    </complexType>
-    <complexType name="ITEM_LIST_TYPE">
-        <sequence>
-            <element name="itemCd">
-                <annotation>
-                    <documentation>상품코드</documentation>
-                    <appinfo>
-                        <p:description />
-                        <p:mandatory value="N" />
-                        <p:level value="2" />
-                        <p:encryption value="N" />
-                        <p:one_path_encp value="N" />
-                        <p:mask_type />
-                        <p:db_key value="N" />
-                        <p:krn_fld_yn value="N" />
-                    </appinfo>
-                </annotation>
-                <simpleType>
-                    <restriction base="string">
-                        <maxLength value="13" />
-                    </restriction>
-                </simpleType>
-            </element>
-            <element name="itemAmt">
-                <annotation>
-                    <documentation>상품금액</documentation>
-                    <appinfo>
-                        <p:description />
-                        <p:mandatory value="N" />
-                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />

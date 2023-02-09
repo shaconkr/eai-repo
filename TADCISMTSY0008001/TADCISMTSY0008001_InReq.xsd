@@ -643,14 +643,45 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element minOccurs="5" maxOccurs="5" name="itemList" type="tns:ITEM_LIST_TYPE">
+            <element name="itemCd">
                 <annotation>
-                    <documentation>상품리스트</documentation>
+                    <documentation>상품코드</documentation>
                     <appinfo>
+                        <p:description />
                         <p:mandatory value="N" />
                         <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
                     </appinfo>
                 </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="13" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="itemAmt">
+                <annotation>
+                    <documentation>상품금액</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="18" />
+                    </restriction>
+                </simpleType>
             </element>
             <element name="tcktNo">
                 <annotation>
@@ -679,50 +710,6 @@
                         <p:description />
                         <p:mandatory value="N" />
                         <p:level value="1" />
-                        <p:encryption value="N" />
-                        <p:one_path_encp value="N" />
-                        <p:mask_type />
-                        <p:db_key value="N" />
-                        <p:krn_fld_yn value="N" />
-                    </appinfo>
-                </annotation>
-                <simpleType>
-                    <restriction base="string">
-                        <maxLength value="18" />
-                    </restriction>
-                </simpleType>
-            </element>
-        </sequence>
-    </complexType>
-    <complexType name="ITEM_LIST_TYPE">
-        <sequence>
-            <element name="itemCd">
-                <annotation>
-                    <documentation>상품코드</documentation>
-                    <appinfo>
-                        <p:description />
-                        <p:mandatory value="N" />
-                        <p:level value="2" />
-                        <p:encryption value="N" />
-                        <p:one_path_encp value="N" />
-                        <p:mask_type />
-                        <p:db_key value="N" />
-                        <p:krn_fld_yn value="N" />
-                    </appinfo>
-                </annotation>
-                <simpleType>
-                    <restriction base="string">
-                        <maxLength value="13" />
-                    </restriction>
-                </simpleType>
-            </element>
-            <element name="itemAmt">
-                <annotation>
-                    <documentation>상품금액</documentation>
-                    <appinfo>
-                        <p:description />
-                        <p:mandatory value="N" />
-                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
