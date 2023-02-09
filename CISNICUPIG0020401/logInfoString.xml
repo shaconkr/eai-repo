@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deployment id="D00000006542">
+    <deployer id="CIS040">김명상</deployer>
+    <deployment_date>2023-02-09 12:35:26.886301</deployment_date>
+    <target_system id="FEP_D_01">EAI 대외</target_system>
+</deployment>
