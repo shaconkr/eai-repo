@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="outbound" id="TADCISMTSY0008001" version="2" />
+    <src_io id="STADMTSY0008001" />
+    <target_io id="TCISMTSY0008001" />
+    <mapping>
+        <source path="entity/WRK_GB_VAL" />
+        <target path="entity/WRK_GB_VAL" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/CRD_MEM_NO" />
+        <target path="entity/CRD_MEM_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/CRD_NO" />
+        <target path="entity/CRD_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/APRVL_DT" />
+        <target path="entity/APRVL_DT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/APRVL_TMSTMP" />
+        <target path="entity/APRVL_TMSTMP" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/OWCO_APRVL_NO" />
+        <target path="entity/OWCO_APRVL_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/STORE_CD" />
+        <target path="entity/STORE_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/POS_NO" />
+        <target path="entity/POS_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/APRVL_REQN_ISTN_CD" />
+        <target path="entity/APRVL_REQN_ISTN_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/ILMP_APRVL_YN" />
+        <target path="entity/ILMP_APRVL_YN" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/APRVL_TRD_GBCD" />
+        <target path="entity/APRVL_TRD_GBCD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/USE_BNDS_GBCD" />
+        <target path="entity/USE_BNDS_GBCD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/APRVL_RST_CSF_CD" />
+        <target path="entity/APRVL_RST_CSF_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/CNCL_DT" />
+        <target path="entity/CNCL_DT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/CNCL_TMSTMP" />
+        <target path="entity/CNCL_TMSTMP" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/ORGSALE_POS_NO" />
+        <target path="entity/ORGSALE_POS_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/ORGSALE_RCEIT_NO" />
+        <target path="entity/ORGSALE_RCEIT_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/CRD_INSM_MTHS" />
+        <target path="entity/CRD_INSM_MTHS" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/APRVL_CURAT_GBCD" />
+        <target path="entity/APRVL_CURAT_GBCD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/TSALE_AMT" />
+        <target path="entity/TSALE_AMT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/ENURI_AMT" />
+        <target path="entity/ENURI_AMT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/NSALE_AMT" />
+        <target path="entity/NSALE_AMT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/CRD_APRVL_AMT" />
+        <target path="entity/CRD_APRVL_AMT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/PNT_APRVL_AMT" />
+        <target path="entity/PNT_APRVL_AMT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/APRVL_AMT" />
+        <target path="entity/APRVL_AMT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/OCRN_MLG" />
+        <target path="entity/OCRN_MLG" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/NEOX_PNT" />
+        <target path="entity/NEOX_PNT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/NEOX_CRD_NO" />
+        <target path="entity/NEOX_CRD_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/POS_INSR_MODE_GBCD" />
+        <target path="entity/POS_INSR_MODE_GBCD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RCPT_NO" />
+        <target path="entity/RCPT_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/IAMT_GBCD" />
+        <target path="entity/IAMT_GBCD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/IAMT_AMT" />
+        <target path="entity/IAMT_AMT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/ITEM_LIST/ITEM_CD" />
+        <target path="entity/ITEM_LIST/ITEM_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/ITEM_LIST/ITEM_AMT" />
+        <target path="entity/ITEM_LIST/ITEM_AMT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/TCKT_NO" />
+        <target path="entity/TCKT_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/OVER_APRVL_BNDS_AMT" />
+        <target path="entity/OVER_APRVL_BNDS_AMT" />
+        <function ref="move" />
+    </mapping>
+</map>
