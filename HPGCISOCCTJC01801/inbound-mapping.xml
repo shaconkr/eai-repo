@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="inbound" id="HPGCISOCCTJC01801" version="1" />
+    <src_io id="SHPGOCCTJC01801" />
+    <target_io id="TCISOCCTJC01801" />
+    <mapping>
+        <source path="entity/SELF_MEM_NO" />
+        <target path="entity/SELF_MEM_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RENW_TRGT_GBCD" />
+        <target path="entity/RENW_TRGT_GBCD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/MBL_CRD_ISSU_YN" />
+        <target path="entity/MBL_CRD_ISSU_YN" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/CRD_RCPL_CD" />
+        <target path="entity/CRD_RCPL_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/ACRDT_TYPE_CD" />
+        <target path="entity/ACRDT_TYPE_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/ACPT_PATH_NM" />
+        <target path="entity/ACPT_PATH_NM" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/UTLZ_BNDS_UPWD_GD_AGR_YN" />
+        <target path="entity/UTLZ_BNDS_UPWD_GD_AGR_YN" />
+        <function ref="move" />
+    </mapping>
+</map>
