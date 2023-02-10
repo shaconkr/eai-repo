@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="BCCCISCTCN0010101" idn="BC01_BCC_EAH21S" name="BC체크제휴카드정보수신_요청" version="2">
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="BCCCISCTCN0010101" idn="BC01_BCC_EAH21S" name="BC체크제휴카드정보수신_요청" version="3">
     <common>
         <description />
         <system code="CIS" name="H-CIS" />
