@@ -670,8 +670,8 @@
                     </appinfo>
                 </annotation>
                 <simpleType>
-                    <restriction base="string">
-                        <maxLength value="13" />
+                    <restriction base="long">
+                        <totalDigits value="13" />
                     </restriction>
                 </simpleType>
             </element>
@@ -690,8 +690,8 @@
                     </appinfo>
                 </annotation>
                 <simpleType>
-                    <restriction base="string">
-                        <maxLength value="1" />
+                    <restriction base="long">
+                        <totalDigits value="1" />
                     </restriction>
                 </simpleType>
             </element>
