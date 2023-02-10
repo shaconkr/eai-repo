@@ -3,13 +3,41 @@
     <element name="root" type="tns:SCISUPIG0020401_inbound" />
     <complexType name="SCISUPIG0020401_inbound">
         <sequence>
+            <element maxOccurs="1" minOccurs="1" name="niceHdrGroup" type="tns:NICE_HDR_GROUP_TYPE">
+                <annotation>
+                    <documentation>NICE헤더</documentation>
+                    <appinfo>
+                        <p:level value="1" />
+                    </appinfo>
+                </annotation>
+            </element>
+            <element maxOccurs="1" minOccurs="1" name="niceDataGroup" type="tns:NICE_DATA_GROUP_TYPE">
+                <annotation>
+                    <documentation>NICE데이터</documentation>
+                    <appinfo>
+                        <p:level value="1" />
+                    </appinfo>
+                </annotation>
+            </element>
+            <element maxOccurs="1" minOccurs="1" name="niceEndGroup" type="tns:NICE_END_GROUP_TYPE">
+                <annotation>
+                    <documentation>NICE종료</documentation>
+                    <appinfo>
+                        <p:level value="1" />
+                    </appinfo>
+                </annotation>
+            </element>
+        </sequence>
+    </complexType>
+    <complexType name="NICE_HDR_GROUP_TYPE">
+        <sequence>
             <element name="dataGbcd1">
                 <annotation>
                     <documentation>데이터구분코드1</documentation>
                     <appinfo>
                         <p:description value="데이터구분코드" />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -29,7 +57,7 @@
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -49,7 +77,7 @@
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -69,7 +97,7 @@
                     <appinfo>
                         <p:description value="기준의 시작일자" />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -89,7 +117,7 @@
                     <appinfo>
                         <p:description value="기준의 종료일자" />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -109,7 +137,7 @@
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -129,7 +157,7 @@
                     <appinfo>
                         <p:description value="총건수" />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -149,7 +177,7 @@
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -169,7 +197,7 @@
                     <appinfo>
                         <p:description value="전문에서 공백 ;FILLER" />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -183,79 +211,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="dataInpaRowcount">
-                <annotation>
-                    <documentation>데이터부분건수</documentation>
-                    <appinfo>
-                        <p:description />
-                        <p:mandatory value="N" />
-                        <p:level value="1" />
-                        <p:encryption value="N" />
-                        <p:one_path_encp value="N" />
-                        <p:mask_type />
-                        <p:db_key value="N" />
-                        <p:krn_fld_yn value="N" />
-                    </appinfo>
-                </annotation>
-                <simpleType>
-                    <restriction base="long">
-                        <totalDigits value="5" />
-                    </restriction>
-                </simpleType>
-            </element>
-            <element maxOccurs="unbounded" name="dataInpaList" type="tns:DATA_INPA_LIST_TYPE">
-                <annotation>
-                    <documentation>데이터부분</documentation>
-                    <appinfo>
-                        <p:adjustLength category="variableField" lengthFieldURL="DATA_INPA_ROWCOUNT" />
-                        <p:mandatory value="N" />
-                        <p:level value="1" />
-                    </appinfo>
-                </annotation>
-            </element>
-            <element name="dataGbcd3">
-                <annotation>
-                    <documentation>데이터구분코드3</documentation>
-                    <appinfo>
-                        <p:description value="데이터구분코드" />
-                        <p:mandatory value="N" />
-                        <p:level value="1" />
-                        <p:encryption value="N" />
-                        <p:one_path_encp value="N" />
-                        <p:mask_type />
-                        <p:db_key value="N" />
-                        <p:krn_fld_yn value="N" />
-                    </appinfo>
-                </annotation>
-                <simpleType>
-                    <restriction base="string">
-                        <maxLength value="1" />
-                    </restriction>
-                </simpleType>
-            </element>
-            <element name="totCnt2">
-                <annotation>
-                    <documentation>총건수2</documentation>
-                    <appinfo>
-                        <p:description value="총건수" />
-                        <p:mandatory value="N" />
-                        <p:level value="1" />
-                        <p:encryption value="N" />
-                        <p:one_path_encp value="N" />
-                        <p:mask_type />
-                        <p:db_key value="N" />
-                        <p:krn_fld_yn value="N" />
-                    </appinfo>
-                </annotation>
-                <simpleType>
-                    <restriction base="long">
-                        <totalDigits value="10" />
-                    </restriction>
-                </simpleType>
-            </element>
         </sequence>
     </complexType>
-    <complexType name="DATA_INPA_LIST_TYPE">
+    <complexType name="NICE_DATA_GROUP_TYPE">
         <sequence>
             <element name="dataGbcd2">
                 <annotation>
@@ -814,6 +772,50 @@
                 <simpleType>
                     <restriction base="string">
                         <maxLength value="9" />
+                    </restriction>
+                </simpleType>
+            </element>
+        </sequence>
+    </complexType>
+    <complexType name="NICE_END_GROUP_TYPE">
+        <sequence>
+            <element name="dataGbcd3">
+                <annotation>
+                    <documentation>데이터구분코드3</documentation>
+                    <appinfo>
+                        <p:description value="데이터구분코드" />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="1" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="totCnt2">
+                <annotation>
+                    <documentation>총건수2</documentation>
+                    <appinfo>
+                        <p:description value="총건수" />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="long">
+                        <totalDigits value="10" />
                     </restriction>
                 </simpleType>
             </element>
