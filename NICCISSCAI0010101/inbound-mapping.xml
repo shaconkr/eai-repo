@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="inbound" id="NICCISSCAI0010101" version="1" />
+    <src_io id="SNICSCAI0010101" />
+    <target_io id="TCISSCAI0010101" />
+    <mapping>
+        <source path="entity/NICE_DATA_GROUP/MNG_NO" />
+        <target path="entity/NICE_DATA_GROUP/MNG_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/NICE_DATA_GROUP/BSIC_DT" />
+        <target path="entity/NICE_DATA_GROUP/BSIC_DT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/NICE_DATA_GROUP/SALE_AMT" />
+        <target path="entity/NICE_DATA_GROUP/SALE_AMT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/NICE_DATA_GROUP/NPRFT_AMT" />
+        <target path="entity/NICE_DATA_GROUP/NPRFT_AMT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/NICE_DATA_GROUP/TAST_AMT" />
+        <target path="entity/NICE_DATA_GROUP/TAST_AMT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/NICE_DATA_GROUP/DBT_SUM_AMT" />
+        <target path="entity/NICE_DATA_GROUP/DBT_SUM_AMT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/NICE_DATA_GROUP/CORP_D_BFCTD_CNPJ_PLMI_AMT" />
+        <target path="entity/NICE_DATA_GROUP/CORP_D_BFCTD_CNPJ_PLMI_AMT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/NICE_DATA_GROUP/ADT_OPN_CD" />
+        <target path="entity/NICE_DATA_GROUP/ADT_OPN_CD" />
+        <function ref="move" />
+    </mapping>
+</map>
