@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="inbound" id="KCBCISCTJB0021001" version="1" />
+    <src_io id="SKCBCTJB0021001" />
+    <target_io id="TCISCTJB0021001" />
+    <mapping>
+        <source path="header/entity1/TGRM_LEN" />
+        <target path="header/entity1/TGRM_LEN" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/TRD_CD" />
+        <target path="header/entity1/TRD_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/MMCO_CD" />
+        <target path="header/entity1/MMCO_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/TGRM_SUB_C_CD" />
+        <target path="header/entity1/TGRM_SUB_C_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/TSK_GBCD" />
+        <target path="header/entity1/TSK_GBCD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/TNR_GB" />
+        <target path="header/entity1/TNR_GB" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/RESP_CD" />
+        <target path="header/entity1/RESP_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/KCB_TGRM_MNG_NO" />
+        <target path="header/entity1/KCB_TGRM_MNG_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/KCB_TGRM_SEND_TIME" />
+        <target path="header/entity1/KCB_TGRM_SEND_TIME" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/MMCO_TGRM_MNG_NO" />
+        <target path="header/entity1/MMCO_TGRM_MNG_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/MMCO_TGRM_SEND_TIME" />
+        <target path="header/entity1/MMCO_TGRM_SEND_TIME" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/SYS_INF" />
+        <target path="header/entity1/SYS_INF" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/QRY_AGR_CD" />
+        <target path="header/entity1/QRY_AGR_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/PREP_VAL" />
+        <target path="header/entity1/PREP_VAL" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/CERT_NO" />
+        <target path="entity/CERT_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/INF_CNSC_YN" />
+        <target path="entity/INF_CNSC_YN" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RE_REQN_CNT" />
+        <target path="entity/RE_REQN_CNT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/IDNT_NO_GBCD" />
+        <target path="entity/IDNT_NO_GBCD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/INNT_NO" />
+        <target path="entity/INNT_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/DSCLS_PRC_TOT_CNT" />
+        <target path="entity/DSCLS_PRC_TOT_CNT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/DSCLS_PRC_TOT_TRS_CNT" />
+        <target path="entity/DSCLS_PRC_TOT_TRS_CNT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/DSCLS_PRC_RESP_CNT" />
+        <target path="entity/DSCLS_PRC_RESP_CNT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/SI_D_TOT_CNT" />
+        <target path="entity/SI_D_TOT_CNT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/SI_D_TOT_TRS_CNT" />
+        <target path="entity/SI_D_TOT_TRS_CNT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/SI_D_RESP_CNT" />
+        <target path="entity/SI_D_RESP_CNT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/REAL_TRD_PRC_TOT_CNT" />
+        <target path="entity/REAL_TRD_PRC_TOT_CNT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/REAL_TRD_PRC_TOT_TRS_CNT" />
+        <target path="entity/REAL_TRD_PRC_TOT_TRS_CNT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/REAL_TRD_PRC_RESP_CNT" />
+        <target path="entity/REAL_TRD_PRC_RESP_CNT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/DSCLS_PRC_LIST[]/SEG_ID" />
+        <target path="entity/DSCLS_PRC_LIST[]/SEG_ID" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/DSCLS_PRC_LIST[]/BSIC_YM" />
+        <target path="entity/DSCLS_PRC_LIST[]/BSIC_YM" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/DSCLS_PRC_LIST[]/DSCLS_PRC_GBCD" />
+        <target path="entity/DSCLS_PRC_LIST[]/DSCLS_PRC_GBCD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/DSCLS_PRC_LIST[]/DSCLS_PRC" />
+        <target path="entity/DSCLS_PRC_LIST[]/DSCLS_PRC" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/DSCLS_PRC_LIST[]/PREP_VAL" />
+        <target path="entity/DSCLS_PRC_LIST[]/PREP_VAL" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/SI_D_LIST[]/SEG_ID" />
+        <target path="entity/SI_D_LIST[]/SEG_ID" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/SI_D_LIST[]/BSIC_DT" />
+        <target path="entity/SI_D_LIST[]/BSIC_DT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/SI_D_LIST[]/TRD_LWLM_PRC" />
+        <target path="entity/SI_D_LIST[]/TRD_LWLM_PRC" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/SI_D_LIST[]/TRD_GNRL_PRC" />
+        <target path="entity/SI_D_LIST[]/TRD_GNRL_PRC" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/SI_D_LIST[]/TRD_HGLT_PRC" />
+        <target path="entity/SI_D_LIST[]/TRD_HGLT_PRC" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/SI_D_LIST[]/GRNTE_AMT_LWLM_PRC" />
+        <target path="entity/SI_D_LIST[]/GRNTE_AMT_LWLM_PRC" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/SI_D_LIST[]/GRNTE_AMT_GNRL_PRC" />
+        <target path="entity/SI_D_LIST[]/GRNTE_AMT_GNRL_PRC" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/SI_D_LIST[]/GRNTE_AMT_HGLT_PRC" />
+        <target path="entity/SI_D_LIST[]/GRNTE_AMT_HGLT_PRC" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/SI_D_LIST[]/PREP_VAL" />
+        <target path="entity/SI_D_LIST[]/PREP_VAL" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/REAL_TRD_PRC_LIST[]/SEG_ID" />
+        <target path="entity/REAL_TRD_PRC_LIST[]/SEG_ID" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/REAL_TRD_PRC_LIST[]/TRD_YM" />
+        <target path="entity/REAL_TRD_PRC_LIST[]/TRD_YM" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/REAL_TRD_PRC_LIST[]/EXCL_SAREA" />
+        <target path="entity/REAL_TRD_PRC_LIST[]/EXCL_SAREA" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/REAL_TRD_PRC_LIST[]/FLR_CNT" />
+        <target path="entity/REAL_TRD_PRC_LIST[]/FLR_CNT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/REAL_TRD_PRC_LIST[]/TRD_REAL_TRD_PRC" />
+        <target path="entity/REAL_TRD_PRC_LIST[]/TRD_REAL_TRD_PRC" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/REAL_TRD_PRC_LIST[]/PREP_VAL" />
+        <target path="entity/REAL_TRD_PRC_LIST[]/PREP_VAL" />
+        <function ref="move" />
+    </mapping>
+</map>
