@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="inbound" id="KIKCISPMCK0120201" version="2" />
+    <src_io id="SKIKPMCK0120201" />
+    <target_io id="TCISPMCK0120201" />
+    <mapping>
+        <source path="entity/CRD_MEM_NO" />
+        <target path="entity/CRD_MEM_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/REQ_STLM_UNIT_NO" />
+        <target path="entity/REQ_STLM_UNIT_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/IAMT_DT" />
+        <target path="entity/IAMT_DT" />
+        <function ref="move" />
+    </mapping>
+</map>
