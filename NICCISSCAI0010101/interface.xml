@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="NICCISSCAI0010101" name="기업정보 수신(약식재무제표)" version="8">
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="NICCISSCAI0010101" name="기업정보 수신(약식재무제표)" version="9">
     <common>
         <description><![CDATA[NICE로 부터 기업정보 수신(약식재무제표)]]></description>
         <system code="CIS" name="H-CIS" />
