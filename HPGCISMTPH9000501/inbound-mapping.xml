@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="inbound" id="HPGCISMTPH9000501" version="1" />
+    <interface bound="inbound" id="HPGCISMTPH9000501" version="2" />
     <src_io id="SHPGMTPH9000501" />
     <target_io id="TCISMTPH9000501" />
     <mapping>
-        <source path="entity/SRCH_GROUP/CRD_MEM_NO" />
-        <target path="entity/SRCH_GROUP/CRD_MEM_NO" />
+        <source path="entity/srchGroup/crdMemNo" />
+        <target path="entity/srchGroup/crdMemNo" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/SRCH_GROUP/QRY_GB" />
-        <target path="entity/SRCH_GROUP/QRY_GB" />
+        <source path="entity/srchGroup/qryGb" />
+        <target path="entity/srchGroup/qryGb" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/SRCH_GROUP/QRY_STRT_DT" />
-        <target path="entity/SRCH_GROUP/QRY_STRT_DT" />
+        <source path="entity/srchGroup/qryStrtDt" />
+        <target path="entity/srchGroup/qryStrtDt" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/SRCH_GROUP/QRY_END_DT" />
-        <target path="entity/SRCH_GROUP/QRY_END_DT" />
+        <source path="entity/srchGroup/qryEndDt" />
+        <target path="entity/srchGroup/qryEndDt" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/SRCH_GROUP/QRY_PAGE_NO" />
-        <target path="entity/SRCH_GROUP/QRY_PAGE_NO" />
+        <source path="entity/srchGroup/qryPageNo" />
+        <target path="entity/srchGroup/qryPageNo" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/SRCH_GROUP/LXGDS_GBCD" />
-        <target path="entity/SRCH_GROUP/LXGDS_GBCD" />
+        <source path="entity/srchGroup/lxgdsGbcd" />
+        <target path="entity/srchGroup/lxgdsGbcd" />
         <function ref="move" />
     </mapping>
 </map>
