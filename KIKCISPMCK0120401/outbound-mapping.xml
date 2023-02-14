@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="outbound" id="KIKCISPMCK0120401" version="2" />
+    <src_io id="SKIKPMCK0120401" />
+    <target_io id="TCISPMCK0120401" />
+    <mapping>
+        <source path="entity/gridRowcount" />
+        <target path="entity/gridRowcount" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/gridList/saleMngNo" />
+        <target path="entity/gridList/saleMngNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/gridList/saleUtlzGbcd" />
+        <target path="entity/gridList/saleUtlzGbcd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/gridList/owcoAprvlNo" />
+        <target path="entity/gridList/owcoAprvlNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/gridList/selfFamlMemSeq" />
+        <target path="entity/gridList/selfFamlMemSeq" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/gridList/saleDt" />
+        <target path="entity/gridList/saleDt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/gridList/chrDt" />
+        <target path="entity/gridList/chrDt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/gridList/itemNm" />
+        <target path="entity/gridList/itemNm" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/gridList/nsaleAmt" />
+        <target path="entity/gridList/nsaleAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/gridList/crdInsmMths" />
+        <target path="entity/gridList/crdInsmMths" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/gridList/storeCd" />
+        <target path="entity/gridList/storeCd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/gridList/reqTmnm" />
+        <target path="entity/gridList/reqTmnm" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/gridList/odueAmt" />
+        <target path="entity/gridList/odueAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/gridList/nrmlAmt" />
+        <target path="entity/gridList/nrmlAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/gridList/nadvPrncAmt" />
+        <target path="entity/gridList/nadvPrncAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/gridList/nadvCmisAmt" />
+        <target path="entity/gridList/nadvCmisAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/gridList/nrNadvPrncAmt" />
+        <target path="entity/gridList/nrNadvPrncAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/gridList/totNadvBlnc" />
+        <target path="entity/gridList/totNadvBlnc" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/gridList/totBlnc" />
+        <target path="entity/gridList/totBlnc" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/gridList/thmnGbcd" />
+        <target path="entity/gridList/thmnGbcd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/gridList/insmPamtFllpmtYn" />
+        <target path="entity/gridList/insmPamtFllpmtYn" />
+        <function ref="move" />
+    </mapping>
+</map>
