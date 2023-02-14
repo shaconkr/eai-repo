@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="inbound" id="NICCISSCAI0010201" version="1" />
+    <src_io id="SNICSCAI0010201" />
+    <target_io id="TCISSCAI0010201" />
+    <mapping>
+        <source path="entity/bankCd" />
+        <target path="entity/bankCd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/bankNm" />
+        <target path="entity/bankNm" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/bankEnm" />
+        <target path="entity/bankEnm" />
+        <function ref="move" />
+    </mapping>
+</map>
