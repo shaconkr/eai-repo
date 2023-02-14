@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="inbound" id="NICCISSCAI0010101" version="5" />
+    <interface bound="inbound" id="NICCISSCAI0010101" version="6" />
     <src_io id="SNICSCAI0010101" />
     <target_io id="TCISSCAI0010101" />
     <mapping>
@@ -31,6 +31,11 @@
     <mapping>
         <source path="entity/NICE_DATA_GROUP/DBT_SUM_AMT" />
         <target path="entity/NICE_DATA_GROUP/DBT_SUM_AMT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/NICE_DATA_GROUP/CAPT" />
+        <target path="entity/NICE_DATA_GROUP/CAPT" />
         <function ref="move" />
     </mapping>
     <mapping>

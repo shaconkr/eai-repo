@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SNICSCAI0010101" version="2">
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SNICSCAI0010101" version="3">
     <common>
         <io_name><![CDATA[기업정보 수신(약식재무제표)]]></io_name>
         <!--I/O 명-->
@@ -208,6 +208,26 @@
                     <documentation>부채합계금액</documentation>
                     <appinfo>
                         <p:description value="부채합계금액" />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="long">
+                        <totalDigits value="13" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="capt">
+                <annotation>
+                    <documentation>자본금</documentation>
+                    <appinfo>
+                        <p:description value="자본금" />
                         <p:mandatory value="N" />
                         <p:level value="2" />
                         <p:encryption value="N" />

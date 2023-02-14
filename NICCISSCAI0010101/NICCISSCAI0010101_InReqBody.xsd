@@ -135,6 +135,26 @@
                     </restriction>
                 </simpleType>
             </element>
+            <element name="capt">
+                <annotation>
+                    <documentation>자본금</documentation>
+                    <appinfo>
+                        <p:description value="자본금" />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="long">
+                        <totalDigits value="13" />
+                    </restriction>
+                </simpleType>
+            </element>
             <element name="corpDBfctdCnpjPlmiAmt">
                 <annotation>
                     <documentation>법인세비용차감전계속사업손익금액</documentation>
