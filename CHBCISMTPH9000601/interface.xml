@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="CHBCISMTPH9000601" name="비대면 마일리지조회(챗봇)" version="1">
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="CHBCISMTPH9000601" name="비대면 마일리지조회(챗봇)" version="2">
     <common>
         <description><![CDATA[비대면 마일리지조회(챗봇)]]></description>
         <system code="CHB" name="챗봇" />

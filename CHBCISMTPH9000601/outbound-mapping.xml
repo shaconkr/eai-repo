@@ -1,91 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="outbound" id="CHBCISMTPH9000601" version="1" />
+    <interface bound="outbound" id="CHBCISMTPH9000601" version="2" />
     <src_io id="SCHBMTPH9000601" />
     <target_io id="TCISMTPH9000601" />
     <mapping>
-        <source path="entity/RLT_GROUP/SALE_DT" />
-        <target path="entity/RLT_GROUP/SALE_DT" />
+        <source path="entity/gridRowcount" />
+        <target path="entity/gridRowcount" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/RLT_GROUP/SALE_RCEIT_NO" />
-        <target path="entity/RLT_GROUP/SALE_RCEIT_NO" />
+        <source path="entity/gridList/saleDt" />
+        <target path="entity/gridList/saleDt" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/RLT_GROUP/STORE_CD" />
-        <target path="entity/RLT_GROUP/STORE_CD" />
+        <source path="entity/gridList/saleRceitNo" />
+        <target path="entity/gridList/saleRceitNo" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/RLT_GROUP/SALE_POS_NO" />
-        <target path="entity/RLT_GROUP/SALE_POS_NO" />
+        <source path="entity/gridList/storeCd" />
+        <target path="entity/gridList/storeCd" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/RLT_GROUP/STORE_NM" />
-        <target path="entity/RLT_GROUP/STORE_NM" />
+        <source path="entity/gridList/salePosNo" />
+        <target path="entity/gridList/salePosNo" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/RLT_GROUP/ITEM_NM" />
-        <target path="entity/RLT_GROUP/ITEM_NM" />
+        <source path="entity/gridList/storeNm" />
+        <target path="entity/gridList/storeNm" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/RLT_GROUP/SALE_AMT" />
-        <target path="entity/RLT_GROUP/SALE_AMT" />
+        <source path="entity/gridList/itemNm" />
+        <target path="entity/gridList/itemNm" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/RLT_GROUP/OCRN_MLG" />
-        <target path="entity/RLT_GROUP/OCRN_MLG" />
+        <source path="entity/gridList/saleAmt" />
+        <target path="entity/gridList/saleAmt" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/RLT_GROUP/MLG" />
-        <target path="entity/RLT_GROUP/MLG" />
+        <source path="entity/gridList/ocrnMlg" />
+        <target path="entity/gridList/ocrnMlg" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/RLT_GROUP/CASH_MLG" />
-        <target path="entity/RLT_GROUP/CASH_MLG" />
+        <source path="entity/gridList/mlg" />
+        <target path="entity/gridList/mlg" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/RLT_GROUP/OWCO_GC_MLG" />
-        <target path="entity/RLT_GROUP/OWCO_GC_MLG" />
+        <source path="entity/gridList/cashMlg" />
+        <target path="entity/gridList/cashMlg" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/RLT_GROUP/OTCO_CRD_MLG" />
-        <target path="entity/RLT_GROUP/OTCO_CRD_MLG" />
+        <source path="entity/gridList/owcoGcMlg" />
+        <target path="entity/gridList/owcoGcMlg" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/RLT_GROUP/ETC_MLG" />
-        <target path="entity/RLT_GROUP/ETC_MLG" />
+        <source path="entity/gridList/otcoCrdMlg" />
+        <target path="entity/gridList/otcoCrdMlg" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/RLT_GROUP/SALE_SUM_AMT" />
-        <target path="entity/RLT_GROUP/SALE_SUM_AMT" />
+        <source path="entity/gridList/etcMlg" />
+        <target path="entity/gridList/etcMlg" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/RLT_GROUP/SALE_SUM_MLG" />
-        <target path="entity/RLT_GROUP/SALE_SUM_MLG" />
+        <source path="entity/gridList/saleSumAmt" />
+        <target path="entity/gridList/saleSumAmt" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/RLT_GROUP/QRY_PAGE_NO" />
-        <target path="entity/RLT_GROUP/QRY_PAGE_NO" />
+        <source path="entity/gridList/saleSumMlg" />
+        <target path="entity/gridList/saleSumMlg" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/RLT_GROUP/LXGDS_GBCD" />
-        <target path="entity/RLT_GROUP/LXGDS_GBCD" />
+        <source path="entity/gridList/qryPageNo" />
+        <target path="entity/gridList/qryPageNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/gridList/lxgdsGbcd" />
+        <target path="entity/gridList/lxgdsGbcd" />
         <function ref="move" />
     </mapping>
 </map>
