@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="inbound" id="HPGCISMTPH9000501" version="1" />
+    <src_io id="SHPGMTPH9000501" />
+    <target_io id="TCISMTPH9000501" />
+    <mapping>
+        <source path="entity/SRCH_GROUP/CRD_MEM_NO" />
+        <target path="entity/SRCH_GROUP/CRD_MEM_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/SRCH_GROUP/QRY_GB" />
+        <target path="entity/SRCH_GROUP/QRY_GB" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/SRCH_GROUP/QRY_STRT_DT" />
+        <target path="entity/SRCH_GROUP/QRY_STRT_DT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/SRCH_GROUP/QRY_END_DT" />
+        <target path="entity/SRCH_GROUP/QRY_END_DT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/SRCH_GROUP/QRY_PAGE_NO" />
+        <target path="entity/SRCH_GROUP/QRY_PAGE_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/SRCH_GROUP/LXGDS_GBCD" />
+        <target path="entity/SRCH_GROUP/LXGDS_GBCD" />
+        <function ref="move" />
+    </mapping>
+</map>

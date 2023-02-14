@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="outbound" id="HPGCISMTPH9000501" version="1" />
+    <src_io id="SHPGMTPH9000501" />
+    <target_io id="TCISMTPH9000501" />
+    <mapping>
+        <source path="entity/RLT_GROUP/SALE_DT" />
+        <target path="entity/RLT_GROUP/SALE_DT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RLT_GROUP/SALE_RCEIT_NO" />
+        <target path="entity/RLT_GROUP/SALE_RCEIT_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RLT_GROUP/STORE_CD" />
+        <target path="entity/RLT_GROUP/STORE_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RLT_GROUP/SALE_POS_NO" />
+        <target path="entity/RLT_GROUP/SALE_POS_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RLT_GROUP/STORE_NM" />
+        <target path="entity/RLT_GROUP/STORE_NM" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RLT_GROUP/ITEM_NM" />
+        <target path="entity/RLT_GROUP/ITEM_NM" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RLT_GROUP/SALE_AMT" />
+        <target path="entity/RLT_GROUP/SALE_AMT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RLT_GROUP/OCRN_MLG" />
+        <target path="entity/RLT_GROUP/OCRN_MLG" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RLT_GROUP/MLG" />
+        <target path="entity/RLT_GROUP/MLG" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RLT_GROUP/CASH_MLG" />
+        <target path="entity/RLT_GROUP/CASH_MLG" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RLT_GROUP/OWCO_GC_MLG" />
+        <target path="entity/RLT_GROUP/OWCO_GC_MLG" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RLT_GROUP/OTCO_CRD_MLG" />
+        <target path="entity/RLT_GROUP/OTCO_CRD_MLG" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RLT_GROUP/ETC_MLG" />
+        <target path="entity/RLT_GROUP/ETC_MLG" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RLT_GROUP/SALE_SUM_AMT" />
+        <target path="entity/RLT_GROUP/SALE_SUM_AMT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RLT_GROUP/SALE_SUM_MLG" />
+        <target path="entity/RLT_GROUP/SALE_SUM_MLG" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RLT_GROUP/QRY_PAGE_NO" />
+        <target path="entity/RLT_GROUP/QRY_PAGE_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RLT_GROUP/LXGDS_GBCD" />
+        <target path="entity/RLT_GROUP/LXGDS_GBCD" />
+        <function ref="move" />
+    </mapping>
+</map>
