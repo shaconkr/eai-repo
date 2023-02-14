@@ -11,13 +11,17 @@
                     </appinfo>
                 </annotation>
             </element>
+        </sequence>
+    </complexType>
+    <complexType name="NICE_DATA_GROUP_TYPE">
+        <sequence>
             <element name="bankCd">
                 <annotation>
                     <documentation>은행코드</documentation>
                     <appinfo>
                         <p:description value="은행코드" />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -37,7 +41,7 @@
                     <appinfo>
                         <p:description value="은행명" />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -57,7 +61,7 @@
                     <appinfo>
                         <p:description value="은행영문명" />
                         <p:mandatory value="N" />
-                        <p:level value="1" />
+                        <p:level value="2" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
