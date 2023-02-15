@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TCISCTIC0330101" idn="JN01_JNI_HAH30S_JNIL" version="1">
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TCISCTIC0330101" idn="JN01_JNI_HAH30S_JNIL" version="2">
     <common>
         <io_name><![CDATA[제니엘카드배송PDA실시간전문수신_요청]]></io_name>
         <!--I/O 명-->
@@ -17,7 +17,7 @@
         <!--캐릭터셋-->
         <package_name>hdc.cis.ct.cti.ctic.onl.sc.io</package_name>
         <!--패키지경로-->
-        <class_name>CrdDlvPdaRltmSpclRcv</class_name>
+        <class_name>CrdDlvPdaRltmSpclRcvSc</class_name>
         <!--클래스명-->
         <sttl_yn>Y</sttl_yn>
         <!--표준전문여부-->
@@ -55,7 +55,7 @@
     <!--IO처리유형 : O - 온라인, D - DB, F - FILE, A - API-->
     <inbound>
         <message>
-            <io id="C00000008411" idn="JN01_JNI_HAH30S_JNIL" version="1" name="jmims.message.jn01.jni.HAH30S_JNIL" type="Message">
+            <io id="C00000008411" idn="JN01_JNI_HAH30S_JNIL" version="2" name="jmims.message.jn01.jni.HAH30S_JNIL" type="Message">
                 <common>
                     <description />
                     <system code="CIS" name="H-CIS" />
@@ -373,7 +373,7 @@
             </io>
         </header>
         <unit>
-            <io id="S00000002988" idn="JN01_JNI_HAH30S_JNIL" name="jmims.entity.jn01.jni.HAH30S_JNIL" version="1" type="Entity" squencename="entity">
+            <io id="S00000002988" idn="JN01_JNI_HAH30S_JNIL" name="jmims.entity.jn01.jni.HAH30S_JNIL" version="2" type="Entity" squencename="entity">
                 <common>
                     <description><![CDATA[제니엘에서 카드 배송완료 후 PDA로 배송완료 전문을 수신하는 인터페이스 DATA]]></description>
                     <system code="CIS" name="H-CIS" />
@@ -418,7 +418,7 @@
                     </online>
                 </process_type>
                 <data><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/" version="S00000002988.1">
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/" version="S00000002988.2">
     <element name="root" type="tns:JN01_JNI_HAH30S_JNIL_ENT_inbound" />
     <complexType name="JN01_JNI_HAH30S_JNIL_ENT_inbound">
         <sequence>
@@ -479,25 +479,6 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="crdRcvnrSexGbcd">
-                <annotation>
-                    <documentation>카드수령자성별구분코드</documentation>
-                    <appinfo>
-                        <p:description value="예 : 1" />
-                        <p:mandatory value="N" />
-                        <p:level value="1" />
-                        <p:encryption value="N" />
-                        <p:mask_type />
-                        <p:msg_key value="N" />
-                        <p:krn_fld_yn value="N" />
-                    </appinfo>
-                </annotation>
-                <simpleType>
-                    <restriction base="string">
-                        <maxLength value="1" />
-                    </restriction>
-                </simpleType>
-            </element>
             <element name="prepVal1">
                 <annotation>
                     <documentation>예비값1</documentation>
@@ -513,7 +494,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="string">
-                        <maxLength value="6" />
+                        <maxLength value="7" />
                     </restriction>
                 </simpleType>
             </element>

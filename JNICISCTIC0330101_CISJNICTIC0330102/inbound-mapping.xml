@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="inbound" id="JNICISCTIC0330101" version="1" />
+    <interface bound="inbound" id="JNICISCTIC0330101" version="2" />
     <src_io id="SJNICTIC0330101" />
     <target_io id="TCISCTIC0330101" />
     <mapping>
@@ -64,12 +64,7 @@
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/CRD_RCVNR_SEX_GBCD" />
-        <target path="entity/CRD_RCVNR_SEX_GBCD" />
-        <function ref="move" />
-    </mapping>
-    <mapping>
-        <source path="entity/PREP_VAL_1" />
+        <source path="entity/PREP_VAL1" />
         <target path="entity/PREP_VAL1" />
         <function ref="move" />
     </mapping>

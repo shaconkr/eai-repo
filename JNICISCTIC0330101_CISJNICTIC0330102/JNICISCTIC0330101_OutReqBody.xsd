@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/" version="S00000002988.1">
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/" version="S00000002988.2">
     <element name="root" type="tns:JN01_JNI_HAH30S_JNIL_ENT_inbound" />
     <complexType name="JN01_JNI_HAH30S_JNIL_ENT_inbound">
         <sequence>
@@ -60,25 +60,6 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="crdRcvnrSexGbcd">
-                <annotation>
-                    <documentation>카드수령자성별구분코드</documentation>
-                    <appinfo>
-                        <p:description value="예 : 1" />
-                        <p:mandatory value="N" />
-                        <p:level value="1" />
-                        <p:encryption value="N" />
-                        <p:mask_type />
-                        <p:msg_key value="N" />
-                        <p:krn_fld_yn value="N" />
-                    </appinfo>
-                </annotation>
-                <simpleType>
-                    <restriction base="string">
-                        <maxLength value="1" />
-                    </restriction>
-                </simpleType>
-            </element>
             <element name="prepVal1">
                 <annotation>
                     <documentation>예비값1</documentation>
@@ -94,7 +75,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="string">
-                        <maxLength value="6" />
+                        <maxLength value="7" />
                     </restriction>
                 </simpleType>
             </element>
