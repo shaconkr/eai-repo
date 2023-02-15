@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="outbound" id="KIKCISPMCK0120401" version="2" />
+    <interface bound="outbound" id="KIKCISPMCK0120401" version="3" />
     <src_io id="SKIKPMCK0120401" />
     <target_io id="TCISPMCK0120401" />
     <mapping>
@@ -84,18 +84,13 @@
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/gridList/nrNadvPrncAmt" />
-        <target path="entity/gridList/nrNadvPrncAmt" />
-        <function ref="move" />
-    </mapping>
-    <mapping>
         <source path="entity/gridList/totNadvBlnc" />
         <target path="entity/gridList/totNadvBlnc" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/gridList/totBlnc" />
-        <target path="entity/gridList/totBlnc" />
+        <source path="entity/gridList/thmnReqAmt" />
+        <target path="entity/gridList/thmnReqAmt" />
         <function ref="move" />
     </mapping>
     <mapping>

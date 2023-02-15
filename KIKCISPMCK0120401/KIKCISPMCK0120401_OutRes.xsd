@@ -337,26 +337,6 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="nrNadvPrncAmt">
-                <annotation>
-                    <documentation>미수미도래원금금액</documentation>
-                    <appinfo>
-                        <p:description value="미수 미도래 원금" />
-                        <p:mandatory value="N" />
-                        <p:level value="2" />
-                        <p:encryption value="N" />
-                        <p:one_path_encp value="N" />
-                        <p:mask_type />
-                        <p:db_key value="N" />
-                        <p:krn_fld_yn value="N" />
-                    </appinfo>
-                </annotation>
-                <simpleType>
-                    <restriction base="long">
-                        <totalDigits value="19" />
-                    </restriction>
-                </simpleType>
-            </element>
             <element name="totNadvBlnc">
                 <annotation>
                     <documentation>총미도래잔액</documentation>
@@ -377,9 +357,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="totBlnc">
+            <element name="thmnReqAmt">
                 <annotation>
-                    <documentation>총잔액</documentation>
+                    <documentation>당월청구금액</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
