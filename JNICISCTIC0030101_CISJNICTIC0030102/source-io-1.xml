@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SCISCTIC0030102" idn="JN01_JNI_HAH30R_JNIL" version="1">
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SCISCTIC0030102" idn="JN01_JNI_HAH30R_JNIL" version="2">
     <common>
         <io_name><![CDATA[제니엘카드배송PDA실시간전문수신_응답]]></io_name>
         <!--I/O 명-->
@@ -17,7 +17,7 @@
         <!--캐릭터셋-->
         <package_name>hdc.cis.ct.cti.ctic.onl.sc.io</package_name>
         <!--패키지경로-->
-        <class_name>CrdDlvPdaRltmSpclTrs</class_name>
+        <class_name>CrdDlvPdaRltmSpclRespSc</class_name>
         <!--클래스명-->
         <sttl_yn>Y</sttl_yn>
         <!--표준전문여부-->
@@ -55,7 +55,7 @@
     <!--IO처리유형 : O - 온라인, D - DB, F - FILE, A - API-->
     <inbound>
         <message>
-            <io id="C00000002995" idn="JN01_JNI_HAH30R_JNIL" version="1" name="jmims.message.jn01.jni.HAH30R_JNIL" type="Message">
+            <io id="C00000002995" idn="JN01_JNI_HAH30R_JNIL" version="2" name="jmims.message.jn01.jni.HAH30R_JNIL" type="Message">
                 <common>
                     <description />
                     <system code="CIS" name="H-CIS" />
@@ -102,7 +102,7 @@
             </io>
         </message>
         <header>
-            <io id="H00000002986" idn="JN01_JNI_HCommonHeader" version="1" name="jmims.header.jn01.jni.HCommonHeader" type="Header" squencename="header">
+            <io id="H00000002986" idn="JN01_JNI_HCommonHeader" version="3" name="jmims.header.jn01.jni.HCommonHeader" type="Header" squencename="header">
                 <common>
                     <description><![CDATA[제니엘에서 카드 배송완료 후 PDA로 배송완료 전문을 수신하여 반영 후 응답하는 인터페이스 HEADER]]></description>
                     <system code="CIS" name="H-CIS" />
@@ -113,7 +113,7 @@
                     <!--작성 시간-->
                     <writer>하중구</writer>
                     <!--작성자-->
-                    <package_name>hdc.cis.ct.cti.ctic.onl.sc.io</package_name>
+                    <package_name>hdc.cis.com.onl.eh.io</package_name>
                     <!--패키지경로-->
                     <class_name>CrdDlvPdaRltmSpclRcvHdr</class_name>
                     <!--클래스명-->
@@ -147,7 +147,7 @@
                     </online>
                 </process_type>
             </io>
-            <io id="S00000002985" idn="JN01_JNI_HCommonUnit" name="jmims.entity.jn01.jni.HCommonUnit" version="1" type="Entity" squencename="entity1">
+            <io id="S00000002985" idn="JN01_JNI_HCommonHeader" name="jmims.entity.jn01.jni.HCommonHeader" version="3" type="Entity" squencename="entity1">
                 <common>
                     <description><![CDATA[제니엘에서 카드 배송완료 후 PDA로 배송완료 전문을 수신하여 반영 후 응답하는 인터페이스 HEADER]]></description>
                     <system code="CIS" name="H-CIS" />
@@ -158,7 +158,7 @@
                     <!--작성 시간-->
                     <writer>하중구</writer>
                     <!--작성자-->
-                    <package_name>hdc.cis.ct.cti.ctic.onl.sc.io</package_name>
+                    <package_name>hdc.cis.com.onl.eh.io</package_name>
                     <!--패키지경로-->
                     <class_name>CrdDlvPdaRltmSpclRcvHdr</class_name>
                     <!--클래스명-->
@@ -178,7 +178,7 @@
                             <!--대외 거래 구분 코드-->
                             <etc />
                             <!--대외 기타 구분코드-->
-                            <rspn />
+                            <rspn code="respCd" />
                             <!--대외 응답 코드-->
                             <utrace />
                             <!--고유 TraceKey-->
@@ -192,9 +192,9 @@
                     </online>
                 </process_type>
                 <data><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/" version="S00000002985.1">
-    <element name="root" type="tns:JN01_JNI_HCommonUnit_ENT_inbound" />
-    <complexType name="JN01_JNI_HCommonUnit_ENT_inbound">
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/" version="S00000002985.3">
+    <element name="root" type="tns:JN01_JNI_HCommonHeader_ENT_inbound" />
+    <complexType name="JN01_JNI_HCommonHeader_ENT_inbound">
         <sequence>
             <element name="trdCd">
                 <annotation>
