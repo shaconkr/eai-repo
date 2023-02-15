@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="outbound" id="CISTADAHFA0130301" version="2" />
+    <src_io id="SCISAHFA0130301" />
+    <target_io id="TTADAHFA0130301" />
+    <mapping>
+        <source path="entity/recdTotCnt" />
+        <target path="entity/recdTotCnt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/nxtSrchKey" />
+        <target path="entity/nxtSrchKey" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rstList/aprvlCareRegDtm" />
+        <target path="entity/rstList/aprvlCareRegDtm" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rstList/aprvlCareGbcd" />
+        <target path="entity/rstList/aprvlCareGbcd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rstList/aprvlCareAplyDt" />
+        <target path="entity/rstList/aprvlCareAplyDt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rstList/aprvlCareEndDt" />
+        <target path="entity/rstList/aprvlCareEndDt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rstList/aprvlCareCntn" />
+        <target path="entity/rstList/aprvlCareCntn" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rstList/cnslStoreCd" />
+        <target path="entity/rstList/cnslStoreCd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rstList/conpsId" />
+        <target path="entity/rstList/conpsId" />
+        <function ref="move" />
+    </mapping>
+</map>
