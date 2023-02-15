@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SNICSCAI0010201" version="2">
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SNICSCAI0010201" version="3">
     <common>
         <io_name><![CDATA[기업정보 수신(은행코드)]]></io_name>
         <!--I/O 명-->
@@ -134,7 +134,7 @@
                         <p:one_path_encp value="N" />
                         <p:mask_type />
                         <p:db_key value="N" />
-                        <p:krn_fld_yn value="N" />
+                        <p:krn_fld_yn value="Y" />
                     </appinfo>
                 </annotation>
                 <simpleType>

@@ -46,7 +46,7 @@
                         <p:one_path_encp value="N" />
                         <p:mask_type />
                         <p:db_key value="N" />
-                        <p:krn_fld_yn value="N" />
+                        <p:krn_fld_yn value="Y" />
                     </appinfo>
                 </annotation>
                 <simpleType>
