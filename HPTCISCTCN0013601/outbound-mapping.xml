@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="outbound" id="HPTCISCTCN0013601" version="3" />
+    <src_io id="SHPTCTCN0013601" />
+    <target_io id="TCISCTCN0013601" />
+    <mapping>
+        <source path="entity/eaiKeyNo" />
+        <target path="entity/eaiKeyNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/eaiCreDt" />
+        <target path="entity/eaiCreDt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/crdMemCiVal" />
+        <target path="entity/crdMemCiVal" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/owcoReqYn" />
+        <target path="entity/owcoReqYn" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/hpntReqYn" />
+        <target path="entity/hpntReqYn" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/crdMemNo" />
+        <target path="entity/crdMemNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/eltrRcptReqYn" />
+        <target path="entity/eltrRcptReqYn" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/hisEvntNm" />
+        <target path="entity/hisEvntNm" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/selfYn" />
+        <target path="entity/selfYn" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/selfCustNo" />
+        <target path="entity/selfCustNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/selfRelGbcd" />
+        <target path="entity/selfRelGbcd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/hisCd" />
+        <target path="entity/hisCd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/korNm" />
+        <target path="entity/korNm" />
+        <function ref="move" />
+    </mapping>
+</map>
