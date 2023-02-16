@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="outbound" id="CISTADAHFC0060101" version="2" />
+    <src_io id="SCISAHFC0060101" />
+    <target_io id="TTADAHFC0060101" />
+    <mapping>
+        <source path="entity/rstGroup/totBndsAmt" />
+        <target path="entity/rstGroup/totBndsAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rstGroup/totUseAmt" />
+        <target path="entity/rstGroup/totUseAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rstGroup/rmndBndsAmt" />
+        <target path="entity/rstGroup/rmndBndsAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rstGroup/tmpBndsAmt" />
+        <target path="entity/rstGroup/tmpBndsAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rstGroup/speclBndsAmt" />
+        <target path="entity/rstGroup/speclBndsAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rstGroup/tmpBndsAplyDt" />
+        <target path="entity/rstGroup/tmpBndsAplyDt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rstGroup/tmpBndsEndDt" />
+        <target path="entity/rstGroup/tmpBndsEndDt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rstGroup/speclBndsAplyDt" />
+        <target path="entity/rstGroup/speclBndsAplyDt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rstGroup/speclBndsEndDt" />
+        <target path="entity/rstGroup/speclBndsEndDt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rstGroup/speclBndsBlnc" />
+        <target path="entity/rstGroup/speclBndsBlnc" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rstGroup/aprvlAmt" />
+        <target path="entity/rstGroup/aprvlAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rstGroup/iamtAmt" />
+        <target path="entity/rstGroup/iamtAmt" />
+        <function ref="move" />
+    </mapping>
+</map>

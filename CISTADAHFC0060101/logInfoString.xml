@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deployment id="D00000007653">
+    <deployer id="CIS070">전부일</deployer>
+    <deployment_date>2023-02-16 10:16:22.532993</deployment_date>
+    <target_system id="EAI_D_01">EAI 대내</target_system>
+</deployment>
