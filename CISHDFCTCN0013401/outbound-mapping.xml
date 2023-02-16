@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="outbound" id="CISHDFCTCN0013401" version="1" />
+    <src_io id="SCISCTCN0013401" />
+    <target_io id="THDFCTCN0013401" />
+    <mapping>
+        <source path="entity/storeCd" />
+        <target path="entity/storeCd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/crdNo" />
+        <target path="entity/crdNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/mphonNo" />
+        <target path="entity/mphonNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/bymd" />
+        <target path="entity/bymd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/crdGbcd" />
+        <target path="entity/crdGbcd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/custGrdCd" />
+        <target path="entity/custGrdCd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/msg" />
+        <target path="entity/msg" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/prepClasInf" />
+        <target path="entity/prepClasInf" />
+        <function ref="move" />
+    </mapping>
+</map>
