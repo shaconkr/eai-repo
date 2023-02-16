@@ -373,7 +373,7 @@
             </io>
         </header>
         <unit>
-            <io id="S00000002990" idn="JN01_JNI_EAH30S_JNIL" name="jmims.entity.jn01.jni.EAH30S_JNIL" version="3" type="Entity" squencename="entity">
+            <io id="S00000002990" idn="JN01_JNI_EAH30S_JNIL" name="jmims.entity.jn01.jni.EAH30S_JNIL" version="4" type="Entity" squencename="entity">
                 <common>
                     <description><![CDATA[제니엘에서 카드 배송완료 후 PDA로 배송완료 전문을 수신하는 인터페이스 DATA]]></description>
                     <system code="JNI" name="제니엘" />
@@ -418,7 +418,7 @@
                     </online>
                 </process_type>
                 <data><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/" version="S00000002990.3">
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/" version="S00000002990.4">
     <element name="root" type="tns:JN01_JNI_EAH30S_JNIL_ENT_inbound" />
     <complexType name="JN01_JNI_EAH30S_JNIL_ENT_inbound">
         <sequence>
@@ -552,6 +552,25 @@
                 <simpleType>
                     <restriction base="string">
                         <maxLength value="2" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="memo">
+                <annotation>
+                    <documentation>메모</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="40" />
                     </restriction>
                 </simpleType>
             </element>

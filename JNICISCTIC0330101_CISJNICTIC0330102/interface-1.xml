@@ -106,7 +106,7 @@
     </common>
     <interface_type>
         <source>
-            <ioid version="1">SCISCTIC0330102</ioid>
+            <ioid version="2">SCISCTIC0330102</ioid>
             <!--소스 I/O ID-->
             <ioidn>JN01_JNI_HAH30R_JNIL</ioidn>
             <!--소스 관리 I/O ID-->

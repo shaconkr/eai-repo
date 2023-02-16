@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="inbound" id="JNICISCTIC0330101" version="2" />
+    <interface bound="inbound" id="JNICISCTIC0330101" version="3" />
     <src_io id="SJNICTIC0330101" />
     <target_io id="TCISCTIC0330101" />
     <mapping>
@@ -81,6 +81,11 @@
     <mapping>
         <source path="entity/SNDB_RSN_GBCD" />
         <target path="entity/SNDB_RSN_GBCD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/MEMO" />
+        <target path="entity/MEMO" />
         <function ref="move" />
     </mapping>
     <mapping>

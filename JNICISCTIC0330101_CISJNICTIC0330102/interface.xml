@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="JNICISCTIC0330101" idn="JN01_JNI_EAH30S_JNIL" name="제니엘카드배송PDA실시간전문수신_요청" version="4">
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="JNICISCTIC0330101" idn="JN01_JNI_EAH30S_JNIL" name="제니엘카드배송PDA실시간전문수신_요청" version="5">
     <common>
         <description><![CDATA[SVC ID :     OCCTIC03301I(카드.배송.PDA.실시간.전문.수신)
 BuisCd :       CTIC0330101
@@ -168,7 +168,7 @@ ASIS   : hp55lscm.pc]]></description>
             </process_type>
         </source>
         <target>
-            <ioid version="2">TCISCTIC0330101</ioid>
+            <ioid version="3">TCISCTIC0330101</ioid>
             <!--타겟 I/O ID-->
             <ioidn>JN01_JNI_HAH30S_JNIL</ioidn>
             <!--타겟 관리 I/O ID-->
