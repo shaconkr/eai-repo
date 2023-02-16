@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="JNICISCTIC0340101" idn="JN01_JNI_EAH51S_JNIL" name="제니엘특송카드발송진행수신_요청" version="2">
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="JNICISCTIC0340101" idn="JN01_JNI_EAH51S_JNIL" name="제니엘특송카드발송진행수신_요청" version="3">
     <common>
         <description><![CDATA[SVC ID :     OCCTIC03401I (특송.진행.내역.수신)
 BuisCd :       CTIC0340101
