@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="outbound" id="CISTADAHHE0060101" version="2" />
+    <src_io id="SCISAHHE0060101" />
+    <target_io id="TTADAHHE0060101" />
+    <mapping>
+        <source path="entity/nxtSrchKey" />
+        <target path="entity/nxtSrchKey" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rstList/crdNo" />
+        <target path="entity/rstList/crdNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rstList/crdBrndCd" />
+        <target path="entity/rstList/crdBrndCd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rstList/aprvlNo" />
+        <target path="entity/rstList/aprvlNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rstList/storeCd" />
+        <target path="entity/rstList/storeCd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rstList/aprvlInfwGbcd" />
+        <target path="entity/rstList/aprvlInfwGbcd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rstList/aprvId" />
+        <target path="entity/rstList/aprvId" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rstList/aprvlDtm" />
+        <target path="entity/rstList/aprvlDtm" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rstList/posNo" />
+        <target path="entity/rstList/posNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rstList/insmMths" />
+        <target path="entity/rstList/insmMths" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rstList/aprvlIamtGbcd" />
+        <target path="entity/rstList/aprvlIamtGbcd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rstList/tsaleAmt" />
+        <target path="entity/rstList/tsaleAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rstList/dcAmt" />
+        <target path="entity/rstList/dcAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rstList/nsaleAmt" />
+        <target path="entity/rstList/nsaleAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rstList/iamtAmt" />
+        <target path="entity/rstList/iamtAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rstList/crdAprvlAmt" />
+        <target path="entity/rstList/crdAprvlAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rstList/aprvlRstCsfCd" />
+        <target path="entity/rstList/aprvlRstCsfCd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rstList/aprvlCd" />
+        <target path="entity/rstList/aprvlCd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rstList/aprvlMemo" />
+        <target path="entity/rstList/aprvlMemo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rstList/enuriGbVal" />
+        <target path="entity/rstList/enuriGbVal" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rstList/itemCd" />
+        <target path="entity/rstList/itemCd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rstList/itemAmt" />
+        <target path="entity/rstList/itemAmt" />
+        <function ref="move" />
+    </mapping>
+</map>
