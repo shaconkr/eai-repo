@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="inbound" id="CISTADAHFA0100101" version="2" />
+    <src_io id="SCISAHFA0100101" />
+    <target_io id="TTADAHFA0100101" />
+    <mapping>
+        <source path="entity/wrkProcGbcd" />
+        <target path="entity/wrkProcGbcd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/ptcrMemGbcd" />
+        <target path="entity/ptcrMemGbcd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/priorAprvlTypeCd" />
+        <target path="entity/priorAprvlTypeCd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/qryStrtDt" />
+        <target path="entity/qryStrtDt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/qryEndDt" />
+        <target path="entity/qryEndDt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/crdMemNo" />
+        <target path="entity/crdMemNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/nxtSrchKey" />
+        <target path="entity/nxtSrchKey" />
+        <function ref="move" />
+    </mapping>
+</map>
