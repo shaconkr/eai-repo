@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="inbound" id="NICCISSCAI0010701" version="1" />
+    <src_io id="SNICSCAI0010701" />
+    <target_io id="TCISSCAI0010701" />
+    <mapping>
+        <source path="entity/niceDataGroup/mngNo" />
+        <target path="entity/niceDataGroup/mngNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceDataGroup/custInfrNm" />
+        <target path="entity/niceDataGroup/custInfrNm" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceDataGroup/coEnm" />
+        <target path="entity/niceDataGroup/coEnm" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceDataGroup/custChcrNm" />
+        <target path="entity/niceDataGroup/custChcrNm" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceDataGroup/reppNm" />
+        <target path="entity/niceDataGroup/reppNm" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceDataGroup/reppEnm" />
+        <target path="entity/niceDataGroup/reppEnm" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceDataGroup/reppChcrNm" />
+        <target path="entity/niceDataGroup/reppChcrNm" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceDataGroup/newBiztpCd1" />
+        <target path="entity/niceDataGroup/newBiztpCd1" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceDataGroup/indsCdNm" />
+        <target path="entity/niceDataGroup/indsCdNm" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceDataGroup/coFormCd" />
+        <target path="entity/niceDataGroup/coFormCd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceDataGroup/istnFormGbcd" />
+        <target path="entity/niceDataGroup/istnFormGbcd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceDataGroup/hedoAdr" />
+        <target path="entity/niceDataGroup/hedoAdr" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceDataGroup/hedoPostNo" />
+        <target path="entity/niceDataGroup/hedoPostNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceDataGroup/hedoTelno" />
+        <target path="entity/niceDataGroup/hedoTelno" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceDataGroup/hedoFaxNo" />
+        <target path="entity/niceDataGroup/hedoFaxNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceDataGroup/fctryAdr" />
+        <target path="entity/niceDataGroup/fctryAdr" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceDataGroup/fctryPostNo" />
+        <target path="entity/niceDataGroup/fctryPostNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceDataGroup/fctryTelno" />
+        <target path="entity/niceDataGroup/fctryTelno" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceDataGroup/fctryFaxNo" />
+        <target path="entity/niceDataGroup/fctryFaxNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceDataGroup/bizStoreAdr" />
+        <target path="entity/niceDataGroup/bizStoreAdr" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceDataGroup/bizStorePostNo" />
+        <target path="entity/niceDataGroup/bizStorePostNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceDataGroup/bizStoreTelno" />
+        <target path="entity/niceDataGroup/bizStoreTelno" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceDataGroup/bizStoreFaxNo" />
+        <target path="entity/niceDataGroup/bizStoreFaxNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceDataGroup/wkerCnt" />
+        <target path="entity/niceDataGroup/wkerCnt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceDataGroup/wkerCntBsicYm" />
+        <target path="entity/niceDataGroup/wkerCntBsicYm" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceDataGroup/estbDt" />
+        <target path="entity/niceDataGroup/estbDt" />
+        <function ref="move" />
+    </mapping>
+</map>
