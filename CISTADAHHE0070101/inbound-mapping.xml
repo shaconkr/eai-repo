@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="inbound" id="CISTADAHHE0070101" version="2" />
+    <src_io id="SCISAHHE0070101" />
+    <target_io id="TTADAHHE0070101" />
+    <mapping>
+        <source path="entity/srchGroup/qryStrtDt" />
+        <target path="entity/srchGroup/qryStrtDt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/srchGroup/qryEndDt" />
+        <target path="entity/srchGroup/qryEndDt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/srchGroup/nxtSrchKey" />
+        <target path="entity/srchGroup/nxtSrchKey" />
+        <function ref="move" />
+    </mapping>
+</map>
