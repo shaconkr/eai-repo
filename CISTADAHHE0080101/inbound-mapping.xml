@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="inbound" id="CISTADAHHE0080101" version="2" />
+    <src_io id="SCISAHHE0080101" />
+    <target_io id="TTADAHHE0080101" />
+    <mapping>
+        <source path="entity/srchGroup/storeCd" />
+        <target path="entity/srchGroup/storeCd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/srchGroup/aprvId" />
+        <target path="entity/srchGroup/aprvId" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/srchGroup/strtYm" />
+        <target path="entity/srchGroup/strtYm" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/srchGroup/endYm" />
+        <target path="entity/srchGroup/endYm" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/srchGroup/nxtSrchKey" />
+        <target path="entity/srchGroup/nxtSrchKey" />
+        <function ref="move" />
+    </mapping>
+</map>
