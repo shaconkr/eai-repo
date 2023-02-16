@@ -337,6 +337,46 @@
                     </restriction>
                 </simpleType>
             </element>
+            <element name="chrDcAmt">
+                <annotation>
+                    <documentation>청구할인금액</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="long">
+                        <totalDigits value="18" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="reqTgamt">
+                <annotation>
+                    <documentation>청구대상금액</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="long">
+                        <totalDigits value="18" />
+                    </restriction>
+                </simpleType>
+            </element>
             <element name="crdInsmMths">
                 <annotation>
                     <documentation>카드할부개월수</documentation>

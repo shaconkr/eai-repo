@@ -1,56 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="inbound" id="KIKCISFNDX0010101" version="1" />
+    <interface bound="inbound" id="KIKCISFNDX0010101" version="2" />
     <src_io id="SKIKFNDX0010101" />
     <target_io id="TCISFNDX0010101" />
     <mapping>
-        <source path="entity/CRD_MEM_NO" />
-        <target path="entity/CRD_MEM_NO" />
+        <source path="entity/crdMemNo" />
+        <target path="entity/crdMemNo" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/REQ_STLM_UNIT_NO" />
-        <target path="entity/REQ_STLM_UNIT_NO" />
+        <source path="entity/reqStlmUnitNo" />
+        <target path="entity/reqStlmUnitNo" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/IAMT_PRRG_DT" />
-        <target path="entity/IAMT_PRRG_DT" />
+        <source path="entity/iamtPrrgDt" />
+        <target path="entity/iamtPrrgDt" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/STLM_DAY" />
-        <target path="entity/STLM_DAY" />
+        <source path="entity/stlmDay" />
+        <target path="entity/stlmDay" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/CHR_STRT_DT" />
-        <target path="entity/CHR_STRT_DT" />
+        <source path="entity/chrStrtDt" />
+        <target path="entity/chrStrtDt" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/CHR_END_DT" />
-        <target path="entity/CHR_END_DT" />
+        <source path="entity/chrEndDt" />
+        <target path="entity/chrEndDt" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/SCRN_GBCD" />
-        <target path="entity/SCRN_GBCD" />
+        <source path="entity/scrnGbcd" />
+        <target path="entity/scrnGbcd" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/QRY_YN" />
-        <target path="entity/QRY_YN" />
+        <source path="entity/qryYn" />
+        <target path="entity/qryYn" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/QRY_STRT_DT" />
-        <target path="entity/QRY_STRT_DT" />
+        <source path="entity/qryStrtDt" />
+        <target path="entity/qryStrtDt" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/QRY_END_DT" />
-        <target path="entity/QRY_END_DT" />
+        <source path="entity/qryEndDt" />
+        <target path="entity/qryEndDt" />
         <function ref="move" />
     </mapping>
 </map>

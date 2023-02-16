@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="KIKCISFNDX0010101" name="키오스크이용내역조회" version="1">
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="KIKCISFNDX0010101" name="키오스크이용내역조회" version="2">
     <common>
         <description><![CDATA[키오스크이용내역조회]]></description>
         <system code="KIK" name="키오스크" />
