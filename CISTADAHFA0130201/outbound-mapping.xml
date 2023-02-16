@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="outbound" id="CISTADAHFA0130201" version="2" />
+    <src_io id="SCISAHFA0130201" />
+    <target_io id="TTADAHFA0130201" />
+    <mapping>
+        <source path="entity/rstGroup/crdMemNo" />
+        <target path="entity/rstGroup/crdMemNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rstGroup/aprvlCareCd" />
+        <target path="entity/rstGroup/aprvlCareCd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rstGroup/aprvlCareCntn" />
+        <target path="entity/rstGroup/aprvlCareCntn" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rstGroup/aprvlCareAplyDt" />
+        <target path="entity/rstGroup/aprvlCareAplyDt" />
+        <function ref="move" />
+    </mapping>
+</map>

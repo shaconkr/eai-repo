@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="inbound" id="CISTADAHFA0130201" version="2" />
+    <src_io id="SCISAHFA0130201" />
+    <target_io id="TTADAHFA0130201" />
+    <mapping>
+        <source path="entity/srchGroup/wrkGbVal" />
+        <target path="entity/srchGroup/wrkGbVal" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/srchGroup/crdMemNo" />
+        <target path="entity/srchGroup/crdMemNo" />
+        <function ref="move" />
+    </mapping>
+</map>
