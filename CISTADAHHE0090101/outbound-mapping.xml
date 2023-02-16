@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="outbound" id="CISTADAHHE0090101" version="2" />
+    <src_io id="SCISAHHE0090101" />
+    <target_io id="TTADAHHE0090101" />
+    <mapping>
+        <source path="entity/nxtSrchKey" />
+        <target path="entity/nxtSrchKey" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rstList/yr" />
+        <target path="entity/rstList/yr" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rstList/mm" />
+        <target path="entity/rstList/mm" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rstList/ldinCnt" />
+        <target path="entity/rstList/ldinCnt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rstList/ldinAmt" />
+        <target path="entity/rstList/ldinAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rstList/ldinCntPerUprc" />
+        <target path="entity/rstList/ldinCntPerUprc" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rstList/pupAprvlCnt" />
+        <target path="entity/rstList/pupAprvlCnt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rstList/pupAprvlCntRt" />
+        <target path="entity/rstList/pupAprvlCntRt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rstList/pupAprvlAmt" />
+        <target path="entity/rstList/pupAprvlAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rstList/pupAprvlAmtRt" />
+        <target path="entity/rstList/pupAprvlAmtRt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rstList/pupAprvlCntPerUprc" />
+        <target path="entity/rstList/pupAprvlCntPerUprc" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rstList/wirdAprvlCnt" />
+        <target path="entity/rstList/wirdAprvlCnt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rstList/wirdAprvlCntRt" />
+        <target path="entity/rstList/wirdAprvlCntRt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rstList/wirdAprvlAmt" />
+        <target path="entity/rstList/wirdAprvlAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rstList/wirdAprvlAmtRt" />
+        <target path="entity/rstList/wirdAprvlAmtRt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rstList/wirdAprvlCntPerUprc" />
+        <target path="entity/rstList/wirdAprvlCntPerUprc" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rstList/totCnt" />
+        <target path="entity/rstList/totCnt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rstList/aprvlCntRt" />
+        <target path="entity/rstList/aprvlCntRt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rstList/totAmt" />
+        <target path="entity/rstList/totAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rstList/aprvlAmtRt" />
+        <target path="entity/rstList/aprvlAmtRt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rstList/cntPerUprc" />
+        <target path="entity/rstList/cntPerUprc" />
+        <function ref="move" />
+    </mapping>
+</map>
