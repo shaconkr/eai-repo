@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="inbound" id="CISTADAHHF0050101" version="2" />
+    <src_io id="SCISAHHF0050101" />
+    <target_io id="TTADAHHF0050101" />
+    <mapping>
+        <source path="entity/aprvlDt" />
+        <target path="entity/aprvlDt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/aprvlTime" />
+        <target path="entity/aprvlTime" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/aprvlNo" />
+        <target path="entity/aprvlNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/crdNo" />
+        <target path="entity/crdNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/chgId" />
+        <target path="entity/chgId" />
+        <function ref="move" />
+    </mapping>
+</map>
