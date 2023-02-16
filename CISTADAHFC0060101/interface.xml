@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="CISTADAHFC0060101" name="한도정보 조회(승인서버)" version="2">
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="CISTADAHFC0060101" name="한도정보 조회(승인서버)" version="3">
     <common>
         <description />
         <system code="CIS" name="H-CIS" />
