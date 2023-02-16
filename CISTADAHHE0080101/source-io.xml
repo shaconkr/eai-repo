@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SCISAHHE0080101" version="2">
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SCISAHHE0080101" version="3">
     <common>
         <io_name><![CDATA[점별 승인자별 승인결과 집계(승인서버)]]></io_name>
         <!--I/O 명-->
@@ -368,8 +368,8 @@
                     </appinfo>
                 </annotation>
                 <simpleType>
-                    <restriction base="string">
-                        <maxLength value="18" />
+                    <restriction base="long">
+                        <totalDigits value="18" />
                     </restriction>
                 </simpleType>
             </element>
@@ -388,8 +388,8 @@
                     </appinfo>
                 </annotation>
                 <simpleType>
-                    <restriction base="string">
-                        <maxLength value="18" />
+                    <restriction base="long">
+                        <totalDigits value="18" />
                     </restriction>
                 </simpleType>
             </element>
@@ -408,8 +408,8 @@
                     </appinfo>
                 </annotation>
                 <simpleType>
-                    <restriction base="string">
-                        <maxLength value="18" />
+                    <restriction base="long">
+                        <totalDigits value="18" />
                     </restriction>
                 </simpleType>
             </element>
@@ -428,8 +428,8 @@
                     </appinfo>
                 </annotation>
                 <simpleType>
-                    <restriction base="string">
-                        <maxLength value="18" />
+                    <restriction base="long">
+                        <totalDigits value="18" />
                     </restriction>
                 </simpleType>
             </element>
@@ -448,8 +448,8 @@
                     </appinfo>
                 </annotation>
                 <simpleType>
-                    <restriction base="string">
-                        <maxLength value="18" />
+                    <restriction base="long">
+                        <totalDigits value="18" />
                     </restriction>
                 </simpleType>
             </element>
@@ -468,8 +468,8 @@
                     </appinfo>
                 </annotation>
                 <simpleType>
-                    <restriction base="string">
-                        <maxLength value="18" />
+                    <restriction base="long">
+                        <totalDigits value="18" />
                     </restriction>
                 </simpleType>
             </element>
@@ -488,8 +488,8 @@
                     </appinfo>
                 </annotation>
                 <simpleType>
-                    <restriction base="string">
-                        <maxLength value="18" />
+                    <restriction base="long">
+                        <totalDigits value="18" />
                     </restriction>
                 </simpleType>
             </element>
@@ -508,8 +508,8 @@
                     </appinfo>
                 </annotation>
                 <simpleType>
-                    <restriction base="string">
-                        <maxLength value="18" />
+                    <restriction base="long">
+                        <totalDigits value="18" />
                     </restriction>
                 </simpleType>
             </element>
