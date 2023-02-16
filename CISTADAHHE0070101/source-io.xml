@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SCISAHHE0070101" version="2">
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SCISAHHE0070101" version="3">
     <common>
         <io_name><![CDATA[자동초과 승인결과 현황 조회(승인서버)]]></io_name>
         <!--I/O 명-->
@@ -239,10 +239,11 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element minOccurs="50" maxOccurs="50" name="rstList" type="tns:RST_LIST_TYPE">
+            <element maxOccurs="unbounded" name="rstList" type="tns:RST_LIST_TYPE">
                 <annotation>
                     <documentation>결과리스트</documentation>
                     <appinfo>
+                        <p:adjustLength category="variableField" lengthFieldURL="RST_ROWCOUNT" />
                         <p:mandatory value="N" />
                         <p:level value="1" />
                     </appinfo>

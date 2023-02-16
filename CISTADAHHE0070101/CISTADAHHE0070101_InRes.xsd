@@ -43,10 +43,11 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element minOccurs="50" maxOccurs="50" name="rstList" type="tns:RST_LIST_TYPE">
+            <element maxOccurs="unbounded" name="rstList" type="tns:RST_LIST_TYPE">
                 <annotation>
                     <documentation>결과리스트</documentation>
                     <appinfo>
+                        <p:adjustLength category="variableField" lengthFieldURL="RST_ROWCOUNT" />
                         <p:mandatory value="N" />
                         <p:level value="1" />
                     </appinfo>
