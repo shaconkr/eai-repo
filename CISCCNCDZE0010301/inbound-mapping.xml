@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="inbound" id="CISCCNCDZE0010301" version="2" />
+    <src_io id="SCISCDZE0010301" />
+    <target_io id="TCCNCDZE0010301" />
+    <mapping>
+        <source path="entity/secrKey" />
+        <target path="entity/secrKey" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/key" />
+        <target path="entity/key" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/charSet" />
+        <target path="entity/charSet" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/reqDataRowcount" />
+        <target path="entity/reqDataRowcount" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/reqDataList/bankCd" />
+        <target path="entity/reqDataList/bankCd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/reqDataList/searchAcctNo" />
+        <target path="entity/reqDataList/searchAcctNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/reqDataList/acnmNo" />
+        <target path="entity/reqDataList/acnmNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/reqDataList/icheAmt" />
+        <target path="entity/reqDataList/icheAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/reqDataList/trscSeqNo" />
+        <target path="entity/reqDataList/trscSeqNo" />
+        <function ref="move" />
+    </mapping>
+</map>
