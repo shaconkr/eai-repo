@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="inbound" id="NICCISSCAI0011001" version="1" />
+    <src_io id="SNICSCAI0011001" />
+    <target_io id="TCISSCAI0011001" />
+    <mapping>
+        <source path="entity/niceDataGroup/mngNo" />
+        <target path="entity/niceDataGroup/mngNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceDataGroup/bsicDt" />
+        <target path="entity/niceDataGroup/bsicDt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceDataGroup/setlGbcd" />
+        <target path="entity/niceDataGroup/setlGbcd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceDataGroup/wkWkCnt" />
+        <target path="entity/niceDataGroup/wkWkCnt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceDataGroup/shrrt" />
+        <target path="entity/niceDataGroup/shrrt" />
+        <function ref="move" />
+    </mapping>
+</map>
