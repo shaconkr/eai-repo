@@ -373,7 +373,7 @@
             </io>
         </header>
         <unit>
-            <io id="S00000003006" idn="JN01_JNI_EAH51S_JNIL" name="jmims.entity.jn01.jni.EAH51S_JNIL" version="1" type="Entity" squencename="entity">
+            <io id="S00000003006" idn="JN01_JNI_EAH51S_JNIL" name="jmims.entity.jn01.jni.EAH51S_JNIL" version="2" type="Entity" squencename="entity">
                 <common>
                     <description><![CDATA[제니엘에서 카드 배송 진행현황을 실시간으로 수신하는 인터페이스]]></description>
                     <system code="JNI" name="제니엘" />
@@ -418,7 +418,7 @@
                     </online>
                 </process_type>
                 <data><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/" version="S00000003006.1">
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/" version="S00000003006.2">
     <element name="root" type="tns:JN01_JNI_EAH51S_JNIL_ENT_inbound" />
     <complexType name="JN01_JNI_EAH51S_JNIL_ENT_inbound">
         <sequence>
@@ -426,7 +426,7 @@
                 <annotation>
                     <documentation>발송번호</documentation>
                     <appinfo>
-                        <p:description value="예 : 202211301111001747815195" />
+                        <p:description value="예 : 202301021311001706796971" />
                         <p:mandatory value="N" />
                         <p:level value="1" />
                         <p:encryption value="N" />
@@ -445,7 +445,7 @@
                 <annotation>
                     <documentation>처리일자</documentation>
                     <appinfo>
-                        <p:description value="예 : 20221202" />
+                        <p:description value="예 : 20230105" />
                         <p:mandatory value="N" />
                         <p:level value="1" />
                         <p:encryption value="N" />
@@ -464,7 +464,7 @@
                 <annotation>
                     <documentation>처리시간</documentation>
                     <appinfo>
-                        <p:description value="예 : 591020" />
+                        <p:description value="예 : 170113" />
                         <p:mandatory value="N" />
                         <p:level value="1" />
                         <p:encryption value="N" />
@@ -483,7 +483,7 @@
                 <annotation>
                     <documentation>카드배송진행상태코드</documentation>
                     <appinfo>
-                        <p:description value="01.배송의뢰&#xA;02.배송업체 본사인수&#xA;03.배송업체 지사발송&#xA;04.배송업체 지사인수&#xA;06.배송완료&#xA;07.선반납&#xA;08.반송&#xA;09.분실" />
+                        <p:description value="예 : 01&#xA;&lt;코드 값&gt;&#xA;01.배송의뢰&#xA;02.배송업체 본사인수&#xA;03.배송업체 지사발송&#xA;04.배송업체 지사인수&#xA;06.배송완료&#xA;07.선반납&#xA;08.반송&#xA;09.분실" />
                         <p:mandatory value="N" />
                         <p:level value="1" />
                         <p:encryption value="N" />
@@ -502,7 +502,7 @@
                 <annotation>
                     <documentation>카드발송진행상태내용</documentation>
                     <appinfo>
-                        <p:description />
+                        <p:description value="배송업체에 카드배송을 의뢰하였습니다." />
                         <p:mandatory value="N" />
                         <p:level value="1" />
                         <p:encryption value="N" />
@@ -513,7 +513,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="string">
-                        <maxLength value="21" />
+                        <maxLength value="120" />
                     </restriction>
                 </simpleType>
             </element>
@@ -521,7 +521,7 @@
                 <annotation>
                     <documentation>비고</documentation>
                     <appinfo>
-                        <p:description />
+                        <p:description value="031-777-9800" />
                         <p:mandatory value="N" />
                         <p:level value="1" />
                         <p:encryption value="N" />
@@ -532,7 +532,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="string">
-                        <maxLength value="175" />
+                        <maxLength value="76" />
                     </restriction>
                 </simpleType>
             </element>
