@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="inbound" id="CISTDSMTPE9000301" version="1" />
+    <interface bound="inbound" id="CISTDSMTPE9000301" version="2" />
     <src_io id="SCISMTPE9000301" />
     <target_io id="TTDSMTPE9000301" />
     <mapping>
@@ -34,43 +34,8 @@
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/useGvbkGbcd" />
-        <target path="entity/useGvbkGbcd" />
-        <function ref="move" />
-    </mapping>
-    <mapping>
-        <source path="entity/tgrmTypeNo" />
-        <target path="entity/tgrmTypeNo" />
-        <function ref="move" />
-    </mapping>
-    <mapping>
-        <source path="entity/crdPosNo" />
-        <target path="entity/crdPosNo" />
-        <function ref="move" />
-    </mapping>
-    <mapping>
-        <source path="entity/custNo1" />
-        <target path="entity/custNo1" />
-        <function ref="move" />
-    </mapping>
-    <mapping>
-        <source path="entity/custNo2" />
-        <target path="entity/custNo2" />
-        <function ref="move" />
-    </mapping>
-    <mapping>
-        <source path="entity/crdNo" />
-        <target path="entity/crdNo" />
-        <function ref="move" />
-    </mapping>
-    <mapping>
-        <source path="entity/storeCd" />
-        <target path="entity/storeCd" />
-        <function ref="move" />
-    </mapping>
-    <mapping>
-        <source path="entity/acmDt" />
-        <target path="entity/acmDt" />
+        <source path="entity/procDt" />
+        <target path="entity/procDt" />
         <function ref="move" />
     </mapping>
     <mapping>
@@ -79,23 +44,23 @@
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/swtcAmt" />
-        <target path="entity/swtcAmt" />
+        <source path="entity/useGvbkGbcd" />
+        <target path="entity/useGvbkGbcd" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/storeCd2" />
-        <target path="entity/storeCd2" />
+        <source path="entity/nullVal3" />
+        <target path="entity/nullVal3" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/procDt" />
-        <target path="entity/procDt" />
+        <source path="entity/nullVal4" />
+        <target path="entity/nullVal4" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/procSeq" />
-        <target path="entity/procSeq" />
+        <source path="entity/giveNo" />
+        <target path="entity/giveNo" />
         <function ref="move" />
     </mapping>
     <mapping>
@@ -104,18 +69,23 @@
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/rgstEmno" />
-        <target path="entity/rgstEmno" />
+        <source path="entity/storeCd" />
+        <target path="entity/storeCd" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/rgstId" />
-        <target path="entity/rgstId" />
+        <source path="entity/swtcAmt" />
+        <target path="entity/swtcAmt" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/nullVal3" />
-        <target path="entity/nullVal3" />
+        <source path="entity/ptcoDvlbRate" />
+        <target path="entity/ptcoDvlbRate" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/nullVal5" />
+        <target path="entity/nullVal5" />
         <function ref="move" />
     </mapping>
 </map>
