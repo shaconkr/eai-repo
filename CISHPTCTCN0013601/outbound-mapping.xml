@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="outbound" id="CISHPTCTCN0013601" version="3" />
+    <src_io id="SCISCTCN0013601" />
+    <target_io id="THPTCTCN0013601" />
+    <mapping>
+        <source path="entity/dongSiJnpsYn" />
+        <target path="entity/dongSiJnpsYn" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/curDtm" />
+        <target path="entity/curDtm" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/untdTcnd1AgrYnVal" />
+        <target path="entity/untdTcnd1AgrYnVal" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/untdTcnd3AgrYnVal" />
+        <target path="entity/untdTcnd3AgrYnVal" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/untdTcnd4AgrYnVal" />
+        <target path="entity/untdTcnd4AgrYnVal" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/untdTcnd6AgrYnVal" />
+        <target path="entity/untdTcnd6AgrYnVal" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/untdTcnd7AgrYnVal" />
+        <target path="entity/untdTcnd7AgrYnVal" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/untdTcnd8AgrYnVal" />
+        <target path="entity/untdTcnd8AgrYnVal" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/crdMemNo" />
+        <target path="entity/crdMemNo" />
+        <function ref="move" />
+    </mapping>
+</map>
