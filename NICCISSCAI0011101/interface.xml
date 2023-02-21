@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="NICCISSCAI0011101" name="기업정보 수신(주식소유규모별분포)" version="2">
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="NICCISSCAI0011101" name="기업정보 수신(주식소유규모별분포)" version="3">
     <common>
         <description />
         <system code="CIS" name="H-CIS" />
