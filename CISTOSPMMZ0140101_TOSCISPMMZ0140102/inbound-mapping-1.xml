@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="inbound" id="TOSCISPMMZ0140102" version="1" />
+    <src_io id="STOSPMMZ0140102" />
+    <target_io id="TCISPMMZ0140102" />
+    <mapping>
+        <source path="header/entity1/TR_CODE" />
+        <target path="header/entity1/TR_CODE" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/SVC_GB" />
+        <target path="header/entity1/SVC_GB" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/SD_FLAG" />
+        <target path="header/entity1/SD_FLAG" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/SD_ID" />
+        <target path="header/entity1/SD_ID" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/RV_ID" />
+        <target path="header/entity1/RV_ID" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/MSG_ID" />
+        <target path="header/entity1/MSG_ID" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/CPNY_CD" />
+        <target path="header/entity1/CPNY_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/BNK_CD" />
+        <target path="header/entity1/BNK_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/EDI_CD" />
+        <target path="header/entity1/EDI_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/JOB_GB" />
+        <target path="header/entity1/JOB_GB" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/EDI_NO" />
+        <target path="header/entity1/EDI_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/SD_DATE" />
+        <target path="header/entity1/SD_DATE" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/SD_TIME" />
+        <target path="header/entity1/SD_TIME" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/RET_CD" />
+        <target path="header/entity1/RET_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/SPARE_AREA" />
+        <target path="header/entity1/SPARE_AREA" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/PAR_ACNO" />
+        <target path="entity/PAR_ACNO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/PWD" />
+        <target path="entity/PWD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/ENCODING_CD" />
+        <target path="entity/ENCODING_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/TRD_GB" />
+        <target path="entity/TRD_GB" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/TRSF_AMT" />
+        <target path="entity/TRSF_AMT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/BLNC_SMBL" />
+        <target path="entity/BLNC_SMBL" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/BLNC" />
+        <target path="entity/BLNC" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/TRD_ACNT_BNK_CD" />
+        <target path="entity/TRD_ACNT_BNK_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/TRD_ACNO" />
+        <target path="entity/TRD_ACNO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/CMIS" />
+        <target path="entity/CMIS" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/CMS_CD" />
+        <target path="entity/CMS_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/PAYER_NM" />
+        <target path="entity/PAYER_NM" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/JUMIN_BUSN_NO" />
+        <target path="entity/JUMIN_BUSN_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/PMPSN_NO" />
+        <target path="entity/PMPSN_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/KIKWAN_CODE" />
+        <target path="entity/KIKWAN_CODE" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/SPARE_AREA1" />
+        <target path="entity/SPARE_AREA1" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/BNK_EDI_NO" />
+        <target path="entity/BNK_EDI_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/JATONG_APPL_YN" />
+        <target path="entity/JATONG_APPL_YN" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/COMM_BNK_CD" />
+        <target path="entity/COMM_BNK_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/INDI_BNK_CD" />
+        <target path="entity/INDI_BNK_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/MONEY_KND_CD" />
+        <target path="entity/MONEY_KND_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/INPA_WTHDRWL_YN" />
+        <target path="entity/INPA_WTHDRWL_YN" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/PROC_AMT" />
+        <target path="entity/PROC_AMT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/NPROC_AMT" />
+        <target path="entity/NPROC_AMT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/SPARE_AREA2" />
+        <target path="entity/SPARE_AREA2" />
+        <function ref="move" />
+    </mapping>
+</map>
