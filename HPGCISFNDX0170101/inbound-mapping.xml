@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="inbound" id="HPGCISFNDX0170101" version="2" />
+    <src_io id="SHPGFNDX0170101" />
+    <target_io id="TCISFNDX0170101" />
+    <mapping>
+        <source path="entity/billList/crdMemNo" />
+        <target path="entity/billList/crdMemNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billList/reqStlmUnitNo" />
+        <target path="entity/billList/reqStlmUnitNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billList/chrDt" />
+        <target path="entity/billList/chrDt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billList/acptDtm" />
+        <target path="entity/billList/acptDtm" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billList/acptPathCd" />
+        <target path="entity/billList/acptPathCd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billList/acptStoreCd" />
+        <target path="entity/billList/acptStoreCd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billList/crdNo" />
+        <target path="entity/billList/crdNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billList/senmGbcd" />
+        <target path="entity/billList/senmGbcd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billList/billSenmFormGbcd" />
+        <target path="entity/billList/billSenmFormGbcd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billList/rcplGbcd" />
+        <target path="entity/billList/rcplGbcd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billList/emailAdr" />
+        <target path="entity/billList/emailAdr" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billList/faxAreaNo" />
+        <target path="entity/billList/faxAreaNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billList/faxSvccd" />
+        <target path="entity/billList/faxSvccd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billList/faxSeqno" />
+        <target path="entity/billList/faxSeqno" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billList/smsNo" />
+        <target path="entity/billList/smsNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billList/billSenmGbcd" />
+        <target path="entity/billList/billSenmGbcd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billList/reqTypeCd" />
+        <target path="entity/billList/reqTypeCd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billList/reqEstmTimeCd" />
+        <target path="entity/billList/reqEstmTimeCd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billList/reqGbCd" />
+        <target path="entity/billList/reqGbCd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billList/senmEn" />
+        <target path="entity/billList/senmEn" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billList/prntYn" />
+        <target path="entity/billList/prntYn" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billList/cnclYn" />
+        <target path="entity/billList/cnclYn" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billList/senmDt" />
+        <target path="entity/billList/senmDt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billList/custMemo" />
+        <target path="entity/billList/custMemo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billList/hisRegYn" />
+        <target path="entity/billList/hisRegYn" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billList/userMemNo" />
+        <target path="entity/billList/userMemNo" />
+        <function ref="move" />
+    </mapping>
+</map>
