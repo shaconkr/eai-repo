@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="inbound" id="CHBCISFNDX0130101" version="2" />
+    <src_io id="SCHBFNDX0130101" />
+    <target_io id="TCISFNDX0130101" />
+    <mapping>
+        <source path="entity/crdMemNo" />
+        <target path="entity/crdMemNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/reqStlmUnitNo" />
+        <target path="entity/reqStlmUnitNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/chrDt" />
+        <target path="entity/chrDt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/acptDtm" />
+        <target path="entity/acptDtm" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/acptPathCd" />
+        <target path="entity/acptPathCd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/acptStoreCd" />
+        <target path="entity/acptStoreCd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/crdNo" />
+        <target path="entity/crdNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/senmGbcd" />
+        <target path="entity/senmGbcd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billSenmFormGbcd" />
+        <target path="entity/billSenmFormGbcd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rcplGbcd" />
+        <target path="entity/rcplGbcd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/emailAdr" />
+        <target path="entity/emailAdr" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/faxAreaNo" />
+        <target path="entity/faxAreaNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/faxSvccd" />
+        <target path="entity/faxSvccd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/faxSeqno" />
+        <target path="entity/faxSeqno" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/smsNo" />
+        <target path="entity/smsNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billSenmGbcd" />
+        <target path="entity/billSenmGbcd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/reqTypeCd" />
+        <target path="entity/reqTypeCd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/reqEstmTimeCd" />
+        <target path="entity/reqEstmTimeCd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/reqGbCd" />
+        <target path="entity/reqGbCd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/senmEn" />
+        <target path="entity/senmEn" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/prntYn" />
+        <target path="entity/prntYn" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/cnclYn" />
+        <target path="entity/cnclYn" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/senmDt" />
+        <target path="entity/senmDt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/custMemo" />
+        <target path="entity/custMemo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/hisRegYn" />
+        <target path="entity/hisRegYn" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/userMemNo" />
+        <target path="entity/userMemNo" />
+        <function ref="move" />
+    </mapping>
+</map>
