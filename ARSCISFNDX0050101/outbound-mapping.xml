@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="outbound" id="ARSCISFNDX0050101" version="2" />
+    <src_io id="SARSFNDX0050101" />
+    <target_io id="TCISFNDX0050101" />
+    <mapping>
+        <source path="entity/billpostRowcount" />
+        <target path="entity/billpostRowcount" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/sendDt" />
+        <target path="entity/billpostList/sendDt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/sendTime" />
+        <target path="entity/billpostList/sendTime" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/respCd" />
+        <target path="entity/billpostList/respCd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/crdMemNo" />
+        <target path="entity/billpostList/crdMemNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/crdNo" />
+        <target path="entity/billpostList/crdNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/custNm" />
+        <target path="entity/billpostList/custNm" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/chrDt" />
+        <target path="entity/billpostList/chrDt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/saleStrtDt" />
+        <target path="entity/billpostList/saleStrtDt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/saleEndDt" />
+        <target path="entity/billpostList/saleEndDt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/stlmMthdCd" />
+        <target path="entity/billpostList/stlmMthdCd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/stlmBankCd" />
+        <target path="entity/billpostList/stlmBankCd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/stlmAcno" />
+        <target path="entity/billpostList/stlmAcno" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/lastIamtDt" />
+        <target path="entity/billpostList/lastIamtDt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/realStlmDt" />
+        <target path="entity/billpostList/realStlmDt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/intrRcknDt" />
+        <target path="entity/billpostList/intrRcknDt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/aplyIntrRt" />
+        <target path="entity/billpostList/aplyIntrRt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/untdBndsAmt" />
+        <target path="entity/billpostList/untdBndsAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/mlg" />
+        <target path="entity/billpostList/mlg" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/mlgEstmBsicDt" />
+        <target path="entity/billpostList/mlgEstmBsicDt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/stlmDay" />
+        <target path="entity/billpostList/stlmDay" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/oduePrncAmt" />
+        <target path="entity/billpostList/oduePrncAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/odueCmisAmt" />
+        <target path="entity/billpostList/odueCmisAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/odueIntrAmt" />
+        <target path="entity/billpostList/odueIntrAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/odueTotSumAmt" />
+        <target path="entity/billpostList/odueTotSumAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/thmnPrncAmt" />
+        <target path="entity/billpostList/thmnPrncAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/thmnCmisAmt" />
+        <target path="entity/billpostList/thmnCmisAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/thmnReqSumAmt" />
+        <target path="entity/billpostList/thmnReqSumAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/overPymAmt" />
+        <target path="entity/billpostList/overPymAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/pymSumAmt" />
+        <target path="entity/billpostList/pymSumAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/totCnt" />
+        <target path="entity/billpostList/totCnt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/saleDt" />
+        <target path="entity/billpostList/saleDt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/itemNm" />
+        <target path="entity/billpostList/itemNm" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/relGbcdNm" />
+        <target path="entity/billpostList/relGbcdNm" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/frcsNm" />
+        <target path="entity/billpostList/frcsNm" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/crdInsmMths" />
+        <target path="entity/billpostList/crdInsmMths" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/saleAmt" />
+        <target path="entity/billpostList/saleAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/lmmNpymAmt" />
+        <target path="entity/billpostList/lmmNpymAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/reqTmnm" />
+        <target path="entity/billpostList/reqTmnm" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/thmnReqPrncAmt" />
+        <target path="entity/billpostList/thmnReqPrncAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/thmnReqCmisAmt" />
+        <target path="entity/billpostList/thmnReqCmisAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/rmndMths" />
+        <target path="entity/billpostList/rmndMths" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/nadvAmt" />
+        <target path="entity/billpostList/nadvAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/stlmDt" />
+        <target path="entity/billpostList/stlmDt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/userNm" />
+        <target path="entity/billpostList/userNm" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/useCrdBck4PtnNo" />
+        <target path="entity/billpostList/useCrdBck4PtnNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/imdtIamtAmt" />
+        <target path="entity/billpostList/imdtIamtAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/acmExpMlg" />
+        <target path="entity/billpostList/acmExpMlg" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/adr1" />
+        <target path="entity/billpostList/adr1" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/adr2" />
+        <target path="entity/billpostList/adr2" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/mobiTelno" />
+        <target path="entity/billpostList/mobiTelno" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/emailAdr" />
+        <target path="entity/billpostList/emailAdr" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/bankNm1" />
+        <target path="entity/billpostList/bankNm1" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/virtAcno1" />
+        <target path="entity/billpostList/virtAcno1" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/bankNm2" />
+        <target path="entity/billpostList/bankNm2" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/virtAcno2" />
+        <target path="entity/billpostList/virtAcno2" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/bankNm3" />
+        <target path="entity/billpostList/bankNm3" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/virtAcno3" />
+        <target path="entity/billpostList/virtAcno3" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/bankNm4" />
+        <target path="entity/billpostList/bankNm4" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/virtAcno4" />
+        <target path="entity/billpostList/virtAcno4" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/bankNm5" />
+        <target path="entity/billpostList/bankNm5" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/virtAcno5" />
+        <target path="entity/billpostList/virtAcno5" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/bankNm6" />
+        <target path="entity/billpostList/bankNm6" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/virtAcno6" />
+        <target path="entity/billpostList/virtAcno6" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/selfFamlMemSeq1" />
+        <target path="entity/billpostList/selfFamlMemSeq1" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/userNm1" />
+        <target path="entity/billpostList/userNm1" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/useCrdBck4PtnNo1" />
+        <target path="entity/billpostList/useCrdBck4PtnNo1" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/reqTgamt1" />
+        <target path="entity/billpostList/reqTgamt1" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/selfFamlMemSeq2" />
+        <target path="entity/billpostList/selfFamlMemSeq2" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/userNm2" />
+        <target path="entity/billpostList/userNm2" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/useCrdBck4PtnNo2" />
+        <target path="entity/billpostList/useCrdBck4PtnNo2" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/reqTgamt2" />
+        <target path="entity/billpostList/reqTgamt2" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/selfFamlMemSeq3" />
+        <target path="entity/billpostList/selfFamlMemSeq3" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/userNm3" />
+        <target path="entity/billpostList/userNm3" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/useCrdBck4PtnNo3" />
+        <target path="entity/billpostList/useCrdBck4PtnNo3" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/reqTgamt3" />
+        <target path="entity/billpostList/reqTgamt3" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/selfFamlMemSeq4" />
+        <target path="entity/billpostList/selfFamlMemSeq4" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/userNm4" />
+        <target path="entity/billpostList/userNm4" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/useCrdBck4PtnNo4" />
+        <target path="entity/billpostList/useCrdBck4PtnNo4" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/reqTgamt4" />
+        <target path="entity/billpostList/reqTgamt4" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/selfFamlMemSeq5" />
+        <target path="entity/billpostList/selfFamlMemSeq5" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/userNm5" />
+        <target path="entity/billpostList/userNm5" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/useCrdBck4PtnNo5" />
+        <target path="entity/billpostList/useCrdBck4PtnNo5" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/reqTgamt5" />
+        <target path="entity/billpostList/reqTgamt5" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/selfFamlMemSeq6" />
+        <target path="entity/billpostList/selfFamlMemSeq6" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/userNm6" />
+        <target path="entity/billpostList/userNm6" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/useCrdBck4PtnNo6" />
+        <target path="entity/billpostList/useCrdBck4PtnNo6" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/reqTgamt6" />
+        <target path="entity/billpostList/reqTgamt6" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/selfFamlMemSeq7" />
+        <target path="entity/billpostList/selfFamlMemSeq7" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/userNm7" />
+        <target path="entity/billpostList/userNm7" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/useCrdBck4PtnNo7" />
+        <target path="entity/billpostList/useCrdBck4PtnNo7" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/reqTgamt7" />
+        <target path="entity/billpostList/reqTgamt7" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/selfFamlMemSeq8" />
+        <target path="entity/billpostList/selfFamlMemSeq8" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/userNm8" />
+        <target path="entity/billpostList/userNm8" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/useCrdBck4PtnNo8" />
+        <target path="entity/billpostList/useCrdBck4PtnNo8" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/reqTgamt8" />
+        <target path="entity/billpostList/reqTgamt8" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/selfFamlMemSeq9" />
+        <target path="entity/billpostList/selfFamlMemSeq9" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/userNm9" />
+        <target path="entity/billpostList/userNm9" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/useCrdBck4PtnNo9" />
+        <target path="entity/billpostList/useCrdBck4PtnNo9" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/reqTgamt9" />
+        <target path="entity/billpostList/reqTgamt9" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/selfFamlMemSeq10" />
+        <target path="entity/billpostList/selfFamlMemSeq10" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/userNm10" />
+        <target path="entity/billpostList/userNm10" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/useCrdBck4PtnNo10" />
+        <target path="entity/billpostList/useCrdBck4PtnNo10" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/billpostList/reqTgamt10" />
+        <target path="entity/billpostList/reqTgamt10" />
+        <function ref="move" />
+    </mapping>
+</map>
