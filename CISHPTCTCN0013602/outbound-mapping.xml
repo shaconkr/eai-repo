@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="outbound" id="CISHPTCTCN0013602" version="2" />
+    <src_io id="SCISCTCN0013602" />
+    <target_io id="THPTCTCN0013602" />
+    <mapping>
+        <source path="entity/eaiKeyNo" />
+        <target path="entity/eaiKeyNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/eaiCreDt" />
+        <target path="entity/eaiCreDt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/sendReqnGbcd" />
+        <target path="entity/sendReqnGbcd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/sendTrgtPtcoId" />
+        <target path="entity/sendTrgtPtcoId" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/sendTrgtChId" />
+        <target path="entity/sendTrgtChId" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/custCiVal" />
+        <target path="entity/custCiVal" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/owcoReqYn" />
+        <target path="entity/owcoReqYn" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/hpntReqYn" />
+        <target path="entity/hpntReqYn" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/aplyYn" />
+        <target path="entity/aplyYn" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/eaiCreDtm" />
+        <target path="entity/eaiCreDtm" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/eaiRfltDtm" />
+        <target path="entity/eaiRfltDtm" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/eaiRfltYn" />
+        <target path="entity/eaiRfltYn" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/eaiNrfltErrMsgCntn" />
+        <target path="entity/eaiNrfltErrMsgCntn" />
+        <function ref="move" />
+    </mapping>
+</map>
