@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="inbound" id="HPGCISFNDX0180101" version="1" />
+    <src_io id="SHPGFNDX0180101" />
+    <target_io id="TCISFNDX0180101" />
+    <mapping>
+        <source path="entity/selfMemNo" />
+        <target path="entity/selfMemNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/memNo" />
+        <target path="entity/memNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/saleYr" />
+        <target path="entity/saleYr" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/emailAdr" />
+        <target path="entity/emailAdr" />
+        <function ref="move" />
+    </mapping>
+</map>
