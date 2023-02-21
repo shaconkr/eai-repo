@@ -373,7 +373,7 @@
             </io>
         </header>
         <unit>
-            <io id="S00000003005" idn="JN01_JNI_HAH51S_JNIL" name="jmims.entity.jn01.jni.HAH51S_JNIL" version="2" type="Entity" squencename="entity">
+            <io id="S00000003005" idn="JN01_JNI_HAH51S_JNIL" name="jmims.entity.jn01.jni.HAH51S_JNIL" version="4" type="Entity" squencename="entity">
                 <common>
                     <description><![CDATA[제니엘에서 카드 배송 진행현황을 실시간으로 수신하는 인터페이스]]></description>
                     <system code="CIS" name="H-CIS" />
@@ -418,7 +418,7 @@
                     </online>
                 </process_type>
                 <data><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/" version="S00000003005.2">
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/" version="S00000003005.4">
     <element name="root" type="tns:JN01_JNI_HAH51S_JNIL_ENT_inbound" />
     <complexType name="JN01_JNI_HAH51S_JNIL_ENT_inbound">
         <sequence>
@@ -517,9 +517,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="rmrk">
+            <element name="procCntnRmrk">
                 <annotation>
-                    <documentation>비고</documentation>
+                    <documentation>처리내용비고</documentation>
                     <appinfo>
                         <p:description value="예 : 031-777-9800" />
                         <p:mandatory value="N" />

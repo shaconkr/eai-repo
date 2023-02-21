@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/" version="S00000003006.2">
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/" version="S00000003006.4">
     <element name="root" type="tns:JN01_JNI_EAH51S_JNIL_ENT_inbound" />
     <complexType name="JN01_JNI_EAH51S_JNIL_ENT_inbound">
         <sequence>
@@ -98,9 +98,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="rmrk">
+            <element name="procCntnRmrk">
                 <annotation>
-                    <documentation>비고</documentation>
+                    <documentation>처리내용비고</documentation>
                     <appinfo>
                         <p:description value="031-777-9800" />
                         <p:mandatory value="N" />

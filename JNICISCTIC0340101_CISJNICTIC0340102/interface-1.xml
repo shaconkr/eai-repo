@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="CISJNICTIC0340102" idn="JN01_JNI_HAH51R_JNIL" name="제니엘특송카드발송진행수신_응답" version="2">
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="CISJNICTIC0340102" idn="JN01_JNI_HAH51R_JNIL" name="제니엘특송카드발송진행수신_응답" version="3">
     <common>
         <description />
         <system code="CIS" name="H-CIS" />

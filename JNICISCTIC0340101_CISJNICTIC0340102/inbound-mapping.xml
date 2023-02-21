@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="inbound" id="JNICISCTIC0340101" version="1" />
+    <interface bound="inbound" id="JNICISCTIC0340101" version="2" />
     <src_io id="SJNICTIC0340101" />
     <target_io id="TCISCTIC0340101" />
     <mapping>
@@ -74,8 +74,8 @@
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/RMRK" />
-        <target path="entity/RMRK" />
+        <source path="entity/PROC_CNTN_RMRK" />
+        <target path="entity/PROC_CNTN_RMRK" />
         <function ref="move" />
     </mapping>
 </map>
