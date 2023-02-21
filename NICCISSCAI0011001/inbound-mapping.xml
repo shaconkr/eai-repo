@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="inbound" id="NICCISSCAI0011001" version="1" />
+    <interface bound="inbound" id="NICCISSCAI0011001" version="2" />
     <src_io id="SNICSCAI0011001" />
     <target_io id="TCISSCAI0011001" />
     <mapping>
@@ -11,6 +11,11 @@
     <mapping>
         <source path="entity/niceDataGroup/bsicDt" />
         <target path="entity/niceDataGroup/bsicDt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceDataGroup/stkOwnFormGbcd" />
+        <target path="entity/niceDataGroup/stkOwnFormGbcd" />
         <function ref="move" />
     </mapping>
     <mapping>

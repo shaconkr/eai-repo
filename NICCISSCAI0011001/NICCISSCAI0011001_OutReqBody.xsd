@@ -55,6 +55,26 @@
                     </restriction>
                 </simpleType>
             </element>
+            <element name="stkOwnFormGbcd">
+                <annotation>
+                    <documentation>주식소유형태구분코드</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="2" />
+                    </restriction>
+                </simpleType>
+            </element>
             <element name="setlGbcd">
                 <annotation>
                     <documentation>결산구분코드</documentation>
@@ -71,7 +91,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="string">
-                        <maxLength value="2" />
+                        <maxLength value="1" />
                     </restriction>
                 </simpleType>
             </element>
