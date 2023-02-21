@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="outbound" id="ARSCISFNDX0040101" version="2" />
+    <src_io id="SARSFNDX0040101" />
+    <target_io id="TCISFNDX0040101" />
+    <mapping>
+        <source path="entity/sendDt" />
+        <target path="entity/sendDt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/sendTime" />
+        <target path="entity/sendTime" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/respCd" />
+        <target path="entity/respCd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/crdMemNo" />
+        <target path="entity/crdMemNo" />
+        <function ref="move" />
+    </mapping>
+</map>
