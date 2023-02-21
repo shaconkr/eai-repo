@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="outbound" id="HPGCISFNDX0110101" version="2" />
+    <src_io id="SHPGFNDX0110101" />
+    <target_io id="TCISFNDX0110101" />
+    <mapping>
+        <source path="entity/insmAmt" />
+        <target path="entity/insmAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/crdInsmMths" />
+        <target path="entity/crdInsmMths" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/cmisr" />
+        <target path="entity/cmisr" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/cmisAmt" />
+        <target path="entity/cmisAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/reqAmt" />
+        <target path="entity/reqAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/cmisList/reqTmnm" />
+        <target path="entity/cmisList/reqTmnm" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/cmisList/reqPrncAmt" />
+        <target path="entity/cmisList/reqPrncAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/cmisList/cmisAmt" />
+        <target path="entity/cmisList/cmisAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/cmisList/mmChrAmt" />
+        <target path="entity/cmisList/mmChrAmt" />
+        <function ref="move" />
+    </mapping>
+</map>
