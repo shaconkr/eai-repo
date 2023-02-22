@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/" version="S00000003331.3">
+    <element name="root" type="tns:OS01_OSE_E2501_ENT_inbound" />
+    <complexType name="OS01_OSE_E2501_ENT_inbound">
+        <sequence>
+            <element name="procMthdCd">
+                <annotation>
+                    <documentation>처리방법코드</documentation>
+                    <appinfo>
+                        <p:description value="0504 번호 할당 방식 구분 ( 1 로 고정 )&#xA;1:사업자할당후 번호리턴,2:서버에서 할당후 번호리턴-미적용" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="Y" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="1" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="virtTelno1">
+                <annotation>
+                    <documentation>가상전화번호1</documentation>
+                    <appinfo>
+                        <p:description value="0504 가상 번호 ( 11~12자리 )                  (예:05075905276)" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="Y" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="15" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="user1Telno1">
+                <annotation>
+                    <documentation>사용자1전화번호1</documentation>
+                    <appinfo>
+                        <p:description value="사용자 번호 1(12 자리이하)" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="15" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="user1Telno2">
+                <annotation>
+                    <documentation>사용자1전화번호2</documentation>
+                    <appinfo>
+                        <p:description value="사용자 번호 2(12 자리이하)" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="15" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="virtTelno2">
+                <annotation>
+                    <documentation>가상전화번호2</documentation>
+                    <appinfo>
+                        <p:description value="0504 가상 번호 ( 11~12자리 )&#xA;안심번호간 상호 통화 방식인 경우 사용&#xA;(일반 안심번호 방식인 경우 공백 )" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="15" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="user2Telno1">
+                <annotation>
+                    <documentation>사용자2전화번호1</documentation>
+                    <appinfo>
+                        <p:description value="사용자 번호 1(12 자리이하 자리이하 )&#xA;(일반 안심번호 방식인 경우 공백 )" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="15" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="user2Telno2">
+                <annotation>
+                    <documentation>사용자2전화번호2</documentation>
+                    <appinfo>
+                        <p:description value="사용자 번호 2(12 자리이하 자리이하 )&#xA;(일반 안심번호 방식인 경우 공백 )" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="15" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="useStatGbcd">
+                <annotation>
+                    <documentation>사용상태구분코드</documentation>
+                    <appinfo>
+                        <p:description value="사용상태구분 (1 로 고정)                      (1)" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="1" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="endGbVal">
+                <annotation>
+                    <documentation>종료구분값</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="1" />
+                    </restriction>
+                </simpleType>
+            </element>
+        </sequence>
+    </complexType>
+</schema>
