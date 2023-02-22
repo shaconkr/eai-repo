@@ -106,7 +106,7 @@
     </common>
     <interface_type>
         <source>
-            <ioid version="4">SCISCTIC0060101</ioid>
+            <ioid version="5">SCISCTIC0060101</ioid>
             <!--소스 I/O ID-->
             <ioidn>OS01_OSE_H2502</ioidn>
             <!--소스 관리 I/O ID-->

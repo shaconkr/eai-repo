@@ -164,7 +164,7 @@
             </process_type>
         </source>
         <target>
-            <ioid version="3">TCISCTIC0060102</ioid>
+            <ioid version="4">TCISCTIC0060102</ioid>
             <!--타겟 I/O ID-->
             <ioidn>OS01_OSE_H3502</ioidn>
             <!--타겟 관리 I/O ID-->
