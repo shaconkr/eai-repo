@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="inbound" id="NICCISSCAI0011301" version="1" />
+    <src_io id="SNICSCAI0011301" />
+    <target_io id="TCISSCAI0011301" />
+    <mapping>
+        <source path="entity/niceDataGroup/mngNo" />
+        <target path="entity/niceDataGroup/mngNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceDataGroup/bsicDt" />
+        <target path="entity/niceDataGroup/bsicDt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceDataGroup/rowSeq" />
+        <target path="entity/niceDataGroup/rowSeq" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceDataGroup/captMvmtKndCntn" />
+        <target path="entity/niceDataGroup/captMvmtKndCntn" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceDataGroup/stprc" />
+        <target path="entity/niceDataGroup/stprc" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceDataGroup/updnDiffAmt" />
+        <target path="entity/niceDataGroup/updnDiffAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceDataGroup/aficdcCapt" />
+        <target path="entity/niceDataGroup/aficdcCapt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceDataGroup/rmrk" />
+        <target path="entity/niceDataGroup/rmrk" />
+        <function ref="move" />
+    </mapping>
+</map>
