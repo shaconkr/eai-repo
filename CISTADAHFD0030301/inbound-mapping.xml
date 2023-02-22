@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="inbound" id="CISTADAHFD0030301" version="1" />
+    <src_io id="SCISAHFD0030301" />
+    <target_io id="TTADAHFD0030301" />
+    <mapping>
+        <source path="entity/trdCd" />
+        <target path="entity/trdCd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/nullVal" />
+        <target path="entity/nullVal" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/tgrmSubCCd" />
+        <target path="entity/tgrmSubCCd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/storeCd" />
+        <target path="entity/storeCd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/crdPosNo" />
+        <target path="entity/crdPosNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/trdNo" />
+        <target path="entity/trdNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/sendDtm" />
+        <target path="entity/sendDtm" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/vanId" />
+        <target path="entity/vanId" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/tnrStatCd" />
+        <target path="entity/tnrStatCd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/tgrmLen" />
+        <target path="entity/tgrmLen" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/tgrmCd" />
+        <target path="entity/tgrmCd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/procDtm" />
+        <target path="entity/procDtm" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/qryGb" />
+        <target path="entity/qryGb" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/crdNoEcrytYn" />
+        <target path="entity/crdNoEcrytYn" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/insrVal" />
+        <target path="entity/insrVal" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/respCd" />
+        <target path="entity/respCd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/nullVal1" />
+        <target path="entity/nullVal1" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/blnc" />
+        <target path="entity/blnc" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/nullVal2" />
+        <target path="entity/nullVal2" />
+        <function ref="move" />
+    </mapping>
+</map>
