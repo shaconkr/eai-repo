@@ -371,8 +371,9 @@
                     </appinfo>
                 </annotation>
                 <simpleType>
-                    <restriction base="long">
+                    <restriction base="decimal">
                         <totalDigits value="7" />
+                        <fractionDigits value="2" />
                     </restriction>
                 </simpleType>
             </element>
