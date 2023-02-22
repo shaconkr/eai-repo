@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SMYDCTCN0050206" version="1">
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SMYDCTCN0050201" version="1">
     <common>
-        <io_name><![CDATA[마이데이터기관간서비스처리현황수신]]></io_name>
+        <io_name><![CDATA[마이데이터기관정보내역수신]]></io_name>
         <!--I/O 명-->
         <description />
         <!--I/O 설명-->
@@ -9,7 +9,7 @@
         <!--시스템코드, 시스템명-->
         <work code="DEFT" name="어플리케이션 Default 코드" />
         <!--업무구분코드-->
-        <datetime>2023-02-22 12:20:04</datetime>
+        <datetime>2023-02-22 16:26:08</datetime>
         <!--작성 시간-->
         <writer>CIS055</writer>
         <!--작성자-->
@@ -63,18 +63,18 @@
     <!--IO처리유형 : O - 온라인, D - DB, F - FILE, A - API-->
     <inbound>
         <message>
-            <io id="C00000009747" idn="" version="1" name="SMYDCTCN0050206_INBOUND" type="Message" />
+            <io id="C00000009911" idn="" version="1" name="SMYDCTCN0050201_INBOUND" type="Message" />
         </message>
         <header />
         <unit>
-            <io id="C00000009747" idn="" name="SMYDCTCN0050206_INBOUND" version="1" type="Entity" squencename="entity">
+            <io id="C00000009911" idn="" name="SMYDCTCN0050201_INBOUND" version="1" type="Entity" squencename="entity">
                 <common>
                     <description />
                     <system />
                     <!--시스템코드, 시스템명-->
                     <work />
                     <!--업무 구분 코드-->
-                    <datetime>2023-02-22 12:20:04</datetime>
+                    <datetime>2023-02-22 16:26:08</datetime>
                     <!--작성 시간-->
                     <writer>CIS055</writer>
                     <!--작성자-->
@@ -88,8 +88,8 @@
                 <process_type />
                 <data><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/">
-    <element name="root" type="tns:SMYDCTCN0050206_inbound" />
-    <complexType name="SMYDCTCN0050206_inbound">
+    <element name="root" type="tns:SMYDCTCN0050201_inbound" />
+    <complexType name="SMYDCTCN0050201_inbound">
         <sequence>
             <element maxOccurs="1" minOccurs="1" name="hdrGrp" type="tns:HDR_GRP_TYPE">
                 <annotation>
@@ -239,9 +239,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="tranOcrnDt">
+            <element name="bsicDt">
                 <annotation>
-                    <documentation>거래발생일자</documentation>
+                    <documentation>기준일자</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
@@ -275,7 +275,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="string">
-                        <maxLength value="252" />
+                        <maxLength value="452" />
                     </restriction>
                 </simpleType>
             </element>
@@ -343,29 +343,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="arrgTranGbcd">
+            <element name="istnCd">
                 <annotation>
-                    <documentation>배치거래구분코드</documentation>
-                    <appinfo>
-                        <p:description />
-                        <p:mandatory value="N" />
-                        <p:level value="2" />
-                        <p:encryption value="N" />
-                        <p:one_path_encp value="N" />
-                        <p:mask_type />
-                        <p:db_key value="N" />
-                        <p:krn_fld_yn value="N" />
-                    </appinfo>
-                </annotation>
-                <simpleType>
-                    <restriction base="string">
-                        <maxLength value="7" />
-                    </restriction>
-                </simpleType>
-            </element>
-            <element name="infOffrIstnCd">
-                <annotation>
-                    <documentation>정보제공기관코드</documentation>
+                    <documentation>기관코드</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
@@ -383,9 +363,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="sendGbcd">
+            <element name="istnGbcd">
                 <annotation>
-                    <documentation>전송구분코드</documentation>
+                    <documentation>기관구분코드</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
@@ -403,9 +383,49 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="infRcvIstnCd">
+            <element name="trdIstnNm">
                 <annotation>
-                    <documentation>정보수신기관코드</documentation>
+                    <documentation>거래기관명</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="60" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="prepInf">
+                <annotation>
+                    <documentation>예비정보</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="20" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="rgno">
+                <annotation>
+                    <documentation>사업자등록번호</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
@@ -423,9 +443,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="srvNrmlProcCnt">
+            <element name="corpRegNo">
                 <annotation>
-                    <documentation>서비스정상처리건수</documentation>
+                    <documentation>법인등록번호</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
@@ -439,13 +459,13 @@
                 </annotation>
                 <simpleType>
                     <restriction base="string">
-                        <maxLength value="8" />
+                        <maxLength value="13" />
                     </restriction>
                 </simpleType>
             </element>
-            <element name="apiCmisSumAmt">
+            <element name="adr">
                 <annotation>
-                    <documentation>API수수료합계금액</documentation>
+                    <documentation>주소</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
@@ -459,7 +479,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="string">
-                        <maxLength value="15" />
+                        <maxLength value="150" />
                     </restriction>
                 </simpleType>
             </element>
@@ -479,7 +499,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="string">
-                        <maxLength value="233" />
+                        <maxLength value="218" />
                     </restriction>
                 </simpleType>
             </element>
@@ -603,7 +623,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="string">
-                        <maxLength value="268" />
+                        <maxLength value="468" />
                     </restriction>
                 </simpleType>
             </element>
@@ -615,18 +635,18 @@
     </inbound>
     <outbound>
         <message>
-            <io id="C00000009749" idn="" version="1" name="SMYDCTCN0050206_OUTBOUND" type="Message" />
+            <io id="C00000009913" idn="" version="1" name="SMYDCTCN0050201_OUTBOUND" type="Message" />
         </message>
         <header />
         <unit>
-            <io id="C00000009749" idn="" name="SMYDCTCN0050206_OUTBOUND" version="1" type="Entity" squencename="entity">
+            <io id="C00000009913" idn="" name="SMYDCTCN0050201_OUTBOUND" version="1" type="Entity" squencename="entity">
                 <common>
                     <description />
                     <system />
                     <!--시스템코드, 시스템명-->
                     <work />
                     <!--업무 구분 코드-->
-                    <datetime>2023-02-22 12:20:04</datetime>
+                    <datetime>2023-02-22 16:26:08</datetime>
                     <!--작성 시간-->
                     <writer>CIS055</writer>
                     <!--작성자-->
@@ -640,8 +660,8 @@
                 <process_type />
                 <data><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/">
-    <element name="root" type="tns:SMYDCTCN0050206_outbound" />
-    <complexType name="SMYDCTCN0050206_outbound">
+    <element name="root" type="tns:SMYDCTCN0050201_outbound" />
+    <complexType name="SMYDCTCN0050201_outbound">
         <sequence />
     </complexType>
 </schema>]]></data>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="MYDCISCTCN0050201" name="마이데이터기관간서비스처리현황수신" version="1">
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="MYDCISCTCN0050201" name="마이데이터기관정보내역수신" version="1">
     <common>
         <description />
         <system code="CIS" name="H-CIS" />
         <!--시스템구분코드-->
         <work code="CTCN" name="회원연계" />
         <!--어플리케이션코드-->
-        <datetime>2023-02-22 12:20:04</datetime>
+        <datetime>2023-02-22 16:26:08</datetime>
         <!--작성일-->
         <writer>CIS055</writer>
         <!--작성자-->
@@ -74,9 +74,9 @@
             </online>
             <batch>
                 <file2file>
-                    <ext_file_path>/hcisnas/sam/crct/batch/BCCTCN00502/ftp_work/MD0006</ext_file_path>
+                    <ext_file_path>/hcisnas/sam/crct/batch/BCCTCE00502/ftp_work/MD0001</ext_file_path>
                     <!--대외기관 파일 경로-->
-                    <ext_file_nm>YYYYMMDD_MD0006s</ext_file_nm>
+                    <ext_file_nm>YYYYMMDD_MD0001s</ext_file_nm>
                     <!--대외기관 파일명-->
                     <ext_line_char />
                     <!--대외 개행문자-->
@@ -108,7 +108,7 @@
     </common>
     <interface_type>
         <source>
-            <ioid>SMYDCTCN0050206</ioid>
+            <ioid>SMYDCTCN0050201</ioid>
             <!--소스 I/O ID-->
             <system code="MYD" name="마이데이터" />
             <!--소스 I/O 시스템 구분 코드 / 시스템 명-->
@@ -164,7 +164,7 @@
             </process_type>
         </source>
         <target>
-            <ioid>TCISCTCN0050206</ioid>
+            <ioid>TCISCTCN0050201</ioid>
             <!--타겟 I/O ID-->
             <system code="CIS" name="H-CIS" />
             <!--타겟 I/O 시스템 구분 코드 / 시스템 명-->
@@ -207,7 +207,7 @@
                         <file2file>
                             <trgt_dflt_yn>Y</trgt_dflt_yn>
                             <!--타겟 파일 경로 표준경로사용 여부-->
-                            <path>/hcisnas/sam/crct/batch/BCCTCN00502/ftp_work/MD0006</path>
+                            <path>/hcisnas/sam/crct/batch/BCCTCE00502/ftp_work/MD0001</path>
                             <!--FILE2FILE 경로-->
                             <trgt_file_renm_yn>N</trgt_file_renm_yn>
                             <!--타겟 변환규칙여부-->
