@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TCISCTCN0050204" version="1">
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TCISCTCN0050204" version="2">
     <common>
         <io_name><![CDATA[마이데이터서비스처리현황수신]]></io_name>
         <!--I/O 명-->
@@ -17,7 +17,7 @@
         <!--캐릭터셋-->
         <package_name>hdc.cis.ct.ctc.ctcn.bat.jc.io</package_name>
         <!--패키지경로-->
-        <class_name>mydataSrvPrcRcv</class_name>
+        <class_name>MydataSrvPrcRcv</class_name>
         <!--클래스명-->
         <sttl_yn>Y</sttl_yn>
         <!--표준전문여부-->
@@ -30,7 +30,7 @@
             <!--Output 거래 ID-->
             <syn-asyn code="2" name="비동기" />
             <!--동기 / 비동기 여부-->
-            <bizhub code="000" name="고객X 마케팅X" />
+            <bizhub />
             <!--비즈허브 접촉정보거래종류-->
             <trncd_in />
             <!--Input 거래 코드-->
