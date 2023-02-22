@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="inbound" id="NICCISSCAI0011901" version="1" />
+    <src_io id="SNICSCAI0011901" />
+    <target_io id="TCISSCAI0011901" />
+    <mapping>
+        <source path="entity/niceDataGroup/mngNo" />
+        <target path="entity/niceDataGroup/mngNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceDataGroup/rowSeq" />
+        <target path="entity/niceDataGroup/rowSeq" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceDataGroup/rgno" />
+        <target path="entity/niceDataGroup/rgno" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceDataGroup/telno" />
+        <target path="entity/niceDataGroup/telno" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceDataGroup/postNo" />
+        <target path="entity/niceDataGroup/postNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceDataGroup/crstNm" />
+        <target path="entity/niceDataGroup/crstNm" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceDataGroup/prmrItemNm" />
+        <target path="entity/niceDataGroup/prmrItemNm" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceDataGroup/adr" />
+        <target path="entity/niceDataGroup/adr" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceDataGroup/faxNo" />
+        <target path="entity/niceDataGroup/faxNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceDataGroup/bizaGbcd" />
+        <target path="entity/niceDataGroup/bizaGbcd" />
+        <function ref="move" />
+    </mapping>
+</map>
