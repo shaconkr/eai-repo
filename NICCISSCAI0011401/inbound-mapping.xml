@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="inbound" id="NICCISSCAI0011401" version="1" />
+    <src_io id="SNICSCAI0011401" />
+    <target_io id="TCISSCAI0011401" />
+    <mapping>
+        <source path="entity/niceDataGroup/mngNo" />
+        <target path="entity/niceDataGroup/mngNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceDataGroup/bsicDt" />
+        <target path="entity/niceDataGroup/bsicDt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceDataGroup/rowSeq" />
+        <target path="entity/niceDataGroup/rowSeq" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceDataGroup/setlGbcd" />
+        <target path="entity/niceDataGroup/setlGbcd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceDataGroup/pstnNm" />
+        <target path="entity/niceDataGroup/pstnNm" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceDataGroup/fnmNm" />
+        <target path="entity/niceDataGroup/fnmNm" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceDataGroup/bymd" />
+        <target path="entity/niceDataGroup/bymd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceDataGroup/acabCrrCntn" />
+        <target path="entity/niceDataGroup/acabCrrCntn" />
+        <function ref="move" />
+    </mapping>
+</map>
