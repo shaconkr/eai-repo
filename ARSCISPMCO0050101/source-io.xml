@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SARSPMCO0050101" version="2">
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SARSPMCO0050101" version="3">
     <common>
         <io_name><![CDATA[ARS즉시출금결제금액조회]]></io_name>
         <!--I/O 명-->
@@ -243,7 +243,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="long">
-                        <totalDigits value="1" />
+                        <totalDigits value="19" />
                     </restriction>
                 </simpleType>
             </element>

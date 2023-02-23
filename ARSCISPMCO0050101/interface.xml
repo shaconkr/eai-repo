@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="ARSCISPMCO0050101" name="ARS즉시출금결제금액조회" version="9">
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="ARSCISPMCO0050101" name="ARS즉시출금결제금액조회" version="10">
     <common>
         <description><![CDATA[ARS즉시출금결제금액조회]]></description>
         <system code="ARS" name="ARS" />
