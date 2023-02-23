@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="outbound" id="ARSCISPMCO0050101" version="4" />
+    <src_io id="SARSPMCO0050101" />
+    <target_io id="TCISPMCO0050101" />
+    <mapping>
+        <source path="entity/bankCd" />
+        <target path="entity/bankCd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/acno" />
+        <target path="entity/acno" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/bsicMm" />
+        <target path="entity/bsicMm" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/odueAmt" />
+        <target path="entity/odueAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/totReqAmt" />
+        <target path="entity/totReqAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/odueYn" />
+        <target path="entity/odueYn" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/respCd" />
+        <target path="entity/respCd" />
+        <function ref="move" />
+    </mapping>
+</map>
