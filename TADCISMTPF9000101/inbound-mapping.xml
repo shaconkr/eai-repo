@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="inbound" id="TADCISMTPF9000101" version="3" />
+    <src_io id="STADAHTC0020101" />
+    <target_io id="TCISMTPF9000101" />
+    <mapping>
+        <source path="entity/storeCd" />
+        <target path="entity/storeCd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/aprvlNo" />
+        <target path="entity/aprvlNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/orgsaleDt" />
+        <target path="entity/orgsaleDt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/orgsalePosNo" />
+        <target path="entity/orgsalePosNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/orgsaleRcptNo" />
+        <target path="entity/orgsaleRcptNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/cnclAmt" />
+        <target path="entity/cnclAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/cnclMlg" />
+        <target path="entity/cnclMlg" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/gvbkTrgtYn" />
+        <target path="entity/gvbkTrgtYn" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/msg1" />
+        <target path="entity/msg1" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/msg2" />
+        <target path="entity/msg2" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/msg3" />
+        <target path="entity/msg3" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/mlgBsicYr" />
+        <target path="entity/mlgBsicYr" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/lackMlg" />
+        <target path="entity/lackMlg" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/giftReRcvnOverAmt" />
+        <target path="entity/giftReRcvnOverAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/pymBsicDt" />
+        <target path="entity/pymBsicDt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/extgMemGrd" />
+        <target path="entity/extgMemGrd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/afcnMemGrd" />
+        <target path="entity/afcnMemGrd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/grdChgAplyDt" />
+        <target path="entity/grdChgAplyDt" />
+        <function ref="move" />
+    </mapping>
+</map>
