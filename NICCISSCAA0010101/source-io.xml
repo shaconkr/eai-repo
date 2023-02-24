@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SNICSCAA0010101" version="1">
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SNICSCAA0010101" version="2">
     <common>
         <io_name><![CDATA[CB 스코어 파일 수신]]></io_name>
         <!--I/O 명-->
@@ -30,7 +30,7 @@
             <!--Output 거래 ID-->
             <syn-asyn code="2" name="비동기" />
             <!--동기 / 비동기 여부-->
-            <bizhub code="000" name="고객X 마케팅X" />
+            <bizhub />
             <!--비즈허브 접촉정보거래종류-->
             <trncd_in />
             <!--Input 거래 코드-->
@@ -543,9 +543,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="aplyExclsRsnCd11">
+            <element name="grpnRsnCd1">
                 <annotation>
-                    <documentation>적용배제사유코드11</documentation>
+                    <documentation>평점사유코드1</documentation>
                     <appinfo>
                         <p:description value="적용배제사유코드" />
                         <p:mandatory value="N" />
@@ -563,9 +563,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="aplyExclsRsnCd12">
+            <element name="grpnRsnCd2">
                 <annotation>
-                    <documentation>적용배제사유코드12</documentation>
+                    <documentation>평점사유코드2</documentation>
                     <appinfo>
                         <p:description value="적용배제사유코드" />
                         <p:mandatory value="N" />
@@ -583,9 +583,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="aplyExclsRsnCd13">
+            <element name="grpnRsnCd3">
                 <annotation>
-                    <documentation>적용배제사유코드13</documentation>
+                    <documentation>평점사유코드3</documentation>
                     <appinfo>
                         <p:description value="적용배제사유코드" />
                         <p:mandatory value="N" />
@@ -603,9 +603,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="aplyExclsRsnCd14">
+            <element name="grpnRsnCd4">
                 <annotation>
-                    <documentation>적용배제사유코드14</documentation>
+                    <documentation>평점사유코드4</documentation>
                     <appinfo>
                         <p:description value="적용배제사유코드" />
                         <p:mandatory value="N" />
@@ -623,9 +623,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="aplyExclsRsnCd15">
+            <element name="grpnRsnCd5">
                 <annotation>
-                    <documentation>적용배제사유코드15</documentation>
+                    <documentation>평점사유코드5</documentation>
                     <appinfo>
                         <p:description value="적용배제사유코드" />
                         <p:mandatory value="N" />
@@ -643,9 +643,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="aplyExclsRsnCd16">
+            <element name="grpnRsnCd6">
                 <annotation>
-                    <documentation>적용배제사유코드16</documentation>
+                    <documentation>평점사유코드6</documentation>
                     <appinfo>
                         <p:description value="적용배제사유코드" />
                         <p:mandatory value="N" />

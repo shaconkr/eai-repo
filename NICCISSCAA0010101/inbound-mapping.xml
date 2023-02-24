@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="inbound" id="NICCISSCAA0010101" version="1" />
+    <interface bound="inbound" id="NICCISSCAA0010101" version="2" />
     <src_io id="SNICSCAA0010101" />
     <target_io id="TCISSCAA0010101" />
     <mapping>
@@ -109,33 +109,33 @@
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/niceDataGroup/aplyExclsRsnCd11" />
-        <target path="entity/niceDataGroup/aplyExclsRsnCd11" />
+        <source path="entity/niceDataGroup/grpnRsnCd1" />
+        <target path="entity/niceDataGroup/grpnRsnCd1" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/niceDataGroup/aplyExclsRsnCd12" />
-        <target path="entity/niceDataGroup/aplyExclsRsnCd12" />
+        <source path="entity/niceDataGroup/grpnRsnCd2" />
+        <target path="entity/niceDataGroup/grpnRsnCd2" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/niceDataGroup/aplyExclsRsnCd13" />
-        <target path="entity/niceDataGroup/aplyExclsRsnCd13" />
+        <source path="entity/niceDataGroup/grpnRsnCd3" />
+        <target path="entity/niceDataGroup/grpnRsnCd3" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/niceDataGroup/aplyExclsRsnCd14" />
-        <target path="entity/niceDataGroup/aplyExclsRsnCd14" />
+        <source path="entity/niceDataGroup/grpnRsnCd4" />
+        <target path="entity/niceDataGroup/grpnRsnCd4" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/niceDataGroup/aplyExclsRsnCd15" />
-        <target path="entity/niceDataGroup/aplyExclsRsnCd15" />
+        <source path="entity/niceDataGroup/grpnRsnCd5" />
+        <target path="entity/niceDataGroup/grpnRsnCd5" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/niceDataGroup/aplyExclsRsnCd16" />
-        <target path="entity/niceDataGroup/aplyExclsRsnCd16" />
+        <source path="entity/niceDataGroup/grpnRsnCd6" />
+        <target path="entity/niceDataGroup/grpnRsnCd6" />
         <function ref="move" />
     </mapping>
     <mapping>
