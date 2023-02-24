@@ -31,9 +31,9 @@
     </complexType>
     <complexType name="NICE_HDR_GROUP_TYPE">
         <sequence>
-            <element name="dataGbcd1">
+            <element name="dataGbcd">
                 <annotation>
-                    <documentation>데이터구분코드1</documentation>
+                    <documentation>데이터구분코드</documentation>
                     <appinfo>
                         <p:description value="데이터구분코드" />
                         <p:mandatory value="N" />
@@ -191,9 +191,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="totCnt1">
+            <element name="totCnt">
                 <annotation>
-                    <documentation>총건수1</documentation>
+                    <documentation>총건수</documentation>
                     <appinfo>
                         <p:description value="총건수" />
                         <p:mandatory value="N" />
@@ -211,9 +211,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="fileNullVal1">
+            <element name="fileNullVal">
                 <annotation>
-                    <documentation>파일공백값1</documentation>
+                    <documentation>파일공백값</documentation>
                     <appinfo>
                         <p:description value="FIXED 파일처리시 필요한 공백값" />
                         <p:mandatory value="N" />
@@ -235,9 +235,9 @@
     </complexType>
     <complexType name="NICE_DATA_GROUP_TYPE">
         <sequence>
-            <element name="dataGbcd2">
+            <element name="dataGbcd">
                 <annotation>
-                    <documentation>데이터구분코드2</documentation>
+                    <documentation>데이터구분코드</documentation>
                     <appinfo>
                         <p:description value="데이터구분코드" />
                         <p:mandatory value="N" />
@@ -255,9 +255,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="rowSeq2">
+            <element name="rowSeq">
                 <annotation>
-                    <documentation>행순번2</documentation>
+                    <documentation>행순번</documentation>
                     <appinfo>
                         <p:description value="행순번" />
                         <p:mandatory value="N" />
@@ -675,9 +675,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="fileNullVal2">
+            <element name="fileNullVal">
                 <annotation>
-                    <documentation>파일공백값2</documentation>
+                    <documentation>파일공백값</documentation>
                     <appinfo>
                         <p:description value="FIXED 파일처리시 필요한 공백값" />
                         <p:mandatory value="N" />
@@ -699,9 +699,9 @@
     </complexType>
     <complexType name="NICE_END_GROUP_TYPE">
         <sequence>
-            <element name="dataGbcd3">
+            <element name="dataGbcd">
                 <annotation>
-                    <documentation>데이터구분코드3</documentation>
+                    <documentation>데이터구분코드</documentation>
                     <appinfo>
                         <p:description value="데이터구분코드" />
                         <p:mandatory value="N" />
@@ -719,9 +719,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="rowSeq3">
+            <element name="rowSeq">
                 <annotation>
-                    <documentation>행순번3</documentation>
+                    <documentation>행순번</documentation>
                     <appinfo>
                         <p:description value="행순번" />
                         <p:mandatory value="N" />
@@ -739,9 +739,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="totCnt2">
+            <element name="totCnt">
                 <annotation>
-                    <documentation>총건수2</documentation>
+                    <documentation>총건수</documentation>
                     <appinfo>
                         <p:description value="총건수" />
                         <p:mandatory value="N" />
@@ -759,9 +759,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="fileNullVal2">
+            <element name="fileNullVal">
                 <annotation>
-                    <documentation>파일공백값2</documentation>
+                    <documentation>파일공백값</documentation>
                     <appinfo>
                         <p:description value="FIXED 파일처리시 필요한 공백값" />
                         <p:mandatory value="N" />

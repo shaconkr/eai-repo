@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="inbound" id="NICCISSCAA0010101" version="2" />
+    <interface bound="inbound" id="NICCISSCAA0010101" version="3" />
     <src_io id="SNICSCAA0010101" />
     <target_io id="TCISSCAA0010101" />
     <mapping>
-        <source path="entity/niceHdrGroup/dataGbcd1" />
-        <target path="entity/niceHdrGroup/dataGbcd1" />
+        <source path="entity/niceHdrGroup/dataGbcd" />
+        <target path="entity/niceHdrGroup/dataGbcd" />
         <function ref="move" />
     </mapping>
     <mapping>
@@ -44,23 +44,23 @@
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/niceHdrGroup/totCnt1" />
-        <target path="entity/niceHdrGroup/totCnt1" />
+        <source path="entity/niceHdrGroup/totCnt" />
+        <target path="entity/niceHdrGroup/totCnt" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/niceHdrGroup/fileNullVal1" />
-        <target path="entity/niceHdrGroup/fileNullVal1" />
+        <source path="entity/niceHdrGroup/fileNullVal" />
+        <target path="entity/niceHdrGroup/fileNullVal" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/niceDataGroup/dataGbcd2" />
-        <target path="entity/niceDataGroup/dataGbcd2" />
+        <source path="entity/niceDataGroup/dataGbcd" />
+        <target path="entity/niceDataGroup/dataGbcd" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/niceDataGroup/rowSeq2" />
-        <target path="entity/niceDataGroup/rowSeq2" />
+        <source path="entity/niceDataGroup/rowSeq" />
+        <target path="entity/niceDataGroup/rowSeq" />
         <function ref="move" />
     </mapping>
     <mapping>
@@ -164,28 +164,28 @@
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/niceDataGroup/fileNullVal2" />
+        <source path="entity/niceDataGroup/fileNullVal" />
         <target path="entity/niceDataGroup/fileNullVal2" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/niceEndGroup/dataGbcd3" />
-        <target path="entity/niceEndGroup/dataGbcd3" />
+        <source path="entity/niceEndGroup/dataGbcd" />
+        <target path="entity/niceEndGroup/dataGbcd" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/niceEndGroup/rowSeq3" />
-        <target path="entity/niceEndGroup/rowSeq3" />
+        <source path="entity/niceEndGroup/rowSeq" />
+        <target path="entity/niceEndGroup/rowSeq" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/niceEndGroup/totCnt2" />
-        <target path="entity/niceEndGroup/totCnt2" />
+        <source path="entity/niceEndGroup/totCnt" />
+        <target path="entity/niceEndGroup/totCnt" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/niceEndGroup/fileNullVal2" />
-        <target path="entity/niceEndGroup/fileNullVal2" />
+        <source path="entity/niceEndGroup/fileNullVal" />
+        <target path="entity/niceEndGroup/fileNullVal" />
         <function ref="move" />
     </mapping>
 </map>
