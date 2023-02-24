@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="CHBCISPMCO0090201" name="챗봇잔여대금조회" version="2">
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="CHBCISPMCO0090201" name="챗봇잔여대금조회" version="3">
     <common>
         <description><![CDATA[챗봇잔여대금조회]]></description>
         <system code="CHB" name="챗봇" />
