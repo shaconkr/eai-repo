@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="outbound" id="CHBCISPMCO0090101" version="2" />
+    <src_io id="SCHBPMCO0090101" />
+    <target_io id="TCISPMCO0090101" />
+    <mapping>
+        <source path="entity/custNm" />
+        <target path="entity/custNm" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/stlmPrrgDt" />
+        <target path="entity/stlmPrrgDt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/wrtBsicDt" />
+        <target path="entity/wrtBsicDt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/spymAmt" />
+        <target path="entity/spymAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/insmPrncAmt" />
+        <target path="entity/insmPrncAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/insmCmis" />
+        <target path="entity/insmCmis" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/insmAmt" />
+        <target path="entity/insmAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/totSumAmt" />
+        <target path="entity/totSumAmt" />
+        <function ref="move" />
+    </mapping>
+</map>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/">
+    <element name="root" type="tns:TCISPMCO0090101_outbound" />
+    <complexType name="TCISPMCO0090101_outbound">
+        <sequence>
+            <element name="custNm">
+                <annotation>
+                    <documentation>고객명</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="100" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="stlmPrrgDt">
+                <annotation>
+                    <documentation>결제예정일자</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="8" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="wrtBsicDt">
+                <annotation>
+                    <documentation>작성기준일자</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="8" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="spymAmt">
+                <annotation>
+                    <documentation>일시불금액</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="long">
+                        <totalDigits value="19" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="insmPrncAmt">
+                <annotation>
+                    <documentation>할부원금금액</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="long">
+                        <totalDigits value="19" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="insmCmis">
+                <annotation>
+                    <documentation>할부수수료</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="long">
+                        <totalDigits value="19" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="insmAmt">
+                <annotation>
+                    <documentation>할부금액</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="long">
+                        <totalDigits value="19" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="totSumAmt">
+                <annotation>
+                    <documentation>총합계금액</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="long">
+                        <totalDigits value="19" />
+                    </restriction>
+                </simpleType>
+            </element>
+        </sequence>
+    </complexType>
+</schema>
