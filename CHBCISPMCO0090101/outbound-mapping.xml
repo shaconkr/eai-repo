@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="outbound" id="CHBCISPMCO0090101" version="3" />
+    <interface bound="outbound" id="CHBCISPMCO0090101" version="4" />
     <src_io id="SCHBPMCO0090101" />
     <target_io id="TCISPMCO0090101" />
     <mapping>
@@ -41,6 +41,31 @@
     <mapping>
         <source path="entity/totSumAmt" />
         <target path="entity/totSumAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/gridRowcount" />
+        <target path="entity/gridRowcount" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/gridList/saleMngNo" />
+        <target path="entity/gridList/saleMngNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/gridList/crdInsmMths" />
+        <target path="entity/gridList/crdInsmMths" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/gridList/prncAmt" />
+        <target path="entity/gridList/prncAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/gridList/cmisAmt" />
+        <target path="entity/gridList/cmisAmt" />
         <function ref="move" />
     </mapping>
 </map>
