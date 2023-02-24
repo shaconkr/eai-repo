@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TCISMTPF9000201" version="2">
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TCISMTPF9000201" version="4">
     <common>
         <io_name><![CDATA[마일리지사은품회수상세조회]]></io_name>
         <!--I/O 명-->
@@ -15,9 +15,9 @@
         <!--작성자-->
         <charset>UTF-8</charset>
         <!--캐릭터셋-->
-        <package_name>hdc.cis.mt.mtp.mtpf.onl.sc</package_name>
+        <package_name>hdc.cis.mt.mtp.mtpf.onl.sc.io</package_name>
         <!--패키지경로-->
-        <class_name>OwcoEtcPosAprvlRegSC</class_name>
+        <class_name>MlgWtdwTrgtRegSC</class_name>
         <!--클래스명-->
         <sttl_yn>Y</sttl_yn>
         <!--표준전문여부-->
