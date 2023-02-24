@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="outbound" id="MYDCISCTCN0050701" version="1" />
+    <src_io id="SMYDCTCN0050701" />
+    <target_io id="TCISCTCN0050701" />
+    <mapping>
+        <source path="entity/trdInntNo" />
+        <target path="entity/trdInntNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/respCd" />
+        <target path="entity/respCd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/respMsg" />
+        <target path="entity/respMsg" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/qryDtm" />
+        <target path="entity/qryDtm" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/revoYn" />
+        <target path="entity/revoYn" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/stlmRowcount" />
+        <target path="entity/stlmRowcount" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/stlmList/stlmSeq" />
+        <target path="entity/stlmList/stlmSeq" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/stlmList/stlmPrrgDt" />
+        <target path="entity/stlmList/stlmPrrgDt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/stlmList/stlmPrrgAmt" />
+        <target path="entity/stlmList/stlmPrrgAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/stlmList/spymAmt" />
+        <target path="entity/stlmList/spymAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/stlmList/insmAmt" />
+        <target path="entity/stlmList/insmAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/stlmList/shtmLoanAmt" />
+        <target path="entity/stlmList/shtmLoanAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/stlmList/revoAmt" />
+        <target path="entity/stlmList/revoAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/stlmList/lntmLoanAmt" />
+        <target path="entity/stlmList/lntmLoanAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/stlmList/anfeAmt" />
+        <target path="entity/stlmList/anfeAmt" />
+        <function ref="move" />
+    </mapping>
+</map>
