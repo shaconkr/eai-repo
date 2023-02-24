@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="outbound" id="TADCISMTPF9000201" version="2" />
+    <src_io id="STADAHTC0020201" />
+    <target_io id="TCISMTPF9000201" />
+    <mapping>
+        <source path="entity/storeCd" />
+        <target path="entity/storeCd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/aprvlNo" />
+        <target path="entity/aprvlNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/orgsaleDt" />
+        <target path="entity/orgsaleDt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/orgsalePosNo" />
+        <target path="entity/orgsalePosNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/orgsaleRcptNo" />
+        <target path="entity/orgsaleRcptNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/cnclAmt" />
+        <target path="entity/cnclAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/cnclMlg" />
+        <target path="entity/cnclMlg" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/cnfmYn" />
+        <target path="entity/cnfmYn" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/arcvnSumMlg" />
+        <target path="entity/arcvnSumMlg" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/arcvnSumRcvnAmt" />
+        <target path="entity/arcvnSumRcvnAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/arcvnGcRcvnMlg" />
+        <target path="entity/arcvnGcRcvnMlg" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/arcvnGcRcvnAmt" />
+        <target path="entity/arcvnGcRcvnAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/arcvnGiftRcvnMlg1" />
+        <target path="entity/arcvnGiftRcvnMlg1" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/arcvnGiftRcvnAmt1" />
+        <target path="entity/arcvnGiftRcvnAmt1" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/arcvnGiftItemNm1" />
+        <target path="entity/arcvnGiftItemNm1" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/arcvnGiftRcvnMlg2" />
+        <target path="entity/arcvnGiftRcvnMlg2" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/arcvnGiftRcvnAmt2" />
+        <target path="entity/arcvnGiftRcvnAmt2" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/arcvnGiftItemNm2" />
+        <target path="entity/arcvnGiftItemNm2" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/arcvnGiftRcvnMlg3" />
+        <target path="entity/arcvnGiftRcvnMlg3" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/arcvnGiftRcvnAmt3" />
+        <target path="entity/arcvnGiftRcvnAmt3" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/arcvnGiftItemNm3" />
+        <target path="entity/arcvnGiftItemNm3" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/afcnSumMlg" />
+        <target path="entity/afcnSumMlg" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/afcnSumRcvnAmt" />
+        <target path="entity/afcnSumRcvnAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/reRcvnPossMlg" />
+        <target path="entity/reRcvnPossMlg" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/reRcvnPossAmt" />
+        <target path="entity/reRcvnPossAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/gvbkSumMlg" />
+        <target path="entity/gvbkSumMlg" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/gvbkSumRcvnAmt" />
+        <target path="entity/gvbkSumRcvnAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/lackMlg" />
+        <target path="entity/lackMlg" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/gcReRcvnOverAmt" />
+        <target path="entity/gcReRcvnOverAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/giftReRcvnOverAmt" />
+        <target path="entity/giftReRcvnOverAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/extgMlg" />
+        <target path="entity/extgMlg" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/extgMemGrd" />
+        <target path="entity/extgMemGrd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/afcnMlg" />
+        <target path="entity/afcnMlg" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/afcnMemGrd" />
+        <target path="entity/afcnMemGrd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/lxgdsGbcd" />
+        <target path="entity/lxgdsGbcd" />
+        <function ref="move" />
+    </mapping>
+</map>
