@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="inbound" id="KFTCISPMCR0010102" version="2" />
+    <src_io id="SKFTPMRZ0010102" />
+    <target_io id="TCISPMRZ0010102" />
+    <mapping>
+        <source path="header/entity1/TGRM_LEN" />
+        <target path="header/entity1/TGRM_LEN" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/INNT_CHR_VAL" />
+        <target path="header/entity1/INNT_CHR_VAL" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/TGRM_TYPE_NO" />
+        <target path="header/entity1/TGRM_TYPE_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/TGRM_ID" />
+        <target path="header/entity1/TGRM_ID" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/TGRM_CNTN" />
+        <target path="header/entity1/TGRM_CNTN" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/TRD_GBCD" />
+        <target path="header/entity1/TRD_GBCD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/TGRM_SEND_DTM" />
+        <target path="header/entity1/TGRM_SEND_DTM" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/TGRM_TRC_NO" />
+        <target path="header/entity1/TGRM_TRC_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/TRD_TIME" />
+        <target path="entity/TRD_TIME" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/TRD_DT" />
+        <target path="entity/TRD_DT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/ISTN_CD" />
+        <target path="entity/ISTN_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/WTHDRWL_ACNO" />
+        <target path="entity/WTHDRWL_ACNO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/IDNT_CD" />
+        <target path="entity/IDNT_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/PMPSN_NO" />
+        <target path="entity/PMPSN_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/EVDN_GBCD" />
+        <target path="entity/EVDN_GBCD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/EVDN_RSRC_KND_IDNT_VAL" />
+        <target path="entity/EVDN_RSRC_KND_IDNT_VAL" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/FILE_SIZE" />
+        <target path="entity/FILE_SIZE" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/CNT" />
+        <target path="entity/CNT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RESP_CD" />
+        <target path="entity/RESP_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/ERR_MSG" />
+        <target path="entity/ERR_MSG" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/FLTR_ID" />
+        <target path="entity/FLTR_ID" />
+        <function ref="move" />
+    </mapping>
+</map>

@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TCISPMRZ0010102" idn="KF06_KFT_H0310" version="1">
+    <common>
+        <io_name><![CDATA[금결원자동이체증빙자료수신대내]]></io_name>
+        <!--I/O 명-->
+        <description />
+        <!--I/O 설명-->
+        <system code="CIS" name="H-CIS" />
+        <!--시스템코드, 시스템명-->
+        <work code="PMRZ" name="자동이체신청공통" />
+        <!--업무구분코드-->
+        <datetime>2023-02-24 09:50:52</datetime>
+        <!--작성 시간-->
+        <writer>박효진</writer>
+        <!--작성자-->
+        <charset>UTF-8</charset>
+        <!--캐릭터셋-->
+        <package_name>hdc.cis.pm.pmr.pmrz.onl.cbc.io</package_name>
+        <!--패키지경로-->
+        <class_name>KftcReqnTgrmSrcRcv</class_name>
+        <!--클래스명-->
+        <sttl_yn>Y</sttl_yn>
+        <!--표준전문여부-->
+    </common>
+    <process_type type="O" name="온라인">
+        <online>
+            <service_in />
+            <!--Input 거래 ID-->
+            <service_out />
+            <!--Output 거래 ID-->
+            <syn-asyn />
+            <!--동기 / 비동기 여부-->
+            <trncd_in />
+            <!--Input 거래 코드-->
+            <trncd_out />
+            <!--Output 거래 코드-->
+            <ext_inop code="2" />
+            <!--대내외 (일반/공유 I/O) 구분 코드 : 1 대내 (일반), 2 대외 (공유)-->
+            <external>
+                <system code="KFT" name="금융결제원" />
+                <!--대외 기관 구분 코드-->
+                <work code="KF06" name="[금융결제원(KFTC)] 금결원자동이체증빙자료송수신" />
+                <!--대외 업무 코드-->
+                <msg code="0310" />
+                <!--대외 전문 종별 코드-->
+                <tx />
+                <!--대외 거래 구분 코드-->
+                <etc />
+                <!--대외 기타 구분 코드-->
+                <inao code="1" />
+                <!--대내외 구간 코드 : 1 대내, 2 대외-->
+            </external>
+        </online>
+    </process_type>
+    <!--IO처리유형 : O - 온라인, D - DB, F - FILE, A - API-->
+    <inbound>
+        <message>
+            <io id="C00000010169" idn="KF06_KFT_H0310" version="1" name="jmims.message.kf06.kft.H0310" type="Message">
+                <common>
+                    <description />
+                    <system code="CIS" name="H-CIS" />
+                    <!--시스템코드, 시스템명-->
+                    <work code="PMRZ" name="자동이체신청공통" />
+                    <!--업무 구분 코드-->
+                    <datetime>2023-02-24 09:50:52</datetime>
+                    <!--작성 시간-->
+                    <writer>박효진</writer>
+                    <!--작성자-->
+                    <package_name />
+                    <!--패키지경로-->
+                    <class_name />
+                    <!--클래스명-->
+                    <sttl_yn>Y</sttl_yn>
+                    <!--표준전문여부-->
+                </common>
+                <process_type>
+                    <online>
+                        <external>
+                            <system code="KFT" name="금융결제원" />
+                            <!--대외 기관 코드, 대외 기관 명-->
+                            <work code="KF06" name="[금융결제원(KFTC)] 금결원자동이체증빙자료송수신" />
+                            <!--대외 업무 코드-->
+                            <msg code="0310" />
+                            <!--대외 전문 종별 코드-->
+                            <tx />
+                            <!--대외 거래 구분 코드-->
+                            <etc />
+                            <!--대외 기타 구분코드-->
+                            <rspn />
+                            <!--대외 응답 코드-->
+                            <utrace />
+                            <!--고유 TraceKey-->
+                            <extwork />
+                            <!--Work 코드-->
+                            <error />
+                            <!--Error 코드-->
+                            <encoding style="UTF-8" />
+                            <!--Encoding-->
+                        </external>
+                    </online>
+                </process_type>
+            </io>
+        </message>
+        <header>
+            <io id="H00000002777" idn="KF06_KFT_HCommHeader" version="4" name="jmims.header.kf06.kft.HCommHeader" type="Header" squencename="header">
+                <common>
+                    <description><![CDATA[금결원자동이체증빙자료송신]]></description>
+                    <system code="CIS" name="H-CIS" />
+                    <!--시스템코드, 시스템명-->
+                    <work code="PMRZ" name="자동이체신청공통" />
+                    <!--업무 구분 코드-->
+                    <datetime>2023-01-11 13:31:25</datetime>
+                    <!--작성 시간-->
+                    <writer>박효진</writer>
+                    <!--작성자-->
+                    <package_name>hdc.cis.com.onl.eh.io</package_name>
+                    <!--패키지경로-->
+                    <class_name>KftcReqnTgrmHdr</class_name>
+                    <!--클래스명-->
+                    <sttl_yn>Y</sttl_yn>
+                    <!--표준전문여부-->
+                </common>
+                <process_type>
+                    <online>
+                        <external>
+                            <system code="KFT" name="금융결제원" />
+                            <!--대외 기관 코드, 대외 기관 명-->
+                            <work code="KF06" name="[금융결제원(KFTC)] 금결원자동이체증빙자료송수신" />
+                            <!--대외 업무 코드-->
+                            <msg code="tgrmId" />
+                            <!--대외 전문 종별 코드-->
+                            <tx />
+                            <!--대외 거래 구분 코드-->
+                            <etc />
+                            <!--대외 기타 구분코드-->
+                            <rspn />
+                            <!--대외 응답 코드-->
+                            <utrace />
+                            <!--고유 TraceKey-->
+                            <extwork />
+                            <!--Work 코드-->
+                            <error />
+                            <!--Error 코드-->
+                            <encoding />
+                            <!--Encoding-->
+                        </external>
+                    </online>
+                </process_type>
+            </io>
+            <io id="S00000002776" idn="KF06_KFT_HCommHeader" name="jmims.entity.kf06.kft.HCommHeader" version="4" type="Entity" squencename="entity1">
+                <common>
+                    <description><![CDATA[금결원자동이체증빙자료송신]]></description>
+                    <system code="CIS" name="H-CIS" />
+                    <!--시스템코드, 시스템명-->
+                    <work code="PMRZ" name="자동이체신청공통" />
+                    <!--업무 구분 코드-->
+                    <datetime>2023-01-11 13:31:25</datetime>
+                    <!--작성 시간-->
+                    <writer>박효진</writer>
+                    <!--작성자-->
+                    <package_name>hdc.cis.com.onl.eh.io</package_name>
+                    <!--패키지경로-->
+                    <class_name>KftcReqnTgrmHdr</class_name>
+                    <!--클래스명-->
+                    <sttl_yn>Y</sttl_yn>
+                    <!--표준전문여부-->
+                </common>
+                <process_type>
+                    <online>
+                        <external>
+                            <system code="KFT" name="금융결제원" />
+                            <!--대외 기관 코드, 대외 기관 명-->
+                            <work code="KF06" name="[금융결제원(KFTC)] 금결원자동이체증빙자료송수신" />
+                            <!--대외 업무 코드-->
+                            <msg code="tgrmId" />
+                            <!--대외 전문 종별 코드-->
+                            <tx />
+                            <!--대외 거래 구분 코드-->
+                            <etc />
+                            <!--대외 기타 구분코드-->
+                            <rspn />
+                            <!--대외 응답 코드-->
+                            <utrace />
+                            <!--고유 TraceKey-->
+                            <extwork />
+                            <!--Work 코드-->
+                            <error />
+                            <!--Error 코드-->
+                            <encoding />
+                            <!--Encoding-->
+                        </external>
+                    </online>
+                </process_type>
+                <data><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/" version="S00000002776.4">
+    <element name="root" type="tns:KF06_KFT_HCommHeader_ENT_inbound" />
+    <complexType name="KF06_KFT_HCommHeader_ENT_inbound">
+        <sequence>
+            <element name="tgrmLen">
+                <annotation>
+                    <documentation>전문길이</documentation>
+                    <appinfo>
+                        <p:description value="전문+길이" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="4" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="inntChrVal">
+                <annotation>
+                    <documentation>고유문자값</documentation>
+                    <appinfo>
+                        <p:description value="고유문자값" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="3" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="tgrmTypeNo">
+                <annotation>
+                    <documentation>전문유형번호</documentation>
+                    <appinfo>
+                        <p:description value="전문유형번호" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="9" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="tgrmId">
+                <annotation>
+                    <documentation>전문ID</documentation>
+                    <appinfo>
+                        <p:description value="전문ID" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="4" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="tgrmCntn">
+                <annotation>
+                    <documentation>전문내용</documentation>
+                    <appinfo>
+                        <p:description value="전문내용" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="16" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="trdGbcd">
+                <annotation>
+                    <documentation>거래구분코드</documentation>
+                    <appinfo>
+                        <p:description value="거래구분코드" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="6" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="tgrmSendDtm">
+                <annotation>
+                    <documentation>전문전송일시</documentation>
+                    <appinfo>
+                        <p:description value="전문전송일시" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="10" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="tgrmTrcNo">
+                <annotation>
+                    <documentation>전문추적번호</documentation>
+                    <appinfo>
+                        <p:description value="전문추적번호" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="6" />
+                    </restriction>
+                </simpleType>
+            </element>
+        </sequence>
+    </complexType>
+</schema>]]></data>
+            </io>
+        </header>
+        <unit>
+            <io id="S00000002799" idn="KF06_KFT_H0310" name="jmims.entity.kf06.kft.H0310" version="1" type="Entity" squencename="entity">
+                <common>
+                    <description><![CDATA[금결원자동이체증빙자료수신대내]]></description>
+                    <system code="CIS" name="H-CIS" />
+                    <!--시스템코드, 시스템명-->
+                    <work code="PMRZ" name="자동이체신청공통" />
+                    <!--업무 구분 코드-->
+                    <datetime>2023-01-11 14:49:49</datetime>
+                    <!--작성 시간-->
+                    <writer>박효진</writer>
+                    <!--작성자-->
+                    <package_name>hdc.cis.pm.pmr.pmrz.onl.bc.io</package_name>
+                    <!--패키지경로-->
+                    <class_name>KftcReqnTgrmUnitRcv</class_name>
+                    <!--클래스명-->
+                    <sttl_yn>Y</sttl_yn>
+                    <!--표준전문여부-->
+                </common>
+                <process_type>
+                    <online>
+                        <external>
+                            <system code="KFT" name="금융결제원" />
+                            <!--대외 기관 코드, 대외 기관 명-->
+                            <work code="KF06" name="[금융결제원(KFTC)] 금결원자동이체증빙자료송수신" />
+                            <!--대외 업무 코드-->
+                            <msg code="0310" />
+                            <!--대외 전문 종별 코드-->
+                            <tx />
+                            <!--대외 거래 구분 코드-->
+                            <etc />
+                            <!--대외 기타 구분코드-->
+                            <rspn />
+                            <!--대외 응답 코드-->
+                            <utrace />
+                            <!--고유 TraceKey-->
+                            <extwork />
+                            <!--Work 코드-->
+                            <error />
+                            <!--Error 코드-->
+                            <encoding />
+                            <!--Encoding-->
+                        </external>
+                    </online>
+                </process_type>
+                <data><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/" version="S00000002799.1">
+    <element name="root" type="tns:KF06_KFT_H0310_ENT_inbound" />
+    <complexType name="KF06_KFT_H0310_ENT_inbound">
+        <sequence>
+            <element name="trdTime">
+                <annotation>
+                    <documentation>거래시간</documentation>
+                    <appinfo>
+                        <p:description value="거래시간" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="6" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="trdDt">
+                <annotation>
+                    <documentation>거래일자</documentation>
+                    <appinfo>
+                        <p:description value="거래일자" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="4" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="istnCd">
+                <annotation>
+                    <documentation>기관코드</documentation>
+                    <appinfo>
+                        <p:description value="기관코드" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="9" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="wthdrwlAcno">
+                <annotation>
+                    <documentation>출금계좌번호</documentation>
+                    <appinfo>
+                        <p:description value="출금계좌번호" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="39" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="idntCd">
+                <annotation>
+                    <documentation>식별코드</documentation>
+                    <appinfo>
+                        <p:description value="식별코드" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="15" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="pmpsnNo">
+                <annotation>
+                    <documentation>납부자번호</documentation>
+                    <appinfo>
+                        <p:description value="납부자번호" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="40" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="evdnGbcd">
+                <annotation>
+                    <documentation>증빙구분코드</documentation>
+                    <appinfo>
+                        <p:description value="증빙구분코드" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="1" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="evdnRsrcKndIdntVal">
+                <annotation>
+                    <documentation>증빙자료종류식별값</documentation>
+                    <appinfo>
+                        <p:description value="증빙자료종류식별값" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="5" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="fileSize">
+                <annotation>
+                    <documentation>파일크기</documentation>
+                    <appinfo>
+                        <p:description value="파일크기" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="long">
+                        <totalDigits value="7" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="cnt">
+                <annotation>
+                    <documentation>건수</documentation>
+                    <appinfo>
+                        <p:description value="건수" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="long">
+                        <totalDigits value="4" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="respCd">
+                <annotation>
+                    <documentation>응답코드</documentation>
+                    <appinfo>
+                        <p:description value="거래시간" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="7" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="errMsg">
+                <annotation>
+                    <documentation>오류메시지</documentation>
+                    <appinfo>
+                        <p:description value="오류메시지" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="80" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="fltrId">
+                <annotation>
+                    <documentation>필터ID</documentation>
+                    <appinfo>
+                        <p:description value="거래시간" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="79" />
+                    </restriction>
+                </simpleType>
+            </element>
+        </sequence>
+    </complexType>
+</schema>]]></data>
+            </io>
+        </unit>
+    </inbound>
+    <outbound>
+        <message />
+        <header />
+        <unit />
+    </outbound>
+</io>
