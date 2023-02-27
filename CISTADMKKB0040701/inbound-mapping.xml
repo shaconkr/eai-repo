@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="inbound" id="CISTADMKKB0040701" version="2" />
+    <src_io id="SCISMKKB0040701" />
+    <target_io id="TTADMKKB0040701" />
+    <mapping>
+        <source path="entity/mblCopnNo" />
+        <target path="entity/mblCopnNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/dscdDt" />
+        <target path="entity/dscdDt" />
+        <function ref="move" />
+    </mapping>
+</map>
