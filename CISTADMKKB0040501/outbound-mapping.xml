@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="outbound" id="CISTADMKKB0040501" version="2" />
+    <src_io id="SCISMKKB0040501" />
+    <target_io id="TTADMKKB0040501" />
+    <mapping>
+        <source path="entity/mblCopnNo" />
+        <target path="entity/mblCopnNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/crdMemNo" />
+        <target path="entity/crdMemNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/copnPblcDt" />
+        <target path="entity/copnPblcDt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/sdispsAmt" />
+        <target path="entity/sdispsAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/amtDcCopnPblcRsnCd" />
+        <target path="entity/amtDcCopnPblcRsnCd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/copnVlidStrtDt" />
+        <target path="entity/copnVlidStrtDt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/copnVlidEndDt" />
+        <target path="entity/copnVlidEndDt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/autoDwldYn" />
+        <target path="entity/autoDwldYn" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/dwldActiYn" />
+        <target path="entity/dwldActiYn" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/dwldDtm" />
+        <target path="entity/dwldDtm" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/onlnExcldYn" />
+        <target path="entity/onlnExcldYn" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/copnPblcGbcd" />
+        <target path="entity/copnPblcGbcd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/copnWtdwYn" />
+        <target path="entity/copnWtdwYn" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/campGbcd" />
+        <target path="entity/campGbcd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/campId" />
+        <target path="entity/campId" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/ofrId" />
+        <target path="entity/ofrId" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/ofrIdSeqno" />
+        <target path="entity/ofrIdSeqno" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/brndLimiYn" />
+        <target path="entity/brndLimiYn" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/posLimiYn" />
+        <target path="entity/posLimiYn" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/aprvlSendYn" />
+        <target path="entity/aprvlSendYn" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/mblSpeclSpdcpsIssuMemo" />
+        <target path="entity/mblSpeclSpdcpsIssuMemo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/useYn" />
+        <target path="entity/useYn" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/dscdDt" />
+        <target path="entity/dscdDt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/regId" />
+        <target path="entity/regId" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/regDtm" />
+        <target path="entity/regDtm" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/regPrgId" />
+        <target path="entity/regPrgId" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/chgId" />
+        <target path="entity/chgId" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/chgDtm" />
+        <target path="entity/chgDtm" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/chgPrgId" />
+        <target path="entity/chgPrgId" />
+        <function ref="move" />
+    </mapping>
+</map>
