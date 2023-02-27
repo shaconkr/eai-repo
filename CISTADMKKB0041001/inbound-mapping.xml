@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="inbound" id="CISTADMKKB0041001" version="3" />
+    <src_io id="SCISMKKB0041001" />
+    <target_io id="TTADMKKB0041001" />
+    <mapping>
+        <source path="entity/copnIssuReqDt" />
+        <target path="entity/copnIssuReqDt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/issuReqSeq" />
+        <target path="entity/issuReqSeq" />
+        <function ref="move" />
+    </mapping>
+</map>
