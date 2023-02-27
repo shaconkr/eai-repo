@@ -1,18 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="inbound" id="CISTADAHHC0012701" version="2" />
+    <interface bound="inbound" id="CISTADAHHC0012701" version="3" />
     <src_io id="SCISAHHC0012701" />
     <target_io id="TTADAHHC0012701" />
-    <mapping>
-        <source path="entity/trdCd" />
-        <target path="entity/trdCd" />
-        <function ref="move" />
-    </mapping>
-    <mapping>
-        <source path="entity/nullVal1" />
-        <target path="entity/nullVal1" />
-        <function ref="move" />
-    </mapping>
     <mapping>
         <source path="entity/storeCd" />
         <target path="entity/storeCd" />
@@ -24,58 +14,23 @@
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/trdTrcNo" />
-        <target path="entity/trdTrcNo" />
+        <source path="entity/sendDt" />
+        <target path="entity/sendDt" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/aprvlReqnDt" />
-        <target path="entity/aprvlReqnDt" />
+        <source path="entity/sendTime" />
+        <target path="entity/sendTime" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/nullVal2" />
-        <target path="entity/nullVal2" />
-        <function ref="move" />
-    </mapping>
-    <mapping>
-        <source path="entity/dataLen" />
-        <target path="entity/dataLen" />
-        <function ref="move" />
-    </mapping>
-    <mapping>
-        <source path="entity/aprvlTrdGbcd" />
-        <target path="entity/aprvlTrdGbcd" />
-        <function ref="move" />
-    </mapping>
-    <mapping>
-        <source path="entity/trdDt" />
-        <target path="entity/trdDt" />
-        <function ref="move" />
-    </mapping>
-    <mapping>
-        <source path="entity/trdTime" />
-        <target path="entity/trdTime" />
-        <function ref="move" />
-    </mapping>
-    <mapping>
-        <source path="entity/posInsrModeGbcd" />
-        <target path="entity/posInsrModeGbcd" />
-        <function ref="move" />
-    </mapping>
-    <mapping>
-        <source path="entity/track2CrdToknVal" />
-        <target path="entity/track2CrdToknVal" />
+        <source path="entity/crdNo" />
+        <target path="entity/crdNo" />
         <function ref="move" />
     </mapping>
     <mapping>
         <source path="entity/insmMths" />
         <target path="entity/insmMths" />
-        <function ref="move" />
-    </mapping>
-    <mapping>
-        <source path="entity/aprvlIamtGbcd" />
-        <target path="entity/aprvlIamtGbcd" />
         <function ref="move" />
     </mapping>
     <mapping>
@@ -109,43 +64,23 @@
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/enuriCopnCd" />
-        <target path="entity/enuriCopnCd" />
+        <source path="entity/aprvlRsnGbcd" />
+        <target path="entity/aprvlRsnGbcd" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/cmisGbcd" />
-        <target path="entity/cmisGbcd" />
+        <source path="entity/aprvlMemo" />
+        <target path="entity/aprvlMemo" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/aprvlDt" />
-        <target path="entity/aprvlDt" />
+        <source path="entity/overAprvlBndsAmt" />
+        <target path="entity/overAprvlBndsAmt" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/aprvlNo" />
-        <target path="entity/aprvlNo" />
-        <function ref="move" />
-    </mapping>
-    <mapping>
-        <source path="entity/neoXGbcd" />
-        <target path="entity/neoXGbcd" />
-        <function ref="move" />
-    </mapping>
-    <mapping>
-        <source path="entity/neoxCrdNo" />
-        <target path="entity/neoxCrdNo" />
-        <function ref="move" />
-    </mapping>
-    <mapping>
-        <source path="entity/itemList/itemCd" />
-        <target path="entity/itemList/itemCd" />
-        <function ref="move" />
-    </mapping>
-    <mapping>
-        <source path="entity/itemList/itemAmt" />
-        <target path="entity/itemList/itemAmt" />
+        <source path="entity/chgpId" />
+        <target path="entity/chgpId" />
         <function ref="move" />
     </mapping>
 </map>

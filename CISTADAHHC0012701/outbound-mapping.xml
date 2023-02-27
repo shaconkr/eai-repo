@@ -1,91 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="outbound" id="CISTADAHHC0012701" version="2" />
+    <interface bound="outbound" id="CISTADAHHC0012701" version="3" />
     <src_io id="SCISAHHC0012701" />
     <target_io id="TTADAHHC0012701" />
     <mapping>
-        <source path="entity/trdCd" />
-        <target path="entity/trdCd" />
-        <function ref="move" />
-    </mapping>
-    <mapping>
-        <source path="entity/nullVal1" />
-        <target path="entity/nullVal1" />
-        <function ref="move" />
-    </mapping>
-    <mapping>
-        <source path="entity/storeCd" />
-        <target path="entity/storeCd" />
-        <function ref="move" />
-    </mapping>
-    <mapping>
-        <source path="entity/posNo" />
-        <target path="entity/posNo" />
-        <function ref="move" />
-    </mapping>
-    <mapping>
-        <source path="entity/trdTrcNo" />
-        <target path="entity/trdTrcNo" />
-        <function ref="move" />
-    </mapping>
-    <mapping>
-        <source path="entity/aprvlReqnDt" />
-        <target path="entity/aprvlReqnDt" />
-        <function ref="move" />
-    </mapping>
-    <mapping>
-        <source path="entity/nullVal2" />
-        <target path="entity/nullVal2" />
-        <function ref="move" />
-    </mapping>
-    <mapping>
-        <source path="entity/dataLen" />
-        <target path="entity/dataLen" />
-        <function ref="move" />
-    </mapping>
-    <mapping>
-        <source path="entity/aprvlTrdGbcd" />
-        <target path="entity/aprvlTrdGbcd" />
-        <function ref="move" />
-    </mapping>
-    <mapping>
-        <source path="entity/trdDt" />
-        <target path="entity/trdDt" />
-        <function ref="move" />
-    </mapping>
-    <mapping>
-        <source path="entity/trdTime" />
-        <target path="entity/trdTime" />
-        <function ref="move" />
-    </mapping>
-    <mapping>
-        <source path="entity/track2CrdToknVal" />
-        <target path="entity/track2CrdToknVal" />
-        <function ref="move" />
-    </mapping>
-    <mapping>
-        <source path="entity/insmMths" />
-        <target path="entity/insmMths" />
-        <function ref="move" />
-    </mapping>
-    <mapping>
-        <source path="entity/aprvlIamtGbcd" />
-        <target path="entity/aprvlIamtGbcd" />
-        <function ref="move" />
-    </mapping>
-    <mapping>
-        <source path="entity/crdAprvlAmt" />
-        <target path="entity/crdAprvlAmt" />
-        <function ref="move" />
-    </mapping>
-    <mapping>
-        <source path="entity/cmisGbcd" />
-        <target path="entity/cmisGbcd" />
-        <function ref="move" />
-    </mapping>
-    <mapping>
         <source path="entity/respCd" />
         <target path="entity/respCd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/respMsg" />
+        <target path="entity/respMsg" />
         <function ref="move" />
     </mapping>
     <mapping>
