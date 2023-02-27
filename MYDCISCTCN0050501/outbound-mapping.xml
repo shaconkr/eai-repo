@@ -34,23 +34,23 @@
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/mmChrAmt" />
-        <target path="entity/mmChrAmt" />
+        <source path="entity/chrList/mmChrAmt" />
+        <target path="entity/chrList/mmChrAmt" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/stlmDay" />
-        <target path="entity/stlmDay" />
+        <source path="entity/chrList/stlmDay" />
+        <target path="entity/chrList/stlmDay" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/reqYm" />
-        <target path="entity/reqYm" />
+        <source path="entity/chrList/reqYm" />
+        <target path="entity/chrList/reqYm" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/stlmDt" />
-        <target path="entity/stlmDt" />
+        <source path="entity/chrList/stlmDt" />
+        <target path="entity/chrList/stlmDt" />
         <function ref="move" />
     </mapping>
 </map>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SMYDCTCN0050501" version="1">
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SMYDCTCN0050501" version="2">
     <common>
         <io_name><![CDATA[마이데이터_청구기본정보조회]]></io_name>
         <!--I/O 명-->
@@ -30,7 +30,7 @@
             <!--Output 거래 ID-->
             <syn-asyn code="1" name="동기" />
             <!--동기 / 비동기 여부-->
-            <bizhub code="000" name="고객X 마케팅X" />
+            <bizhub />
             <!--비즈허브 접촉정보거래종류-->
             <trncd_in />
             <!--Input 거래 코드-->
@@ -411,91 +411,6 @@
                     </appinfo>
                 </annotation>
             </element>
-            <element name="mmChrAmt">
-                <annotation>
-                    <documentation>월청구금액</documentation>
-                    <appinfo>
-                        <p:description value="월청구금액" />
-                        <p:mandatory value="N" />
-                        <p:level value="1" />
-                        <p:encryption value="N" />
-                        <p:one_path_encp value="N" />
-                        <p:mask_type />
-                        <p:db_key value="N" />
-                        <p:krn_fld_yn value="N" />
-                        <p:api_data_area_dcd value="B" />
-                    </appinfo>
-                </annotation>
-                <simpleType>
-                    <restriction base="decimal">
-                        <totalDigits value="15" />
-                        <fractionDigits value="0" />
-                    </restriction>
-                </simpleType>
-            </element>
-            <element name="stlmDay">
-                <annotation>
-                    <documentation>결제일</documentation>
-                    <appinfo>
-                        <p:description />
-                        <p:mandatory value="N" />
-                        <p:level value="1" />
-                        <p:encryption value="N" />
-                        <p:one_path_encp value="N" />
-                        <p:mask_type />
-                        <p:db_key value="N" />
-                        <p:krn_fld_yn value="N" />
-                        <p:api_data_area_dcd value="B" />
-                    </appinfo>
-                </annotation>
-                <simpleType>
-                    <restriction base="string">
-                        <maxLength value="2" />
-                    </restriction>
-                </simpleType>
-            </element>
-            <element name="reqYm">
-                <annotation>
-                    <documentation>청구년월</documentation>
-                    <appinfo>
-                        <p:description />
-                        <p:mandatory value="N" />
-                        <p:level value="1" />
-                        <p:encryption value="N" />
-                        <p:one_path_encp value="N" />
-                        <p:mask_type />
-                        <p:db_key value="N" />
-                        <p:krn_fld_yn value="N" />
-                        <p:api_data_area_dcd value="B" />
-                    </appinfo>
-                </annotation>
-                <simpleType>
-                    <restriction base="string">
-                        <maxLength value="6" />
-                    </restriction>
-                </simpleType>
-            </element>
-            <element name="stlmDt">
-                <annotation>
-                    <documentation>결제일자</documentation>
-                    <appinfo>
-                        <p:description />
-                        <p:mandatory value="N" />
-                        <p:level value="1" />
-                        <p:encryption value="N" />
-                        <p:one_path_encp value="N" />
-                        <p:mask_type />
-                        <p:db_key value="N" />
-                        <p:krn_fld_yn value="N" />
-                        <p:api_data_area_dcd value="B" />
-                    </appinfo>
-                </annotation>
-                <simpleType>
-                    <restriction base="string">
-                        <maxLength value="8" />
-                    </restriction>
-                </simpleType>
-            </element>
         </sequence>
     </complexType>
     <complexType name="CHR_LIST_TYPE">
@@ -518,6 +433,91 @@
                 <simpleType>
                     <restriction base="string">
                         <maxLength value="30" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="mmChrAmt">
+                <annotation>
+                    <documentation>월청구금액</documentation>
+                    <appinfo>
+                        <p:description value="월청구금액" />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                        <p:api_data_area_dcd value="B" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="decimal">
+                        <totalDigits value="15" />
+                        <fractionDigits value="0" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="stlmDay">
+                <annotation>
+                    <documentation>결제일</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                        <p:api_data_area_dcd value="B" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="2" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="reqYm">
+                <annotation>
+                    <documentation>청구년월</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                        <p:api_data_area_dcd value="B" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="6" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="stlmDt">
+                <annotation>
+                    <documentation>결제일자</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="2" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                        <p:api_data_area_dcd value="B" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="8" />
                     </restriction>
                 </simpleType>
             </element>
