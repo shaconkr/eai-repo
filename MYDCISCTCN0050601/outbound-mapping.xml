@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="outbound" id="MYDCISCTCN0050601" version="1" />
+    <src_io id="SMYDCTCN0050601" />
+    <target_io id="TCISCTCN0050601" />
+    <mapping>
+        <source path="entity/trdInntNo" />
+        <target path="entity/trdInntNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/respCd" />
+        <target path="entity/respCd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/respMsg" />
+        <target path="entity/respMsg" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/nxtKey" />
+        <target path="entity/nxtKey" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/chrDtlRowcount" />
+        <target path="entity/chrDtlRowcount" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/crdId" />
+        <target path="entity/crdId" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/useDtm" />
+        <target path="entity/useDtm" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/trdNo" />
+        <target path="entity/trdNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/utlzAmt" />
+        <target path="entity/utlzAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/crncCd" />
+        <target path="entity/crncCd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/frcsNm" />
+        <target path="entity/frcsNm" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/frcsRgno" />
+        <target path="entity/frcsRgno" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/crdtSellCmis" />
+        <target path="entity/crdtSellCmis" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/totInsmTmnm" />
+        <target path="entity/totInsmTmnm" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/curInsmTmnm" />
+        <target path="entity/curInsmTmnm" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/insmStlmAfBlnc" />
+        <target path="entity/insmStlmAfBlnc" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/itemCd" />
+        <target path="entity/itemCd" />
+        <function ref="move" />
+    </mapping>
+</map>
