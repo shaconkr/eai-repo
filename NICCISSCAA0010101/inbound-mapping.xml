@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="inbound" id="NICCISSCAA0010101" version="3" />
+    <interface bound="inbound" id="NICCISSCAA0010101" version="4" />
     <src_io id="SNICSCAA0010101" />
     <target_io id="TCISSCAA0010101" />
     <mapping>
@@ -89,8 +89,8 @@
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/niceDataGroup/pynStoreRstCd" />
-        <target path="entity/niceDataGroup/pynStoreRstCd" />
+        <source path="entity/niceDataGroup/grpnRstCd" />
+        <target path="entity/niceDataGroup/grpnRstCd" />
         <function ref="move" />
     </mapping>
     <mapping>
