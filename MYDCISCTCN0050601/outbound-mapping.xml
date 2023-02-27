@@ -29,63 +29,63 @@
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/crdId" />
-        <target path="entity/crdId" />
+        <source path="entity/chrDtlList/crdId" />
+        <target path="entity/chrDtlList/crdId" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/useDtm" />
-        <target path="entity/useDtm" />
+        <source path="entity/chrDtlList/useDtm" />
+        <target path="entity/chrDtlList/useDtm" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/trdNo" />
-        <target path="entity/trdNo" />
+        <source path="entity/chrDtlList/trdNo" />
+        <target path="entity/chrDtlList/trdNo" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/utlzAmt" />
-        <target path="entity/utlzAmt" />
+        <source path="entity/chrDtlList/utlzAmt" />
+        <target path="entity/chrDtlList/utlzAmt" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/crncCd" />
-        <target path="entity/crncCd" />
+        <source path="entity/chrDtlList/crncCd" />
+        <target path="entity/chrDtlList/crncCd" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/frcsNm" />
-        <target path="entity/frcsNm" />
+        <source path="entity/chrDtlList/frcsNm" />
+        <target path="entity/chrDtlList/frcsNm" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/frcsRgno" />
-        <target path="entity/frcsRgno" />
+        <source path="entity/chrDtlList/frcsRgno" />
+        <target path="entity/chrDtlList/frcsRgno" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/crdtSellCmis" />
-        <target path="entity/crdtSellCmis" />
+        <source path="entity/chrDtlList/crdtSellCmis" />
+        <target path="entity/chrDtlList/crdtSellCmis" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/totInsmTmnm" />
-        <target path="entity/totInsmTmnm" />
+        <source path="entity/chrDtlList/totInsmTmnm" />
+        <target path="entity/chrDtlList/totInsmTmnm" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/curInsmTmnm" />
-        <target path="entity/curInsmTmnm" />
+        <source path="entity/chrDtlList/curInsmTmnm" />
+        <target path="entity/chrDtlList/curInsmTmnm" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/insmStlmAfBlnc" />
-        <target path="entity/insmStlmAfBlnc" />
+        <source path="entity/chrDtlList/insmStlmAfBlnc" />
+        <target path="entity/chrDtlList/insmStlmAfBlnc" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/itemCd" />
-        <target path="entity/itemCd" />
+        <source path="entity/chrDtlList/itemCd" />
+        <target path="entity/chrDtlList/itemCd" />
         <function ref="move" />
     </mapping>
 </map>
