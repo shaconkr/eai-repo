@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="STADMKKA0110101" version="4">
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="STADMKKA0110101" version="5">
     <common>
-        <io_name><![CDATA[에누리쿠폰 사용정보 반영]]></io_name>
+        <io_name><![CDATA[에누리쿠폰사용처리]]></io_name>
         <!--I/O 명-->
         <description><![CDATA[에누리쿠폰 사용내역을 승인시스템에서 수신받아 에누리쿠폰 사용내역을 반영한다.]]></description>
         <!--I/O 설명-->

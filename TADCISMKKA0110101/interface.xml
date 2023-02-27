@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TADCISMKKA0110101" name="에누리쿠폰 사용정보 반영" version="4">
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TADCISMKKA0110101" name="에누리쿠폰사용처리" version="6">
     <common>
         <description><![CDATA[에누리쿠폰 사용내역을 승인시스템에서 수신받아 에누리쿠폰 사용내역을 반영한다.]]></description>
         <system code="TAD" name="승인서버(탠덤)" />
