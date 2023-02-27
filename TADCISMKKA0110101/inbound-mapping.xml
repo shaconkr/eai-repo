@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="inbound" id="TADCISMKKA0110101" version="3" />
+    <src_io id="STADMKKA0110101" />
+    <target_io id="TCISMKKA0110101" />
+    <mapping>
+        <source path="entity/enuriCopnNo" />
+        <target path="entity/enuriCopnNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/ulmtCopnIssuSeq" />
+        <target path="entity/ulmtCopnIssuSeq" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/crdMemNo" />
+        <target path="entity/crdMemNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/aprvlDt" />
+        <target path="entity/aprvlDt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/aprvlTime" />
+        <target path="entity/aprvlTime" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/crdNo" />
+        <target path="entity/crdNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/aprvlNo" />
+        <target path="entity/aprvlNo" />
+        <function ref="move" />
+    </mapping>
+</map>
