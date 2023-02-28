@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="inbound" id="CISPISMKCY0010101" version="2" />
+    <src_io id="SCISMKCY0010101" />
+    <target_io id="TPISMKCY0010101" />
+    <mapping>
+        <source path="entity/crdMemNo" />
+        <target path="entity/crdMemNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/campId" />
+        <target path="entity/campId" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/procDt" />
+        <target path="entity/procDt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/crdNo" />
+        <target path="entity/crdNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/pisCampId" />
+        <target path="entity/pisCampId" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/joinYn" />
+        <target path="entity/joinYn" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/regPrgId" />
+        <target path="entity/regPrgId" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/regDtm" />
+        <target path="entity/regDtm" />
+        <function ref="move" />
+    </mapping>
+</map>
