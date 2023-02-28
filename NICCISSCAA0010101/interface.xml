@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="NICCISSCAA0010101" name="CB 스코어 파일 수신" version="6">
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="NICCISSCAA0010101" name="CB 스코어 파일 수신" version="7">
     <common>
         <description />
         <system code="CIS" name="H-CIS" />
@@ -74,7 +74,7 @@
             </online>
             <batch>
                 <file2file>
-                    <ext_file_path>/app/sam/sc/kis/rcv</ext_file_path>
+                    <ext_file_path>/app/sam/sc/nice/rcv</ext_file_path>
                     <!--대외기관 파일 경로-->
                     <ext_file_nm>23NICE_SCALINF_O001.YYMMDD.Z</ext_file_nm>
                     <!--대외기관 파일명-->
