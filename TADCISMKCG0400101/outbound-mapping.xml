@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="outbound" id="TADCISMKCG0400101" version="2" />
+    <src_io id="STADMKCG0400101" />
+    <target_io id="TCISMKCG0400101" />
+    <mapping>
+        <source path="entity/crdNo" />
+        <target path="entity/crdNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/crdMemNo" />
+        <target path="entity/crdMemNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/selfMemNo" />
+        <target path="entity/selfMemNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/aprvlDtm" />
+        <target path="entity/aprvlDtm" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/aprvlNo" />
+        <target path="entity/aprvlNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/storeCd" />
+        <target path="entity/storeCd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/aprvlReqnPosNo" />
+        <target path="entity/aprvlReqnPosNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/saleRceitNo" />
+        <target path="entity/saleRceitNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/aprvlGbcd" />
+        <target path="entity/aprvlGbcd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/aprvlReqnIstnCd" />
+        <target path="entity/aprvlReqnIstnCd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/frcsNo" />
+        <target path="entity/frcsNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/insmMths" />
+        <target path="entity/insmMths" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/iamtGbcd" />
+        <target path="entity/iamtGbcd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/tsaleAmt" />
+        <target path="entity/tsaleAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/enuriAmt" />
+        <target path="entity/enuriAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/nsaleAmt" />
+        <target path="entity/nsaleAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/saleIamtAmt" />
+        <target path="entity/saleIamtAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/itemCd" />
+        <target path="entity/itemCd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/orgAprvlDtm" />
+        <target path="entity/orgAprvlDtm" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/cnclPosNo" />
+        <target path="entity/cnclPosNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/orgsaleRceitNo" />
+        <target path="entity/orgsaleRceitNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/eltrWalletJoinYn" />
+        <target path="entity/eltrWalletJoinYn" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/smsngpJoinYn" />
+        <target path="entity/smsngpJoinYn" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/paycJoinYn" />
+        <target path="entity/paycJoinYn" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/nullVal" />
+        <target path="entity/nullVal" />
+        <function ref="move" />
+    </mapping>
+</map>
