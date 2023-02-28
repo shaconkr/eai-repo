@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="inbound" id="HPGCISMKCH0200101" version="4" />
+    <src_io id="SHPGMKCH0200101" />
+    <target_io id="TCISMKCH0200101" />
+    <mapping>
+        <source path="entity/campId" />
+        <target path="entity/campId" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/crdMemNo" />
+        <target path="entity/crdMemNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/campGbcd" />
+        <target path="entity/campGbcd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/reqDt" />
+        <target path="entity/reqDt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/tmnnDt" />
+        <target path="entity/tmnnDt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/tmnnYn" />
+        <target path="entity/tmnnYn" />
+        <function ref="move" />
+    </mapping>
+</map>
