@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="inbound" id="CISTADMKCY0040105" version="2" />
+    <src_io id="SCISMKCY0040105" />
+    <target_io id="TTADMKCY0040105" />
+    <mapping>
+        <source path="entity/campId" />
+        <target path="entity/campId" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/ofrId" />
+        <target path="entity/ofrId" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/ofrIdSeqno" />
+        <target path="entity/ofrIdSeqno" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/useStoreCd" />
+        <target path="entity/useStoreCd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/brndCd" />
+        <target path="entity/brndCd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/campGbcd" />
+        <target path="entity/campGbcd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/regId" />
+        <target path="entity/regId" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/regDtm" />
+        <target path="entity/regDtm" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/regPrgId" />
+        <target path="entity/regPrgId" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/chgId" />
+        <target path="entity/chgId" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/chgDtm" />
+        <target path="entity/chgDtm" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/chgPrgId" />
+        <target path="entity/chgPrgId" />
+        <function ref="move" />
+    </mapping>
+</map>
