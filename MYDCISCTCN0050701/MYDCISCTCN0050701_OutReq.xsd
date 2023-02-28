@@ -78,7 +78,7 @@
                         <p:mask_type />
                         <p:db_key value="N" />
                         <p:krn_fld_yn value="N" />
-                        <p:api_data_area_dcd value="B" />
+                        <p:api_data_area_dcd value="P" />
                     </appinfo>
                 </annotation>
                 <simpleType>
@@ -99,7 +99,7 @@
                         <p:mask_type />
                         <p:db_key value="N" />
                         <p:krn_fld_yn value="N" />
-                        <p:api_data_area_dcd value="B" />
+                        <p:api_data_area_dcd value="P" />
                     </appinfo>
                 </annotation>
                 <simpleType>
