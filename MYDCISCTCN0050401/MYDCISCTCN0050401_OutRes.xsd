@@ -3,7 +3,7 @@
     <element name="root" type="tns:TCISCTCN0050401_outbound" />
     <complexType name="TCISCTCN0050401_outbound">
         <sequence>
-            <element name="trdInntNo">
+            <element name="x_api_tran_id">
                 <annotation>
                     <documentation>거래고유번호</documentation>
                     <appinfo>
@@ -24,9 +24,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="respCd">
+            <element name="rspCode">
                 <annotation>
-                    <documentation>응답코드</documentation>
+                    <documentation>세부응답코드</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
@@ -45,9 +45,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="respMsg">
+            <element name="rspMsg">
                 <annotation>
-                    <documentation>응답메시지</documentation>
+                    <documentation>세부응답메시지</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
@@ -66,9 +66,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="qryDtm">
+            <element name="searchTimestamp">
                 <annotation>
-                    <documentation>조회일시</documentation>
+                    <documentation>조회타임스탬프</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
@@ -87,9 +87,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="trfcCrdYn">
+            <element name="isTransPayable">
                 <annotation>
-                    <documentation>교통카드여부</documentation>
+                    <documentation>교통기능여부</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
@@ -108,9 +108,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="cashCrdYn">
+            <element name="isCashCard">
                 <annotation>
-                    <documentation>현금카드여부</documentation>
+                    <documentation>현금카드기능여부</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
@@ -129,7 +129,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="stlmBankCd">
+            <element name="linkedBankCode">
                 <annotation>
                     <documentation>결제은행코드</documentation>
                     <appinfo>
@@ -150,7 +150,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="stlmAcno">
+            <element name="accountNum">
                 <annotation>
                     <documentation>결제계좌번호</documentation>
                     <appinfo>
@@ -171,7 +171,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="crdBrndCd">
+            <element name="cardBrand">
                 <annotation>
                     <documentation>카드브랜드코드</documentation>
                     <appinfo>
@@ -192,9 +192,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="anfeAmt">
+            <element name="annualFee">
                 <annotation>
-                    <documentation>연회비금액</documentation>
+                    <documentation>상품연회비</documentation>
                     <appinfo>
                         <p:description value="연회비금액" />
                         <p:mandatory value="N" />
@@ -214,7 +214,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="issuDt">
+            <element name="issueDate">
                 <annotation>
                     <documentation>발급일자</documentation>
                     <appinfo>

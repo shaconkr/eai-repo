@@ -1,61 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="outbound" id="MYDCISCTCN0050401" version="1" />
+    <interface bound="outbound" id="MYDCISCTCN0050401" version="2" />
     <src_io id="SMYDCTCN0050401" />
     <target_io id="TCISCTCN0050401" />
     <mapping>
-        <source path="entity/trdInntNo" />
-        <target path="entity/trdInntNo" />
+        <source path="entity/x_api_tran_id" />
+        <target path="entity/x_api_tran_id" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/respCd" />
-        <target path="entity/respCd" />
+        <source path="entity/rspCode" />
+        <target path="entity/rspCode" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/respMsg" />
-        <target path="entity/respMsg" />
+        <source path="entity/rspMsg" />
+        <target path="entity/rspMsg" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/qryDtm" />
-        <target path="entity/qryDtm" />
+        <source path="entity/searchTimestamp" />
+        <target path="entity/searchTimestamp" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/trfcCrdYn" />
-        <target path="entity/trfcCrdYn" />
+        <source path="entity/isTransPayable" />
+        <target path="entity/isTransPayable" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/cashCrdYn" />
-        <target path="entity/cashCrdYn" />
+        <source path="entity/isCashCard" />
+        <target path="entity/isCashCard" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/stlmBankCd" />
-        <target path="entity/stlmBankCd" />
+        <source path="entity/linkedBankCode" />
+        <target path="entity/linkedBankCode" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/stlmAcno" />
-        <target path="entity/stlmAcno" />
+        <source path="entity/accountNum" />
+        <target path="entity/accountNum" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/crdBrndCd" />
-        <target path="entity/crdBrndCd" />
+        <source path="entity/cardBrand" />
+        <target path="entity/cardBrand" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/anfeAmt" />
-        <target path="entity/anfeAmt" />
+        <source path="entity/annualFee" />
+        <target path="entity/annualFee" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/issuDt" />
-        <target path="entity/issuDt" />
+        <source path="entity/issueDate" />
+        <target path="entity/issueDate" />
         <function ref="move" />
     </mapping>
 </map>

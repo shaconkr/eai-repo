@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<deployment id="D00000009590">
-    <deployer id="CIS055">선우진</deployer>
-    <deployment_date>2023-02-27 21:20:59.921093</deployment_date>
+<deployment id="D00000010119">
+    <deployer id="ADMIN">관리자</deployer>
+    <deployment_date>2023-03-02 17:04:42.788634</deployment_date>
     <target_system id="FEP_D_01">EAI 대외</target_system>
 </deployment>
