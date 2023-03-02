@@ -3,7 +3,7 @@
     <element name="root" type="tns:TCISCTCN0050401_inbound" />
     <complexType name="TCISCTCN0050401_inbound">
         <sequence>
-            <element name="x_user_ci">
+            <element name="x-user-ci">
                 <annotation>
                     <documentation>정보주체식별값</documentation>
                     <appinfo>
@@ -24,7 +24,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="x_api_tran_id">
+            <element name="x-api-tran-id">
                 <annotation>
                     <documentation>거래고유번호</documentation>
                     <appinfo>
@@ -45,7 +45,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="x_api_type">
+            <element name="x-api-type">
                 <annotation>
                     <documentation>API유형</documentation>
                     <appinfo>
@@ -66,7 +66,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="orgCode">
+            <element name="org_code">
                 <annotation>
                     <documentation>기관코드</documentation>
                     <appinfo>
@@ -87,7 +87,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="searchTimestamp">
+            <element name="search_timestamp">
                 <annotation>
                     <documentation>조회타임스탬프</documentation>
                     <appinfo>

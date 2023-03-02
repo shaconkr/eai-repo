@@ -91,7 +91,7 @@
     <element name="root" type="tns:TCISCTCN0050401_inbound" />
     <complexType name="TCISCTCN0050401_inbound">
         <sequence>
-            <element name="x_user_ci">
+            <element name="x-user-ci">
                 <annotation>
                     <documentation>정보주체식별값</documentation>
                     <appinfo>
@@ -112,7 +112,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="x_api_tran_id">
+            <element name="x-api-tran-id">
                 <annotation>
                     <documentation>거래고유번호</documentation>
                     <appinfo>
@@ -133,7 +133,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="x_api_type">
+            <element name="x-api-type">
                 <annotation>
                     <documentation>API유형</documentation>
                     <appinfo>
@@ -154,7 +154,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="orgCode">
+            <element name="org_code">
                 <annotation>
                     <documentation>기관코드</documentation>
                     <appinfo>
@@ -175,7 +175,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="searchTimestamp">
+            <element name="search_timestamp">
                 <annotation>
                     <documentation>조회타임스탬프</documentation>
                     <appinfo>
@@ -232,7 +232,7 @@
     <element name="root" type="tns:TCISCTCN0050401_outbound" />
     <complexType name="TCISCTCN0050401_outbound">
         <sequence>
-            <element name="x_api_tran_id">
+            <element name="x-api-tran-id">
                 <annotation>
                     <documentation>거래고유번호</documentation>
                     <appinfo>
@@ -253,7 +253,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="rspCode">
+            <element name="rsp_code">
                 <annotation>
                     <documentation>세부응답코드</documentation>
                     <appinfo>
@@ -274,7 +274,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="rspMsg">
+            <element name="rsp_msg">
                 <annotation>
                     <documentation>세부응답메시지</documentation>
                     <appinfo>
@@ -295,7 +295,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="searchTimestamp">
+            <element name="search_timestamp">
                 <annotation>
                     <documentation>조회타임스탬프</documentation>
                     <appinfo>
@@ -316,7 +316,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="isTransPayable">
+            <element name="is_trans_payable">
                 <annotation>
                     <documentation>교통기능여부</documentation>
                     <appinfo>
@@ -337,7 +337,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="isCashCard">
+            <element name="is_cash_card">
                 <annotation>
                     <documentation>현금카드기능여부</documentation>
                     <appinfo>
@@ -358,7 +358,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="linkedBankCode">
+            <element name="linked_bank_code">
                 <annotation>
                     <documentation>결제은행코드</documentation>
                     <appinfo>
@@ -379,7 +379,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="accountNum">
+            <element name="account_num">
                 <annotation>
                     <documentation>결제계좌번호</documentation>
                     <appinfo>
@@ -400,7 +400,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="cardBrand">
+            <element name="card_brand">
                 <annotation>
                     <documentation>카드브랜드코드</documentation>
                     <appinfo>
@@ -421,7 +421,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="annualFee">
+            <element name="annual_fee">
                 <annotation>
                     <documentation>상품연회비</documentation>
                     <appinfo>
@@ -443,7 +443,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="issueDate">
+            <element name="issue_date">
                 <annotation>
                     <documentation>발급일자</documentation>
                     <appinfo>

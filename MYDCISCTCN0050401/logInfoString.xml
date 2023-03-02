@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<deployment id="D00000010119">
+<deployment id="D00000010154">
     <deployer id="ADMIN">관리자</deployer>
-    <deployment_date>2023-03-02 17:04:42.788634</deployment_date>
-    <target_system id="FEP_D_01">EAI 대외</target_system>
+    <deployment_date>2023-03-02 18:06:12.631745</deployment_date>
+    <target_system id="FEP_D_02">EAI 대외 API</target_system>
 </deployment>
