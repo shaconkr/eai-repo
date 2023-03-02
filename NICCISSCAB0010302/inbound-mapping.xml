@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="inbound" id="NICCISSCAB0010302" version="1" />
+    <src_io id="SNICSCAB0010302" />
+    <target_io id="TCISSCAB0010301" />
+    <mapping>
+        <source path="entity/niceHdrGroup/dataGbcd" />
+        <target path="entity/niceHdrGroup/dataGbcd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceHdrGroup/rowSeq" />
+        <target path="entity/niceHdrGroup/rowSeq" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceHdrGroup/infGb" />
+        <target path="entity/niceHdrGroup/infGb" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceHdrGroup/trdIstnCd" />
+        <target path="entity/niceHdrGroup/trdIstnCd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceHdrGroup/custCd" />
+        <target path="entity/niceHdrGroup/custCd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceHdrGroup/trdIstnNm" />
+        <target path="entity/niceHdrGroup/trdIstnNm" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceHdrGroup/batchWrkBsicCd" />
+        <target path="entity/niceHdrGroup/batchWrkBsicCd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceHdrGroup/wrkBsicDt" />
+        <target path="entity/niceHdrGroup/wrkBsicDt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceHdrGroup/totCnt" />
+        <target path="entity/niceHdrGroup/totCnt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceHdrGroup/fileNullVal" />
+        <target path="entity/niceHdrGroup/fileNullVal" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceDataGroup/dataGbcd" />
+        <target path="entity/niceDataGroup/dataGbcd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceDataGroup/rowSeq" />
+        <target path="entity/niceDataGroup/rowSeq" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceDataGroup/rrno" />
+        <target path="entity/niceDataGroup/rrno" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceDataGroup/fnmNm" />
+        <target path="entity/niceDataGroup/fnmNm" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceDataGroup/custNo" />
+        <target path="entity/niceDataGroup/custNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceDataGroup/bsicDt" />
+        <target path="entity/niceDataGroup/bsicDt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceDataGroup/reqnCnt" />
+        <target path="entity/niceDataGroup/reqnCnt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceDataGroup/reqnCntn" />
+        <target path="entity/niceDataGroup/reqnCntn" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceDataGroup/fileNullVal2" />
+        <target path="entity/niceDataGroup/fileNullVal2" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceEndGroup/dataGbcd" />
+        <target path="entity/niceEndGroup/dataGbcd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceEndGroup/rowSeq" />
+        <target path="entity/niceEndGroup/rowSeq" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceEndGroup/totCnt" />
+        <target path="entity/niceEndGroup/totCnt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/niceEndGroup/fileNullVal" />
+        <target path="entity/niceEndGroup/fileNullVal" />
+        <function ref="move" />
+    </mapping>
+</map>
