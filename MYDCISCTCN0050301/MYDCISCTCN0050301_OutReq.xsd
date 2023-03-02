@@ -3,9 +3,9 @@
     <element name="root" type="tns:TCISCTCN0050301_inbound" />
     <complexType name="TCISCTCN0050301_inbound">
         <sequence>
-            <element name="ciVal">
+            <element name="x_user_ci">
                 <annotation>
-                    <documentation>CI값</documentation>
+                    <documentation>종보주체식별값</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
@@ -24,7 +24,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="trdInntNo">
+            <element name="x_api_tran_id">
                 <annotation>
                     <documentation>거래고유번호</documentation>
                     <appinfo>
@@ -45,9 +45,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="apiGbcd">
+            <element name="x_api_type">
                 <annotation>
-                    <documentation>API구분코드</documentation>
+                    <documentation>API유형</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
@@ -66,7 +66,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="istnCd">
+            <element name="ordCode">
                 <annotation>
                     <documentation>기관코드</documentation>
                     <appinfo>
@@ -87,9 +87,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="qryDtm">
+            <element name="searchTimestamp">
                 <annotation>
-                    <documentation>조회일시</documentation>
+                    <documentation>조회타임스탬프</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
@@ -108,9 +108,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="nxtKey">
+            <element name="nextPage">
                 <annotation>
-                    <documentation>다음KEY</documentation>
+                    <documentation>다음페이지기준개체</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
@@ -129,9 +129,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="maxQryCnt">
+            <element name="limit">
                 <annotation>
-                    <documentation>최대조회건수</documentation>
+                    <documentation>최대조회갯수</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />

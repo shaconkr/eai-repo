@@ -1,41 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="inbound" id="MYDCISCTCN0050301" version="1" />
+    <interface bound="inbound" id="MYDCISCTCN0050301" version="2" />
     <src_io id="SMYDCTCN0050301" />
     <target_io id="TCISCTCN0050301" />
     <mapping>
-        <source path="entity/ciVal" />
-        <target path="entity/ciVal" />
+        <source path="entity/x_user_ci" />
+        <target path="entity/x_user_ci" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/trdInntNo" />
-        <target path="entity/trdInntNo" />
+        <source path="entity/x_api_tran_id" />
+        <target path="entity/x_api_tran_id" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/apiGbcd" />
-        <target path="entity/apiGbcd" />
+        <source path="entity/x_api_type" />
+        <target path="entity/x_api_type" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/istnCd" />
-        <target path="entity/istnCd" />
+        <source path="entity/ordCode" />
+        <target path="entity/ordCode" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/qryDtm" />
-        <target path="entity/qryDtm" />
+        <source path="entity/searchTimestamp" />
+        <target path="entity/searchTimestamp" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/nxtKey" />
-        <target path="entity/nxtKey" />
+        <source path="entity/nextPage" />
+        <target path="entity/nextPage" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/maxQryCnt" />
-        <target path="entity/maxQryCnt" />
+        <source path="entity/limit" />
+        <target path="entity/limit" />
         <function ref="move" />
     </mapping>
 </map>

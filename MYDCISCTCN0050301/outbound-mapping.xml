@@ -1,61 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="outbound" id="MYDCISCTCN0050301" version="1" />
+    <interface bound="outbound" id="MYDCISCTCN0050301" version="2" />
     <src_io id="SMYDCTCN0050301" />
     <target_io id="TCISCTCN0050301" />
     <mapping>
-        <source path="entity/trdInntNo" />
-        <target path="entity/trdInntNo" />
+        <source path="entity/x_api_tran_id" />
+        <target path="entity/x_api_tran_id" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/respCd" />
-        <target path="entity/respCd" />
+        <source path="entity/rspCode" />
+        <target path="entity/rspCode" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/respMsg" />
-        <target path="entity/respMsg" />
+        <source path="entity/rspMsg" />
+        <target path="entity/rspMsg" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/qryDtm" />
-        <target path="entity/qryDtm" />
+        <source path="entity/searchTimestamp" />
+        <target path="entity/searchTimestamp" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/nxtKey" />
-        <target path="entity/nxtKey" />
+        <source path="entity/nextPage" />
+        <target path="entity/nextPage" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/crdRowcount" />
-        <target path="entity/crdRowcount" />
+        <source path="entity/cardCnt" />
+        <target path="entity/cardCnt" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/crdList/crdId" />
-        <target path="entity/crdList/crdId" />
+        <source path="entity/cardList/cardId" />
+        <target path="entity/cardList/cardId" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/crdList/crdNo" />
-        <target path="entity/crdList/crdNo" />
+        <source path="entity/cardList/cardNum" />
+        <target path="entity/cardList/cardNum" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/crdList/crdItemNm" />
-        <target path="entity/crdList/crdItemNm" />
+        <source path="entity/cardList/cardName" />
+        <target path="entity/cardList/cardName" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/crdList/selfFamlGbcd" />
-        <target path="entity/crdList/selfFamlGbcd" />
+        <source path="entity/cardList/cardMember" />
+        <target path="entity/cardList/cardMember" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/crdList/crdTypeCd" />
-        <target path="entity/crdList/crdTypeCd" />
+        <source path="entity/cardList/cardType" />
+        <target path="entity/cardList/cardType" />
         <function ref="move" />
     </mapping>
 </map>

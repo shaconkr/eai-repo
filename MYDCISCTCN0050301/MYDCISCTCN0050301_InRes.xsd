@@ -3,7 +3,7 @@
     <element name="root" type="tns:SMYDCTCN0050301_outbound" />
     <complexType name="SMYDCTCN0050301_outbound">
         <sequence>
-            <element name="trdInntNo">
+            <element name="x_api_tran_id">
                 <annotation>
                     <documentation>거래고유번호</documentation>
                     <appinfo>
@@ -24,9 +24,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="respCd">
+            <element name="rspCode">
                 <annotation>
-                    <documentation>응답코드</documentation>
+                    <documentation>세부응답코드</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
@@ -45,9 +45,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="respMsg">
+            <element name="rspMsg">
                 <annotation>
-                    <documentation>응답메시지</documentation>
+                    <documentation>세부응답메시지</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
@@ -66,9 +66,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="qryDtm">
+            <element name="searchTimestamp">
                 <annotation>
-                    <documentation>조회일시</documentation>
+                    <documentation>조회타임스탬프</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
@@ -87,9 +87,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="nxtKey">
+            <element name="nextPage">
                 <annotation>
-                    <documentation>다음KEY</documentation>
+                    <documentation>다음페이지기준개체</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
@@ -108,9 +108,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="crdRowcount">
+            <element name="cardCnt">
                 <annotation>
-                    <documentation>보유카드내역_배열건수</documentation>
+                    <documentation>보유카드수</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
@@ -129,11 +129,11 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element maxOccurs="unbounded" name="crdList" type="tns:CRD_LIST_TYPE">
+            <element maxOccurs="unbounded" name="cardList" type="tns:card_list_TYPE">
                 <annotation>
-                    <documentation>보유카드내역_배열</documentation>
+                    <documentation>보유카드목록</documentation>
                     <appinfo>
-                        <p:adjustLength category="variableField" lengthFieldURL="CRD_ROWCOUNT" />
+                        <p:adjustLength category="variableField" lengthFieldURL="card_cnt" />
                         <p:mandatory value="N" />
                         <p:level value="1" />
                         <p:api_data_area_dcd value="B" />
@@ -142,11 +142,11 @@
             </element>
         </sequence>
     </complexType>
-    <complexType name="CRD_LIST_TYPE">
+    <complexType name="card_list_TYPE">
         <sequence>
-            <element name="crdId">
+            <element name="cardId">
                 <annotation>
-                    <documentation>카드ID</documentation>
+                    <documentation>카드식별자</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
@@ -165,7 +165,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="crdNo">
+            <element name="cardNum">
                 <annotation>
                     <documentation>카드번호</documentation>
                     <appinfo>
@@ -186,7 +186,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="crdItemNm">
+            <element name="cardName">
                 <annotation>
                     <documentation>카드상품명</documentation>
                     <appinfo>
@@ -207,7 +207,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="selfFamlGbcd">
+            <element name="cardMember">
                 <annotation>
                     <documentation>본인가족구분코드</documentation>
                     <appinfo>
@@ -228,9 +228,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="crdTypeCd">
+            <element name="cardType">
                 <annotation>
-                    <documentation>카드유형코드</documentation>
+                    <documentation>카드구분코드</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
