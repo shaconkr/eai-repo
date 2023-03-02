@@ -4,33 +4,33 @@
     <src_io id="SMYDCTCN0050301" />
     <target_io id="TCISCTCN0050301" />
     <mapping>
-        <source path="entity/x_user_ci" />
-        <target path="entity/x_user_ci" />
+        <source path="entity/x-user-ci" />
+        <target path="entity/x-user-ci" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/x_api_tran_id" />
-        <target path="entity/x_api_tran_id" />
+        <source path="entity/x-api-tran-id" />
+        <target path="entity/x-api-tran-id" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/x_api_type" />
-        <target path="entity/x_api_type" />
+        <source path="entity/x-api-type" />
+        <target path="entity/x-api-type" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/ordCode" />
-        <target path="entity/ordCode" />
+        <source path="entity/ord_code" />
+        <target path="entity/ord_code" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/searchTimestamp" />
-        <target path="entity/searchTimestamp" />
+        <source path="entity/search_timestamp" />
+        <target path="entity/search_timestamp" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/nextPage" />
-        <target path="entity/nextPage" />
+        <source path="entity/next_page" />
+        <target path="entity/next_page" />
         <function ref="move" />
     </mapping>
     <mapping>

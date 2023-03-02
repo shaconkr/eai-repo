@@ -4,58 +4,58 @@
     <src_io id="SMYDCTCN0050301" />
     <target_io id="TCISCTCN0050301" />
     <mapping>
-        <source path="entity/x_api_tran_id" />
-        <target path="entity/x_api_tran_id" />
+        <source path="entity/x-api-tran-id" />
+        <target path="entity/x-api-tran-id" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/rspCode" />
-        <target path="entity/rspCode" />
+        <source path="entity/rsp_code" />
+        <target path="entity/rsp_code" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/rspMsg" />
-        <target path="entity/rspMsg" />
+        <source path="entity/rsp_msg" />
+        <target path="entity/rsp_msg" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/searchTimestamp" />
-        <target path="entity/searchTimestamp" />
+        <source path="entity/search_timestamp" />
+        <target path="entity/search_timestamp" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/nextPage" />
-        <target path="entity/nextPage" />
+        <source path="entity/next_page" />
+        <target path="entity/next_page" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/cardCnt" />
-        <target path="entity/cardCnt" />
+        <source path="entity/card_cnt" />
+        <target path="entity/card_cnt" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/cardList/cardId" />
-        <target path="entity/cardList/cardId" />
+        <source path="entity/card_list/card_id" />
+        <target path="entity/card_list/card_id" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/cardList/cardNum" />
-        <target path="entity/cardList/cardNum" />
+        <source path="entity/card_list/card_num" />
+        <target path="entity/card_list/card_num" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/cardList/cardName" />
-        <target path="entity/cardList/cardName" />
+        <source path="entity/card_list/card_name" />
+        <target path="entity/card_list/card_name" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/cardList/cardMember" />
-        <target path="entity/cardList/cardMember" />
+        <source path="entity/card_list/card_member" />
+        <target path="entity/card_list/card_member" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/cardList/cardType" />
-        <target path="entity/cardList/cardType" />
+        <source path="entity/card_list/card_type" />
+        <target path="entity/card_list/card_type" />
         <function ref="move" />
     </mapping>
 </map>

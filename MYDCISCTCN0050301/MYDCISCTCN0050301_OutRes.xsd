@@ -3,7 +3,7 @@
     <element name="root" type="tns:TCISCTCN0050301_outbound" />
     <complexType name="TCISCTCN0050301_outbound">
         <sequence>
-            <element name="x_api_tran_id">
+            <element name="x-api-tran-id">
                 <annotation>
                     <documentation>거래고유번호</documentation>
                     <appinfo>
@@ -24,7 +24,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="rspCode">
+            <element name="rsp_code">
                 <annotation>
                     <documentation>세부응답코드</documentation>
                     <appinfo>
@@ -45,7 +45,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="rspMsg">
+            <element name="rsp_msg">
                 <annotation>
                     <documentation>세부응답메시지</documentation>
                     <appinfo>
@@ -66,7 +66,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="searchTimestamp">
+            <element name="search_timestamp">
                 <annotation>
                     <documentation>조회타임스탬프</documentation>
                     <appinfo>
@@ -87,7 +87,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="nextPage">
+            <element name="next_page">
                 <annotation>
                     <documentation>다음페이지기준개체</documentation>
                     <appinfo>
@@ -108,7 +108,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="cardCnt">
+            <element name="card_cnt">
                 <annotation>
                     <documentation>보유카드수</documentation>
                     <appinfo>
@@ -129,7 +129,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element maxOccurs="unbounded" name="cardList" type="tns:card_list_TYPE">
+            <element maxOccurs="unbounded" name="card_list" type="tns:card_list_TYPE">
                 <annotation>
                     <documentation>보유카드목록</documentation>
                     <appinfo>
@@ -144,7 +144,7 @@
     </complexType>
     <complexType name="card_list_TYPE">
         <sequence>
-            <element name="cardId">
+            <element name="card_id">
                 <annotation>
                     <documentation>카드식별자</documentation>
                     <appinfo>
@@ -165,7 +165,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="cardNum">
+            <element name="card_num">
                 <annotation>
                     <documentation>카드번호</documentation>
                     <appinfo>
@@ -186,7 +186,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="cardName">
+            <element name="card_name">
                 <annotation>
                     <documentation>카드상품명</documentation>
                     <appinfo>
@@ -207,7 +207,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="cardMember">
+            <element name="card_member">
                 <annotation>
                     <documentation>본인가족구분코드</documentation>
                     <appinfo>
@@ -228,7 +228,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="cardType">
+            <element name="card_type">
                 <annotation>
                     <documentation>카드구분코드</documentation>
                     <appinfo>
