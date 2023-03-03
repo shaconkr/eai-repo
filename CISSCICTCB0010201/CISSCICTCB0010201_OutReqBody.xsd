@@ -3,7 +3,7 @@
     <element name="root" type="tns:SC01_SCI_E0210_295_ENT_inbound" />
     <complexType name="SC01_SCI_E0210_295_ENT_inbound">
         <sequence>
-            <element name="CRD_MEM_DI_VAL">
+            <element name="crdMemDiVal">
                 <annotation>
                     <documentation>카드회원DI값</documentation>
                     <appinfo>
@@ -22,7 +22,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="CI_VER">
+            <element name="ciVer">
                 <annotation>
                     <documentation>CI버전</documentation>
                     <appinfo>
@@ -41,7 +41,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="CUST_CI_VAL1">
+            <element name="custCiVal1">
                 <annotation>
                     <documentation>고객CI값1</documentation>
                     <appinfo>
@@ -60,7 +60,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="CUST_CI_VAL2">
+            <element name="custCiVal2">
                 <annotation>
                     <documentation>고객CI값2</documentation>
                     <appinfo>
@@ -79,7 +79,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="PREP_VAL">
+            <element name="prepVal">
                 <annotation>
                     <documentation>예비값</documentation>
                     <appinfo>

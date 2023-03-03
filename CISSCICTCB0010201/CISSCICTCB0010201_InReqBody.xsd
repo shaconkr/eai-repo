@@ -3,7 +3,7 @@
     <element name="root" type="tns:SC01_SCI_E0200_295_ENT_inbound" />
     <complexType name="SC01_SCI_E0200_295_ENT_inbound">
         <sequence>
-            <element name="RRNO">
+            <element name="rrno">
                 <annotation>
                     <documentation>주민등록번호</documentation>
                     <appinfo>
@@ -22,7 +22,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="PREP_VAL">
+            <element name="prepVal">
                 <annotation>
                     <documentation>예비값</documentation>
                     <appinfo>

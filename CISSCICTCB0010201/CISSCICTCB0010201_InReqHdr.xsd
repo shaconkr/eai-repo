@@ -3,7 +3,7 @@
     <element name="root" type="tns:SC01_SCI_ECommHeader_ENT_inbound" />
     <complexType name="SC01_SCI_ECommHeader_ENT_inbound">
         <sequence>
-            <element name="TGRM_LEN">
+            <element name="tgrmLen">
                 <annotation>
                     <documentation>전문길이</documentation>
                     <appinfo>
@@ -22,7 +22,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="TGRM_NO">
+            <element name="tgrmNo">
                 <annotation>
                     <documentation>전문번호</documentation>
                     <appinfo>
@@ -41,7 +41,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="TGRM_ID">
+            <element name="tgrmId">
                 <annotation>
                     <documentation>전문ID</documentation>
                     <appinfo>
@@ -60,7 +60,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="TGRM_SUB_C_CD">
+            <element name="tgrmSubCCd">
                 <annotation>
                     <documentation>전문종별코드</documentation>
                     <appinfo>
@@ -79,7 +79,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="TSK_GBCD">
+            <element name="tskGbcd">
                 <annotation>
                     <documentation>업무구분코드</documentation>
                     <appinfo>
@@ -98,7 +98,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="RESP_CD">
+            <element name="respCd">
                 <annotation>
                     <documentation>응답코드</documentation>
                     <appinfo>
@@ -117,7 +117,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="MNG_KEY">
+            <element name="mngKey">
                 <annotation>
                     <documentation>관리KEY</documentation>
                     <appinfo>
@@ -136,7 +136,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="CI_INF">
+            <element name="ciInf">
                 <annotation>
                     <documentation>CI정보</documentation>
                     <appinfo>
@@ -155,7 +155,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="SEQNO">
+            <element name="seqno">
                 <annotation>
                     <documentation>일련번호</documentation>
                     <appinfo>

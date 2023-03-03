@@ -127,13 +127,13 @@
                             <!--대외 기관 코드, 대외 기관 명-->
                             <work code="SC01" name="[서울신용평가] CI정보 조회 요청 서신평 송신" />
                             <!--대외 업무 코드-->
-                            <msg code="TGRM_SUB_C_CD" />
+                            <msg code="tgrmSubCCd" />
                             <!--대외 전문 종별 코드-->
-                            <tx code="TSK_GBCD" />
+                            <tx code="tskGbcd" />
                             <!--대외 거래 구분 코드-->
                             <etc />
                             <!--대외 기타 구분코드-->
-                            <rspn code="RESP_CD" />
+                            <rspn code="respCd" />
                             <!--대외 응답 코드-->
                             <utrace />
                             <!--고유 TraceKey-->
@@ -172,13 +172,13 @@
                             <!--대외 기관 코드, 대외 기관 명-->
                             <work code="SC01" name="[서울신용평가] CI정보 조회 요청 서신평 송신" />
                             <!--대외 업무 코드-->
-                            <msg code="TGRM_SUB_C_CD" />
+                            <msg code="tgrmSubCCd" />
                             <!--대외 전문 종별 코드-->
-                            <tx code="TSK_GBCD" />
+                            <tx code="tskGbcd" />
                             <!--대외 거래 구분 코드-->
                             <etc />
                             <!--대외 기타 구분코드-->
-                            <rspn code="RESP_CD" />
+                            <rspn code="respCd" />
                             <!--대외 응답 코드-->
                             <utrace />
                             <!--고유 TraceKey-->
@@ -196,7 +196,7 @@
     <element name="root" type="tns:SC01_SCI_ECommHeader_ENT_inbound" />
     <complexType name="SC01_SCI_ECommHeader_ENT_inbound">
         <sequence>
-            <element name="TGRM_LEN">
+            <element name="tgrmLen">
                 <annotation>
                     <documentation>전문길이</documentation>
                     <appinfo>
@@ -215,7 +215,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="TGRM_NO">
+            <element name="tgrmNo">
                 <annotation>
                     <documentation>전문번호</documentation>
                     <appinfo>
@@ -234,7 +234,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="TGRM_ID">
+            <element name="tgrmId">
                 <annotation>
                     <documentation>전문ID</documentation>
                     <appinfo>
@@ -253,7 +253,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="TGRM_SUB_C_CD">
+            <element name="tgrmSubCCd">
                 <annotation>
                     <documentation>전문종별코드</documentation>
                     <appinfo>
@@ -272,7 +272,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="TSK_GBCD">
+            <element name="tskGbcd">
                 <annotation>
                     <documentation>업무구분코드</documentation>
                     <appinfo>
@@ -291,7 +291,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="RESP_CD">
+            <element name="respCd">
                 <annotation>
                     <documentation>응답코드</documentation>
                     <appinfo>
@@ -310,7 +310,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="MNG_KEY">
+            <element name="mngKey">
                 <annotation>
                     <documentation>관리KEY</documentation>
                     <appinfo>
@@ -329,7 +329,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="CI_INF">
+            <element name="ciInf">
                 <annotation>
                     <documentation>CI정보</documentation>
                     <appinfo>
@@ -348,7 +348,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="SEQNO">
+            <element name="seqno">
                 <annotation>
                     <documentation>일련번호</documentation>
                     <appinfo>
@@ -422,7 +422,7 @@
     <element name="root" type="tns:SC01_SCI_E0210_295_ENT_inbound" />
     <complexType name="SC01_SCI_E0210_295_ENT_inbound">
         <sequence>
-            <element name="CRD_MEM_DI_VAL">
+            <element name="crdMemDiVal">
                 <annotation>
                     <documentation>카드회원DI값</documentation>
                     <appinfo>
@@ -441,7 +441,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="CI_VER">
+            <element name="ciVer">
                 <annotation>
                     <documentation>CI버전</documentation>
                     <appinfo>
@@ -460,7 +460,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="CUST_CI_VAL1">
+            <element name="custCiVal1">
                 <annotation>
                     <documentation>고객CI값1</documentation>
                     <appinfo>
@@ -479,7 +479,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="CUST_CI_VAL2">
+            <element name="custCiVal2">
                 <annotation>
                     <documentation>고객CI값2</documentation>
                     <appinfo>
@@ -498,7 +498,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="PREP_VAL">
+            <element name="prepVal">
                 <annotation>
                     <documentation>예비값</documentation>
                     <appinfo>
