@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SMYDCTCN0050301" version="4">
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SMYDCTCN0050301" version="5">
     <common>
         <io_name><![CDATA[마이데이터_카드목록조회]]></io_name>
         <!--I/O 명-->
@@ -154,7 +154,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="ord_code">
+            <element name="org_code">
                 <annotation>
                     <documentation>기관코드</documentation>
                     <appinfo>
@@ -233,8 +233,8 @@
                     </appinfo>
                 </annotation>
                 <simpleType>
-                    <restriction base="string">
-                        <maxLength value="3" />
+                    <restriction base="long">
+                        <totalDigits value="3" />
                     </restriction>
                 </simpleType>
             </element>
@@ -396,7 +396,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="long">
-                        <totalDigits value="5" />
+                        <totalDigits value="3" />
                     </restriction>
                 </simpleType>
             </element>
