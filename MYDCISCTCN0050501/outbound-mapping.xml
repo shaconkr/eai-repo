@@ -1,56 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="outbound" id="MYDCISCTCN0050501" version="1" />
+    <interface bound="outbound" id="MYDCISCTCN0050501" version="2" />
     <src_io id="SMYDCTCN0050501" />
     <target_io id="TCISCTCN0050501" />
     <mapping>
-        <source path="entity/trdInntNo" />
-        <target path="entity/trdInntNo" />
+        <source path="entity/x-api-tran-id" />
+        <target path="entity/x-api-tran-id" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/respCd" />
-        <target path="entity/respCd" />
+        <source path="entity/rsp_code" />
+        <target path="entity/rsp_code" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/respMsg" />
-        <target path="entity/respMsg" />
+        <source path="entity/rsp_msg" />
+        <target path="entity/rsp_msg" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/nxtKey" />
-        <target path="entity/nxtKey" />
+        <source path="entity/next_page" />
+        <target path="entity/next_page" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/chrRowcount" />
-        <target path="entity/chrRowcount" />
+        <source path="entity/bill_cnt" />
+        <target path="entity/bill_cnt" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/chrList/stlmSeq" />
-        <target path="entity/chrList/stlmSeq" />
+        <source path="entity/bill_list/seqno" />
+        <target path="entity/bill_list/seqno" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/chrList/mmChrAmt" />
-        <target path="entity/chrList/mmChrAmt" />
+        <source path="entity/bill_list/charge_amt" />
+        <target path="entity/bill_list/charge_amt" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/chrList/stlmDay" />
-        <target path="entity/chrList/stlmDay" />
+        <source path="entity/bill_list/charge_day" />
+        <target path="entity/bill_list/charge_day" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/chrList/reqYm" />
-        <target path="entity/chrList/reqYm" />
+        <source path="entity/bill_list/charge_month" />
+        <target path="entity/bill_list/charge_month" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/chrList/stlmDt" />
-        <target path="entity/chrList/stlmDt" />
+        <source path="entity/bill_list/paid_out_date" />
+        <target path="entity/bill_list/paid_out_date" />
         <function ref="move" />
     </mapping>
 </map>

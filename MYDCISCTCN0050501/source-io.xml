@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SMYDCTCN0050501" version="2">
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SMYDCTCN0050501" version="4">
     <common>
         <io_name><![CDATA[마이데이터_청구기본정보조회]]></io_name>
         <!--I/O 명-->
@@ -19,7 +19,7 @@
         <!--패키지경로-->
         <class_name />
         <!--클래스명-->
-        <sttl_yn>Y</sttl_yn>
+        <sttl_yn>N</sttl_yn>
         <!--표준전문여부-->
     </common>
     <process_type type="A" name="API">
@@ -91,7 +91,7 @@
     <element name="root" type="tns:SMYDCTCN0050501_inbound" />
     <complexType name="SMYDCTCN0050501_inbound">
         <sequence>
-            <element name="ciVal">
+            <element name="x-user-ci">
                 <annotation>
                     <documentation>CI값</documentation>
                     <appinfo>
@@ -112,7 +112,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="trdInntNo">
+            <element name="x-api-tran-id">
                 <annotation>
                     <documentation>거래고유번호</documentation>
                     <appinfo>
@@ -133,7 +133,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="apiGbcd">
+            <element name="x-api-type">
                 <annotation>
                     <documentation>API구분코드</documentation>
                     <appinfo>
@@ -154,7 +154,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="istnCd">
+            <element name="org_code">
                 <annotation>
                     <documentation>기관코드</documentation>
                     <appinfo>
@@ -175,7 +175,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="strtYm">
+            <element name="from_month">
                 <annotation>
                     <documentation>시작년월</documentation>
                     <appinfo>
@@ -196,7 +196,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="endYm">
+            <element name="to_month">
                 <annotation>
                     <documentation>종료년월</documentation>
                     <appinfo>
@@ -217,7 +217,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="nxtKey">
+            <element name="next_page">
                 <annotation>
                     <documentation>다음KEY</documentation>
                     <appinfo>
@@ -238,7 +238,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="maxQryCnt">
+            <element name="limit">
                 <annotation>
                     <documentation>최대조회건수</documentation>
                     <appinfo>
@@ -254,8 +254,8 @@
                     </appinfo>
                 </annotation>
                 <simpleType>
-                    <restriction base="string">
-                        <maxLength value="3" />
+                    <restriction base="long">
+                        <totalDigits value="3" />
                     </restriction>
                 </simpleType>
             </element>
@@ -295,7 +295,7 @@
     <element name="root" type="tns:SMYDCTCN0050501_outbound" />
     <complexType name="SMYDCTCN0050501_outbound">
         <sequence>
-            <element name="trdInntNo">
+            <element name="x-api-tran-id">
                 <annotation>
                     <documentation>거래고유번호</documentation>
                     <appinfo>
@@ -316,7 +316,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="respCd">
+            <element name="rsp_code">
                 <annotation>
                     <documentation>응답코드</documentation>
                     <appinfo>
@@ -337,7 +337,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="respMsg">
+            <element name="rsp_msg">
                 <annotation>
                     <documentation>응답메시지</documentation>
                     <appinfo>
@@ -358,7 +358,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="nxtKey">
+            <element name="next_page">
                 <annotation>
                     <documentation>다음KEY</documentation>
                     <appinfo>
@@ -379,7 +379,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="chrRowcount">
+            <element name="bill_cnt">
                 <annotation>
                     <documentation>청구목록_배열건수</documentation>
                     <appinfo>
@@ -400,11 +400,11 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element maxOccurs="unbounded" name="chrList" type="tns:CHR_LIST_TYPE">
+            <element maxOccurs="unbounded" name="bill_list" type="tns:bill_list_TYPE">
                 <annotation>
                     <documentation>청구목록_배열</documentation>
                     <appinfo>
-                        <p:adjustLength category="variableField" lengthFieldURL="CHR_ROWCOUNT" />
+                        <p:adjustLength category="variableField" lengthFieldURL="bill_cnt" />
                         <p:mandatory value="N" />
                         <p:level value="1" />
                         <p:api_data_area_dcd value="B" />
@@ -413,9 +413,9 @@
             </element>
         </sequence>
     </complexType>
-    <complexType name="CHR_LIST_TYPE">
+    <complexType name="bill_list_TYPE">
         <sequence>
-            <element name="stlmSeq">
+            <element name="seqno">
                 <annotation>
                     <documentation>결제순번</documentation>
                     <appinfo>
@@ -436,7 +436,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="mmChrAmt">
+            <element name="charge_amt">
                 <annotation>
                     <documentation>월청구금액</documentation>
                     <appinfo>
@@ -452,13 +452,12 @@
                     </appinfo>
                 </annotation>
                 <simpleType>
-                    <restriction base="decimal">
+                    <restriction base="long">
                         <totalDigits value="15" />
-                        <fractionDigits value="0" />
                     </restriction>
                 </simpleType>
             </element>
-            <element name="stlmDay">
+            <element name="charge_day">
                 <annotation>
                     <documentation>결제일</documentation>
                     <appinfo>
@@ -479,7 +478,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="reqYm">
+            <element name="charge_month">
                 <annotation>
                     <documentation>청구년월</documentation>
                     <appinfo>
@@ -500,7 +499,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="stlmDt">
+            <element name="paid_out_date">
                 <annotation>
                     <documentation>결제일자</documentation>
                     <appinfo>

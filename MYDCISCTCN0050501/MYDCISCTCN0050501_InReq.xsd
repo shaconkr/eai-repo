@@ -3,7 +3,7 @@
     <element name="root" type="tns:SMYDCTCN0050501_inbound" />
     <complexType name="SMYDCTCN0050501_inbound">
         <sequence>
-            <element name="ciVal">
+            <element name="x-user-ci">
                 <annotation>
                     <documentation>CI값</documentation>
                     <appinfo>
@@ -24,7 +24,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="trdInntNo">
+            <element name="x-api-tran-id">
                 <annotation>
                     <documentation>거래고유번호</documentation>
                     <appinfo>
@@ -45,7 +45,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="apiGbcd">
+            <element name="x-api-type">
                 <annotation>
                     <documentation>API구분코드</documentation>
                     <appinfo>
@@ -66,7 +66,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="istnCd">
+            <element name="org_code">
                 <annotation>
                     <documentation>기관코드</documentation>
                     <appinfo>
@@ -87,7 +87,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="strtYm">
+            <element name="from_month">
                 <annotation>
                     <documentation>시작년월</documentation>
                     <appinfo>
@@ -108,7 +108,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="endYm">
+            <element name="to_month">
                 <annotation>
                     <documentation>종료년월</documentation>
                     <appinfo>
@@ -129,7 +129,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="nxtKey">
+            <element name="next_page">
                 <annotation>
                     <documentation>다음KEY</documentation>
                     <appinfo>
@@ -150,7 +150,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="maxQryCnt">
+            <element name="limit">
                 <annotation>
                     <documentation>최대조회건수</documentation>
                     <appinfo>
@@ -166,8 +166,8 @@
                     </appinfo>
                 </annotation>
                 <simpleType>
-                    <restriction base="string">
-                        <maxLength value="3" />
+                    <restriction base="long">
+                        <totalDigits value="3" />
                     </restriction>
                 </simpleType>
             </element>

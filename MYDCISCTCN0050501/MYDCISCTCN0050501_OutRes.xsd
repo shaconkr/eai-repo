@@ -3,7 +3,7 @@
     <element name="root" type="tns:TCISCTCN0050501_outbound" />
     <complexType name="TCISCTCN0050501_outbound">
         <sequence>
-            <element name="trdInntNo">
+            <element name="x-api-tran-id">
                 <annotation>
                     <documentation>거래고유번호</documentation>
                     <appinfo>
@@ -24,7 +24,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="respCd">
+            <element name="rsp_code">
                 <annotation>
                     <documentation>응답코드</documentation>
                     <appinfo>
@@ -45,7 +45,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="respMsg">
+            <element name="rsp_msg">
                 <annotation>
                     <documentation>응답메시지</documentation>
                     <appinfo>
@@ -66,7 +66,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="nxtKey">
+            <element name="next_page">
                 <annotation>
                     <documentation>다음KEY</documentation>
                     <appinfo>
@@ -87,7 +87,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="chrRowcount">
+            <element name="bill_cnt">
                 <annotation>
                     <documentation>청구목록_배열건수</documentation>
                     <appinfo>
@@ -108,11 +108,11 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element maxOccurs="unbounded" name="chrList" type="tns:CHR_LIST_TYPE">
+            <element maxOccurs="unbounded" name="bill_list" type="tns:bill_list_TYPE">
                 <annotation>
                     <documentation>청구목록_배열</documentation>
                     <appinfo>
-                        <p:adjustLength category="variableField" lengthFieldURL="CHR_ROWCOUNT" />
+                        <p:adjustLength category="variableField" lengthFieldURL="bill_cnt" />
                         <p:mandatory value="N" />
                         <p:level value="1" />
                         <p:api_data_area_dcd value="B" />
@@ -121,9 +121,9 @@
             </element>
         </sequence>
     </complexType>
-    <complexType name="CHR_LIST_TYPE">
+    <complexType name="bill_list_TYPE">
         <sequence>
-            <element name="stlmSeq">
+            <element name="seqno">
                 <annotation>
                     <documentation>결제순번</documentation>
                     <appinfo>
@@ -144,7 +144,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="mmChrAmt">
+            <element name="charge_amt">
                 <annotation>
                     <documentation>월청구금액</documentation>
                     <appinfo>
@@ -160,13 +160,12 @@
                     </appinfo>
                 </annotation>
                 <simpleType>
-                    <restriction base="decimal">
+                    <restriction base="long">
                         <totalDigits value="15" />
-                        <fractionDigits value="0" />
                     </restriction>
                 </simpleType>
             </element>
-            <element name="stlmDay">
+            <element name="charge_day">
                 <annotation>
                     <documentation>결제일</documentation>
                     <appinfo>
@@ -187,7 +186,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="reqYm">
+            <element name="charge_month">
                 <annotation>
                     <documentation>청구년월</documentation>
                     <appinfo>
@@ -208,7 +207,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="stlmDt">
+            <element name="paid_out_date">
                 <annotation>
                     <documentation>결제일자</documentation>
                     <appinfo>
