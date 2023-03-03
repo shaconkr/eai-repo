@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<deployment id="D00000008206">
-    <deployer id="CIS010">정유진</deployer>
-    <deployment_date>2023-02-20 12:54:26.238763</deployment_date>
-    <target_system id="EAI_D_01">EAI 대내</target_system>
-</deployment>
