@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SMYDCTCN0050801" version="2">
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SMYDCTCN0050801" version="4">
     <common>
         <io_name><![CDATA[마이데이터_국내승인내역조회]]></io_name>
         <!--I/O 명-->
@@ -19,7 +19,7 @@
         <!--패키지경로-->
         <class_name />
         <!--클래스명-->
-        <sttl_yn>Y</sttl_yn>
+        <sttl_yn>N</sttl_yn>
         <!--표준전문여부-->
     </common>
     <process_type type="A" name="API">
@@ -91,7 +91,7 @@
     <element name="root" type="tns:SMYDCTCN0050801_inbound" />
     <complexType name="SMYDCTCN0050801_inbound">
         <sequence>
-            <element name="ciVal">
+            <element name="x-user-ci">
                 <annotation>
                     <documentation>CI값</documentation>
                     <appinfo>
@@ -112,7 +112,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="trdInntNo">
+            <element name="x-api-tran-id">
                 <annotation>
                     <documentation>거래고유번호</documentation>
                     <appinfo>
@@ -133,7 +133,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="apiGbcd">
+            <element name="x-api-type">
                 <annotation>
                     <documentation>API구분코드</documentation>
                     <appinfo>
@@ -154,7 +154,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="istnCd">
+            <element name="org_code">
                 <annotation>
                     <documentation>기관코드</documentation>
                     <appinfo>
@@ -175,7 +175,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="frcsInfSendYn">
+            <element name="is_merchant_info">
                 <annotation>
                     <documentation>가맹점정보전송여부</documentation>
                     <appinfo>
@@ -191,14 +191,14 @@
                     </appinfo>
                 </annotation>
                 <simpleType>
-                    <restriction base="long">
-                        <totalDigits value="1" />
+                    <restriction base="string">
+                        <maxLength value="5" />
                     </restriction>
                 </simpleType>
             </element>
-            <element name="strtYm">
+            <element name="from_date">
                 <annotation>
-                    <documentation>시작년월</documentation>
+                    <documentation>시작일자</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
@@ -213,13 +213,13 @@
                 </annotation>
                 <simpleType>
                     <restriction base="string">
-                        <maxLength value="6" />
+                        <maxLength value="8" />
                     </restriction>
                 </simpleType>
             </element>
-            <element name="endYm">
+            <element name="to_date">
                 <annotation>
-                    <documentation>종료년월</documentation>
+                    <documentation>종료일자</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
@@ -234,13 +234,13 @@
                 </annotation>
                 <simpleType>
                     <restriction base="string">
-                        <maxLength value="6" />
+                        <maxLength value="8" />
                     </restriction>
                 </simpleType>
             </element>
-            <element name="nxtKey">
+            <element name="next_page">
                 <annotation>
-                    <documentation>다음KEY</documentation>
+                    <documentation>다음페이지기준걔체</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
@@ -259,7 +259,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="maxQryCnt">
+            <element name="limit">
                 <annotation>
                     <documentation>최대조회건수</documentation>
                     <appinfo>
@@ -275,8 +275,8 @@
                     </appinfo>
                 </annotation>
                 <simpleType>
-                    <restriction base="string">
-                        <maxLength value="3" />
+                    <restriction base="long">
+                        <totalDigits value="3" />
                     </restriction>
                 </simpleType>
             </element>
@@ -316,7 +316,7 @@
     <element name="root" type="tns:SMYDCTCN0050801_outbound" />
     <complexType name="SMYDCTCN0050801_outbound">
         <sequence>
-            <element name="trdInntNo">
+            <element name="x-api-tran-id">
                 <annotation>
                     <documentation>거래고유번호</documentation>
                     <appinfo>
@@ -337,7 +337,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="respCd">
+            <element name="rsp_code">
                 <annotation>
                     <documentation>응답코드</documentation>
                     <appinfo>
@@ -358,7 +358,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="respMsg">
+            <element name="rsp_msg">
                 <annotation>
                     <documentation>응답메시지</documentation>
                     <appinfo>
@@ -379,7 +379,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="nxtKey">
+            <element name="next_page">
                 <annotation>
                     <documentation>다음KEY</documentation>
                     <appinfo>
@@ -400,7 +400,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="aprvlRowcount">
+            <element name="approved_cnt">
                 <annotation>
                     <documentation>승인_배열건수</documentation>
                     <appinfo>
@@ -417,15 +417,15 @@
                 </annotation>
                 <simpleType>
                     <restriction base="long">
-                        <totalDigits value="5" />
+                        <totalDigits value="3" />
                     </restriction>
                 </simpleType>
             </element>
-            <element maxOccurs="unbounded" name="aprvlList" type="tns:APRVL_LIST_TYPE">
+            <element maxOccurs="unbounded" name="approved_list" type="tns:approved_list_TYPE">
                 <annotation>
                     <documentation>승인_배열</documentation>
                     <appinfo>
-                        <p:adjustLength category="variableField" lengthFieldURL="APRVL_ROWCOUNT" />
+                        <p:adjustLength category="variableField" lengthFieldURL="approved_cnt" />
                         <p:mandatory value="N" />
                         <p:level value="1" />
                         <p:api_data_area_dcd value="B" />
@@ -434,9 +434,9 @@
             </element>
         </sequence>
     </complexType>
-    <complexType name="APRVL_LIST_TYPE">
+    <complexType name="approved_list_TYPE">
         <sequence>
-            <element name="aprvlNo">
+            <element name="approved_num">
                 <annotation>
                     <documentation>승인번호</documentation>
                     <appinfo>
@@ -457,7 +457,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="aprvlDtm">
+            <element name="approved_dtime">
                 <annotation>
                     <documentation>승인일시</documentation>
                     <appinfo>
@@ -478,7 +478,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="stlmStatVal">
+            <element name="status">
                 <annotation>
                     <documentation>결제상태값</documentation>
                     <appinfo>
@@ -499,7 +499,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="useGbcd">
+            <element name="pay_type">
                 <annotation>
                     <documentation>사용구분코드</documentation>
                     <appinfo>
@@ -520,9 +520,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="cnclDtm">
+            <element name="trans_dtime">
                 <annotation>
-                    <documentation>취소일시</documentation>
+                    <documentation>정정또는승인취소일시</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
@@ -541,7 +541,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="frcsNm">
+            <element name="merchant_name">
                 <annotation>
                     <documentation>가맹점명</documentation>
                     <appinfo>
@@ -562,7 +562,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="frcsRgno">
+            <element name="merchant_regno">
                 <annotation>
                     <documentation>가맹점사업자등록번호</documentation>
                     <appinfo>
@@ -583,7 +583,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="aprvlAmt">
+            <element name="approved_amt">
                 <annotation>
                     <documentation>승인금액</documentation>
                     <appinfo>
@@ -604,7 +604,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="crctAfAmt">
+            <element name="modified_amt">
                 <annotation>
                     <documentation>정정후금액</documentation>
                     <appinfo>
@@ -625,7 +625,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="totInsmTmnm">
+            <element name="total_install_cnt">
                 <annotation>
                     <documentation>전체할부회차</documentation>
                     <appinfo>

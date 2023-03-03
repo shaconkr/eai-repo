@@ -1,81 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="outbound" id="MYDCISCTCN0050801" version="1" />
+    <interface bound="outbound" id="MYDCISCTCN0050801" version="2" />
     <src_io id="SMYDCTCN0050801" />
     <target_io id="TCISCTCN0050801" />
     <mapping>
-        <source path="entity/trdInntNo" />
-        <target path="entity/trdInntNo" />
+        <source path="entity/x-api-tran-id" />
+        <target path="entity/x-api-tran-id" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/respCd" />
-        <target path="entity/respCd" />
+        <source path="entity/rsp_code" />
+        <target path="entity/rsp_code" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/respMsg" />
-        <target path="entity/respMsg" />
+        <source path="entity/rsp_msg" />
+        <target path="entity/rsp_msg" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/nxtKey" />
-        <target path="entity/nxtKey" />
+        <source path="entity/next_page" />
+        <target path="entity/next_page" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/aprvlRowcount" />
-        <target path="entity/aprvlRowcount" />
+        <source path="entity/approved_cnt" />
+        <target path="entity/approved_cnt" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/aprvlList/aprvlNo" />
-        <target path="entity/aprvlList/aprvlNo" />
+        <source path="entity/approved_list/approved_num" />
+        <target path="entity/approved_list/approved_num" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/aprvlList/aprvlDtm" />
-        <target path="entity/aprvlList/aprvlDtm" />
+        <source path="entity/approved_list/approved_dtime" />
+        <target path="entity/approved_list/approved_dtime" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/aprvlList/stlmStatVal" />
-        <target path="entity/aprvlList/stlmStatVal" />
+        <source path="entity/approved_list/status" />
+        <target path="entity/approved_list/status" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/aprvlList/useGbcd" />
-        <target path="entity/aprvlList/useGbcd" />
+        <source path="entity/approved_list/pay_type" />
+        <target path="entity/approved_list/pay_type" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/aprvlList/cnclDtm" />
-        <target path="entity/aprvlList/cnclDtm" />
+        <source path="entity/approved_list/trans_dtime" />
+        <target path="entity/approved_list/trans_dtime" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/aprvlList/frcsNm" />
-        <target path="entity/aprvlList/frcsNm" />
+        <source path="entity/approved_list/merchant_name" />
+        <target path="entity/approved_list/merchant_name" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/aprvlList/frcsRgno" />
-        <target path="entity/aprvlList/frcsRgno" />
+        <source path="entity/approved_list/merchant_regno" />
+        <target path="entity/approved_list/merchant_regno" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/aprvlList/aprvlAmt" />
-        <target path="entity/aprvlList/aprvlAmt" />
+        <source path="entity/approved_list/approved_amt" />
+        <target path="entity/approved_list/approved_amt" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/aprvlList/crctAfAmt" />
-        <target path="entity/aprvlList/crctAfAmt" />
+        <source path="entity/approved_list/modified_amt" />
+        <target path="entity/approved_list/modified_amt" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/aprvlList/totInsmTmnm" />
-        <target path="entity/aprvlList/totInsmTmnm" />
+        <source path="entity/approved_list/total_install_cnt" />
+        <target path="entity/approved_list/total_install_cnt" />
         <function ref="move" />
     </mapping>
 </map>
