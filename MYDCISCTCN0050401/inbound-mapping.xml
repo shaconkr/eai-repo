@@ -1,31 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="inbound" id="MYDCISCTCN0050401" version="2" />
-    <src_io id="SMYDCTCN0050401" />
-    <target_io id="TCISCTCN0050401" />
-    <mapping>
-        <source path="entity/x-user-ci" />
-        <target path="entity/x-user-ci" />
-        <function ref="move" />
-    </mapping>
-    <mapping>
-        <source path="entity/x-api-tran-id" />
-        <target path="entity/x-api-tran-id" />
-        <function ref="move" />
-    </mapping>
-    <mapping>
-        <source path="entity/x-api-type" />
-        <target path="entity/x-api-type" />
-        <function ref="move" />
-    </mapping>
-    <mapping>
-        <source path="entity/org_code" />
-        <target path="entity/org_code" />
-        <function ref="move" />
-    </mapping>
-    <mapping>
-        <source path="entity/search_timestamp" />
-        <target path="entity/search_timestamp" />
-        <function ref="move" />
-    </mapping>
+    <interface bound="inbound" id="MYDCISCTCN0050401" version="none" />
 </map>
