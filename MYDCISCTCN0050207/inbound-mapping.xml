@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="inbound" id="MYDCISCTCN0050207" version="1" />
+    <interface bound="inbound" id="MYDCISCTCN0050207" version="2" />
     <src_io id="SMYDCTCN0050207" />
     <target_io id="TCISCTCN0050207" />
     <mapping>
-        <source path="entity/ciVal" />
-        <target path="entity/ciVal" />
+        <source path="entity/x-user-ci" />
+        <target path="entity/x-user-ci" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/trdInntNo" />
-        <target path="entity/trdInntNo" />
+        <source path="entity/x-api-tran-id" />
+        <target path="entity/x-api-tran-id" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/istnCd" />
-        <target path="entity/istnCd" />
+        <source path="entity/org_code" />
+        <target path="entity/org_code" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/infMagnIdntCd" />
-        <target path="entity/infMagnIdntCd" />
+        <source path="entity/ci_code" />
+        <target path="entity/ci_code" />
         <function ref="move" />
     </mapping>
 </map>

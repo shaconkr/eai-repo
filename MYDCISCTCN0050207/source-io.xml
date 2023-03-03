@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SMYDCTCN0050207" version="1">
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SMYDCTCN0050207" version="3">
     <common>
         <io_name><![CDATA[마이데이터_정보주체식별]]></io_name>
         <!--I/O 명-->
@@ -19,7 +19,7 @@
         <!--패키지경로-->
         <class_name />
         <!--클래스명-->
-        <sttl_yn>Y</sttl_yn>
+        <sttl_yn>N</sttl_yn>
         <!--표준전문여부-->
     </common>
     <process_type type="A" name="API">
@@ -30,7 +30,7 @@
             <!--Output 거래 ID-->
             <syn-asyn code="1" name="동기" />
             <!--동기 / 비동기 여부-->
-            <bizhub code="000" name="고객X 마케팅X" />
+            <bizhub />
             <!--비즈허브 접촉정보거래종류-->
             <trncd_in />
             <!--Input 거래 코드-->
@@ -91,7 +91,7 @@
     <element name="root" type="tns:SMYDCTCN0050207_inbound" />
     <complexType name="SMYDCTCN0050207_inbound">
         <sequence>
-            <element name="ciVal">
+            <element name="x-user-ci">
                 <annotation>
                     <documentation>CI값</documentation>
                     <appinfo>
@@ -112,7 +112,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="trdInntNo">
+            <element name="x-api-tran-id">
                 <annotation>
                     <documentation>거래고유번호</documentation>
                     <appinfo>
@@ -133,7 +133,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="istnCd">
+            <element name="org_code">
                 <annotation>
                     <documentation>기관코드</documentation>
                     <appinfo>
@@ -154,7 +154,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="infMagnIdntCd">
+            <element name="ci_code">
                 <annotation>
                     <documentation>정보주체식별코드</documentation>
                     <appinfo>
@@ -211,7 +211,7 @@
     <element name="root" type="tns:SMYDCTCN0050207_outbound" />
     <complexType name="SMYDCTCN0050207_outbound">
         <sequence>
-            <element name="trdInntNo">
+            <element name="x-api-tran-id">
                 <annotation>
                     <documentation>거래고유번호</documentation>
                     <appinfo>
@@ -232,7 +232,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="respCd">
+            <element name="rsp_code">
                 <annotation>
                     <documentation>응답코드</documentation>
                     <appinfo>
@@ -253,7 +253,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="respMsg">
+            <element name="rsp_msg">
                 <annotation>
                     <documentation>응답메시지</documentation>
                     <appinfo>

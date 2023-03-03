@@ -3,7 +3,7 @@
     <element name="root" type="tns:SMYDCTCN0050207_inbound" />
     <complexType name="SMYDCTCN0050207_inbound">
         <sequence>
-            <element name="ciVal">
+            <element name="x-user-ci">
                 <annotation>
                     <documentation>CI값</documentation>
                     <appinfo>
@@ -24,7 +24,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="trdInntNo">
+            <element name="x-api-tran-id">
                 <annotation>
                     <documentation>거래고유번호</documentation>
                     <appinfo>
@@ -45,7 +45,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="istnCd">
+            <element name="org_code">
                 <annotation>
                     <documentation>기관코드</documentation>
                     <appinfo>
@@ -66,7 +66,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="infMagnIdntCd">
+            <element name="ci_code">
                 <annotation>
                     <documentation>정보주체식별코드</documentation>
                     <appinfo>
