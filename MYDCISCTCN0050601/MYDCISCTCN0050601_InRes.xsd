@@ -3,7 +3,7 @@
     <element name="root" type="tns:SMYDCTCN0050601_outbound" />
     <complexType name="SMYDCTCN0050601_outbound">
         <sequence>
-            <element name="trdInntNo">
+            <element name="x-api-tran-id">
                 <annotation>
                     <documentation>거래고유번호</documentation>
                     <appinfo>
@@ -24,7 +24,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="respCd">
+            <element name="rsp_code">
                 <annotation>
                     <documentation>응답코드</documentation>
                     <appinfo>
@@ -45,7 +45,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="respMsg">
+            <element name="rsp_msg">
                 <annotation>
                     <documentation>응답메시지</documentation>
                     <appinfo>
@@ -66,7 +66,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="nxtKey">
+            <element name="next_page">
                 <annotation>
                     <documentation>다음KEY</documentation>
                     <appinfo>
@@ -87,7 +87,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="chrDtlRowcount">
+            <element name="bill_detail_cnt">
                 <annotation>
                     <documentation>청구상세내역_배열건수</documentation>
                     <appinfo>
@@ -104,15 +104,15 @@
                 </annotation>
                 <simpleType>
                     <restriction base="long">
-                        <totalDigits value="5" />
+                        <totalDigits value="3" />
                     </restriction>
                 </simpleType>
             </element>
-            <element maxOccurs="unbounded" name="chrDtlList" type="tns:CHR_DTL_LIST_TYPE">
+            <element maxOccurs="unbounded" name="bill_detail_list" type="tns:bill_detail_list_TYPE">
                 <annotation>
                     <documentation>청구상세내역_배열</documentation>
                     <appinfo>
-                        <p:adjustLength category="variableField" lengthFieldURL="CHR_DTL_ROWCOUNT" />
+                        <p:adjustLength category="variableField" lengthFieldURL="bill_detail_cnt" />
                         <p:mandatory value="N" />
                         <p:level value="1" />
                         <p:api_data_area_dcd value="B" />
@@ -121,9 +121,9 @@
             </element>
         </sequence>
     </complexType>
-    <complexType name="CHR_DTL_LIST_TYPE">
+    <complexType name="bill_detail_list_TYPE">
         <sequence>
-            <element name="crdId">
+            <element name="card_id">
                 <annotation>
                     <documentation>카드ID</documentation>
                     <appinfo>
@@ -144,7 +144,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="useDtm">
+            <element name="paid_dtime">
                 <annotation>
                     <documentation>사용일시</documentation>
                     <appinfo>
@@ -165,7 +165,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="trdNo">
+            <element name="trans_no">
                 <annotation>
                     <documentation>거래번호</documentation>
                     <appinfo>
@@ -186,7 +186,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="utlzAmt">
+            <element name="paid_amt">
                 <annotation>
                     <documentation>이용금액</documentation>
                     <appinfo>
@@ -208,7 +208,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="crncCd">
+            <element name="currency_code">
                 <annotation>
                     <documentation>통화코드</documentation>
                     <appinfo>
@@ -229,7 +229,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="frcsNm">
+            <element name="merchant_name">
                 <annotation>
                     <documentation>가맹점명</documentation>
                     <appinfo>
@@ -250,7 +250,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="frcsRgno">
+            <element name="merchant_regno">
                 <annotation>
                     <documentation>가맹점사업자등록번호</documentation>
                     <appinfo>
@@ -271,7 +271,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="crdtSellCmis">
+            <element name="credit_fee_amt">
                 <annotation>
                     <documentation>신용판매수수료</documentation>
                     <appinfo>
@@ -292,7 +292,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="totInsmTmnm">
+            <element name="total_install_cnt">
                 <annotation>
                     <documentation>전체할부회차</documentation>
                     <appinfo>
@@ -313,7 +313,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="curInsmTmnm">
+            <element name="cur_install_cnt">
                 <annotation>
                     <documentation>현재할부회차</documentation>
                     <appinfo>
@@ -334,7 +334,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="insmStlmAfBlnc">
+            <element name="balance_amt">
                 <annotation>
                     <documentation>할부결제후잔액</documentation>
                     <appinfo>
@@ -355,7 +355,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="itemCd">
+            <element name="prod_type">
                 <annotation>
                     <documentation>상품코드</documentation>
                     <appinfo>

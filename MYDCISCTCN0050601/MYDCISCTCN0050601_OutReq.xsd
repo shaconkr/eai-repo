@@ -3,7 +3,7 @@
     <element name="root" type="tns:TCISCTCN0050601_inbound" />
     <complexType name="TCISCTCN0050601_inbound">
         <sequence>
-            <element name="ciVal">
+            <element name="x-user-ci">
                 <annotation>
                     <documentation>CI값</documentation>
                     <appinfo>
@@ -24,7 +24,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="trdInntNo">
+            <element name="x-api-tran-id">
                 <annotation>
                     <documentation>거래고유번호</documentation>
                     <appinfo>
@@ -45,7 +45,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="apiGbcd">
+            <element name="x-api-type">
                 <annotation>
                     <documentation>API구분코드</documentation>
                     <appinfo>
@@ -66,7 +66,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="istnCd">
+            <element name="org_code">
                 <annotation>
                     <documentation>기관코드</documentation>
                     <appinfo>
@@ -87,7 +87,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="frcsInfSendYn">
+            <element name="is_merchant_info">
                 <annotation>
                     <documentation>가맹점정보전송여부</documentation>
                     <appinfo>
@@ -104,11 +104,11 @@
                 </annotation>
                 <simpleType>
                     <restriction base="string">
-                        <maxLength value="1" />
+                        <maxLength value="5" />
                     </restriction>
                 </simpleType>
             </element>
-            <element name="stlmSeq">
+            <element name="seqno">
                 <annotation>
                     <documentation>결제순번</documentation>
                     <appinfo>
@@ -129,7 +129,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="reqYm">
+            <element name="charge_month">
                 <annotation>
                     <documentation>청구년월</documentation>
                     <appinfo>
@@ -150,7 +150,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="nxtKey">
+            <element name="next_page">
                 <annotation>
                     <documentation>다음KEY</documentation>
                     <appinfo>
@@ -171,7 +171,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="maxQryCnt">
+            <element name="limit">
                 <annotation>
                     <documentation>최대조회건수</documentation>
                     <appinfo>
@@ -187,8 +187,8 @@
                     </appinfo>
                 </annotation>
                 <simpleType>
-                    <restriction base="string">
-                        <maxLength value="3" />
+                    <restriction base="long">
+                        <totalDigits value="3" />
                     </restriction>
                 </simpleType>
             </element>

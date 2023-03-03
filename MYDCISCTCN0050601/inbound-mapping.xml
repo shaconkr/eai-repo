@@ -1,51 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="inbound" id="MYDCISCTCN0050601" version="1" />
+    <interface bound="inbound" id="MYDCISCTCN0050601" version="2" />
     <src_io id="SMYDCTCN0050601" />
     <target_io id="TCISCTCN0050601" />
     <mapping>
-        <source path="entity/ciVal" />
-        <target path="entity/ciVal" />
+        <source path="entity/x-user-ci" />
+        <target path="entity/x-user-ci" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/trdInntNo" />
-        <target path="entity/trdInntNo" />
+        <source path="entity/x-api-tran-id" />
+        <target path="entity/x-api-tran-id" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/apiGbcd" />
-        <target path="entity/apiGbcd" />
+        <source path="entity/x-api-type" />
+        <target path="entity/x-api-type" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/istnCd" />
-        <target path="entity/istnCd" />
+        <source path="entity/org_code" />
+        <target path="entity/org_code" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/frcsInfSendYn" />
-        <target path="entity/frcsInfSendYn" />
+        <source path="entity/is_merchant_info" />
+        <target path="entity/is_merchant_info" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/stlmSeq" />
-        <target path="entity/stlmSeq" />
+        <source path="entity/seqno" />
+        <target path="entity/seqno" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/reqYm" />
-        <target path="entity/reqYm" />
+        <source path="entity/charge_month" />
+        <target path="entity/charge_month" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/nxtKey" />
-        <target path="entity/nxtKey" />
+        <source path="entity/next_page" />
+        <target path="entity/next_page" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/maxQryCnt" />
-        <target path="entity/maxQryCnt" />
+        <source path="entity/limit" />
+        <target path="entity/limit" />
         <function ref="move" />
     </mapping>
 </map>

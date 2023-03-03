@@ -1,91 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="outbound" id="MYDCISCTCN0050601" version="1" />
+    <interface bound="outbound" id="MYDCISCTCN0050601" version="2" />
     <src_io id="SMYDCTCN0050601" />
     <target_io id="TCISCTCN0050601" />
     <mapping>
-        <source path="entity/trdInntNo" />
-        <target path="entity/trdInntNo" />
+        <source path="entity/x-api-tran-id" />
+        <target path="entity/x-api-tran-id" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/respCd" />
-        <target path="entity/respCd" />
+        <source path="entity/rsp_code" />
+        <target path="entity/rsp_code" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/respMsg" />
-        <target path="entity/respMsg" />
+        <source path="entity/rsp_msg" />
+        <target path="entity/rsp_msg" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/nxtKey" />
-        <target path="entity/nxtKey" />
+        <source path="entity/next_page" />
+        <target path="entity/next_page" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/chrDtlRowcount" />
-        <target path="entity/chrDtlRowcount" />
+        <source path="entity/bill_detail_cnt" />
+        <target path="entity/bill_detail_cnt" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/chrDtlList/crdId" />
-        <target path="entity/chrDtlList/crdId" />
+        <source path="entity/bill_detail_list/card_id" />
+        <target path="entity/bill_detail_list/card_id" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/chrDtlList/useDtm" />
-        <target path="entity/chrDtlList/useDtm" />
+        <source path="entity/bill_detail_list/paid_dtime" />
+        <target path="entity/bill_detail_list/paid_dtime" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/chrDtlList/trdNo" />
-        <target path="entity/chrDtlList/trdNo" />
+        <source path="entity/bill_detail_list/trans_no" />
+        <target path="entity/bill_detail_list/trans_no" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/chrDtlList/utlzAmt" />
-        <target path="entity/chrDtlList/utlzAmt" />
+        <source path="entity/bill_detail_list/paid_amt" />
+        <target path="entity/bill_detail_list/paid_amt" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/chrDtlList/crncCd" />
-        <target path="entity/chrDtlList/crncCd" />
+        <source path="entity/bill_detail_list/currency_code" />
+        <target path="entity/bill_detail_list/currency_code" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/chrDtlList/frcsNm" />
-        <target path="entity/chrDtlList/frcsNm" />
+        <source path="entity/bill_detail_list/merchant_name" />
+        <target path="entity/bill_detail_list/merchant_name" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/chrDtlList/frcsRgno" />
-        <target path="entity/chrDtlList/frcsRgno" />
+        <source path="entity/bill_detail_list/merchant_regno" />
+        <target path="entity/bill_detail_list/merchant_regno" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/chrDtlList/crdtSellCmis" />
-        <target path="entity/chrDtlList/crdtSellCmis" />
+        <source path="entity/bill_detail_list/credit_fee_amt" />
+        <target path="entity/bill_detail_list/credit_fee_amt" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/chrDtlList/totInsmTmnm" />
-        <target path="entity/chrDtlList/totInsmTmnm" />
+        <source path="entity/bill_detail_list/total_install_cnt" />
+        <target path="entity/bill_detail_list/total_install_cnt" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/chrDtlList/curInsmTmnm" />
-        <target path="entity/chrDtlList/curInsmTmnm" />
+        <source path="entity/bill_detail_list/cur_install_cnt" />
+        <target path="entity/bill_detail_list/cur_install_cnt" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/chrDtlList/insmStlmAfBlnc" />
-        <target path="entity/chrDtlList/insmStlmAfBlnc" />
+        <source path="entity/bill_detail_list/balance_amt" />
+        <target path="entity/bill_detail_list/balance_amt" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/chrDtlList/itemCd" />
-        <target path="entity/chrDtlList/itemCd" />
+        <source path="entity/bill_detail_list/prod_type" />
+        <target path="entity/bill_detail_list/prod_type" />
         <function ref="move" />
     </mapping>
 </map>
