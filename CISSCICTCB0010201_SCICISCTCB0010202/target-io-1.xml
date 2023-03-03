@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SCISCTCB0010202" idn="SC01_SCI_H0210_295" version="2">
+    <common>
+        <io_name><![CDATA[CI인증정보조회 응답 타겟 대내]]></io_name>
+        <!--I/O 명-->
+        <description />
+        <!--I/O 설명-->
+        <system code="CIS" name="H-CIS" />
+        <!--시스템코드, 시스템명-->
+        <work code="CTCB" name="회원정보관리" />
+        <!--업무구분코드-->
+        <datetime>2023-03-03 12:05:09</datetime>
+        <!--작성 시간-->
+        <writer>관리자</writer>
+        <!--작성자-->
+        <charset>UTF-8</charset>
+        <!--캐릭터셋-->
+        <package_name>hdc.cis.ct.ctc.ctcb.onl.sc.io</package_name>
+        <!--패키지경로-->
+        <class_name>ConfirmSeocreCiValRespInt</class_name>
+        <!--클래스명-->
+        <sttl_yn>Y</sttl_yn>
+        <!--표준전문여부-->
+    </common>
+    <process_type type="O" name="온라인">
+        <online>
+            <service_in />
+            <!--Input 거래 ID-->
+            <service_out />
+            <!--Output 거래 ID-->
+            <syn-asyn />
+            <!--동기 / 비동기 여부-->
+            <trncd_in />
+            <!--Input 거래 코드-->
+            <trncd_out />
+            <!--Output 거래 코드-->
+            <ext_inop code="2" />
+            <!--대내외 (일반/공유 I/O) 구분 코드 : 1 대내 (일반), 2 대외 (공유)-->
+            <external>
+                <system code="SCI" name="서신평" />
+                <!--대외 기관 구분 코드-->
+                <work code="SC01" name="[서울신용평가] CI정보 조회 요청 서신평 송신" />
+                <!--대외 업무 코드-->
+                <msg code="0210" />
+                <!--대외 전문 종별 코드-->
+                <tx code="295" />
+                <!--대외 거래 구분 코드-->
+                <etc />
+                <!--대외 기타 구분 코드-->
+                <inao code="1" />
+                <!--대내외 구간 코드 : 1 대내, 2 대외-->
+            </external>
+        </online>
+    </process_type>
+    <!--IO처리유형 : O - 온라인, D - DB, F - FILE, A - API-->
+    <inbound>
+        <message>
+            <io id="C00000011257" idn="SC01_SCI_H0210_295" version="2" name="jmims.message.sc01.sci.H0210_295" type="Message">
+                <common>
+                    <description />
+                    <system code="CIS" name="H-CIS" />
+                    <!--시스템코드, 시스템명-->
+                    <work code="CTCB" name="회원정보관리" />
+                    <!--업무 구분 코드-->
+                    <datetime>2023-03-03 12:05:09</datetime>
+                    <!--작성 시간-->
+                    <writer>관리자</writer>
+                    <!--작성자-->
+                    <package_name />
+                    <!--패키지경로-->
+                    <class_name />
+                    <!--클래스명-->
+                    <sttl_yn>Y</sttl_yn>
+                    <!--표준전문여부-->
+                </common>
+                <process_type>
+                    <online>
+                        <external>
+                            <system code="SCI" name="서신평" />
+                            <!--대외 기관 코드, 대외 기관 명-->
+                            <work code="SC01" name="[서울신용평가] CI정보 조회 요청 서신평 송신" />
+                            <!--대외 업무 코드-->
+                            <msg code="0210" />
+                            <!--대외 전문 종별 코드-->
+                            <tx code="295" />
+                            <!--대외 거래 구분 코드-->
+                            <etc />
+                            <!--대외 기타 구분코드-->
+                            <rspn />
+                            <!--대외 응답 코드-->
+                            <utrace />
+                            <!--고유 TraceKey-->
+                            <extwork />
+                            <!--Work 코드-->
+                            <error />
+                            <!--Error 코드-->
+                            <encoding style="UTF-8" />
+                            <!--Encoding-->
+                        </external>
+                    </online>
+                </process_type>
+            </io>
+        </message>
+        <header>
+            <io id="H00000011191" idn="SC01_SCI_HCommHeader" version="3" name="jmims.header.sc01.sci.HCommHeader" type="Header" squencename="header">
+                <common>
+                    <description><![CDATA[CI인증정보조회 대내]]></description>
+                    <system code="CIS" name="H-CIS" />
+                    <!--시스템코드, 시스템명-->
+                    <work code="CTCB" name="회원정보관리" />
+                    <!--업무 구분 코드-->
+                    <datetime>2023-03-03 09:42:48</datetime>
+                    <!--작성 시간-->
+                    <writer>박진성</writer>
+                    <!--작성자-->
+                    <package_name>hdc.cis.com.onl.eh.io</package_name>
+                    <!--패키지경로-->
+                    <class_name>ConfirmSeocreCiValHdr</class_name>
+                    <!--클래스명-->
+                    <sttl_yn>N</sttl_yn>
+                    <!--표준전문여부-->
+                </common>
+                <process_type>
+                    <online>
+                        <external>
+                            <system code="SCI" name="서신평" />
+                            <!--대외 기관 코드, 대외 기관 명-->
+                            <work code="SC01" name="[서울신용평가] CI정보 조회 요청 서신평 송신" />
+                            <!--대외 업무 코드-->
+                            <msg code="tgrmSubCCd" />
+                            <!--대외 전문 종별 코드-->
+                            <tx code="tskGbcd" />
+                            <!--대외 거래 구분 코드-->
+                            <etc />
+                            <!--대외 기타 구분코드-->
+                            <rspn code="respCd" />
+                            <!--대외 응답 코드-->
+                            <utrace />
+                            <!--고유 TraceKey-->
+                            <extwork />
+                            <!--Work 코드-->
+                            <error />
+                            <!--Error 코드-->
+                            <encoding />
+                            <!--Encoding-->
+                        </external>
+                    </online>
+                </process_type>
+            </io>
+            <io id="S00000011190" idn="SC01_SCI_HCommHeader" name="jmims.entity.sc01.sci.HCommHeader" version="3" type="Entity" squencename="entity1">
+                <common>
+                    <description><![CDATA[CI인증정보조회 대내]]></description>
+                    <system code="CIS" name="H-CIS" />
+                    <!--시스템코드, 시스템명-->
+                    <work code="CTCB" name="회원정보관리" />
+                    <!--업무 구분 코드-->
+                    <datetime>2023-03-03 09:42:48</datetime>
+                    <!--작성 시간-->
+                    <writer>박진성</writer>
+                    <!--작성자-->
+                    <package_name>hdc.cis.com.onl.eh.io</package_name>
+                    <!--패키지경로-->
+                    <class_name>ConfirmSeocreCiValHdr</class_name>
+                    <!--클래스명-->
+                    <sttl_yn>N</sttl_yn>
+                    <!--표준전문여부-->
+                </common>
+                <process_type>
+                    <online>
+                        <external>
+                            <system code="SCI" name="서신평" />
+                            <!--대외 기관 코드, 대외 기관 명-->
+                            <work code="SC01" name="[서울신용평가] CI정보 조회 요청 서신평 송신" />
+                            <!--대외 업무 코드-->
+                            <msg code="tgrmSubCCd" />
+                            <!--대외 전문 종별 코드-->
+                            <tx code="tskGbcd" />
+                            <!--대외 거래 구분 코드-->
+                            <etc />
+                            <!--대외 기타 구분코드-->
+                            <rspn code="respCd" />
+                            <!--대외 응답 코드-->
+                            <utrace />
+                            <!--고유 TraceKey-->
+                            <extwork />
+                            <!--Work 코드-->
+                            <error />
+                            <!--Error 코드-->
+                            <encoding />
+                            <!--Encoding-->
+                        </external>
+                    </online>
+                </process_type>
+                <data><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/" version="S00000011190.3">
+    <element name="root" type="tns:SC01_SCI_HCommHeader_ENT_inbound" />
+    <complexType name="SC01_SCI_HCommHeader_ENT_inbound">
+        <sequence>
+            <element name="tgrmLen">
+                <annotation>
+                    <documentation>전문길이</documentation>
+                    <appinfo>
+                        <p:description value="전문+길이" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="4" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="tgrmNo">
+                <annotation>
+                    <documentation>전문번호</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="8" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="tgrmId">
+                <annotation>
+                    <documentation>전문ID</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="12" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="tgrmSubCCd">
+                <annotation>
+                    <documentation>전문종별코드</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="4" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="tskGbcd">
+                <annotation>
+                    <documentation>업무구분코드</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="3" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="respCd">
+                <annotation>
+                    <documentation>응답코드</documentation>
+                    <appinfo>
+                        <p:description value="업무구분코드" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="3" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="mngKey">
+                <annotation>
+                    <documentation>관리KEY</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="4" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="ciInf">
+                <annotation>
+                    <documentation>CI정보</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="1" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="seqno">
+                <annotation>
+                    <documentation>일련번호</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="20" />
+                    </restriction>
+                </simpleType>
+            </element>
+        </sequence>
+    </complexType>
+</schema>]]></data>
+            </io>
+        </header>
+        <unit>
+            <io id="S00000011213" idn="SC01_SCI_H0210_295" name="jmims.entity.sc01.sci.H0210_295" version="2" type="Entity" squencename="entity">
+                <common>
+                    <description />
+                    <system code="CIS" name="H-CIS" />
+                    <!--시스템코드, 시스템명-->
+                    <work code="CTCB" name="회원정보관리" />
+                    <!--업무 구분 코드-->
+                    <datetime>2023-03-03 10:46:41</datetime>
+                    <!--작성 시간-->
+                    <writer>박진성</writer>
+                    <!--작성자-->
+                    <package_name>hdc.cis.ct.ctc.ctcb.onl.sc.io</package_name>
+                    <!--패키지경로-->
+                    <class_name>ConfirmSeocreCiValOutUnit</class_name>
+                    <!--클래스명-->
+                    <sttl_yn>Y</sttl_yn>
+                    <!--표준전문여부-->
+                </common>
+                <process_type>
+                    <online>
+                        <external>
+                            <system code="SCI" name="서신평" />
+                            <!--대외 기관 코드, 대외 기관 명-->
+                            <work code="SC01" name="[서울신용평가] CI정보 조회 요청 서신평 송신" />
+                            <!--대외 업무 코드-->
+                            <msg code="0210" />
+                            <!--대외 전문 종별 코드-->
+                            <tx code="295" />
+                            <!--대외 거래 구분 코드-->
+                            <etc />
+                            <!--대외 기타 구분코드-->
+                            <rspn />
+                            <!--대외 응답 코드-->
+                            <utrace />
+                            <!--고유 TraceKey-->
+                            <extwork />
+                            <!--Work 코드-->
+                            <error />
+                            <!--Error 코드-->
+                            <encoding />
+                            <!--Encoding-->
+                        </external>
+                    </online>
+                </process_type>
+                <data><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/" version="S00000011213.2">
+    <element name="root" type="tns:SC01_SCI_H0210_295_ENT_inbound" />
+    <complexType name="SC01_SCI_H0210_295_ENT_inbound">
+        <sequence>
+            <element name="crdMemDiVal">
+                <annotation>
+                    <documentation>카드회원DI값</documentation>
+                    <appinfo>
+                        <p:description value="서심평에서 받은 대체번호값" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="64" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="ciVer">
+                <annotation>
+                    <documentation>CI버전</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="1" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="custCiVal1">
+                <annotation>
+                    <documentation>고객CI값1</documentation>
+                    <appinfo>
+                        <p:description value="고객CI값" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="88" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="custCiVal2">
+                <annotation>
+                    <documentation>고객CI값2</documentation>
+                    <appinfo>
+                        <p:description value="고객CI값" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="88" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="prepVal">
+                <annotation>
+                    <documentation>예비값</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="44" />
+                    </restriction>
+                </simpleType>
+            </element>
+        </sequence>
+    </complexType>
+</schema>]]></data>
+            </io>
+        </unit>
+    </inbound>
+    <outbound>
+        <message />
+        <header />
+        <unit />
+    </outbound>
+</io>

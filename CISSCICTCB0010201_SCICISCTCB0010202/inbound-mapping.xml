@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="inbound" id="CISSCICTCB0010201" version="1" />
+    <src_io id="SCISCTCB0010201" />
+    <target_io id="TSCICTCB0010201" />
+    <mapping>
+        <source path="header/entity1/TGRM_LEN" />
+        <target path="header/entity1/TGRM_LEN" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/TGRM_NO" />
+        <target path="header/entity1/TGRM_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/TGRM_ID" />
+        <target path="header/entity1/TGRM_ID" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/TGRM_SUB_C_CD" />
+        <target path="header/entity1/TGRM_SUB_C_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/TSK_GBCD" />
+        <target path="header/entity1/TSK_GBCD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/RESP_CD" />
+        <target path="header/entity1/RESP_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/MNG_KEY" />
+        <target path="header/entity1/MNG_KEY" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/CI_INF" />
+        <target path="header/entity1/CI_INF" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/SEQNO" />
+        <target path="header/entity1/SEQNO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RRNO" />
+        <target path="entity/RRNO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/PREP_VAL" />
+        <target path="entity/PREP_VAL" />
+        <function ref="move" />
+    </mapping>
+</map>
