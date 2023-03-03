@@ -3,7 +3,7 @@
     <element name="root" type="tns:TCISCTCN0050101_outbound" />
     <complexType name="TCISCTCN0050101_outbound">
         <sequence>
-            <element name="trdInntNo">
+            <element name="x-api-tran-id">
                 <annotation>
                     <documentation>거래고유번호</documentation>
                     <appinfo>
@@ -24,9 +24,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="respCd">
+            <element name="rsp_code">
                 <annotation>
-                    <documentation>응답코드</documentation>
+                    <documentation>세부응답코드</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
@@ -45,9 +45,9 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="respMsg">
+            <element name="rsp_msg">
                 <annotation>
-                    <documentation>응답메시지</documentation>
+                    <documentation>세부응답메시지</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
