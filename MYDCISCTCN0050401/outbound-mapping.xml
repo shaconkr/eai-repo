@@ -1,4 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="outbound" id="MYDCISCTCN0050401" version="none" />
+    <interface bound="outbound" id="MYDCISCTCN0050401" version="3" />
+    <src_io id="SMYDCTCN0050401" />
+    <target_io id="TCISCTCN0050401" />
+    <mapping>
+        <source path="entity/x-api-tran-id" />
+        <target path="entity/x-api-tran-id" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsp_code" />
+        <target path="entity/rsp_code" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsp_msg" />
+        <target path="entity/rsp_msg" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/search_timestamp" />
+        <target path="entity/search_timestamp" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/is_trans_payable" />
+        <target path="entity/is_trans_payable" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/is_cash_card" />
+        <target path="entity/is_cash_card" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/linked_bank_code" />
+        <target path="entity/linked_bank_code" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/account_num" />
+        <target path="entity/account_num" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/card_brand" />
+        <target path="entity/card_brand" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/annual_fee" />
+        <target path="entity/annual_fee" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/issue_date" />
+        <target path="entity/issue_date" />
+        <function ref="move" />
+    </mapping>
 </map>

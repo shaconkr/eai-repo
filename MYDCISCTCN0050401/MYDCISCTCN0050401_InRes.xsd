@@ -104,7 +104,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="string">
-                        <maxLength value="1" />
+                        <maxLength value="5" />
                     </restriction>
                 </simpleType>
             </element>
@@ -125,7 +125,7 @@
                 </annotation>
                 <simpleType>
                     <restriction base="string">
-                        <maxLength value="1" />
+                        <maxLength value="5" />
                     </restriction>
                 </simpleType>
             </element>
@@ -208,9 +208,8 @@
                     </appinfo>
                 </annotation>
                 <simpleType>
-                    <restriction base="decimal">
+                    <restriction base="long">
                         <totalDigits value="15" />
-                        <fractionDigits value="2" />
                     </restriction>
                 </simpleType>
             </element>
