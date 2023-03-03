@@ -3,7 +3,7 @@
     <element name="root" type="tns:SMYDCTCN0050701_outbound" />
     <complexType name="SMYDCTCN0050701_outbound">
         <sequence>
-            <element name="trdInntNo">
+            <element name="x-api-tran-id">
                 <annotation>
                     <documentation>거래고유번호</documentation>
                     <appinfo>
@@ -24,7 +24,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="respCd">
+            <element name="rsp_code">
                 <annotation>
                     <documentation>응답코드</documentation>
                     <appinfo>
@@ -45,7 +45,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="respMsg">
+            <element name="rsp_msg">
                 <annotation>
                     <documentation>응답메시지</documentation>
                     <appinfo>
@@ -66,7 +66,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="qryDtm">
+            <element name="search_timestamp">
                 <annotation>
                     <documentation>조회일시</documentation>
                     <appinfo>
@@ -82,12 +82,12 @@
                     </appinfo>
                 </annotation>
                 <simpleType>
-                    <restriction base="string">
-                        <maxLength value="14" />
+                    <restriction base="long">
+                        <totalDigits value="14" />
                     </restriction>
                 </simpleType>
             </element>
-            <element name="revoYn">
+            <element name="is_revolving">
                 <annotation>
                     <documentation>리볼빙여부</documentation>
                     <appinfo>
@@ -104,11 +104,11 @@
                 </annotation>
                 <simpleType>
                     <restriction base="string">
-                        <maxLength value="1" />
+                        <maxLength value="5" />
                     </restriction>
                 </simpleType>
             </element>
-            <element name="stlmRowcount">
+            <element name="pay_cnt">
                 <annotation>
                     <documentation>결제_배열건수</documentation>
                     <appinfo>
@@ -125,15 +125,15 @@
                 </annotation>
                 <simpleType>
                     <restriction base="long">
-                        <totalDigits value="5" />
+                        <totalDigits value="3" />
                     </restriction>
                 </simpleType>
             </element>
-            <element maxOccurs="unbounded" name="stlmList" type="tns:STLM_LIST_TYPE">
+            <element maxOccurs="unbounded" name="pay_list" type="tns:pay_list_TYPE">
                 <annotation>
                     <documentation>결제_배열</documentation>
                     <appinfo>
-                        <p:adjustLength category="variableField" lengthFieldURL="STLM_ROWCOUNT" />
+                        <p:adjustLength category="variableField" lengthFieldURL="pay_cnt" />
                         <p:mandatory value="N" />
                         <p:level value="1" />
                         <p:api_data_area_dcd value="B" />
@@ -142,9 +142,9 @@
             </element>
         </sequence>
     </complexType>
-    <complexType name="STLM_LIST_TYPE">
+    <complexType name="pay_list_TYPE">
         <sequence>
-            <element name="stlmSeq">
+            <element name="seqno">
                 <annotation>
                     <documentation>결제순번</documentation>
                     <appinfo>
@@ -165,7 +165,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="stlmPrrgDt">
+            <element name="pay_due_date">
                 <annotation>
                     <documentation>결제예정일자</documentation>
                     <appinfo>
@@ -186,7 +186,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="stlmPrrgAmt">
+            <element name="pay_amt">
                 <annotation>
                     <documentation>결제예정금액</documentation>
                     <appinfo>
@@ -202,13 +202,12 @@
                     </appinfo>
                 </annotation>
                 <simpleType>
-                    <restriction base="decimal">
+                    <restriction base="long">
                         <totalDigits value="15" />
-                        <fractionDigits value="0" />
                     </restriction>
                 </simpleType>
             </element>
-            <element name="spymAmt">
+            <element name="lump_sum_amt">
                 <annotation>
                     <documentation>일시불금액</documentation>
                     <appinfo>
@@ -230,7 +229,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="insmAmt">
+            <element name="monthly_amt">
                 <annotation>
                     <documentation>할부금액</documentation>
                     <appinfo>
@@ -246,12 +245,13 @@
                     </appinfo>
                 </annotation>
                 <simpleType>
-                    <restriction base="string">
-                        <maxLength value="18" />
+                    <restriction base="decimal">
+                        <totalDigits value="18" />
+                        <fractionDigits value="3" />
                     </restriction>
                 </simpleType>
             </element>
-            <element name="shtmLoanAmt">
+            <element name="loan_short_amt">
                 <annotation>
                     <documentation>단기대출금액</documentation>
                     <appinfo>
@@ -273,7 +273,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="revoAmt">
+            <element name="revolving_amt">
                 <annotation>
                     <documentation>리볼빙금액</documentation>
                     <appinfo>
@@ -290,12 +290,12 @@
                 </annotation>
                 <simpleType>
                     <restriction base="decimal">
-                        <totalDigits value="20" />
-                        <fractionDigits value="2" />
+                        <totalDigits value="18" />
+                        <fractionDigits value="3" />
                     </restriction>
                 </simpleType>
             </element>
-            <element name="lntmLoanAmt">
+            <element name="loan_long_amt">
                 <annotation>
                     <documentation>장기대출금액</documentation>
                     <appinfo>
@@ -317,7 +317,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="anfeAmt">
+            <element name="etc_amt">
                 <annotation>
                     <documentation>연회비금액</documentation>
                     <appinfo>
@@ -334,8 +334,8 @@
                 </annotation>
                 <simpleType>
                     <restriction base="decimal">
-                        <totalDigits value="20" />
-                        <fractionDigits value="2" />
+                        <totalDigits value="18" />
+                        <fractionDigits value="3" />
                     </restriction>
                 </simpleType>
             </element>

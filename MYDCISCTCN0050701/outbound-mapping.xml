@@ -1,81 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="outbound" id="MYDCISCTCN0050701" version="1" />
+    <interface bound="outbound" id="MYDCISCTCN0050701" version="2" />
     <src_io id="SMYDCTCN0050701" />
     <target_io id="TCISCTCN0050701" />
     <mapping>
-        <source path="entity/trdInntNo" />
-        <target path="entity/trdInntNo" />
+        <source path="entity/x-api-tran-id" />
+        <target path="entity/x-api-tran-id" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/respCd" />
-        <target path="entity/respCd" />
+        <source path="entity/rsp_code" />
+        <target path="entity/rsp_code" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/respMsg" />
-        <target path="entity/respMsg" />
+        <source path="entity/rsp_msg" />
+        <target path="entity/rsp_msg" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/qryDtm" />
-        <target path="entity/qryDtm" />
+        <source path="entity/search_timestamp" />
+        <target path="entity/search_timestamp" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/revoYn" />
-        <target path="entity/revoYn" />
+        <source path="entity/is_revolving" />
+        <target path="entity/is_revolving" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/stlmRowcount" />
-        <target path="entity/stlmRowcount" />
+        <source path="entity/pay_cnt" />
+        <target path="entity/pay_cnt" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/stlmList/stlmSeq" />
-        <target path="entity/stlmList/stlmSeq" />
+        <source path="entity/pay_list/seqno" />
+        <target path="entity/pay_list/seqno" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/stlmList/stlmPrrgDt" />
-        <target path="entity/stlmList/stlmPrrgDt" />
+        <source path="entity/pay_list/pay_due_date" />
+        <target path="entity/pay_list/pay_due_date" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/stlmList/stlmPrrgAmt" />
-        <target path="entity/stlmList/stlmPrrgAmt" />
+        <source path="entity/pay_list/pay_amt" />
+        <target path="entity/pay_list/pay_amt" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/stlmList/spymAmt" />
-        <target path="entity/stlmList/spymAmt" />
+        <source path="entity/pay_list/lump_sum_amt" />
+        <target path="entity/pay_list/lump_sum_amt" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/stlmList/insmAmt" />
-        <target path="entity/stlmList/insmAmt" />
+        <source path="entity/pay_list/monthly_amt" />
+        <target path="entity/pay_list/monthly_amt" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/stlmList/shtmLoanAmt" />
-        <target path="entity/stlmList/shtmLoanAmt" />
+        <source path="entity/pay_list/loan_short_amt" />
+        <target path="entity/pay_list/loan_short_amt" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/stlmList/revoAmt" />
-        <target path="entity/stlmList/revoAmt" />
+        <source path="entity/pay_list/revolving_amt" />
+        <target path="entity/pay_list/revolving_amt" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/stlmList/lntmLoanAmt" />
-        <target path="entity/stlmList/lntmLoanAmt" />
+        <source path="entity/pay_list/loan_long_amt" />
+        <target path="entity/pay_list/loan_long_amt" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/stlmList/anfeAmt" />
-        <target path="entity/stlmList/anfeAmt" />
+        <source path="entity/pay_list/etc_amt" />
+        <target path="entity/pay_list/etc_amt" />
         <function ref="move" />
     </mapping>
 </map>
