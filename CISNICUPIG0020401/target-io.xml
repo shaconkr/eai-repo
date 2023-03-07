@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TNICUPIG0020401" version="5">
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TNICUPIG0020401" version="6">
     <common>
         <io_name><![CDATA[NICECB연체정보파일송신]]></io_name>
         <!--I/O 명-->
@@ -15,7 +15,7 @@
         <!--작성자-->
         <charset>KSC5601</charset>
         <!--캐릭터셋-->
-        <package_name>hdc.cis.up.upi.upig.bat.io</package_name>
+        <package_name>hdc.cis.up.upi.upig.bat.jc.io</package_name>
         <!--패키지경로-->
         <class_name>NiceCbOdueInfFileTrs</class_name>
         <!--클래스명-->
