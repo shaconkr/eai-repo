@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="CISTOSPMMZ0140501" idn="TS01_TOS_H0800_100" name="업무개시 요청" version="1">
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="CISTOSPMMZ0140501" idn="TS01_TOS_H0800_100" name="업무개시 요청" version="2">
     <common>
         <description />
         <system code="CIS" name="H-CIS" />
@@ -58,7 +58,7 @@
                     <!--등가 전문 종별 코드-->
                     <response_interface name="IF_TS01_TOS_E0810_100" id="TOSCISPMMZ0140502" />
                     <!--응답 인터페이스 관리ID-->
-                    <method code="2" name="요청" />
+                    <method />
                     <!--처리 방법 - 1:요청응답 / 2:요청-->
                     <saf code="N" name="SAF미사용" />
                     <!--SAF여부 - Y:SAF사용 / N:SAF미사용-->
