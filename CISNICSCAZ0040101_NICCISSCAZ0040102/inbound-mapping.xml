@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="inbound" id="CISNICSCAZ0040101" version="4" />
+    <src_io id="SCISSCAZ0040101" />
+    <target_io id="TNICSCAZ0040101" />
+    <mapping>
+        <source path="header/entity1/TR_NO" />
+        <target path="header/entity1/TR_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/TGRM_GRP_CD" />
+        <target path="header/entity1/TGRM_GRP_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/TRD_SUB_C_CD" />
+        <target path="header/entity1/TRD_SUB_C_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/TRD_GBCD" />
+        <target path="header/entity1/TRD_GBCD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/TRS_RCV_GB" />
+        <target path="header/entity1/TNR_GB" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/TE_GBCD" />
+        <target path="header/entity1/TE_GB" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/RESP_CD" />
+        <target path="header/entity1/RESP_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/ISTN_ID" />
+        <target path="header/entity1/ISTN_ID" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/ISTN_TGRM_MNG_NO" />
+        <target path="header/entity1/ISTN_TGRM_MNG_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/ISTN_TGRM_SEND_TIME" />
+        <target path="header/entity1/ISTN_TGRM_SEND_TIME" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/NICE_TGRM_MNG_NO" />
+        <target path="header/entity1/NICE_TGRM_MNG_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/NICE_TGRM_SEND_TIME" />
+        <target path="header/entity1/NICE_TGRM_SEND_TIME" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/PRMR_BMP" />
+        <target path="header/entity1/PRMR_BMP" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/QRY_AGR_RSN_CD" />
+        <target path="header/entity1/QRY_AGR_RSN_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/PSN_CORP_GBCD" />
+        <target path="entity/PSN_CORP_GBCD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RRNO" />
+        <target path="entity/RRNO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/QRY_RSN_CD" />
+        <target path="entity/QRY_RSN_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/IQPS_IDNT_CD" />
+        <target path="entity/IQPS_IDNT_CD" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RE_REQN_CNT" />
+        <target path="entity/RE_REQN_CNT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/CERT_NO" />
+        <target path="entity/CERT_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/DEBT_NOFFIL_INF_RCV_CNT" />
+        <target path="entity/DEBT_NOFFIL_INF_RCV_CNT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/DEBT_NOFFIL_INF_REQN_CNT" />
+        <target path="entity/DEBT_NOFFIL_INF_REQN_CNT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/DEBT_NOFFIL_INF_RCV_CNT1" />
+        <target path="entity/DEBT_NOFFIL_INF_RCV_CNT1" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/DEBT_NOFFIL_INF_REQN_CNT1" />
+        <target path="entity/DEBT_NOFFIL_INF_REQN_CNT1" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/CRDT_QRY_INF_RCV_CNT" />
+        <target path="entity/CRDT_QRY_INF_RCV_CNT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/CRDT_QRY_INF_REQN_CNT" />
+        <target path="entity/CRDT_QRY_INF_REQN_CNT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/REL_PTRN_INF_RCV_CNT" />
+        <target path="entity/REL_PTRN_INF_RCV_CNT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/REL_PTRN_INF_REQN_CNT" />
+        <target path="entity/REL_PTRN_INF_REQN_CNT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/SMRY_INF_RCV_CNT" />
+        <target path="entity/SMRY_INF_RCV_CNT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/SMRY_INF_REQN_CNT" />
+        <target path="entity/SMRY_INF_REQN_CNT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/SMRY_SRV_GB_INF_ROWCOUNT" />
+        <target path="entity/SMRY_SRV_GB_INF_ROWCOUNT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/SMRY_SRV_GB_INF_LIST[]/SMRY_SRV_GB_INF" />
+        <target path="entity/SMRY_SRV_GB_INF_LIST[]/SMRY_SRV_GB_INF" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/SMRY_SRV_GB_INF_LIST[]/SMRY_CLAS_CD" />
+        <target path="entity/SMRY_SRV_GB_INF_LIST[]/SMRY_CLAS_CD" />
+        <function ref="move" />
+    </mapping>
+</map>
