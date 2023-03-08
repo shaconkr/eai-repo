@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="outbound" id="GRWCISCDDG0020301" version="2" />
+    <src_io id="SGRWCDDG0020301" />
+    <target_io id="TCISCDDG0020301" />
+    <mapping>
+        <source path="entity/eltrAthzNo" />
+        <target path="entity/eltrAthzNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/athzTypeCd" />
+        <target path="entity/athzTypeCd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/eltrAthzStatCd" />
+        <target path="entity/eltrAthzStatCd" />
+        <function ref="move" />
+    </mapping>
+</map>
