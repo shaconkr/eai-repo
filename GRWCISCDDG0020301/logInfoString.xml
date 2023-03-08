@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<deployment id="D00000010968">
+<deployment id="D00000010972">
     <deployer id="CIS115">오진일</deployer>
-    <deployment_date>2023-03-08 10:42:23.185671</deployment_date>
-    <target_system id="MCI_D_01">MCI</target_system>
+    <deployment_date>2023-03-08 10:45:34.951465</deployment_date>
+    <target_system id="EAI_D_01">EAI 대내</target_system>
 </deployment>
