@@ -468,7 +468,7 @@
             </io>
         </header>
         <unit>
-            <io id="S00000011449" idn="NC02_NIC_E0200_24001" name="jmims.entity.nc02.nic.E0200_24001" version="4" type="Entity" squencename="entity">
+            <io id="S00000011449" idn="NC02_NIC_E0200_24001_F4800F8000000004" name="jmims.entity.nc02.nic.E0200_24001_F4800F8000000004" version="7" type="Entity" squencename="entity">
                 <common>
                     <description><![CDATA[개인요약형조회(사업자 My Repory) Unit - Nice]]></description>
                     <system code="NIC" name="NICE(나이스정보통신)" />
@@ -513,9 +513,9 @@
                     </online>
                 </process_type>
                 <data><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/" version="S00000011449.4">
-    <element name="root" type="tns:NC02_NIC_E0200_24001_ENT_inbound" />
-    <complexType name="NC02_NIC_E0200_24001_ENT_inbound">
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/" version="S00000011449.7">
+    <element name="root" type="tns:NC02_NIC_E0200_24001_F4800F8000000004_ENT_inbound" />
+    <complexType name="NC02_NIC_E0200_24001_F4800F8000000004_ENT_inbound">
         <sequence>
             <element name="psnCorpGbcd">
                 <annotation>
@@ -693,6 +693,44 @@
                     <documentation>채무불이행정보요청건수1</documentation>
                     <appinfo>
                         <p:description value="채무불이행정보요청건수" />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="long">
+                        <totalDigits value="2" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="trdOpeInfRcvCnt">
+                <annotation>
+                    <documentation>거래개설정보수신건수</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="long">
+                        <totalDigits value="3" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="trdOpeInfReqnCnt">
+                <annotation>
+                    <documentation>거래개설정보요청건수</documentation>
+                    <appinfo>
+                        <p:description />
                         <p:mandatory value="N" />
                         <p:level value="1" />
                         <p:encryption value="N" />

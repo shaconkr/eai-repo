@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="inbound" id="CISNICSCAZ0040101" version="4" />
+    <interface bound="inbound" id="CISNICSCAZ0040101" version="6" />
     <src_io id="SCISSCAZ0040101" />
     <target_io id="TNICSCAZ0040101" />
     <mapping>
@@ -121,6 +121,16 @@
     <mapping>
         <source path="entity/DEBT_NOFFIL_INF_REQN_CNT1" />
         <target path="entity/DEBT_NOFFIL_INF_REQN_CNT1" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/TRD_OPE_INF_RCV_CNT" />
+        <target path="entity/TRD_OPE_INF_RCV_CNT" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/TRD_OPE_INF_REQN_CNT" />
+        <target path="entity/TRD_OPE_INF_REQN_CNT" />
         <function ref="move" />
     </mapping>
     <mapping>

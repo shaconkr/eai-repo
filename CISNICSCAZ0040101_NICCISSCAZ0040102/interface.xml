@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="CISNICSCAZ0040101" idn="NC02_NIC_H0200_24001_F4800F8000000004" name="개인요약형조회(사업자 My Repory)" version="6">
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="CISNICSCAZ0040101" idn="NC02_NIC_H0200_24001_F4800F8000000004" name="개인요약형조회(사업자 My Repory)" version="8">
     <common>
         <description />
         <system code="CIS" name="H-CIS" />
