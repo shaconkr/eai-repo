@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="inbound" id="NICCISSCAZ0040102" version="3" />
+    <interface bound="inbound" id="NICCISSCAZ0040102" version="4" />
     <src_io id="SNICSCAZ0040102" />
     <target_io id="TCISSCAZ0040102" />
     <mapping>

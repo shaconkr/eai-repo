@@ -468,7 +468,7 @@
             </io>
         </header>
         <unit>
-            <io id="S00000011483" idn="NC02_NIC_E0210_24001_F4800F8000000004" name="jmims.entity.nc02.nic.E0210_24001_F4800F8000000004" version="3" type="Entity" squencename="entity">
+            <io id="S00000011483" idn="NC02_NIC_E0210_24001_F4800F8000000004" name="jmims.entity.nc02.nic.E0210_24001_F4800F8000000004" version="4" type="Entity" squencename="entity">
                 <common>
                     <description><![CDATA[개인요약형조회(사업자 My Repory)]]></description>
                     <system code="NIC" name="NICE(나이스정보통신)" />
@@ -513,7 +513,7 @@
                     </online>
                 </process_type>
                 <data><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/" version="S00000011483.3">
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/" version="S00000011483.4">
     <element name="root" type="tns:NC02_NIC_E0210_24001_F4800F8000000004_ENT_inbound" />
     <complexType name="NC02_NIC_E0210_24001_F4800F8000000004_ENT_inbound">
         <sequence>
@@ -930,7 +930,7 @@
                 <annotation>
                     <documentation>채무불이행정보응답1_배열</documentation>
                     <appinfo>
-                        <p:adjustLength category="variableField" lengthFieldURL="DEBT_NOFFIL_INF_RESP_ROWCOUNT" />
+                        <p:adjustLength category="variableField" lengthFieldURL="DEBT_NOFFIL_INF_RESP1_ROWCOUNT" />
                         <p:mandatory value="N" />
                         <p:level value="1" />
                     </appinfo>
