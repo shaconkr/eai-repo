@@ -3,7 +3,7 @@
     <element name="root" type="tns:SCISPMBC0020101_inbound" />
     <complexType name="SCISPMBC0020101_inbound">
         <sequence>
-            <element maxOccurs="1" minOccurs="1" name="comHeaderGroup" type="tns:COM_HEADER_GROUP_TYPE">
+            <element maxOccurs="1" minOccurs="1" name="COM_HEADER_GROUP" type="tns:COM_HEADER_GROUP_TYPE">
                 <annotation>
                     <documentation>토스공통헤더</documentation>
                     <appinfo>
@@ -11,7 +11,7 @@
                     </appinfo>
                 </annotation>
             </element>
-            <element maxOccurs="1" minOccurs="1" name="headerGroup" type="tns:HEADER_GROUP_TYPE">
+            <element maxOccurs="1" minOccurs="1" name="HEADER_GROUP" type="tns:HEADER_GROUP_TYPE">
                 <annotation>
                     <documentation>기업은행헤더</documentation>
                     <appinfo>
@@ -19,7 +19,7 @@
                     </appinfo>
                 </annotation>
             </element>
-            <element name="dataGroupRowcount">
+            <element name="DATA_GROUP_ROWCOUNT">
                 <annotation>
                     <documentation>기업은행데이터부_배열건수</documentation>
                     <appinfo>
@@ -39,7 +39,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element maxOccurs="unbounded" name="dataGroupList" type="tns:DATA_GROUP_LIST_TYPE">
+            <element maxOccurs="unbounded" name="DATA_GROUP_LIST" type="tns:DATA_GROUP_LIST_TYPE">
                 <annotation>
                     <documentation>기업은행데이터부_배열</documentation>
                     <appinfo>
@@ -49,7 +49,7 @@
                     </appinfo>
                 </annotation>
             </element>
-            <element maxOccurs="1" minOccurs="1" name="tailGroup" type="tns:TAIL_GROUP_TYPE">
+            <element maxOccurs="1" minOccurs="1" name="TAIL_GROUP" type="tns:TAIL_GROUP_TYPE">
                 <annotation>
                     <documentation>기업은행트레일러</documentation>
                     <appinfo>
@@ -61,7 +61,7 @@
     </complexType>
     <complexType name="COM_HEADER_GROUP_TYPE">
         <sequence>
-            <element name="tossHdrGbVal">
+            <element name="TOSS_HDR_GB_VAL">
                 <annotation>
                     <documentation>토스헤더구분값</documentation>
                     <appinfo>
@@ -81,7 +81,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="tskGbcd">
+            <element name="TSK_GBCD">
                 <annotation>
                     <documentation>업무구분코드</documentation>
                     <appinfo>
@@ -101,7 +101,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="trdFormCd">
+            <element name="TRD_FORM_CD">
                 <annotation>
                     <documentation>거래형태코드</documentation>
                     <appinfo>
@@ -121,7 +121,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="fileSize1">
+            <element name="FILE_SIZE1">
                 <annotation>
                     <documentation>파일크기1</documentation>
                     <appinfo>
@@ -141,7 +141,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="fileSize2">
+            <element name="FILE_SIZE2">
                 <annotation>
                     <documentation>파일크기2</documentation>
                     <appinfo>
@@ -161,7 +161,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="trspId">
+            <element name="TRSP_ID">
                 <annotation>
                     <documentation>송신자ID</documentation>
                     <appinfo>
@@ -181,7 +181,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="senmCustGbcd">
+            <element name="SENM_CUST_GBCD">
                 <annotation>
                     <documentation>발송업체구분코드</documentation>
                     <appinfo>
@@ -201,7 +201,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="infGbcd">
+            <element name="INF_GBCD">
                 <annotation>
                     <documentation>정보구분코드</documentation>
                     <appinfo>
@@ -221,7 +221,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="prepVal">
+            <element name="PREP_VAL">
                 <annotation>
                     <documentation>예비값</documentation>
                     <appinfo>
@@ -241,7 +241,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="rcvCnt">
+            <element name="RCV_CNT">
                 <annotation>
                     <documentation>수신건수</documentation>
                     <appinfo>
@@ -261,7 +261,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="rcvpId">
+            <element name="RCVP_ID">
                 <annotation>
                     <documentation>수신자ID</documentation>
                     <appinfo>
@@ -285,7 +285,7 @@
     </complexType>
     <complexType name="HEADER_GROUP_TYPE">
         <sequence>
-            <element name="idntCd">
+            <element name="IDNT_CD">
                 <annotation>
                     <documentation>식별코드</documentation>
                     <appinfo>
@@ -305,7 +305,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="trsfGbVal">
+            <element name="TRSF_GB_VAL">
                 <annotation>
                     <documentation>이체구분값</documentation>
                     <appinfo>
@@ -325,7 +325,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="tnrGbcd">
+            <element name="TNR_GBCD">
                 <annotation>
                     <documentation>송수신구분코드</documentation>
                     <appinfo>
@@ -345,7 +345,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="bankCd">
+            <element name="BANK_CD">
                 <annotation>
                     <documentation>은행코드</documentation>
                     <appinfo>
@@ -365,7 +365,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="istnCd">
+            <element name="ISTN_CD">
                 <annotation>
                     <documentation>기관코드</documentation>
                     <appinfo>
@@ -385,7 +385,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="askDt">
+            <element name="ASK_DT">
                 <annotation>
                     <documentation>의뢰일자</documentation>
                     <appinfo>
@@ -405,7 +405,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="trsfDsntDt">
+            <element name="TRSF_DSNT_DT">
                 <annotation>
                     <documentation>이체지정일자</documentation>
                     <appinfo>
@@ -425,7 +425,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="endDt">
+            <element name="END_DT">
                 <annotation>
                     <documentation>종료일자</documentation>
                     <appinfo>
@@ -445,7 +445,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="nullVal1">
+            <element name="NULL_VAL1">
                 <annotation>
                     <documentation>공백값1</documentation>
                     <appinfo>
@@ -465,7 +465,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="parAcno">
+            <element name="PAR_ACNO">
                 <annotation>
                     <documentation>모계좌번호</documentation>
                     <appinfo>
@@ -485,7 +485,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="nullVal2">
+            <element name="NULL_VAL2">
                 <annotation>
                     <documentation>공백값2</documentation>
                     <appinfo>
@@ -509,7 +509,7 @@
     </complexType>
     <complexType name="DATA_GROUP_LIST_TYPE">
         <sequence>
-            <element name="idntCd">
+            <element name="IDNT_CD">
                 <annotation>
                     <documentation>식별코드</documentation>
                     <appinfo>
@@ -529,7 +529,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="seqno">
+            <element name="SEQNO">
                 <annotation>
                     <documentation>일련번호</documentation>
                     <appinfo>
@@ -549,7 +549,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="trsfAskDt">
+            <element name="TRSF_ASK_DT">
                 <annotation>
                     <documentation>이체의뢰일자</documentation>
                     <appinfo>
@@ -569,7 +569,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="bankCd">
+            <element name="BANK_CD">
                 <annotation>
                     <documentation>은행코드</documentation>
                     <appinfo>
@@ -589,7 +589,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="acno">
+            <element name="ACNO">
                 <annotation>
                     <documentation>계좌번호</documentation>
                     <appinfo>
@@ -609,7 +609,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="trsfAskAmt">
+            <element name="TRSF_ASK_AMT">
                 <annotation>
                     <documentation>이체의뢰금액</documentation>
                     <appinfo>
@@ -629,7 +629,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="procGbVal">
+            <element name="PROC_GB_VAL">
                 <annotation>
                     <documentation>처리구분값</documentation>
                     <appinfo>
@@ -649,7 +649,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="inabCd">
+            <element name="INAB_CD">
                 <annotation>
                     <documentation>불능코드</documentation>
                     <appinfo>
@@ -669,7 +669,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="custUseInf">
+            <element name="CUST_USE_INF">
                 <annotation>
                     <documentation>업체사용정보</documentation>
                     <appinfo>
@@ -689,7 +689,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="procAmt">
+            <element name="PROC_AMT">
                 <annotation>
                     <documentation>처리금액</documentation>
                     <appinfo>
@@ -709,7 +709,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="nullVal">
+            <element name="NULL_VAL">
                 <annotation>
                     <documentation>공백값</documentation>
                     <appinfo>
@@ -733,7 +733,7 @@
     </complexType>
     <complexType name="TAIL_GROUP_TYPE">
         <sequence>
-            <element name="idntCd">
+            <element name="IDNT_CD">
                 <annotation>
                     <documentation>식별코드</documentation>
                     <appinfo>
@@ -753,7 +753,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="trsfGbVal">
+            <element name="TRSF_GB_VAL">
                 <annotation>
                     <documentation>이체구분값</documentation>
                     <appinfo>
@@ -773,7 +773,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="recdTotCnt">
+            <element name="RECD_TOT_CNT">
                 <annotation>
                     <documentation>레코드총건수</documentation>
                     <appinfo>
@@ -793,7 +793,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="askCnt">
+            <element name="ASK_CNT">
                 <annotation>
                     <documentation>의뢰건수</documentation>
                     <appinfo>
@@ -813,7 +813,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="askAmt">
+            <element name="ASK_AMT">
                 <annotation>
                     <documentation>의뢰금액</documentation>
                     <appinfo>
@@ -833,7 +833,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="nrmlWthdrwlCnt">
+            <element name="NRML_WTHDRWL_CNT">
                 <annotation>
                     <documentation>정상출금건수</documentation>
                     <appinfo>
@@ -853,7 +853,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="nrmlWthdrwlAmt">
+            <element name="NRML_WTHDRWL_AMT">
                 <annotation>
                     <documentation>정상출금금액</documentation>
                     <appinfo>
@@ -873,7 +873,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="inpaWthdrwlCnt">
+            <element name="INPA_WTHDRWL_CNT">
                 <annotation>
                     <documentation>부분출금건수</documentation>
                     <appinfo>
@@ -893,7 +893,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="inpaWthdrwlAmt">
+            <element name="INPA_WTHDRWL_AMT">
                 <annotation>
                     <documentation>부분출금금액</documentation>
                     <appinfo>
@@ -913,7 +913,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="inabCnt">
+            <element name="INAB_CNT">
                 <annotation>
                     <documentation>불능건수</documentation>
                     <appinfo>
@@ -933,7 +933,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="inabAmt">
+            <element name="INAB_AMT">
                 <annotation>
                     <documentation>불능금액</documentation>
                     <appinfo>
@@ -953,7 +953,7 @@
                     </restriction>
                 </simpleType>
             </element>
-            <element name="nullVal">
+            <element name="NULL_VAL">
                 <annotation>
                     <documentation>공백값</documentation>
                     <appinfo>
