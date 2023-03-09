@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="CISTADSCBB0010201" name="BS전략한도파일 승인전송" version="3">
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="CISTADSCBB0010201" name="BS전략한도파일 승인전송" version="4">
     <common>
         <description><![CDATA[BS전략한도파일 승인전송]]></description>
         <system code="CIS" name="H-CIS" />
@@ -209,9 +209,9 @@
                             <!--타겟 파일 경로 표준경로사용 여부-->
                             <path>$COMM03.AHFTPIN</path>
                             <!--FILE2FILE 경로-->
-                            <trgt_file_renm_yn>N</trgt_file_renm_yn>
+                            <trgt_file_renm_yn>Y</trgt_file_renm_yn>
                             <!--타겟 변환규칙여부-->
-                            <rule />
+                            <rule>TA001DAT</rule>
                             <!--타겟 FILE명 규칙-->
                             <after_execute>N</after_execute>
                             <!--후속처리 여부-->
