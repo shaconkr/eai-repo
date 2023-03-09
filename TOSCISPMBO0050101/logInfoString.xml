@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deployment id="D00000011211">
+    <deployer id="CIS049">최재현</deployer>
+    <deployment_date>2023-03-09 15:40:19.929635</deployment_date>
+    <target_system id="FEP_D_02">EAI 대외 API</target_system>
+</deployment>
