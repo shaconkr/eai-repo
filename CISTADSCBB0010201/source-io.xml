@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SCISSCBB0010201" version="3">
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SCISSCBB0010201" version="5">
     <common>
         <io_name><![CDATA[BS전략한도파일]]></io_name>
         <!--I/O 명-->
@@ -17,7 +17,7 @@
         <!--캐릭터셋-->
         <package_name>hdc.cis.sc.scb.scbb.bat.jc.io</package_name>
         <!--패키지경로-->
-        <class_name>BsStrgBndsFile2FIO</class_name>
+        <class_name>BsStrgBndsFileFIO</class_name>
         <!--클래스명-->
         <sttl_yn>Y</sttl_yn>
         <!--표준전문여부-->
