@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="CISKFTPMBF0030101" name="금결원자동이체_연체 출금의뢰(EC21)" version="1">
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="CISKFTPMBF0030101" name="금결원자동이체_연체 출금의뢰(EC21)" version="2">
     <common>
         <description><![CDATA[금결원 연체대상 출금의뢰파일 연계거래]]></description>
         <system code="CIS" name="H-CIS" />
         <!--시스템구분코드-->
-        <work code="PMBC" name="자동이체출금제휴파일생성" />
+        <work code="PMBF" name="자동이체출금금결원파일생성" />
         <!--어플리케이션코드-->
         <datetime>2023-01-19 15:42:56</datetime>
         <!--작성일-->
@@ -112,7 +112,7 @@
             <!--소스 I/O ID-->
             <system code="CIS" name="H-CIS" />
             <!--소스 I/O 시스템 구분 코드 / 시스템 명-->
-            <work code="PMBC" name="자동이체출금제휴파일생성" />
+            <work code="PMBF" name="자동이체출금금결원파일생성" />
             <!--소스 I/O 업무 코드 / 업무 코드 명-->
             <person />
             <!--소스 I/O 작성자-->
@@ -207,9 +207,9 @@
                         <file2file>
                             <trgt_dflt_yn>Y</trgt_dflt_yn>
                             <!--타겟 파일 경로 표준경로사용 여부-->
-                            <path />
+                            <path>/hcisnas/sam/</path>
                             <!--FILE2FILE 경로-->
-                            <trgt_file_renm_yn>Y</trgt_file_renm_yn>
+                            <trgt_file_renm_yn>N</trgt_file_renm_yn>
                             <!--타겟 변환규칙여부-->
                             <rule />
                             <!--타겟 FILE명 규칙-->

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SCISPMBF0030101" version="2">
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SCISPMBF0030101" version="3">
     <common>
         <io_name><![CDATA[금결원자동이체_연체 출금의뢰(EC21)]]></io_name>
         <!--I/O 명-->
@@ -7,7 +7,7 @@
         <!--I/O 설명-->
         <system code="CIS" name="H-CIS" />
         <!--시스템코드, 시스템명-->
-        <work code="PMBC" name="자동이체출금제휴파일생성" />
+        <work code="PMBF" name="자동이체출금금결원파일생성" />
         <!--업무구분코드-->
         <datetime>2023-01-19 15:42:56</datetime>
         <!--작성 시간-->
