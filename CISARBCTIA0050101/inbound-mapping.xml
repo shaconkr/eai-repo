@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="inbound" id="CISARBCTIA0050101" version="2" />
+    <src_io id="SCISCTIA0050101" />
+    <target_io id="TARBCTIA0050101" />
+    <mapping>
+        <source path="entity/procGbVal" />
+        <target path="entity/procGbVal" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/cnfmDt" />
+        <target path="entity/cnfmDt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/abnAcptDt" />
+        <target path="entity/abnAcptDt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/abnCustNo" />
+        <target path="entity/abnCustNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/nwrgLvoutYn" />
+        <target path="entity/nwrgLvoutYn" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/buyYn" />
+        <target path="entity/buyYn" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsnCd" />
+        <target path="entity/rsnCd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/seqno" />
+        <target path="entity/seqno" />
+        <function ref="move" />
+    </mapping>
+</map>
