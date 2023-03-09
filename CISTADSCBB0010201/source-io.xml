@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SCISSCBB0010201" version="6">
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SCISSCBB0010201" version="7">
     <common>
         <io_name><![CDATA[BS전략한도파일]]></io_name>
         <!--I/O 명-->
-        <description><![CDATA[BS전략한도파일]]></description>
+        <description><![CDATA[BS전략 한도파일]]></description>
         <!--I/O 설명-->
         <system code="CIS" name="H-CIS" />
         <!--시스템코드, 시스템명-->
