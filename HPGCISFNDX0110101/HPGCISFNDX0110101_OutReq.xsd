@@ -3,9 +3,29 @@
     <element name="root" type="tns:TCISFNDX0110101_inbound" />
     <complexType name="TCISFNDX0110101_inbound">
         <sequence>
-            <element name="insmAmt">
+            <element name="saleDt">
                 <annotation>
-                    <documentation>할부금액</documentation>
+                    <documentation>매출일자</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="8" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="saleAmt">
+                <annotation>
+                    <documentation>매출금액</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
@@ -19,15 +39,35 @@
                 </annotation>
                 <simpleType>
                     <restriction base="long">
-                        <totalDigits value="19" />
+                        <totalDigits value="1" />
                     </restriction>
                 </simpleType>
             </element>
-            <element name="crdInsmMths">
+            <element name="stlmDay">
                 <annotation>
-                    <documentation>카드할부개월수</documentation>
+                    <documentation>결제일</documentation>
                     <appinfo>
-                        <p:description value="카드 할부개월수" />
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="2" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="insmMths">
+                <annotation>
+                    <documentation>할부개월수</documentation>
+                    <appinfo>
+                        <p:description />
                         <p:mandatory value="N" />
                         <p:level value="1" />
                         <p:encryption value="N" />
@@ -39,7 +79,28 @@
                 </annotation>
                 <simpleType>
                     <restriction base="long">
-                        <totalDigits value="4" />
+                        <totalDigits value="18" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="cmisr">
+                <annotation>
+                    <documentation>수수료율</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="decimal">
+                        <totalDigits value="12" />
+                        <fractionDigits value="2" />
                     </restriction>
                 </simpleType>
             </element>

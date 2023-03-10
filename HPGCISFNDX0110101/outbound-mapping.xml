@@ -1,51 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <interface bound="outbound" id="HPGCISFNDX0110101" version="2" />
+    <interface bound="outbound" id="HPGCISFNDX0110101" version="3" />
     <src_io id="SHPGFNDX0110101" />
     <target_io id="TCISFNDX0110101" />
     <mapping>
-        <source path="entity/insmAmt" />
-        <target path="entity/insmAmt" />
+        <source path="entity/rsltRowcount" />
+        <target path="entity/rsltRowcount" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/crdInsmMths" />
-        <target path="entity/crdInsmMths" />
+        <source path="entity/rsltList/chrDt" />
+        <target path="entity/rsltList/chrDt" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/cmisr" />
-        <target path="entity/cmisr" />
+        <source path="entity/rsltList/reqTmnm" />
+        <target path="entity/rsltList/reqTmnm" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/cmisAmt" />
-        <target path="entity/cmisAmt" />
+        <source path="entity/rsltList/calcDys" />
+        <target path="entity/rsltList/calcDys" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/reqAmt" />
-        <target path="entity/reqAmt" />
+        <source path="entity/rsltList/prncAmt" />
+        <target path="entity/rsltList/prncAmt" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/cmisList/reqTmnm" />
-        <target path="entity/cmisList/reqTmnm" />
+        <source path="entity/rsltList/cmisAmt" />
+        <target path="entity/rsltList/cmisAmt" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/cmisList/reqPrncAmt" />
-        <target path="entity/cmisList/reqPrncAmt" />
+        <source path="entity/rsltList/nadvAmt" />
+        <target path="entity/rsltList/nadvAmt" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/cmisList/cmisAmt" />
-        <target path="entity/cmisList/cmisAmt" />
+        <source path="entity/rsltList/realStlmDt" />
+        <target path="entity/rsltList/realStlmDt" />
         <function ref="move" />
     </mapping>
     <mapping>
-        <source path="entity/cmisList/mmChrAmt" />
-        <target path="entity/cmisList/mmChrAmt" />
+        <source path="entity/rsltList/insmCmisRcknDt" />
+        <target path="entity/rsltList/insmCmisRcknDt" />
         <function ref="move" />
     </mapping>
 </map>
