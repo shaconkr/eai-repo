@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="inbound" id="HPGCISFNDX0110102" version="2" />
+    <src_io id="SHPGFNDX0110102" />
+    <target_io id="TCISFNDA0050401" />
+    <mapping>
+        <source path="entity/saleDt" />
+        <target path="entity/saleDt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/saleAmt" />
+        <target path="entity/saleAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/stlmDay" />
+        <target path="entity/stlmDay" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/insmMths" />
+        <target path="entity/insmMths" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/cmisr" />
+        <target path="entity/cmisr" />
+        <function ref="move" />
+    </mapping>
+</map>
