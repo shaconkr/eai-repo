@@ -164,7 +164,7 @@
             </process_type>
         </source>
         <target>
-            <ioid version="2">TCISCIPZ0010302</ioid>
+            <ioid version="3">TCISCIPZ0010302</ioid>
             <!--타겟 I/O ID-->
             <ioidn>CG01_CGA_HIP1000S</ioidn>
             <!--타겟 관리 I/O ID-->
