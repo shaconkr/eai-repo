@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TCGACIPZ0010301" idn="CG01_CGA_EIP1000Q" version="1">
+    <common>
+        <io_name><![CDATA[이미지 레터링 발신 - 요청]]></io_name>
+        <!--I/O 명-->
+        <description />
+        <!--I/O 설명-->
+        <system code="CGA" name="콜게이트" />
+        <!--시스템코드, 시스템명-->
+        <work code="DEFT" name="어플리케이션 Default 코드" />
+        <!--업무구분코드-->
+        <datetime>2023-01-19 10:14:05</datetime>
+        <!--작성 시간-->
+        <writer>황재학</writer>
+        <!--작성자-->
+        <charset>KSC5601</charset>
+        <!--캐릭터셋-->
+        <package_name />
+        <!--패키지경로-->
+        <class_name />
+        <!--클래스명-->
+        <sttl_yn>N</sttl_yn>
+        <!--표준전문여부-->
+    </common>
+    <process_type type="O" name="온라인">
+        <online>
+            <service_in />
+            <!--Input 거래 ID-->
+            <service_out />
+            <!--Output 거래 ID-->
+            <syn-asyn />
+            <!--동기 / 비동기 여부-->
+            <trncd_in />
+            <!--Input 거래 코드-->
+            <trncd_out />
+            <!--Output 거래 코드-->
+            <ext_inop code="2" />
+            <!--대내외 (일반/공유 I/O) 구분 코드 : 1 대내 (일반), 2 대외 (공유)-->
+            <external>
+                <system code="CGA" name="콜게이트" />
+                <!--대외 기관 구분 코드-->
+                <work code="CG01" name="[콜게이트] 이미지 레터링 발신" />
+                <!--대외 업무 코드-->
+                <msg code="IP1000Q" />
+                <!--대외 전문 종별 코드-->
+                <tx />
+                <!--대외 거래 구분 코드-->
+                <etc />
+                <!--대외 기타 구분 코드-->
+                <inao code="2" />
+                <!--대내외 구간 코드 : 1 대내, 2 대외-->
+            </external>
+        </online>
+    </process_type>
+    <!--IO처리유형 : O - 온라인, D - DB, F - FILE, A - API-->
+    <inbound>
+        <message>
+            <io id="C00000004016" idn="CG01_CGA_EIP1000Q" version="1" name="jmims.message.cg01.cga.EIP1000Q" type="Message">
+                <common>
+                    <description />
+                    <system code="CGA" name="콜게이트" />
+                    <!--시스템코드, 시스템명-->
+                    <work code="DEFT" name="어플리케이션 Default 코드" />
+                    <!--업무 구분 코드-->
+                    <datetime>2023-01-19 10:14:05</datetime>
+                    <!--작성 시간-->
+                    <writer>황재학</writer>
+                    <!--작성자-->
+                    <package_name />
+                    <!--패키지경로-->
+                    <class_name />
+                    <!--클래스명-->
+                    <sttl_yn>N</sttl_yn>
+                    <!--표준전문여부-->
+                </common>
+                <process_type>
+                    <online>
+                        <external>
+                            <system code="CGA" name="콜게이트" />
+                            <!--대외 기관 코드, 대외 기관 명-->
+                            <work code="CG01" name="[콜게이트] 이미지 레터링 발신" />
+                            <!--대외 업무 코드-->
+                            <msg code="ip1000q" />
+                            <!--대외 전문 종별 코드-->
+                            <tx />
+                            <!--대외 거래 구분 코드-->
+                            <etc />
+                            <!--대외 기타 구분코드-->
+                            <rspn />
+                            <!--대외 응답 코드-->
+                            <utrace />
+                            <!--고유 TraceKey-->
+                            <extwork />
+                            <!--Work 코드-->
+                            <error />
+                            <!--Error 코드-->
+                            <encoding style="KSC5601" />
+                            <!--Encoding-->
+                        </external>
+                    </online>
+                </process_type>
+            </io>
+        </message>
+        <header>
+            <io id="H00000004008" idn="CG01_CGA_ECommHeader" version="1" name="jmims.header.cg01.cga.ECommHeader" type="Header" squencename="header">
+                <common>
+                    <description />
+                    <system code="CGA" name="콜게이트" />
+                    <!--시스템코드, 시스템명-->
+                    <work code="DEFT" name="어플리케이션 Default 코드" />
+                    <!--업무 구분 코드-->
+                    <datetime>2023-01-19 10:13:25</datetime>
+                    <!--작성 시간-->
+                    <writer>황재학</writer>
+                    <!--작성자-->
+                    <package_name />
+                    <!--패키지경로-->
+                    <class_name />
+                    <!--클래스명-->
+                    <sttl_yn>N</sttl_yn>
+                    <!--표준전문여부-->
+                </common>
+                <process_type>
+                    <online>
+                        <external>
+                            <system code="CGA" name="콜게이트" />
+                            <!--대외 기관 코드, 대외 기관 명-->
+                            <work code="CG01" name="[콜게이트] 이미지 레터링 발신" />
+                            <!--대외 업무 코드-->
+                            <msg code="messageType" />
+                            <!--대외 전문 종별 코드-->
+                            <tx />
+                            <!--대외 거래 구분 코드-->
+                            <etc />
+                            <!--대외 기타 구분코드-->
+                            <rspn />
+                            <!--대외 응답 코드-->
+                            <utrace />
+                            <!--고유 TraceKey-->
+                            <extwork />
+                            <!--Work 코드-->
+                            <error />
+                            <!--Error 코드-->
+                            <encoding />
+                            <!--Encoding-->
+                        </external>
+                    </online>
+                </process_type>
+            </io>
+            <io id="S00000004007" idn="CG01_CGA_ECommUnit" name="jmims.entity.cg01.cga.ECommUnit" version="1" type="Entity" squencename="entity1">
+                <common>
+                    <description />
+                    <system code="CGA" name="콜게이트" />
+                    <!--시스템코드, 시스템명-->
+                    <work code="DEFT" name="어플리케이션 Default 코드" />
+                    <!--업무 구분 코드-->
+                    <datetime>2023-01-19 10:13:25</datetime>
+                    <!--작성 시간-->
+                    <writer>황재학</writer>
+                    <!--작성자-->
+                    <package_name />
+                    <!--패키지경로-->
+                    <class_name />
+                    <!--클래스명-->
+                    <sttl_yn>N</sttl_yn>
+                    <!--표준전문여부-->
+                </common>
+                <process_type>
+                    <online>
+                        <external>
+                            <system code="CGA" name="콜게이트" />
+                            <!--대외 기관 코드, 대외 기관 명-->
+                            <work code="CG01" name="[콜게이트] 이미지 레터링 발신" />
+                            <!--대외 업무 코드-->
+                            <msg code="messageType" />
+                            <!--대외 전문 종별 코드-->
+                            <tx />
+                            <!--대외 거래 구분 코드-->
+                            <etc />
+                            <!--대외 기타 구분코드-->
+                            <rspn />
+                            <!--대외 응답 코드-->
+                            <utrace />
+                            <!--고유 TraceKey-->
+                            <extwork />
+                            <!--Work 코드-->
+                            <error />
+                            <!--Error 코드-->
+                            <encoding />
+                            <!--Encoding-->
+                        </external>
+                    </online>
+                </process_type>
+                <data><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/" version="S00000004007.1">
+    <element name="root" type="tns:CG01_CGA_ECommUnit_ENT_inbound" />
+    <complexType name="CG01_CGA_ECommUnit_ENT_inbound">
+        <sequence>
+            <element name="messageSize">
+                <annotation>
+                    <documentation>전체메시지크기</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="long">
+                        <totalDigits value="4" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="messageNo">
+                <annotation>
+                    <documentation>전문번호</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="Y" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="20" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="customerServiceId">
+                <annotation>
+                    <documentation>고객사별서비스ID</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="16" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="messageType">
+                <annotation>
+                    <documentation>메시지유형</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="10" />
+                    </restriction>
+                </simpleType>
+            </element>
+        </sequence>
+    </complexType>
+</schema>]]></data>
+            </io>
+        </header>
+        <unit>
+            <io id="S00000004014" idn="CG01_CGA_EIP1000Q" name="jmims.entity.cg01.cga.EIP1000Q" version="1" type="Entity" squencename="entity">
+                <common>
+                    <description />
+                    <system code="CGA" name="콜게이트" />
+                    <!--시스템코드, 시스템명-->
+                    <work code="DEFT" name="어플리케이션 Default 코드" />
+                    <!--업무 구분 코드-->
+                    <datetime>2023-01-19 10:13:44</datetime>
+                    <!--작성 시간-->
+                    <writer>황재학</writer>
+                    <!--작성자-->
+                    <package_name />
+                    <!--패키지경로-->
+                    <class_name />
+                    <!--클래스명-->
+                    <sttl_yn>N</sttl_yn>
+                    <!--표준전문여부-->
+                </common>
+                <process_type>
+                    <online>
+                        <external>
+                            <system code="CGA" name="콜게이트" />
+                            <!--대외 기관 코드, 대외 기관 명-->
+                            <work code="CG01" name="[콜게이트] 이미지 레터링 발신" />
+                            <!--대외 업무 코드-->
+                            <msg code="ip1000q" />
+                            <!--대외 전문 종별 코드-->
+                            <tx />
+                            <!--대외 거래 구분 코드-->
+                            <etc />
+                            <!--대외 기타 구분코드-->
+                            <rspn />
+                            <!--대외 응답 코드-->
+                            <utrace />
+                            <!--고유 TraceKey-->
+                            <extwork />
+                            <!--Work 코드-->
+                            <error />
+                            <!--Error 코드-->
+                            <encoding />
+                            <!--Encoding-->
+                        </external>
+                    </online>
+                </process_type>
+                <data><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:p="http://schemas.jmims.com/mms/io/" xmlns:tns="http://schemas.jmims.com/mms/io/" targetNamespace="http://schemas.jmims.com/mms/io/" version="S00000004014.1">
+    <element name="root" type="tns:CG01_CGA_EIP1000Q_ENT_inbound" />
+    <complexType name="CG01_CGA_EIP1000Q_ENT_inbound">
+        <sequence>
+            <element name="authKey">
+                <annotation>
+                    <documentation>인증키</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="40" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="svcCode">
+                <annotation>
+                    <documentation>서비스 연동코드</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="16" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="userMdn">
+                <annotation>
+                    <documentation>휴대폰번호</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="Y" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="16" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="boundType">
+                <annotation>
+                    <documentation>인바운드아웃바운드유형</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="3" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="prologueContentCode">
+                <annotation>
+                    <documentation>프롤로그 컨텐츠 코드</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="6" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="prologueCustomUrl">
+                <annotation>
+                    <documentation>프롤로그 커스텀URL</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="200" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="epilogueContentCode">
+                <annotation>
+                    <documentation>에필로그 컨텐츠 코드</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="6" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="epilogueCustomUrl">
+                <annotation>
+                    <documentation>에필로그 컨텐츠 URL</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="200" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="callerMdnCheckYn">
+                <annotation>
+                    <documentation>발신번호체크여부</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="1" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="callerMdn">
+                <annotation>
+                    <documentation>발신번호</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:mask_type />
+                        <p:msg_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="20" />
+                    </restriction>
+                </simpleType>
+            </element>
+        </sequence>
+    </complexType>
+</schema>]]></data>
+            </io>
+        </unit>
+    </inbound>
+    <outbound>
+        <message />
+        <header />
+        <unit />
+    </outbound>
+</io>

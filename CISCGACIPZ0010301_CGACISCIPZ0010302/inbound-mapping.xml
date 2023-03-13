@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="inbound" id="CISCGACIPZ0010301" version="1" />
+    <src_io id="SCISCIPZ0010301" />
+    <target_io id="TCGACIPZ0010301" />
+    <mapping>
+        <source path="header/entity1/MESSAGE_SIZE" />
+        <target path="header/entity1/MESSAGE_SIZE" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/MESSAGE_NO" />
+        <target path="header/entity1/MESSAGE_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/CUSTOMER_SERVICE_ID" />
+        <target path="header/entity1/CUSTOMER_SERVICE_ID" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/MESSAGE_TYPE" />
+        <target path="header/entity1/MESSAGE_TYPE" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/AUTH_KEY" />
+        <target path="entity/AUTH_KEY" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/SVC_CODE" />
+        <target path="entity/SVC_CODE" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/USER_MDN" />
+        <target path="entity/USER_MDN" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/BOUND_TYPE" />
+        <target path="entity/BOUND_TYPE" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/PROLOGUE_CONTENT_CODE" />
+        <target path="entity/PROLOGUE_CONTENT_CODE" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/PROLOGUE_CUSTOM_URL" />
+        <target path="entity/PROLOGUE_CUSTOM_URL" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/EPILOGUE_CONTENT_CODE" />
+        <target path="entity/EPILOGUE_CONTENT_CODE" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/EPILOGUE_CUSTOM_URL" />
+        <target path="entity/EPILOGUE_CUSTOM_URL" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/CALLER_MDN_CHECK_YN" />
+        <target path="entity/CALLER_MDN_CHECK_YN" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/CALLER_MDN" />
+        <target path="entity/CALLER_MDN" />
+        <function ref="move" />
+    </mapping>
+</map>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="inbound" id="CGACISCIPZ0010302" version="1" />
+    <src_io id="SCGACIPZ0010302" />
+    <target_io id="TCISCIPZ0010302" />
+    <mapping>
+        <source path="header/entity1/MESSAGE_SIZE" />
+        <target path="header/entity1/MESSAGE_SIZE" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/MESSAGE_NO" />
+        <target path="header/entity1/MESSAGE_NO" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/CUSTOMER_SERVICE_ID" />
+        <target path="header/entity1/CUSTOMER_SERVICE_ID" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="header/entity1/MESSAGE_TYPE" />
+        <target path="header/entity1/MESSAGE_TYPE" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/AUTH_KEY" />
+        <target path="entity/AUTH_KEY" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/SVC_CODE" />
+        <target path="entity/SVC_CODE" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/USER_MDN" />
+        <target path="entity/USER_MDN" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/RESULT_CODE" />
+        <target path="entity/RESULT_CODE" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/TELECOM_TYPE" />
+        <target path="entity/TELECOM_TYPE" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/PLATFORM_TYPE" />
+        <target path="entity/PLATFORM_TYPE" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/SERVICE_SUPPORT_YN" />
+        <target path="entity/SERVICE_SUPPORT_YN" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/LVM_INSTALL_YN" />
+        <target path="entity/LVM_INSTALL_YN" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/SERVICE_INVOKE_TYPE" />
+        <target path="entity/SERVICE_INVOKE_TYPE" />
+        <function ref="move" />
+    </mapping>
+</map>
