@@ -87,17 +87,13 @@
                     </restriction>
                 </simpleType>
             </element>
-        </sequence>
-    </complexType>
-    <complexType name="">
-        <sequence>
             <element name="ordInfoRowcount">
                 <annotation>
                     <documentation>주문정보건수</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
-                        <p:level value="2" />
+                        <p:level value="1" />
                         <p:encryption value="N" />
                         <p:one_path_encp value="N" />
                         <p:mask_type />
@@ -118,11 +114,15 @@
                     <appinfo>
                         <p:adjustLength category="variableField" lengthFieldURL="ORD_INFO_ROWCOUNT" />
                         <p:mandatory value="N" />
-                        <p:level value="2" />
+                        <p:level value="1" />
                         <p:api_data_area_dcd value="B" />
                     </appinfo>
                 </annotation>
             </element>
+        </sequence>
+    </complexType>
+    <complexType name="ORD_INFO_TYPE">
+        <sequence>
             <element name="ordNo">
                 <annotation>
                     <documentation>기프티콘 주문번호</documentation>
