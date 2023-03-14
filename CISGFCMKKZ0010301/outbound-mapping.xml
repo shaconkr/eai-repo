@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="outbound" id="CISGFCMKKZ0010301" version="1" />
+    <src_io id="SCISMKKZ0010301" />
+    <target_io id="TGFCMKKZ0010301" />
+    <mapping>
+        <source path="entity/resultCd" />
+        <target path="entity/resultCd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/resultMsg" />
+        <target path="entity/resultMsg" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/campId" />
+        <target path="entity/campId" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/trId" />
+        <target path="entity/trId" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/ordInfoRowcount" />
+        <target path="entity/ordInfoRowcount" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/ordInfo/ordNo" />
+        <target path="entity/ordInfo/ordNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/ordInfo/cpnoInfoRowcount" />
+        <target path="entity/ordInfo/cpnoInfoRowcount" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/ordInfo/cpnoInfo/cpno" />
+        <target path="entity/ordInfo/cpnoInfo/cpno" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/ordInfo/cpnoInfo/cpnoSeq" />
+        <target path="entity/ordInfo/cpnoInfo/cpnoSeq" />
+        <function ref="move" />
+    </mapping>
+</map>

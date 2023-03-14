@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="inbound" id="CISGFCMKKZ0010301" version="1" />
+    <src_io id="SCISMKKZ0010301" />
+    <target_io id="TGFCMKKZ0010301" />
+    <mapping>
+        <source path="entity/campId" />
+        <target path="entity/campId" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/trId" />
+        <target path="entity/trId" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/prodId" />
+        <target path="entity/prodId" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/prodQty" />
+        <target path="entity/prodQty" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rcvrInfoRowcount" />
+        <target path="entity/rcvrInfoRowcount" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rcvrInfo/rcvrMdn" />
+        <target path="entity/rcvrInfo/rcvrMdn" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rcvrInfo/userId" />
+        <target path="entity/rcvrInfo/userId" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/encYn" />
+        <target path="entity/encYn" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/encType" />
+        <target path="entity/encType" />
+        <function ref="move" />
+    </mapping>
+</map>
