@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="CISTADAHHC0012701" name="자사카드 승인(유선승인-승인시스템)" version="4">
+<interface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="CISTADAHHC0012701" name="자사카드 승인(유선승인-승인시스템)" version="5">
     <common>
         <description />
         <system code="CIS" name="H-CIS" />

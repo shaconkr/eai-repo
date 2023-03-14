@@ -3,6 +3,26 @@
     <element name="root" type="tns:TTADAHHC0012701_inbound" />
     <complexType name="TTADAHHC0012701_inbound">
         <sequence>
+            <element name="wrkGbcd">
+                <annotation>
+                    <documentation>작업구분코드</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="4" />
+                    </restriction>
+                </simpleType>
+            </element>
             <element name="storeCd">
                 <annotation>
                     <documentation>점코드</documentation>
