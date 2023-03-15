@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="outbound" id="HPGCISFNDX0420101" version="1" />
+    <src_io id="SHPGFNDX0420101" />
+    <target_io id="TCISFNDX0420101" />
+    <mapping>
+        <source path="entity/enuriAmt" />
+        <target path="entity/enuriAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/insmCmisExpAmt" />
+        <target path="entity/insmCmisExpAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/chrDcAmt" />
+        <target path="entity/chrDcAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/bnftSumAmt" />
+        <target path="entity/bnftSumAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/totCnt" />
+        <target path="entity/totCnt" />
+        <function ref="move" />
+    </mapping>
+</map>
