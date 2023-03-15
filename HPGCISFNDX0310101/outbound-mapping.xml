@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="outbound" id="HPGCISFNDX0310101" version="1" />
+    <src_io id="SHPGFNDX0310101" />
+    <target_io id="TCISFNDX0310101" />
+    <mapping>
+        <source path="entity/saleYr" />
+        <target path="entity/saleYr" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/saleMm" />
+        <target path="entity/saleMm" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/crdUseAmt" />
+        <target path="entity/crdUseAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/anmlExcpUseAmt" />
+        <target path="entity/anmlExcpUseAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/ddctAmt" />
+        <target path="entity/ddctAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/mdctIstnUseAmt" />
+        <target path="entity/mdctIstnUseAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/cultrIrgnAmt" />
+        <target path="entity/cultrIrgnAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/cultrIrgnAnmlAmt" />
+        <target path="entity/cultrIrgnAnmlAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/cultrIrgnDdctAmt" />
+        <target path="entity/cultrIrgnDdctAmt" />
+        <function ref="move" />
+    </mapping>
+</map>

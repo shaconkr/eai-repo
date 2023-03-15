@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="inbound" id="CISSPGMTPH8000401" version="1" />
+    <src_io id="SCISMTPH8000401" />
+    <target_io id="TSPGMTPH8000401" />
+    <mapping>
+        <source path="entity/useGbcd" />
+        <target path="entity/useGbcd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/storeCd" />
+        <target path="entity/storeCd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/sendDtm" />
+        <target path="entity/sendDtm" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/procGbcd" />
+        <target path="entity/procGbcd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/gcNo" />
+        <target path="entity/gcNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/gcGbcd" />
+        <target path="entity/gcGbcd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/sysGbcd" />
+        <target path="entity/sysGbcd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/useDt" />
+        <target path="entity/useDt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/nullVal" />
+        <target path="entity/nullVal" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/tgrmMngNo" />
+        <target path="entity/tgrmMngNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/gcAmt" />
+        <target path="entity/gcAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/ptcoDvlbRate" />
+        <target path="entity/ptcoDvlbRate" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/useYn" />
+        <target path="entity/useYn" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/vatTrgtAmt" />
+        <target path="entity/vatTrgtAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/vatNtgtAmt" />
+        <target path="entity/vatNtgtAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/crdMemNo" />
+        <target path="entity/crdMemNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/nullVal1" />
+        <target path="entity/nullVal1" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/respCd" />
+        <target path="entity/respCd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/nullVal2" />
+        <target path="entity/nullVal2" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/endGbVal" />
+        <target path="entity/endGbVal" />
+        <function ref="move" />
+    </mapping>
+</map>
