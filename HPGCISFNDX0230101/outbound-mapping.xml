@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="outbound" id="HPGCISFNDX0230101" version="1" />
+    <src_io id="SHPGFNDX0230101" />
+    <target_io id="TCISFNDX0230101" />
+    <mapping>
+        <source path="entity/rsltRowcount" />
+        <target path="entity/rsltRowcount" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/selfFamlMemSeq" />
+        <target path="entity/rsltList/selfFamlMemSeq" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/userNm" />
+        <target path="entity/rsltList/userNm" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/crdBck4PtnNo" />
+        <target path="entity/rsltList/crdBck4PtnNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/totReqAmt" />
+        <target path="entity/rsltList/totReqAmt" />
+        <function ref="move" />
+    </mapping>
+</map>
