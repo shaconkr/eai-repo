@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="outbound" id="HPGCISFNDX0430101" version="1" />
+    <src_io id="SHPGFNDX0430101" />
+    <target_io id="TCISFNDX0430101" />
+    <mapping>
+        <source path="entity/rsltRowcount" />
+        <target path="entity/rsltRowcount" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/owcoAprvlNo" />
+        <target path="entity/rsltList/owcoAprvlNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/crdMemNo" />
+        <target path="entity/rsltList/crdMemNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/crdNo" />
+        <target path="entity/rsltList/crdNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/korNm" />
+        <target path="entity/rsltList/korNm" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/saleDt" />
+        <target path="entity/rsltList/saleDt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/nsaleAmt" />
+        <target path="entity/rsltList/nsaleAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/dcAmt" />
+        <target path="entity/rsltList/dcAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/chrDcAmt" />
+        <target path="entity/rsltList/chrDcAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/insmCmisExpAmt" />
+        <target path="entity/rsltList/insmCmisExpAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/tsaleAmt" />
+        <target path="entity/rsltList/tsaleAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/itemNm" />
+        <target path="entity/rsltList/itemNm" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/selfFamlMemSeq" />
+        <target path="entity/rsltList/selfFamlMemSeq" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/crdInsmMths" />
+        <target path="entity/rsltList/crdInsmMths" />
+        <function ref="move" />
+    </mapping>
+</map>
