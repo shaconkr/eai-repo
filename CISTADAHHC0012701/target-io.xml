@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TTADAHHC0012701" version="4">
+<io xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TTADAHHC0012701" version="5">
     <common>
         <io_name><![CDATA[자사카드 승인(유선승인-승인시스템)]]></io_name>
         <!--I/O 명-->
@@ -394,6 +394,46 @@
             <element name="overAprvlBndsAmt">
                 <annotation>
                     <documentation>초과승인한도금액</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="18" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="itemCd">
+                <annotation>
+                    <documentation>상품코드</documentation>
+                    <appinfo>
+                        <p:description />
+                        <p:mandatory value="N" />
+                        <p:level value="1" />
+                        <p:encryption value="N" />
+                        <p:one_path_encp value="N" />
+                        <p:mask_type />
+                        <p:db_key value="N" />
+                        <p:krn_fld_yn value="N" />
+                    </appinfo>
+                </annotation>
+                <simpleType>
+                    <restriction base="string">
+                        <maxLength value="20" />
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="itemAmt">
+                <annotation>
+                    <documentation>상품금액</documentation>
                     <appinfo>
                         <p:description />
                         <p:mandatory value="N" />
