@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="inbound" id="HPGCISFNDX0220101" version="1" />
+    <src_io id="SHPGFNDX0220101" />
+    <target_io id="TCISFNDX0220101" />
+    <mapping>
+        <source path="entity/crdMemNo" />
+        <target path="entity/crdMemNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/reqStlmUnitNo" />
+        <target path="entity/reqStlmUnitNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/psnCorpGbcd" />
+        <target path="entity/psnCorpGbcd" />
+        <function ref="move" />
+    </mapping>
+</map>
