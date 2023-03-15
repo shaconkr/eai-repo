@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="outbound" id="HPGCISFNDX0210101" version="1" />
+    <src_io id="SHPGFNDX0210101" />
+    <target_io id="TCISFNDX0210101" />
+    <mapping>
+        <source path="entity/pymSumAmt" />
+        <target path="entity/pymSumAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/chrDt" />
+        <target path="entity/chrDt" />
+        <function ref="move" />
+    </mapping>
+</map>
