@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="outbound" id="HPGCISFNDX0250101" version="1" />
+    <src_io id="SHPGFNDX0250101" />
+    <target_io id="TCISFNDX0250101" />
+    <mapping>
+        <source path="entity/rsltRowcount" />
+        <target path="entity/rsltRowcount" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/reqStlmUnitNo" />
+        <target path="entity/rsltList/reqStlmUnitNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/chrDt" />
+        <target path="entity/rsltList/chrDt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/crdMemNo" />
+        <target path="entity/rsltList/crdMemNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/saleMngNo" />
+        <target path="entity/rsltList/saleMngNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/crdNo" />
+        <target path="entity/rsltList/crdNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/selfFamlMemSeq" />
+        <target path="entity/rsltList/selfFamlMemSeq" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/selfFamlGbVal" />
+        <target path="entity/rsltList/selfFamlGbVal" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/itemNm" />
+        <target path="entity/rsltList/itemNm" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/saleDt" />
+        <target path="entity/rsltList/saleDt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/saleCnfmDt" />
+        <target path="entity/rsltList/saleCnfmDt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/owcoAprvlNo" />
+        <target path="entity/rsltList/owcoAprvlNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/aprvlDt" />
+        <target path="entity/rsltList/aprvlDt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/utlzDtm" />
+        <target path="entity/rsltList/utlzDtm" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/tsaleAmt" />
+        <target path="entity/rsltList/tsaleAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/enuriAmt" />
+        <target path="entity/rsltList/enuriAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/nsaleAmt" />
+        <target path="entity/rsltList/nsaleAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/imdtIamtAmt" />
+        <target path="entity/rsltList/imdtIamtAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/chrDcAmt" />
+        <target path="entity/rsltList/chrDcAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/reqTgamt" />
+        <target path="entity/rsltList/reqTgamt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/useMlg" />
+        <target path="entity/rsltList/useMlg" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/crdInsmMths" />
+        <target path="entity/rsltList/crdInsmMths" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/reqTmnm" />
+        <target path="entity/rsltList/reqTmnm" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/rmndMths" />
+        <target path="entity/rsltList/rmndMths" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/thmnReqPrncAmt" />
+        <target path="entity/rsltList/thmnReqPrncAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/totReqAmt" />
+        <target path="entity/rsltList/totReqAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/thmnReqCmisAmt" />
+        <target path="entity/rsltList/thmnReqCmisAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/alrqPrncSumAmt" />
+        <target path="entity/rsltList/alrqPrncSumAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/alrqSumCmisAmt" />
+        <target path="entity/rsltList/alrqSumCmisAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/alsttPrncSumAmt" />
+        <target path="entity/rsltList/alsttPrncSumAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/alsttSumCmisAmt" />
+        <target path="entity/rsltList/alsttSumCmisAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/nadvAmt" />
+        <target path="entity/rsltList/nadvAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/cnclYn" />
+        <target path="entity/rsltList/cnclYn" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/prtCnclAmt" />
+        <target path="entity/rsltList/prtCnclAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/oduePrncAmt" />
+        <target path="entity/rsltList/oduePrncAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/odueCmisAmt" />
+        <target path="entity/rsltList/odueCmisAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/odueIntrAmt" />
+        <target path="entity/rsltList/odueIntrAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/odueMths" />
+        <target path="entity/rsltList/odueMths" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/crdGrdCd" />
+        <target path="entity/rsltList/crdGrdCd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/crdStlmMthdCd" />
+        <target path="entity/rsltList/crdStlmMthdCd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/bankBrnCd" />
+        <target path="entity/rsltList/bankBrnCd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/stlmAcno" />
+        <target path="entity/rsltList/stlmAcno" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/korNm" />
+        <target path="entity/rsltList/korNm" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/storeCd" />
+        <target path="entity/rsltList/storeCd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/storeNm" />
+        <target path="entity/rsltList/storeNm" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/saleUtlzGbcd" />
+        <target path="entity/rsltList/saleUtlzGbcd" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/overPymAmt" />
+        <target path="entity/rsltList/overPymAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/lmmNpymAmt" />
+        <target path="entity/rsltList/lmmNpymAmt" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/userNm" />
+        <target path="entity/rsltList/userNm" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/crdBck4PtnNo" />
+        <target path="entity/rsltList/crdBck4PtnNo" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/acmExpMlg" />
+        <target path="entity/rsltList/acmExpMlg" />
+        <function ref="move" />
+    </mapping>
+    <mapping>
+        <source path="entity/rsltList/lxgdsGbcd" />
+        <target path="entity/rsltList/lxgdsGbcd" />
+        <function ref="move" />
+    </mapping>
+</map>
