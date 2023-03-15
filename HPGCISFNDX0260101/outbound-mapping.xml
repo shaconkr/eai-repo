@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <interface bound="outbound" id="HPGCISFNDX0260101" version="1" />
+    <src_io id="SHPGFNDX0260101" />
+    <target_io id="TCISFNDX0260101" />
+    <mapping>
+        <source path="entity/cnnGbcd" />
+        <target path="entity/cnnGbcd" />
+        <function ref="move" />
+    </mapping>
+</map>
